@@ -1,0 +1,376 @@
+id: ep006-constantinople-holds
+series: never-fell
+series_number: 2
+pillar: never-fell
+title: Constantinople Holds
+hook_title: WHAT IF CONSTANTINOPLE NEVER FELL
+file_number: FILE B-0006
+target_duration: 80
+stamp_text: NEVER HAPPENED
+voice:
+  direction: calm dry archivist, British-leaning, unhurried, low-mid pitch, lets facts land
+  voice_type: preset
+  voice_id: 30fc8796-ceb6-4a66-b3a7-4a145ef7f346
+music:
+  mood: low strings, slow pulse, a bell at the hinge
+  cue: assets/music/never-fell-02.mp3
+look_key_prompt: >-
+  empty establishing frame of the Theodosian land walls of Constantinople at dawn, banded brick and limestone towers,
+  a dry moat, the Sea of Marmara grey beyond, cypress trees, cold low sun through haze
+research:
+  hinge: >-
+    In 1452 the gun founder Orban offered his great bombard to Constantine XI, who could not pay him or supply the
+    bronze; Orban then sold it to Mehmed II for four times the price, and in 1453 it breached the walls. In this
+    timeline the emperor melts church silver, pays, and the gun defends the walls instead.
+  hinge_date: '1452'
+  sources:
+  - >-
+    Doukas, Decline and Fall of Byzantium to the Ottoman Turks, ch. 35 (Orban's offer to the emperor and his sale
+    to the Sultan)
+  - Steven Runciman, The Fall of Constantinople 1453 (1965)
+  - 'Roger Crowley, Constantinople: The Last Great Siege, 1453 (2005)'
+  - >-
+    Jonathan Harris, Greek Emigres in the West 1400-1520 (1995), on scholars leaving before and after 1453
+  - Marios Philippides & Walter Hanak, The Siege and the Fall of Constantinople in 1453 (2011)
+  facts:
+  - >-
+    The siege ran from the sixth of April to the twenty-ninth of May 1453; about eight thousand defenders faced
+    an army of sixty to eighty thousand.
+  - >-
+    Orban's bombard was roughly eight metres long, fired stone balls of around six hundred kilograms and needed
+    sixty oxen to move.
+  - >-
+    Mehmed II was twenty-one; his father Murad II had been pushed off and back onto the throne within a decade,
+    so a failed siege could have ended him.
+  - >-
+    The Theodosian walls had held every siege for a thousand years; the gun was the difference.
+  - >-
+    Greek scholars had been moving to Italy since Chrysoloras arrived in Florence in 1397, so the Renaissance effect
+    is a slowdown, not a stop.
+  - >-
+    Genoa and Venice ran the Black Sea trade through the city; the Ottoman closure helped push Portugal toward the
+    Cape route.
+  era_sheet:
+    timeline: 1452 to 1453, the sixteenth century, and the present day of a surviving city-state
+    architecture: >-
+      banded brick-and-limestone walls and towers, the great church's dome and buttresses, cypress gardens; today
+      low domed skyline, a suspension bridge with bronze double-headed eagles, harbour cranes
+    clothing: >-
+      court in dark silk with gold borders, Genoese mercenaries in brigandine and sallets, gunners in leather aprons,
+      Ottoman officers in kaftans and turbans; today ordinary clothes and joggers
+    vehicles: the bronze bombard on a timber carriage, oxen, Genoese galleys; today trams and ferries
+    street: church silver on scales, bronze, stone cannonballs, tents, cypress, modern tram stops
+    light: cold Marmara dawn, foundry fire, torch-lit walls at night, bright Bosphorus morning today
+    palette: limestone cream, brick red, Marmara grey, imperial gold accent
+    forbidden: >-
+      crescent flags over the city, minarets on the great church, glass towers, Hollywood battle gore, text
+  cost: >-
+    A city that never falls never has to leave. The scholars who carried Greek to Florence stay home and the overland
+    spice trade stays open, so the Renaissance runs slower and nobody needs an Atlantic route for another century.
+beats:
+- id: hook
+  vo: >-
+    What if Constantinople never fell. Fourteen fifty-three. The cannon that breaks the walls is Byzantine, because
+    the emperor paid the invoice. The city is still Rome.
+  card:
+    text: WHAT IF CONSTANTINOPLE NEVER FELL
+    style: title
+- id: hinge
+  vo: >-
+    In fourteen fifty-two a founder named Orban offered his cannon to the emperor first. Constantine could not pay,
+    so Orban sold it to the Sultan. Here, the emperor melts church silver and pays. This is how it happens.
+  card:
+    text: 1452 · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    Year one. The great gun sits on the walls, so the siege of fourteen fifty-three breaks on them. Mehmed, twenty-one,
+    loses his army and his throne. The Ottoman state splits in three.
+  card:
+    text: '1453'
+    style: phase
+- id: phase2
+  vo: >-
+    Year one hundred. Venice and Genoa keep the Black Sea trade, so silk and spice still flow overland. Nobody needs
+    a sea route to India, so Lisbon stays a fishing town.
+  card:
+    text: '1553'
+    style: phase
+- id: phase3
+  vo: >-
+    Today. Constantinople is a city-state of four million, like Singapore with a fifth-century wall. The great church
+    is still a church, because nobody ever took it. The double eagle flies on the bridge.
+  card:
+    text: TODAY
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But a city that never falls never has to leave. The scholars who carried Greek to Florence stay home,
+    so the Renaissance runs slow and the Atlantic waits a century.
+  card: null
+- id: dilemma
+  vo: >-
+    That timeline never happened. Ours did. Does a surviving Constantinople delay America, or just change the flag?
+  card:
+    text: Does a surviving Constantinople delay America, or just change the flag?
+    style: question
+shots:
+- beat: hook
+  size: WIDE
+  location: Theodosian walls, dawn, 1453
+  prompt: >-
+    a huge bronze bombard on a timber carriage mounted on the banded brick-and-limestone walls at dawn, gunners
+    in leather aprons beside it, an army's tents on the plain beyond, cold low sun through haze
+  motion: slow dolly forward along the wall toward the gun, haze drifts, the gunners shift
+  dur: 2.5
+  mode: video
+  sfx: camp dawn
+  hero_object: true
+- beat: hook
+  size: DETAIL
+  location: Theodosian walls, dawn, 1453
+  prompt: >-
+    macro, the bronze muzzle of the great gun with a double-headed eagle cast in relief, soot in the grooves, a
+    gunner's hand resting on it, torchlight and dawn mixed
+  motion: slow lateral track right across the relief, torch flicker on the bronze
+  dur: 2.5
+  mode: video
+  sfx: torch
+- beat: hook
+  size: MEDIUM
+  location: Tower top, 1453, dawn
+  prompt: >-
+    waist-up from behind, a man in dark silk with a gold border standing on a tower looking out over an army's tents,
+    two Genoese guards in brigandine beside him, cold dawn light
+  motion: static tripod with a slow push-in, his cloak stirs, the guards turn their heads
+  dur: 2.5
+  mode: video
+  sfx: wind on walls
+- beat: hinge
+  size: CLOSE
+  location: Treasury, 1452, night
+  prompt: >-
+    a hand placing silver chalices and a silver book cover onto a brass balance scale, gold coins in the other pan,
+    a candle, a stone vault wall behind
+  motion: static close, the pan sinks slowly as the silver is added, candle flame leans
+  dur: 3.5
+  mode: video
+  sfx: silver on brass
+- beat: hinge
+  size: MEDIUM
+  location: Foundry, 1452
+  prompt: >-
+    waist-up, a broad man in a leather apron clasping forearms with a court official in dark silk inside a foundry,
+    a furnace mouth throwing orange light, a clay mould for a huge gun behind them
+  motion: slow push-in, the furnace light flickers, sparks drift
+  dur: 3.0
+  mode: video
+  sfx: foundry
+- beat: hinge
+  size: DETAIL
+  location: Foundry, 1452
+  prompt: >-
+    macro, molten bronze pouring from a crucible into a clay gun mould, sparks, a workman's gloved hands on the
+    crucible chain, furnace light
+  motion: static macro, the bronze pours in a steady stream, sparks drift
+  dur: 3.0
+  mode: video
+  sfx: molten pour
+- beat: hinge
+  size: AERIAL
+  location: Golden Horn, dawn, 1453
+  prompt: >-
+    high and slow over the city at dawn, the land walls as a long line of towers, gun smoke drifting from the walls
+    outward over an army's tents, the Golden Horn grey with Genoese galleys
+  motion: slow pan right along the walls, smoke drifts outward, galleys stay rigid
+  dur: 3.0
+  mode: video
+  sfx: distant guns
+- beat: phase1
+  size: WIDE
+  location: Theodosian walls under siege, 1453
+  prompt: >-
+    the land walls holding under bombardment, a breach plugged with timber and earth, a stone ball rolling in the
+    dry moat, defenders on the ramparts, dust and overcast afternoon light
+  motion: slow dolly back from the breach, dust drifts, a defender crosses the rampart
+  dur: 3.5
+  mode: video
+  sfx: distant guns
+  card:
+    text: |-
+      600 KG
+      STONE BALLS
+    style: stat
+- beat: phase1
+  size: POV
+  location: Embrasure, 1453
+  prompt: >-
+    handheld from an embrasure as the great gun beside it fires, a rush of white smoke, the tents on the plain beyond,
+    harsh daylight through the smoke
+  motion: handheld shake on the shot, smoke billows outward and thins
+  dur: 3.0
+  mode: video
+  sfx: cannon
+  hero_object: true
+- beat: phase1
+  size: DETAIL
+  location: Plain outside the walls, 1453, rain
+  prompt: >-
+    macro, a broken standard pole with a horsetail tassel lying in mud, rain, an abandoned tent peg, grey light
+  motion: static macro, rain spatters the mud, the tassel stirs
+  dur: 3.0
+  mode: video
+  sfx: rain
+- beat: phase1
+  size: MEDIUM
+  location: Sultan's camp, 1453, dusk
+  prompt: >-
+    waist-up, officers in kaftans arguing beside a great tent being struck by servants, a young man in a white turban
+    walking away from them, campfires, dusk
+  motion: slow lateral track left, the tent canvas drops, the young man walks out of frame
+  dur: 3.5
+  mode: video
+  sfx: camp dusk
+- beat: phase2
+  size: MAP
+  location: Merchant's office, Galata, 1553
+  prompt: >-
+    a parchment map of the eastern Mediterranean and the Black Sea on a table, hands moving a small bolt of silk
+    and a sack of pepper along an overland route, candle and window light, lettering illegible
+  motion: the hands move the silk and pepper slowly westward, candle flame leans
+  dur: 3.5
+  mode: video
+  sfx: paper
+- beat: phase2
+  size: CLOSE
+  location: Warehouse, Constantinople, 1553
+  prompt: >-
+    a merchant's hands weighing peppercorns on a brass scale, sacks of spice behind, a Venetian ledger with illegible
+    writing, warm afternoon light through a shutter
+  motion: static close, peppercorns pour into the pan, the pan settles
+  dur: 3.0
+  mode: video
+  sfx: spice pour
+- beat: phase2
+  size: WIDE
+  location: Lisbon, 1553
+  prompt: >-
+    a small fishing town of whitewashed houses on a river bank, boats pulled up on sand, nets drying, no large ships
+    at all, soft evening light
+  motion: slow dolly forward along the sand, nets sway, a boat rocks
+  dur: 3.5
+  mode: video
+  sfx: gulls
+  card:
+    text: |-
+      1553
+      LISBON, A FISHING TOWN
+    style: stat
+- beat: phase2
+  size: DETAIL
+  location: Scriptorium, Constantinople, 1553
+  prompt: >-
+    macro, a scribe's hand copying a Greek manuscript with a reed pen, the letters illegible, a candle, a shelf
+    of bound codices behind
+  motion: static macro, the pen moves across the page, candle flame steady
+  dur: 3.0
+  mode: video
+  sfx: pen on parchment
+- beat: phase3
+  size: AERIAL
+  location: Constantinople, today, morning
+  prompt: >-
+    high and slow over a low domed city of cypress gardens, the ancient land walls intact as a green park, a suspension
+    bridge over the Golden Horn with bronze double-headed eagles on its pylons, harbour cranes, bright morning light
+  motion: slow crane down toward the bridge, ferries cross, cranes stay rigid
+  dur: 3.5
+  mode: video
+  sfx: harbour
+- beat: phase3
+  size: POV
+  location: Wall park, today
+  prompt: >-
+    handheld walking along the top of the Theodosian walls today, joggers passing, cypress trees, the city's domes
+    beyond, bright morning sun
+  motion: handheld walk forward, a jogger passes, trees sway
+  dur: 3.0
+  mode: video
+  sfx: park morning
+- beat: phase3
+  size: CLOSE
+  location: Bridge pylon, today
+  prompt: >-
+    a bronze double-headed eagle on a steel bridge pylon in hard sun, a ferry's wake below, gulls, blue sky
+  motion: slow lateral track right across the eagle, gulls cross, water ripples
+  dur: 3.0
+  mode: video
+  sfx: gulls
+- beat: phase3
+  size: MEDIUM
+  location: Tram stop, today
+  prompt: >-
+    waist-up, commuters at a tram stop beneath the great church's buttresses, a tram arriving, a priest in black
+    among office workers, morning light
+  motion: slow push-in, the tram arrives and doors open, people step forward
+  dur: 3.0
+  mode: video
+  sfx: tram bell
+- beat: turn
+  size: WIDE
+  location: Florence, 1553, dusk
+  prompt: >-
+    a cathedral with its dome half built, bare brick drum, idle scaffolding, a near-empty piazza at dusk, swallows,
+    warm last light
+  motion: very slow crane up along the unfinished drum, swallows cross, light fades
+  dur: 4.5
+  mode: video
+  sfx: swallows
+- beat: turn
+  size: DETAIL
+  location: Museum, today
+  prompt: >-
+    macro, the great bronze bombard as a museum piece under a skylight, dust on the double-headed eagle relief,
+    a velvet rope, soft daylight from the skylight above
+  motion: slow lateral track right along the barrel, dust motes in the skylight
+  dur: 4.0
+  mode: video
+  sfx: museum quiet
+  hero_object: true
+- beat: turn
+  size: CLOSE
+  location: Lisbon beach, 1553
+  prompt: >-
+    a fisherman's hands mending a net on sand, a small boat behind, no horizon ships, soft evening sunlight
+  motion: static close, the hands work the net, the boat rocks
+  dur: 4.0
+  mode: video
+  sfx: surf
+- beat: dilemma
+  size: WIDE
+  location: Sea of Marmara, dawn
+  prompt: >-
+    the land walls and the domed city at dawn seen from the Sea of Marmara, a single galley leaving harbour, the
+    bombard a small shape on the nearest tower, pale sky
+  motion: very slow dolly back, the galley's oars rise and fall, haze drifts
+  dur: 5.5
+  mode: video
+  sfx: oars
+  hero_object: true
+dilemma: Does a surviving Constantinople delay America, or just change the flag?
+pinned_comment: >-
+  Delays it. Portugal spent eighty years and a fortune going round Africa because the overland routes closed behind
+  the Ottomans. With the Black Sea open, nobody funds Columbus. The flag never matters; the invoice does.
+metadata:
+  cover_time: 0.9
+  second_comment: >-
+    The Portuguese were already past Cape Bojador in fourteen thirty-four, two decades before the siege. The Atlantic
+    was coming either way. A surviving city changes who pays for the ships, not whether they sail.
+  hashtags:
+  - '#alternatehistory'
+  - '#history'
+  - '#whatif'
+  - '#byzantium'
+  - '#neverfell'
+  replies_to_prepare:
+  - The city would have fallen anyway in a few years
+  - The Greek scholars had already left before 1453

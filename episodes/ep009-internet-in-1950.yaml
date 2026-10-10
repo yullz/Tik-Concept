@@ -1,0 +1,381 @@
+id: ep009-internet-in-1950
+series: early-arrival
+series_number: 1
+pillar: early-arrival
+title: The Internet in 1950
+hook_title: WHAT IF THE INTERNET ARRIVED IN 1950
+file_number: FILE B-0009
+target_duration: 80
+stamp_text: NEVER HAPPENED
+voice:
+  direction: calm dry archivist, British-leaning, unhurried, low-mid pitch, lets facts land
+  voice_type: preset
+  voice_id: 30fc8796-ceb6-4a66-b3a7-4a145ef7f346
+music:
+  mood: clockwork percussion and cello, a teletype rhythm under the phases
+  cue: assets/music/early-arrival-01.mp3
+look_key_prompt: >-
+  empty establishing frame of a 1950 American kitchen at breakfast, Formica table, chrome chairs, a teletype terminal
+  with a paper roll beside the toaster, Bakelite radio, morning sun through gingham curtains
+research:
+  hinge: >-
+    In July 1945 Vannevar Bush described the memex, a desk that could store and link every document; the transistor
+    followed in December 1947. In this timeline the Soviet bomb test of August 1949 pushes Washington to fund Bush's
+    machine as a continental defence network, and by 1952 a hundred universities are wired together.
+  hinge_date: '1949'
+  sources:
+  - Vannevar Bush, As We May Think, The Atlantic, July 1945
+  - >-
+    Bell Labs, point-contact transistor demonstrated 16 December 1947 (Bardeen and Brattain), announced June 1948
+  - Soviet RDS-1 test, 29 August 1949; US detection announced 23 September 1949
+  - >-
+    SAGE air-defence network, first operational 1958, AN/FSQ-7 computers with about 55,000 vacuum tubes each (MIT
+    Lincoln Laboratory)
+  - >-
+    Janet Abbate, Inventing the Internet (1999), on ARPANET's open design and the first message of 29 October 1969
+  - Senator McCarthy's Wheeling speech, 9 February 1950
+  facts:
+  - >-
+    Bush ran the wartime Office of Scientific Research and Development and had the authority to build a national
+    system.
+  - >-
+    The real SAGE network linked radar stations and computers across the continent by 1958; the parts existed a
+    decade earlier.
+  - >-
+    In 1950 about nine percent of American households owned a television; a kitchen terminal would have been as
+    strange as the radio was in 1920.
+  - >-
+    ARPANET's first message was sent on 29 October 1969; its open architecture was a scientific choice, not a military
+    one.
+  - >-
+    A network built for air defence in 1950 would route every message through military switching centres.
+  era_sheet:
+    timeline: 1945, 1950 to 1965 America and Tokyo, and the present day of a world twenty years ahead
+    architecture: >-
+      1950 kitchens in Formica and chrome, wood-panelled offices, concrete government corridors, a 1965 suburban
+      kitchen; today an ordinary city street with thin paper-like screens and no visible phones
+    clothing: >-
+      aprons and house dresses, grey flannel suits, shirtsleeves and ties, uniforms with brass buttons; today ordinary
+      clothes
+    vehicles: 1950 sedans, a 1965 station wagon, a modern tram
+    street: >-
+      teletype terminals with paper rolls, round CRT consoles in wood cabinets, vacuum-tube racks, punched cards,
+      rotary phones, pipe smoke, gingham curtains
+    light: >-
+      warm morning kitchen sun, fluorescent machine rooms, sodium streetlight, overcast present-day rain
+    palette: Formica cream, Bakelite brown, chrome, amber accent in filaments and lamps
+    forbidden: neon, holograms, glowing interfaces, legible text on screens, flying cars, chrome robots
+  cost: >-
+    A network built by generals in 1950 has no off switch and no privacy by design: every search runs through a
+    military switchboard during the McCarthy years. Ours was built by scientists who forgot to lock the doors, which
+    is the only reason it belongs to its users.
+beats:
+- id: hook
+  vo: >-
+    What if the internet arrived in nineteen fifty. A modem rings in an Ohio kitchen. On the screen, a letter from
+    Tokyo. Four seconds.
+  card:
+    text: WHAT IF THE INTERNET ARRIVED IN 1950
+    style: title
+- id: hinge
+  vo: >-
+    In nineteen forty-five Vannevar Bush described a desk that searched every book. Here, the Soviet bomb of forty-nine
+    scares Washington into building it. By fifty-two a hundred universities are wired. This is how it happens.
+  card:
+    text: 1949 · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    Year five. Messages arrive in seconds, so the letter dies first. Then the newspaper, because the morning edition
+    is already old. Rooms of vacuum tubes run hot in every city. The power bill is classified.
+  card:
+    text: '1955'
+    style: phase
+- id: phase2
+  vo: >-
+    Year fifteen. The terminal moves into the kitchen. Every search runs through a Pentagon switchboard, because
+    the Pentagon built it. The men who hunted communists in fifty-three hold everyone's reading list.
+  card:
+    text: '1965'
+    style: phase
+- id: phase3
+  vo: >-
+    Today. Computing is twenty years ahead, so your phone has been boring since two thousand five. What never arrived
+    is privacy. Nobody here has ever been alone with a screen.
+  card:
+    text: TODAY
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But a network built by generals has no off switch. Ours was built by scientists who forgot to lock
+    the doors, which is the only reason it belongs to you.
+  card: null
+- id: dilemma
+  vo: >-
+    That timeline never happened. Ours did. Twenty years ahead, every page you ever read on file. Would you log
+    on?
+  card:
+    text: Twenty years ahead, every page you read on file. Would you log on?
+    style: question
+shots:
+- beat: hook
+  size: WIDE
+  location: Kitchen, Ohio, 1950, morning
+  prompt: >-
+    a 1950 kitchen with a Formica table and chrome chairs, a teletype terminal with a paper roll beside the toaster,
+    a woman in an apron reading its printout with a coffee cup, morning sun through gingham curtains
+  motion: slow dolly forward toward the table, the paper feeds out, curtains stir
+  dur: 2.5
+  mode: video
+  sfx: teletype
+  hero_object: true
+- beat: hook
+  size: DETAIL
+  location: Kitchen, Ohio, 1950
+  prompt: >-
+    macro, teletype keys hammering and paper feeding from the roll, the printed characters illegible, a small bell
+    lever, morning light on the chrome
+  motion: static macro, the keys hammer, paper feeds, the bell lever trips
+  dur: 2.5
+  mode: video
+  sfx: teletype bell
+- beat: hook
+  size: MEDIUM
+  location: Office, Tokyo, 1950, night
+  prompt: >-
+    waist-up, a clerk in shirtsleeves at a matching teletype terminal in a wood-panelled Tokyo office at night,
+    a desk lamp, a paper calendar on the wall with illegible characters, rain on the window
+  motion: static tripod with a slow push-in, he tears off a printout, rain streaks the glass
+  dur: 2.5
+  mode: video
+  sfx: rain on glass
+- beat: hinge
+  size: CLOSE
+  location: Study, Washington, 1945
+  prompt: >-
+    a hand holding a pipe above a wooden desk model of a desk-sized reading machine with a slanted screen and levers,
+    a window of afternoon light, papers with illegible typing
+  motion: static close, pipe smoke drifts across the model, the hand sets the pipe down
+  dur: 3.5
+  mode: video
+  sfx: study quiet
+- beat: hinge
+  size: AERIAL
+  location: Government building, Washington, 1949, dawn
+  prompt: >-
+    high and slow over a grey stone government building at dawn with fresh cable trenches cut across its lawn, trucks
+    of cable drums, long shadows, cold light
+  motion: slow crane down toward the trenches, a truck moves, shadows stay long
+  dur: 3.0
+  mode: video
+  sfx: trucks
+- beat: hinge
+  size: MAP
+  location: War room, 1952
+  prompt: >-
+    a wall map of the continental United States with brass pins at a hundred cities linked by taut copper strings,
+    a hand pressing in one more pin, overhead lamp light, no lettering
+  motion: the hand presses the pin and withdraws, slow push-in on the strings
+  dur: 3.0
+  mode: video
+  sfx: pin in board
+  card:
+    text: |-
+      100 UNIVERSITIES
+      WIRED BY 1952
+    style: stat
+- beat: phase1
+  size: WIDE
+  location: Machine room, Chicago, 1955
+  prompt: >-
+    a vast room of vacuum-tube racks with warm orange filaments, technicians in shirtsleeves and ties on ladders,
+    heat haze above the racks, fluorescent light
+  motion: slow lateral track right along the racks, heat haze wavers, a technician climbs
+  dur: 3.5
+  mode: video
+  sfx: machine room hum
+- beat: phase1
+  size: DETAIL
+  location: Newsroom, 1955
+  prompt: >-
+    macro, a teletype printout curling into a wire basket, a hand tearing off a strip, the printed lines illegible,
+    a desk lamp
+  motion: static macro, paper curls into the basket, the hand tears and lifts
+  dur: 3.0
+  mode: video
+  sfx: paper tear
+  hero_object: true
+- beat: phase1
+  size: POV
+  location: Newsroom, 1955
+  prompt: >-
+    handheld reading a teletype strip in a newsroom, a huge rotary printing press standing idle behind glass, pressmen
+    leaning on it, fluorescent light
+  motion: handheld tilt up from the strip to the idle press, a pressman turns
+  dur: 3.0
+  mode: video
+  sfx: newsroom
+- beat: phase1
+  size: MEDIUM
+  location: Utility office, 1955
+  prompt: >-
+    waist-up, a clerk in a grey suit at a wall of brass electricity meters, writing in a ledger with illegible columns,
+    a locked steel door behind him, overhead lamp
+  motion: slow push-in, the meter needles move, he writes
+  dur: 3.5
+  mode: video
+  sfx: meters
+  card:
+    text: |-
+      CLASSIFIED
+      THE POWER BILL
+    style: stat
+- beat: phase2
+  size: WIDE
+  location: Suburban kitchen, 1965, morning
+  prompt: >-
+    a 1965 kitchen with a round CRT terminal in a wood cabinet beside the toaster, a family at breakfast, a station
+    wagon through the window, morning sun
+  motion: slow dolly forward, a hand reaches for the terminal's dial, cereal is poured
+  dur: 3.5
+  mode: video
+  sfx: kitchen morning
+  hero_object: true
+- beat: phase2
+  size: CLOSE
+  location: Pentagon exchange, 1965
+  prompt: >-
+    an operator's hands pulling and plugging cords in a vast switchboard, rows of lit jacks, a headset cable, fluorescent
+    light
+  motion: static close, the hands pull and plug cords, jack lamps change
+  dur: 3.0
+  mode: video
+  sfx: switchboard
+- beat: phase2
+  size: DETAIL
+  location: Records room, 1965
+  prompt: >-
+    macro, a punched card being filed into a steel drawer among thousands, a gloved hand, fluorescent light, the
+    card's holes catching the light
+  motion: static macro, the card slides in, the drawer closes slowly
+  dur: 3.0
+  mode: video
+  sfx: drawer
+- beat: phase2
+  size: MEDIUM
+  location: Records room window, 1965
+  prompt: >-
+    waist-up from behind, two men in grey suits at an interior window looking down onto rows of card cabinets, one
+    holding a folder, cigarette smoke, cold fluorescent light
+  motion: slow push-in, smoke drifts, one man turns to the other
+  dur: 3.0
+  mode: video
+  sfx: office quiet
+- beat: phase3
+  size: WIDE
+  location: City street, today, rain
+  prompt: >-
+    an ordinary city street in rain, people holding thin paper-like screens under umbrellas, a tram, no visible
+    phones, overcast light on wet asphalt
+  motion: slow dolly forward along the pavement, umbrellas pass, the tram slides by
+  dur: 3.5
+  mode: video
+  sfx: rain street
+- beat: phase3
+  size: POV
+  location: Tram, today
+  prompt: >-
+    handheld, a hand holding a paper-thin flexible screen with illegible blurred content on a tram, other passengers
+    glancing at it, grey window light
+  motion: handheld sway with the tram, the screen flexes, a passenger looks over
+  dur: 3.0
+  mode: video
+  sfx: tram
+- beat: phase3
+  size: DETAIL
+  location: Lamp post, today
+  prompt: >-
+    macro, a small camera lens set into a cast-iron lamp post, rain beading on the glass, sodium light above
+  motion: static macro, rain runs over the lens, light flickers slightly
+  dur: 3.0
+  mode: video
+  sfx: rain
+- beat: phase3
+  size: MAP
+  location: Study, today
+  prompt: >-
+    a physical relief globe wrapped in a web of copper wire on a brass stand, a hand resting on it, desk lamp
+  motion: the hand turns the globe slowly, the wire web glints in the lamp
+  dur: 3.0
+  mode: video
+  sfx: globe turn
+- beat: turn
+  size: WIDE
+  location: Pentagon corridor, 1950
+  prompt: >-
+    a long concrete corridor with uniformed officers walking past an open doorway into a room of terminals, the
+    doorway with no door, fluorescent light
+  motion: slow dolly forward along the corridor, officers pass, the room stays lit
+  dur: 4.5
+  mode: video
+  sfx: corridor
+- beat: turn
+  size: CLOSE
+  location: University lab, Los Angeles, 1969
+  prompt: >-
+    a brass key turning in the lock of a plain wooden lab door, a hand in a shirtsleeve, afternoon sunlight on the
+    wood
+  motion: static close, the key turns, the door eases open a crack
+  dur: 4.0
+  mode: video
+  sfx: key in lock
+- beat: turn
+  size: DETAIL
+  location: Kitchen, Ohio, today
+  prompt: >-
+    macro, the old teletype terminal silent on a Formica table, dust on the keys, the paper roll yellowed, morning
+    sun
+  motion: slow lateral track right across the keys, dust motes in the sun
+  dur: 4.0
+  mode: video
+  sfx: kitchen quiet
+  hero_object: true
+- beat: dilemma
+  size: CLOSE
+  location: Living room, Ohio, 1950, night
+  prompt: >-
+    a hand hesitating above a teletype's keys in lamp light, a wedding ring, the paper roll waiting, rain on the
+    window behind
+  motion: static close, the hand lowers slowly toward the keys and stops
+  dur: 3.5
+  mode: video
+  sfx: rain on glass
+- beat: dilemma
+  size: WIDE
+  location: Living room, Ohio, 1950, night
+  prompt: >-
+    a 1950 living room at night lit by one lamp, the teletype terminal's bell lever lifting as paper begins to feed,
+    an empty armchair, rain on the window
+  motion: very slow dolly forward toward the terminal, paper feeds, lamp steady
+  dur: 5.5
+  mode: video
+  sfx: teletype bell
+  hero_object: true
+dilemma: Twenty years ahead, every page you read on file. Would you log on?
+pinned_comment: >-
+  I would log on. Everyone did, in our timeline too, the moment the terminal arrived. We just told ourselves nobody
+  was reading the logs. In this one they say it out loud.
+metadata:
+  cover_time: 0.7
+  second_comment: >-
+    No. A network with a military switchboard at its centre never gets the web, never gets encryption for civilians,
+    never gets the open protocols. Twenty years ahead in hardware, fifty years behind in freedom.
+  hashtags:
+  - '#alternatehistory'
+  - '#whatif'
+  - '#history'
+  - '#internet'
+  - '#earlyarrival'
+  replies_to_prepare:
+  - The transistor wasn't ready in 1950
+  - The real internet was built by the military too

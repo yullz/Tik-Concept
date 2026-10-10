@@ -1,0 +1,378 @@
+id: ep005-columbus-turns-back
+series: the-hinge
+series_number: 2
+pillar: the-hinge
+title: Columbus Turns Back
+hook_title: WHAT IF COLUMBUS TURNED BACK
+file_number: FILE B-0005
+target_duration: 80
+stamp_text: NEVER HAPPENED
+voice:
+  direction: calm dry archivist, British-leaning, unhurried, low-mid pitch, lets facts land
+  voice_type: preset
+  voice_id: 30fc8796-ceb6-4a66-b3a7-4a145ef7f346
+music:
+  mood: >-
+    a single sustained low note that resolves at the turn, a slow creaking-rope rhythm under the phases
+  cue: assets/music/the-hinge-02.mp3
+look_key_prompt: >-
+  empty establishing frame of the open Atlantic at dawn from a ship's deck, grey-green swell, hemp rigging and a
+  furled lateen sail in the foreground, a sandglass on the binnacle, cold low sun through thin cloud
+research:
+  hinge: >-
+    On the tenth of October 1492, after thirty-three days out of the Canaries, the crews protested and the voyage
+    nearly ended; Columbus talked them into continuing and land was sighted at two in the morning on the twelfth.
+    In this timeline he turns east on the tenth.
+  hinge_date: 10 October 1492
+  sources:
+  - Columbus, Diario (Las Casas abstract), entries for 10, 11 and 12 October 1492
+  - >-
+    Fernández de Oviedo, Historia general y natural de las Indias (1535), the three-days bargain tradition; Pleitos
+    colombinos testimony on Martín Alonso Pinzón
+  - >-
+    Pero Vaz de Caminha, letter to King Manuel on Cabral's landfall at Porto Seguro, 22 April to 1 May 1500
+  - >-
+    Alfred Crosby, The Columbian Exchange (1972), on smallpox reaching Hispaniola in 1518 and Mexico in 1520
+  - Letters patent of Henry VII to John Cabot (1496) and the 1497 Newfoundland landfall
+  facts:
+  - >-
+    Three ships left Palos on the third of August 1492 and the Canaries on the sixth of September.
+  - >-
+    Columbus underestimated the distance to Asia by thousands of kilometres; the crew's fear on the tenth was rational.
+  - Vasco da Gama reached Calicut on the twentieth of May 1498 by the Cape route.
+  - >-
+    Cabral, bound for India, swung west and landed in Brazil in April 1500; Cabot reached Newfoundland for England
+    in June 1497.
+  - >-
+    The Treaty of Tordesillas (1494) divided new lands between Castile and Portugal; without the 1492 landfall it
+    is never signed in that form.
+  - >-
+    Old World diseases killed the majority of the Indigenous population of the Americas within a century of contact,
+    whichever flag arrived.
+  era_sheet:
+    timeline: >-
+      1492 at sea; 1498 to 1500 Lisbon, the Indian Ocean and the Brazilian coast; the present day of a Portuguese-and-English
+      Americas
+    architecture: >-
+      Palos and Lisbon quays in limestone and timber, Belém riverside; today a Caribbean port with azulejo-tiled
+      facades and Portuguese ironwork; a clapboard Newfoundland fishing town
+    clothing: >-
+      1492 sailors in wool caps, loose linen shirts and hose, the admiral in a dark wool gown; Tupiniquim men with
+      feather ornaments and body paint, depicted with dignity; today ordinary clothes
+    vehicles: >-
+      a nao and two caravels with square and lateen sails, Portuguese carracks with the red cross of the Order of
+      Christ on the sails, galleys in Valencia, Portuguese trams today
+    street: >-
+      hemp rigging, a half-hour sandglass on the binnacle, oak decks, parchment charts with dividers (lettering
+      illegible), brazilwood logs, parrots in cages
+    light: >-
+      grey Atlantic dawn and dusk, Lisbon window light, hard Indian Ocean noon, Brazilian Easter-week morning, Caribbean
+      tropical light
+    palette: >-
+      oak brown, hemp ochre, grey-green sea, crimson accent on the Portuguese sails and the sandglass frame
+    forbidden: >-
+      modern flags, Hollywood pirates, cannon battles, native peoples shown as savages or in crowds of extras, text
+      on charts
+  cost: >-
+    The ships still carry smallpox. Portugal's Cabral reaches Brazil in 1500 and England's Cabot touches Newfoundland
+    in 1497 regardless; the great dying of the Americas happens anyway, eight years late. Columbus only ever changed
+    the flag on the beach.
+beats:
+- id: hook
+  vo: >-
+    What if Columbus turned back. October tenth, fourteen ninety-two. The crew offers three more days. He says no.
+    Two days later, nobody sights land.
+  card:
+    text: WHAT IF COLUMBUS TURNED BACK
+    style: title
+- id: hinge
+  vo: >-
+    On the tenth of October the crew had had enough. In our world he won three more days, and on the twelfth they
+    saw land. Here, he turns east. This is how it happens.
+  card:
+    text: 10 OCTOBER 1492 · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    Year one. Columbus returns to Spain as a failure, so Spain stops looking west. Portugal keeps going south, around
+    Africa. Vasco da Gama reaches India in fourteen ninety-eight, and the spice money flows to Lisbon.
+  card:
+    text: YEAR ONE
+    style: phase
+- id: phase2
+  vo: >-
+    Year eight. The Atlantic does what it always does. A Portuguese fleet bound for India swings wide, so in April
+    fifteen hundred Cabral lands in Brazil anyway. Cabot has already touched Newfoundland for England.
+  card:
+    text: YEAR EIGHT
+    style: phase
+- id: phase3
+  vo: >-
+    Today. The Caribbean speaks Portuguese. The north, English, a century earlier than it did. Castile, with no
+    silver from the Andes, stays a Mediterranean power, so there is no Spanish Armada and no Spanish Empire.
+  card:
+    text: TODAY
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But the ships still carry smallpox. The great dying of the Americas happens anyway, eight years late.
+    The only thing Columbus ever changed was the flag on the beach.
+  card: null
+- id: dilemma
+  vo: 'That timeline never happened. Ours did. So who was the hinge: the man, or the wind?'
+  card:
+    text: 'Who was the hinge: the man, or the wind?'
+    style: question
+shots:
+- beat: hook
+  size: WIDE
+  location: Open Atlantic, dawn, 10 October 1492
+  prompt: >-
+    three small wooden ships on a grey-green swell at dawn, sails being hauled round as the lead ship turns away
+    from the sunrise, hemp rigging, cold low sun through thin cloud, spray
+  motion: slow dolly forward, the lead ship turns slowly, sails fill, spray lifts
+  dur: 2.5
+  mode: video
+  sfx: ship creak
+- beat: hook
+  size: DETAIL
+  location: Binnacle, Santa María, dawn
+  prompt: >-
+    macro, a salt-crusted half-hour sandglass in a wooden frame on a ship's binnacle being turned by a weathered
+    hand, sand beginning to run, dawn light from the right, rigging out of focus
+  motion: static macro, the hand turns the glass and withdraws, sand runs
+  dur: 2.5
+  mode: video
+  sfx: sandglass turn
+  hero_object: true
+- beat: hook
+  size: MEDIUM
+  location: Stern rail, Santa María, dawn
+  prompt: >-
+    waist-up from behind, a bearded man in a dark wool gown at a ship's stern rail watching the empty western horizon
+    recede, hemp rigging, cold dawn light on the swell
+  motion: static tripod with a slow push-in, the ship rises and falls, the gown stirs
+  dur: 2.5
+  mode: video
+  sfx: ship creak
+- beat: hinge
+  size: MEDIUM
+  location: Main deck, Santa María, dusk
+  prompt: >-
+    waist-up, a cluster of sailors in wool caps and loose linen at the mast with arms crossed, facing a bearded
+    man in a dark wool gown, a lantern lit, the sea dim behind, dusk light
+  motion: slow push-in on the group, the lantern sways, a sailor shifts his weight
+  dur: 3.5
+  mode: video
+  sfx: crowd murmur
+- beat: hinge
+  size: CLOSE
+  location: Steerage, Santa María, dusk
+  prompt: >-
+    a weathered hand pushing a wooden whipstaff hard over, hemp rope creaking through a block, oak planking, the
+    last dusk light through a hatch
+  motion: static close, the staff pushes over slowly, rope tightens
+  dur: 3.0
+  mode: video
+  sfx: rope creak
+- beat: hinge
+  size: AERIAL
+  location: Open Atlantic, dusk
+  prompt: >-
+    high and slow, three ships from far above making a wide turn, their wakes curving back toward the dusk-lit east,
+    grey-green sea, long shadows
+  motion: slow pan right following the wakes as they curve, sails stay rigid
+  dur: 3.0
+  mode: video
+  sfx: wind at sea
+- beat: phase1
+  size: WIDE
+  location: Palos de la Frontera, 1493, overcast
+  prompt: >-
+    a weather-beaten ship tying up at a limestone quay with only a few onlookers, fishermen mending nets, a monastery
+    on the hill, flat overcast morning light
+  motion: slow lateral track left along the quay, mooring lines are thrown, nets sway
+  dur: 3.5
+  mode: video
+  sfx: harbour
+- beat: phase1
+  size: DETAIL
+  location: Counting house, Lisbon, 1498
+  prompt: >-
+    macro, the sandglass on an oak table among stacked gold coins, a parchment chart with illegible lettering and
+    brass dividers, cool window light from the left
+  motion: slow lateral track right from the sandglass to the coins, dust in the window light
+  dur: 3.0
+  mode: video
+  sfx: coins
+  hero_object: true
+  card:
+    text: |-
+      1498
+      LISBON REACHES INDIA
+    style: stat
+- beat: phase1
+  size: MAP
+  location: Chart table, Lisbon, 1498
+  prompt: >-
+    a parchment chart of the African coast on an oak table, a hand tracing the Cape with brass dividers, a lead
+    weight holding the corner, candlelight and window light mixed, lettering illegible
+  motion: the dividers walk slowly down the coast and round the Cape, candle flame leans
+  dur: 3.0
+  mode: video
+  sfx: paper
+- beat: phase1
+  size: POV
+  location: Carrack's bow, Indian Ocean, 1498, noon
+  prompt: >-
+    handheld from the bow of a Portuguese carrack in the Indian Ocean, a square sail with a red cross filling above,
+    blue swell, flying fish, hard noon sun
+  motion: handheld pitch with the swell, the sail fills, flying fish skip across
+  dur: 3.0
+  mode: video
+  sfx: bow wave
+- beat: phase2
+  size: WIDE
+  location: South Atlantic, April 1500
+  prompt: >-
+    a fleet of a dozen carracks with red-cross sails swinging west across open ocean under trade-wind clouds, bright
+    morning light, white caps
+  motion: slow dolly forward, the fleet turns together, clouds drift
+  dur: 3.5
+  mode: video
+  sfx: wind at sea
+  card:
+    text: |-
+      8 YEARS
+      IS ALL IT BUYS
+    style: stat
+- beat: phase2
+  size: CLOSE
+  location: Carrack's rail, Brazilian coast, April 1500
+  prompt: >-
+    a sailor's sun-cracked hand gripping a rail and pointing, a green line of coast with a rounded hill on the horizon,
+    morning haze, the red cross sail's shadow across the deck
+  motion: static close, the hand points and holds, the ship rises and falls slowly
+  dur: 3.0
+  mode: video
+  sfx: sea quiet
+- beat: phase2
+  size: MEDIUM
+  location: Beach at Porto Seguro, April 1500
+  prompt: >-
+    waist-up, three Portuguese sailors in linen and wool standing on wet sand facing three Tupiniquim men with feather
+    ornaments and red body paint, each side calm and watchful, a ship's boat behind, soft morning light
+  motion: slow push-in, the men shift their stance slightly, surf runs up the sand
+  dur: 3.5
+  mode: video
+  sfx: surf
+- beat: phase2
+  size: DETAIL
+  location: Cabral's deck, Porto Seguro, April 1500
+  prompt: >-
+    macro, the sandglass turning on a carrack's binnacle, a green forested coast out of focus behind, morning sun
+    on the brass frame, a parrot feather on the deck
+  motion: static macro, the hand turns the glass, sand runs, the coast sways slightly
+  dur: 3.0
+  mode: video
+  sfx: sandglass turn
+  hero_object: true
+- beat: phase3
+  size: WIDE
+  location: Harbour city, Caribbean, today
+  prompt: >-
+    a tropical harbour city with azulejo-tiled facades, Portuguese ironwork balconies and a yellow tram on a cobbled
+    waterfront, fishing boats, hard tropical afternoon light
+  motion: slow dolly forward along the waterfront, the tram glides, boats rock
+  dur: 3.5
+  mode: video
+  sfx: tram bell
+- beat: phase3
+  size: POV
+  location: Fishing town, Newfoundland, today
+  prompt: >-
+    handheld walking a steep street of clapboard houses in a fishing town, fog, a pub sign illegible in the mist,
+    lobster pots stacked, grey flat light
+  motion: handheld walk forward uphill, fog drifts, a gull crosses
+  dur: 3.0
+  mode: video
+  sfx: fog horn
+- beat: phase3
+  size: MAP
+  location: Relief map, today
+  prompt: >-
+    a physical relief map of the Americas on a table, two hands placing small painted wooden tokens along the coasts,
+    green-and-red tokens from the Caribbean south, white tokens north, lamp light, no lettering
+  motion: the hands place tokens one by one, slow push-in, lamp steady
+  dur: 3.0
+  mode: video
+  sfx: wood tokens
+- beat: phase3
+  size: CLOSE
+  location: Valencia harbour, today
+  prompt: >-
+    the oar bank of a restored Mediterranean galley in a harbour, varnished oars at rest, tourists' feet on the
+    quay, hard noon light, water reflections on the hull
+  motion: slow lateral track right along the oars, reflections ripple
+  dur: 3.0
+  mode: video
+  sfx: harbour
+- beat: turn
+  size: WIDE
+  location: Tupi village, Brazilian coast, 1500, dusk
+  prompt: >-
+    a village of long thatched houses in a forest clearing at dusk, cooking smoke rising, a Portuguese carrack at
+    anchor in the bay beyond, warm last light and blue shadow
+  motion: very slow crane up over the roofs, smoke rises, the carrack rides at anchor
+  dur: 4.5
+  mode: video
+  sfx: evening forest
+- beat: turn
+  size: DETAIL
+  location: Empty deck, night
+  prompt: >-
+    macro, the sandglass on an empty deck at night, sand running out, a lantern's warm light from the left, rigging
+    creaking out of focus
+  motion: static macro, the last sand runs through, lantern flame leans
+  dur: 4.0
+  mode: video
+  sfx: sandglass run
+  hero_object: true
+- beat: turn
+  size: MEDIUM
+  location: Lisbon quay, 1500
+  prompt: >-
+    waist-up, a line of dockworkers passing brazilwood logs hand to hand from a carrack onto a limestone quay, a
+    caged parrot on a barrel, bright river light
+  motion: slow lateral track left along the line, logs pass hand to hand, the parrot shifts
+  dur: 4.0
+  mode: video
+  sfx: dock work
+- beat: dilemma
+  size: WIDE
+  location: Open Atlantic, dawn
+  prompt: >-
+    the three ships' wakes curving east across an open ocean at dawn, the sun rising dead ahead of them, pale sky,
+    long light on the swell
+  motion: very slow dolly back, the wakes fade, the sun climbs slightly
+  dur: 5.5
+  mode: video
+  sfx: wind at sea
+dilemma: 'Who was the hinge: the man, or the wind?'
+pinned_comment: >-
+  The wind. Cabral hit Brazil in fifteen hundred by accident on the way to India, Cabot hit Newfoundland in fourteen
+  ninety-seven. The Atlantic currents were a conveyor belt; somebody was always getting on it.
+metadata:
+  cover_time: 3.4
+  second_comment: >-
+    The man. Eight years is not nothing: it is the Treaty of Tordesillas, it is Andean silver going to Castile instead
+    of Lisbon, it is the whole shape of the Spanish Empire. Timing is the hinge.
+  hashtags:
+  - '#alternatehistory'
+  - '#history'
+  - '#whatif'
+  - '#columbus'
+  - '#thehinge'
+  replies_to_prepare:
+  - The Vikings got there first anyway
+  - Spain would have just sent someone else

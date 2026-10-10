@@ -1,0 +1,375 @@
+id: ep003-asteroid-twenty-minutes
+series: the-hinge
+series_number: 1
+pillar: the-hinge
+title: The Asteroid Hits Twenty Minutes Later
+hook_title: WHAT IF THE ASTEROID MISSED
+file_number: FILE B-0003
+target_duration: 80
+stamp_text: NEVER HAPPENED
+voice:
+  direction: calm dry archivist, British-leaning, unhurried, low-mid pitch, lets facts land
+  voice_type: preset
+  voice_id: 30fc8796-ceb6-4a66-b3a7-4a145ef7f346
+music:
+  mood: a single sustained low note that resolves at the turn, soft tom pulse under the phases
+  cue: assets/music/the-hinge-01.mp3
+look_key_prompt: >-
+  empty establishing frame of a Late Cretaceous coastal plain at dawn, tree ferns, cycads and magnolia thickets,
+  a wide shallow river, distant conifer ridges, warm haze, no animals in frame
+research:
+  hinge: >-
+    The Chicxulub impactor struck a shallow sea over sulphur-rich anhydrite rock off Yucatán; the sulphur aerosols
+    caused years of darkness and cold. Earth rotates fifteen degrees an hour, so an arrival twenty minutes later
+    puts the same rock about five hundred kilometres east, in the deep Gulf of Mexico: a catastrophe, not an extinction.
+  hinge_date: 66 million years ago
+  sources:
+  - >-
+    Kaiho & Oshima, Site of asteroid impact changed the history of life on Earth, Scientific Reports 7, 14855 (2017):
+    only about 13 percent of Earth's surface was rich enough in hydrocarbons and sulphur to cause the extinction
+  - >-
+    Gulick et al., The first day of the Cenozoic, PNAS 116 (2019): the drill core from the crater and the sulphur-bearing
+    target rock
+  - >-
+    Schulte et al., The Chicxulub asteroid impact and mass extinction at the Cretaceous-Paleogene boundary, Science
+    327 (2010)
+  - >-
+    Gerkema et al., The nocturnal bottleneck and the evolution of activity patterns in mammals, Proc. R. Soc. B
+    280 (2013)
+  - >-
+    Dale Russell & Ron Séguin, Reconstructions of the small Cretaceous theropod Stenonychosaurus and a hypothetical
+    dinosauroid (1982)
+  facts:
+  - >-
+    The impactor was roughly ten kilometres wide and left a crater about one hundred and eighty kilometres across.
+  - >-
+    About three quarters of species on Earth died, including every non-avian dinosaur; birds are the surviving dinosaurs.
+  - >-
+    Non-avian dinosaurs had been the dominant land animals for about one hundred and sixty-five million years.
+  - >-
+    Mammals had existed alongside them for over a hundred million years, mostly small and nocturnal.
+  - >-
+    Grasslands spread tens of millions of years after the impact; grazing herds are a Cenozoic invention.
+  - >-
+    Earth turns fifteen degrees of longitude per hour: twenty minutes is about five hundred kilometres at that latitude.
+  era_sheet:
+    timeline: >-
+      Late Cretaceous (sixty-six million years ago), then ten million years on, then the present day of a world
+      without the extinction
+    architecture: none; landscapes only
+    clothing: none; no humans exist in this timeline after the hinge
+    vehicles: none
+    street: >-
+      tree ferns, cycads, magnolias, palms, araucaria conifers, horsetails; later grasslands and snowy northern
+      plains
+    light: >-
+      warm tropical dawn on the coastal plain; hard noon over the deep Gulf; cold blue dusk on the northern grassland
+    palette: >-
+      fern green, sediment ochre, deep sea blue, crimson accent in the sky at impact and in flank feathers
+    forbidden: >-
+      roaring at camera, scaly tyrannosaurs, volcanoes everywhere, humans, vehicles, Hollywood theme-park framing,
+      text
+  cost: >-
+    The extinction made room. Every large mammal, every primate, every human needed plains that dinosaurs had stopped
+    grazing. Without the impact on that sulphur rock, mammals likely stay small and nocturnal, and no one is here
+    to film this.
+beats:
+- id: hook
+  vo: >-
+    What if the asteroid missed. Sixty-six million years ago, it arrives twenty minutes late and hits deep water.
+    The dinosaurs never die.
+  card:
+    text: WHAT IF THE ASTEROID MISSED
+    style: title
+- id: hinge
+  vo: >-
+    The real rock hit shallow sea over sulphur-rich stone, which blacked out the sun for years. Here, Earth turns
+    twenty more minutes, so it lands in deep water. This is how it happens.
+  card:
+    text: 66,000,000 YEARS AGO · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    Day one. A wave a kilometre high crosses the Atlantic. Nothing within a thousand kilometres survives it. But
+    the sky stays blue, because deep water holds no sulphur. By spring, the herds are grazing again.
+  card:
+    text: DAY ONE
+    style: phase
+- id: phase2
+  vo: >-
+    Ten million years later. The dinosaurs are still here, so the mammals are still small. Nothing bigger than a
+    cat lives on the ground. Mammals stay in the dark.
+  card:
+    text: TEN MILLION YEARS LATER
+    style: phase
+- id: phase3
+  vo: >-
+    Today. Grass covers the plains from Texas to the Arctic, grazed by horned dinosaurs the size of a bus. Winters
+    come, so the northern herds grow thick down. There are no apes. There are no cities.
+  card:
+    text: TODAY
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But the cost is us. Every mammal that ever got big, every primate, every human, needed those empty
+    plains. The asteroid did not just end the dinosaurs. It made room.
+  card: null
+- id: dilemma
+  vo: >-
+    That timeline never happened. Ours did. So: with sixty-six million more years, do they ever build a city?
+  card:
+    text: With sixty-six million more years, do they ever build a city?
+    style: question
+shots:
+- beat: hook
+  size: WIDE
+  location: Deep Gulf of Mexico, dawn, 66 million years ago
+  prompt: >-
+    a white-hot streak descending through a clear dawn sky over open deep blue ocean, no land in sight, calm swell,
+    the streak's reflection on the water, warm low sun from the right
+  motion: slow dolly forward, the streak descends steadily, the swell moves, no other change
+  dur: 2.5
+  mode: video
+  sfx: high rumble
+- beat: hook
+  size: MEDIUM
+  location: Coastal fern meadow, Laramidia, dawn
+  prompt: >-
+    waist-up, a horned dinosaur with a broad frill and sparse bristle feathers lifting its head from a meadow of
+    ferns, dew on the frill, magnolia thicket behind, unchanged dawn sky, warm side light
+  motion: static tripod with a slow push-in, the head lifts and turns, dew drips, ferns sway
+  dur: 2.5
+  mode: video
+  sfx: morning birds
+  hero_object: true
+- beat: hook
+  size: CLOSE
+  location: Cretaceous beach, dawn
+  prompt: >-
+    a group of crested pterosaurs on wet sand lifting their heads toward a brightening streak in the dawn sky, their
+    long shadows on the beach, warm low light from the right
+  motion: static close, the heads lift together, wings half open, surf runs up the sand
+  dur: 2.5
+  mode: video
+  sfx: surf
+- beat: hinge
+  size: MAP
+  location: Geology lab, today
+  prompt: >-
+    a physical relief map of the Gulf of Mexico on a wooden table, Yucatán raised in plaster, a hand placing a steel
+    ball on the peninsula then sliding it east into the deep basin, a desk lamp
+  motion: the hand slides the ball slowly eastward, lamp steady, slow push-in
+  dur: 3.5
+  mode: video
+  sfx: steel on wood
+- beat: hinge
+  size: DETAIL
+  location: Core sample bench, today
+  prompt: >-
+    macro, two rock cores side by side on a lab bench, one pale banded sulphur-rich evaporite, one dark dense basalt,
+    a brass lamp, a pair of calipers, no labels
+  motion: slow lateral track right across the two cores, lamp steady
+  dur: 3.0
+  mode: video
+  sfx: lab hum
+- beat: hinge
+  size: AERIAL
+  location: Deep Gulf of Mexico, the impact
+  prompt: >-
+    high and slow from the stratosphere, a white ring of spray expanding on open deep ocean, a column of steam rising,
+    no coastline in frame, hard noon sun
+  motion: slow crane up as the ring expands outward, steam column rises
+  dur: 3.0
+  mode: video
+  sfx: deep impact
+- beat: phase1
+  size: WIDE
+  location: Cretaceous coast, Texas, day one
+  prompt: >-
+    a wall of dark water a kilometre high approaching a low coastal plain of cycads and palms, pterosaurs scattering
+    ahead of it, a strange flat light under a clear sky
+  motion: slow dolly back from the plain as the wave advances, pterosaurs cross the frame
+  dur: 3.5
+  mode: video
+  sfx: wave roar
+  card:
+    text: |-
+      1,000 KM
+      OF COAST GONE
+    style: stat
+- beat: phase1
+  size: POV
+  location: Inland forest, day one
+  prompt: >-
+    handheld, among tree-fern trunks as brown water surges between them at knee height carrying branches, light
+    from a blue sky above the canopy, spray
+  motion: handheld micro-shake, the water surges past the trunks, fronds thrash
+  dur: 3.0
+  mode: video
+  sfx: water surge
+- beat: phase1
+  size: CLOSE
+  location: Upland nest, spring, year one
+  prompt: >-
+    a clutch of elongated eggs in a scraped nest of ferns, dew on the shells, a blue sky and young fern fronds reflected
+    in a puddle beside them, soft morning light
+  motion: static close, a drop of dew runs down a shell, fronds sway
+  dur: 3.0
+  mode: video
+  sfx: spring insects
+- beat: phase1
+  size: MEDIUM
+  location: Upland meadow, spring, year one
+  prompt: >-
+    waist-up, a herd of horned dinosaurs with bristle feathers grazing young ferns on an upland meadow, the broad-frilled
+    one in front, conifer ridge behind, clear spring light
+  motion: slow lateral track left along the herd, heads dip and rise, no sudden movement
+  dur: 3.5
+  mode: video
+  sfx: grazing
+  hero_object: true
+- beat: phase2
+  size: DETAIL
+  location: Burrow mouth, night, ten million years later
+  prompt: >-
+    macro, a shrew-sized mammal with whiskers at the mouth of a burrow under a fern root, cold starlight and a faint
+    moon, dew on the fur, a huge three-toed footprint in the mud beside it
+  motion: static macro, the whiskers twitch, the animal withdraws slightly
+  dur: 3.0
+  mode: video
+  sfx: night insects
+  card:
+    text: |-
+      100,000,000 YEARS
+      IN THE DARK
+    style: stat
+- beat: phase2
+  size: WIDE
+  location: Night forest, ten million years later
+  prompt: >-
+    a moonlit forest of araucaria conifers with the dark shapes of long-necked dinosaurs browsing the canopy, small
+    mammals on the forest floor, mist at ground level, cold blue night light
+  motion: slow dolly forward through the mist, the long necks move slowly, mist drifts
+  dur: 3.5
+  mode: video
+  sfx: night forest
+- beat: phase2
+  size: CLOSE
+  location: Forest floor, dusk
+  prompt: >-
+    a cat-sized furred mammal with a long snout frozen at the edge of a fern clump at dusk, one eye catching the
+    last light, a massive scaled foot passing out of focus behind
+  motion: static close, the foot passes behind, the mammal does not move
+  dur: 3.0
+  mode: video
+  sfx: heavy footfall
+- beat: phase2
+  size: AERIAL
+  location: Fern plain, dawn
+  prompt: >-
+    high and slow over a vast plain of ferns and horsetails with braided rivers, long shadows at dawn, herds as
+    distant dots, no grass, no roads, warm mist in the river valleys
+  motion: slow pan right over the plain, mist drifts, the herds stay small
+  dur: 3.0
+  mode: video
+  sfx: dawn wind
+- beat: phase3
+  size: WIDE
+  location: Northern grassland, today
+  prompt: >-
+    a herd of bus-sized horned dinosaurs with thick down feathers grazing a wind-blown grassland, snow on distant
+    mountains, a river, cold clear noon light, no trace of roads or fences
+  motion: slow dolly forward, the herd grazes, grass ripples in the wind
+  dur: 3.5
+  mode: video
+  sfx: grassland wind
+  hero_object: true
+- beat: phase3
+  size: POV
+  location: Grass height, today
+  prompt: >-
+    handheld at grass height as huge feathered legs and clawed feet pass close by, grass seed heads in the foreground,
+    dust, low afternoon sun
+  motion: handheld micro-shake, the legs pass left to right, grass sways
+  dur: 3.0
+  mode: video
+  sfx: heavy footfall
+- beat: phase3
+  size: DETAIL
+  location: Northern grassland, dawn, today
+  prompt: >-
+    macro, dense grey down feathers on a dinosaur's flank with frost crystals on the tips, breath fog beyond, pale
+    dawn light from the left
+  motion: static macro, the flank rises and falls with breathing, frost glints
+  dur: 3.0
+  mode: video
+  sfx: breath
+- beat: phase3
+  size: MAP
+  location: Relief globe, today
+  prompt: >-
+    a physical relief globe on a brass stand with no cities, borders or lights marked, continents in bare painted
+    relief, a hand turning it slowly, a desk lamp
+  motion: the hand turns the globe slowly, lamp steady, slow push-in
+  dur: 3.0
+  mode: video
+  sfx: globe turn
+- beat: turn
+  size: WIDE
+  location: Grassland at dusk, today
+  prompt: >-
+    an empty grassland at dusk with no roads, no fences, no lights to the horizon, a single feathered grazer silhouetted,
+    a cold violet sky, the first stars
+  motion: very slow dolly back, the grazer lowers its head, stars brighten
+  dur: 4.5
+  mode: video
+  sfx: dusk wind
+- beat: turn
+  size: CLOSE
+  location: Grass edge, night, today
+  prompt: >-
+    a small nocturnal mammal frozen at the edge of the grass at night, whiskers lit by starlight, nothing else moving,
+    cold blue light
+  motion: static close, the whiskers twitch once, grass stirs
+  dur: 4.0
+  mode: video
+  sfx: night insects
+- beat: turn
+  size: MEDIUM
+  location: Snowfield, today
+  prompt: >-
+    waist-up, the broad-frilled horned dinosaur standing in falling snow, breath steaming, down feathers dusted
+    white, grey winter light
+  motion: static tripod with a slow push-in, snow falls, breath steams, the head turns slightly
+  dur: 4.0
+  mode: video
+  sfx: snow wind
+  hero_object: true
+- beat: dilemma
+  size: WIDE
+  location: Night plain, today
+  prompt: >-
+    a night plain under the full Milky Way, the herd as dark shapes, no light of any kind on the ground to the horizon,
+    cold starlight
+  motion: very slow pan right across the sky, the herd shapes shift slightly
+  dur: 5.5
+  mode: video
+  sfx: night wind
+dilemma: With sixty-six million more years, do they ever build a city?
+pinned_comment: >-
+  No. Intelligence is not a destination. One hundred and sixty-five million years of dinosaurs produced brilliant
+  hunters and zero tools. A mind was the mammals' accident, and the accident needed the asteroid.
+metadata:
+  cover_time: 3.1
+  second_comment: >-
+    Crows and parrots are dinosaurs, and they use tools and plan ahead. Give that lineage sixty-six million extra
+    years with no competition and a city is not even the strange outcome.
+  hashtags:
+  - '#whatif'
+  - '#dinosaurs'
+  - '#science'
+  - '#alternatehistory'
+  - '#thehinge'
+  replies_to_prepare:
+  - The Deccan Traps would have killed them anyway
+  - Birds ARE dinosaurs so they didn't die

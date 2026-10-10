@@ -1,0 +1,363 @@
+id: ep004-moon-is-gone
+series: tomorrow-morning
+series_number: 2
+pillar: tomorrow-morning
+title: The Moon Is Gone
+hook_title: WHAT IF THE MOON VANISHED TONIGHT
+file_number: FILE B-0004
+target_duration: 80
+stamp_text: NEVER HAPPENED
+voice:
+  direction: calm dry archivist, British-leaning, unhurried, low-mid pitch, lets facts land
+  voice_type: preset
+  voice_id: 30fc8796-ceb6-4a66-b3a7-4a145ef7f346
+music:
+  mood: sparse piano, sub bass, a high sustained string from the turn
+  cue: assets/music/tomorrow-morning-02.mp3
+look_key_prompt: >-
+  empty establishing frame of a rocky headland at night under an unusually dark, star-dense sky, a lighthouse beam
+  sweeping, the sea far below its usual line with wet rock exposed, no moon, cold blue starlight
+research:
+  hinge: >-
+    At midnight the Moon and its mass are simply gone. Tides, night light and the long-term stability of Earth's
+    axial tilt all depend on it; each fails on its own timescale.
+  hinge_date: tonight
+  sources:
+  - >-
+    Laskar, Joutel & Robutel, Stabilization of the Earth's obliquity by the Moon, Nature 361 (1993)
+  - >-
+    NOAA Tides and Currents, tidal forces: the Moon's tide-raising force is about 2.2 times the Sun's; Bay of Fundy
+    range up to about 16 metres
+  - >-
+    Harrison et al., Mass spawning in tropical reef corals, Science 223 (1984): spawning timed to the lunar cycle
+  - >-
+    Dacke et al., Insect orientation to polarized moonlight, Nature 424 (2003): dung beetles steer by the Moon
+  - >-
+    Canup, Forming a Moon with an Earth-like composition, Science 338 (2012); early Earth's day after the Moon-forming
+    impact was a few hours long and lengthened by lunar tidal braking
+  facts:
+  - Moonlight on a full-moon night is roughly a hundred times brighter than starlight alone.
+  - >-
+    Remove the Moon and tides shrink to about a third, the solar share; Fundy's sixteen metres become about five.
+  - >-
+    Corals on the Great Barrier Reef spawn in the nights after a full moon; dung beetles and many moths navigate
+    by the Moon.
+  - >-
+    The Moon stabilises Earth's tilt near twenty-three degrees; without it the tilt can wander chaotically over
+    millions of years.
+  - >-
+    Earth's day was only a few hours long after the Moon formed; four and a half billion years of lunar tides stretched
+    it to twenty-four.
+  era_sheet:
+    timeline: the present day, then a decade on, then a million years on
+    architecture: >-
+      real places: a Tokyo balcony, a Bay of Fundy headland and lighthouse, a Queensland dive boat, a Namibian desert
+      road
+    clothing: present-day ordinary clothing, a park ranger's uniform, a diver's wetsuit
+    vehicles: a dive boat, a pickup, leaning fishing boats in a dry estuary
+    street: >-
+      lighthouse, tide clock, mudflats, exposed oyster beds, coral under a dive lamp, turtle tracks on sand
+    light: >-
+      starlight only at night (very dark), sodium lamps, dawn over mudflats; the million-year frames use low tilted
+      sun
+    palette: midnight blue, wet rock black, sodium amber, deep cyan accent
+    forbidden: a visible moon, fantasy skies, glowing objects, text, a second moon, explosions
+  cost: >-
+    The quiet cost comes first: the Moon's pull slowed Earth's spin from a few hours to a twenty-four-hour day,
+    kept the tilt steady, set every tide and most calendars, and was the only other world anyone ever stood on.
+beats:
+- id: hook
+  vo: >-
+    What if the Moon vanished tonight. You wake, look up, and there is a hole in the sky where it was. The tide
+    has already noticed.
+  card:
+    text: WHAT IF THE MOON VANISHED TONIGHT
+    style: title
+- id: hinge
+  vo: >-
+    At midnight the Moon is simply gone. No impact, no debris, just absence. Earth loses what pulled on it for four
+    and a half billion years. This is how it happens.
+  card:
+    text: MIDNIGHT · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    First night. The darkest night in human history, because moonlight was a hundred times brighter than stars.
+    Tides shrink to a third. Fundy's sixteen metres become five. Corals that spawn by moonlight miss their cue.
+  card:
+    text: FIRST NIGHT
+    style: phase
+- id: phase2
+  vo: >-
+    Year ten. Estuaries that fed on the tide go quiet, so the fisheries go with them. Every calendar loses its month.
+    Moths, turtles and dung beetles that steered by the Moon wander.
+  card:
+    text: YEAR TEN
+    style: phase
+- id: phase3
+  vo: >-
+    A million years. The Moon kept Earth's tilt steady. Without it the axis drifts, so the poles swing toward the
+    sun and back. Ice ages and furnace ages trade places every few hundred millennia.
+  card:
+    text: ONE MILLION YEARS
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But the quiet cost comes first. The Moon's pull is why a day lasts twenty-four hours, not six. It was
+    the planet's brake, its clock, and the only other place anyone walked.
+  card: null
+- id: dilemma
+  vo: >-
+    That timeline never happened. Ours did. So which ends us first: the dark, the tide, or the tilt?
+  card:
+    text: 'Which ends us first: the dark, the tide, or the tilt?'
+    style: question
+shots:
+- beat: hook
+  size: POV
+  location: Bedroom window, Lisbon, night
+  prompt: >-
+    handheld, looking up through an open bedroom window at a star-dense night sky with a conspicuous empty darkness
+    where the Moon should be, rooftops below unlit, curtain edge in frame, cold starlight
+  motion: handheld slow tilt up from the rooftops to the sky, the curtain stirs
+  dur: 2.5
+  mode: video
+  sfx: night quiet
+- beat: hook
+  size: WIDE
+  location: Headland lighthouse, Bay of Fundy, night
+  prompt: >-
+    a white lighthouse on a rocky headland at night, its beam sweeping, the sea far below its usual line with wet
+    black rock and weed exposed, star-dense sky, no moon
+  motion: slow dolly forward toward the lighthouse, the beam sweeps once, water glints below
+  dur: 2.5
+  mode: video
+  sfx: lighthouse foghorn
+  hero_object: true
+- beat: hook
+  size: CLOSE
+  location: Below the lighthouse, night
+  prompt: >-
+    wet black rock and dripping kelp newly exposed below a lighthouse, a crab crossing it, the water's edge far
+    lower than the pale tide mark, cold starlight
+  motion: static close, the crab crosses, water drips from the kelp
+  dur: 2.5
+  mode: video
+  sfx: drip
+- beat: hinge
+  size: DETAIL
+  location: Harbourmaster's office, night
+  prompt: >-
+    macro, a brass ship's tide clock on a wooden wall with its single hand missing from the dial, a lamp's warm
+    light from the left, a window of pure black night behind
+  motion: static macro with a slow push-in, lamp flame flickers, nothing else moves
+  dur: 3.5
+  mode: video
+  sfx: clock tick
+- beat: hinge
+  size: AERIAL
+  location: Atlantic coast from altitude, night
+  prompt: >-
+    high and slow over a dark coastline at night, a few town lights, the sea a flat black with no glint of moonlight
+    on it, star-dense sky to the horizon
+  motion: slow pan left along the coast, town lights steady, the sea stays black
+  dur: 3.0
+  mode: video
+  sfx: high wind
+- beat: hinge
+  size: MEDIUM
+  location: Apartment balcony, Tokyo, night
+  prompt: >-
+    waist-up, a woman in a cardigan on a narrow balcony looking up, apartment towers behind with most windows dark,
+    a single sodium lamp below, star-dense sky above
+  motion: >-
+    static tripod with a slow push-in, she lifts her hand to shade her eyes, the cardigan stirs
+  dur: 3.5
+  mode: video
+  sfx: city night
+- beat: phase1
+  size: WIDE
+  location: Bay of Fundy mudflats, dawn
+  prompt: >-
+    vast red mudflats at dawn with the water far out beyond its usual line, sandstone sea stacks with a dry tide
+    mark high on their sides, the lighthouse on the headland, pale pink light
+  motion: slow crane up over the mudflats, low mist drifts, the stacks stay rigid
+  dur: 3.5
+  mode: video
+  sfx: mudflat birds
+  hero_object: true
+  card:
+    text: |-
+      16 M → 5 M
+      FUNDY TIDE
+    style: stat
+- beat: phase1
+  size: CLOSE
+  location: Exposed oyster bed, dawn
+  prompt: >-
+    oysters and mussels dry on exposed rock with weed shrivelling, a gull's foot in frame, the water a thin line
+    far behind, cold dawn light from the right
+  motion: static close, the gull steps out of frame, weed stirs in the wind
+  dur: 3.0
+  mode: video
+  sfx: gulls
+- beat: phase1
+  size: DETAIL
+  location: Great Barrier Reef, night dive
+  prompt: >-
+    macro, coral polyps under a diver's lamp at night, tentacles open, no spawn in the water, dark blue water beyond
+    the lamp's circle
+  motion: static macro, the tentacles sway, lamp beam steady, small particles of silt drift
+  dur: 3.0
+  mode: video
+  sfx: underwater
+- beat: phase1
+  size: POV
+  location: Country road, Namibia, night
+  prompt: >-
+    handheld from a car's passenger seat on a dirt road at night, headlights on gravel and nothing beyond them,
+    absolute dark either side, stars above the windscreen
+  motion: handheld drive forward, gravel passes under the lights, stars steady
+  dur: 3.0
+  mode: video
+  sfx: car on gravel
+- beat: phase2
+  size: WIDE
+  location: Estuary harbour, Brittany, year ten
+  prompt: >-
+    a tidal harbour at permanent half-water, fishing boats leaning on mud, nets rotting on a quay, shuttered sheds,
+    grey overcast noon light
+  motion: slow lateral track right along the quay, a loose net sways, boats stay rigid
+  dur: 3.5
+  mode: video
+  sfx: harbour creak
+- beat: phase2
+  size: DETAIL
+  location: Church clock, Prague, evening
+  prompt: >-
+    macro, an old astronomical clock dial with the moon-phase window showing a blank disc, gilt hands, evening light
+    on the stone, pigeons on the ledge
+  motion: static macro, a hand ticks forward, pigeons shift, light fades slightly
+  dur: 3.0
+  mode: video
+  sfx: clock tick
+- beat: phase2
+  size: CLOSE
+  location: Kalahari sand, night
+  prompt: >-
+    a dung beetle on pale sand rolling its ball in a slow circle under starlight, its track a loop in the sand,
+    cold blue starlight
+  motion: static close, the beetle pushes the ball around the loop, sand grains shift
+  dur: 3.0
+  mode: video
+  sfx: night insects
+- beat: phase2
+  size: MEDIUM
+  location: Turtle beach, Queensland, night
+  prompt: >-
+    waist-up, a park ranger kneeling on a beach with a red torch as turtle hatchlings scatter in every direction
+    instead of toward the sea, the sea a dark line, starlight
+  motion: static tripod with a slow push-in, hatchlings scatter, the torch beam moves
+  dur: 3.5
+  mode: video
+  sfx: surf distant
+- beat: phase3
+  size: AERIAL
+  location: Former Sahara, a million years on
+  prompt: >-
+    high and slow over dunes under a thick crust of snow at noon with the sun low on the horizon, long blue shadows,
+    a frozen lake in a dune hollow
+  motion: slow pan right across the dunes, blown snow drifts off the crests
+  dur: 3.5
+  mode: video
+  sfx: high wind
+- beat: phase3
+  size: MAP
+  location: Observatory, a million years on
+  prompt: >-
+    a physical globe on a brass stand tilted far over by a hand until a pole faces the lamp, a desk lamp, the shadow
+    line falling across the equator
+  motion: the hand tilts the globe slowly, the shadow line slides across it, lamp steady
+  dur: 3.0
+  mode: video
+  sfx: globe turn
+- beat: phase3
+  size: WIDE
+  location: Antarctic coast, a million years on
+  prompt: >-
+    an ice cliff calving into a warm green sea with palms on the shore behind, steam over the water, a sun high
+    in the sky at the pole, harsh light
+  motion: slow dolly back as a slab of ice drops into the sea, steam drifts
+  dur: 3.5
+  mode: video
+  sfx: ice calving
+- beat: phase3
+  size: CLOSE
+  location: Lab, a million years on
+  prompt: >-
+    a hand holding a long drilled coral core with banded growth rings against a lab lamp, the bands uneven and broken,
+    a steel tray beneath
+  motion: static close, the hand turns the core slowly in the light
+  dur: 3.0
+  mode: video
+  sfx: lab hum
+- beat: turn
+  size: WIDE
+  location: Headland lighthouse, night
+  prompt: >-
+    the lighthouse on its headland under the whole Milky Way, the beam sweeping, the sea far below its old line,
+    cold starlight, no moon
+  motion: very slow dolly back, the beam sweeps once, stars steady
+  dur: 4.5
+  mode: video
+  sfx: lighthouse foghorn
+  hero_object: true
+- beat: turn
+  size: DETAIL
+  location: Museum, night
+  prompt: >-
+    macro, a boot print cast in bronze on a stone plinth under a single spotlight, dust on the plinth, the gallery
+    dark around it
+  motion: slow lateral track right across the print, dust motes in the spotlight
+  dur: 4.0
+  mode: video
+  sfx: museum quiet
+- beat: turn
+  size: MEDIUM
+  location: Rooftop, Mumbai, night
+  prompt: >-
+    waist-up, a father and his teenage daughter on a rooftop, she points at the empty sky, water tanks behind, the
+    city below mostly dark, starlight and one sodium lamp
+  motion: static tripod with a slow push-in, she points, he looks up, laundry stirs
+  dur: 4.0
+  mode: video
+  sfx: city night
+- beat: dilemma
+  size: WIDE
+  location: Headland lighthouse, dawn
+  prompt: >-
+    the lighthouse at dawn with the sea far below its old tide line, wet rock and weed exposed, a pale grey sky,
+    the beam just switching off
+  motion: very slow dolly back, the beam goes out, light rises
+  dur: 5.5
+  mode: video
+  sfx: dawn surf
+  hero_object: true
+dilemma: 'Which ends us first: the dark, the tide, or the tilt?'
+pinned_comment: >-
+  The tide. Not the water, the fisheries. Estuaries are nurseries for most of what we eat from the sea, and they
+  run on tidal mixing. The dark is a mood; the tilt is a million years away. Argue.
+metadata:
+  cover_time: 3.4
+  second_comment: >-
+    The dark, and fast. Insect navigation, nocturnal pollination, turtle hatchlings, coral spawning: the night ecosystem
+    is the first thing that breaks, and we eat what it feeds.
+  hashtags:
+  - '#whatif'
+  - '#moon'
+  - '#science'
+  - '#space'
+  - '#tomorrowmorning'
+  replies_to_prepare:
+  - Earth would fly out of orbit
+  - We'd just build a new moon

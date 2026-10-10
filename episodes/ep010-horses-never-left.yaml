@@ -1,0 +1,385 @@
+id: ep010-horses-never-left
+series: the-hinge
+series_number: 4
+pillar: the-hinge
+title: Horses Never Left America
+hook_title: WHAT IF HORSES NEVER LEFT AMERICA
+file_number: FILE B-0010
+target_duration: 80
+stamp_text: NEVER HAPPENED
+voice:
+  direction: calm dry archivist, British-leaning, unhurried, low-mid pitch, lets facts land
+  voice_type: preset
+  voice_id: 30fc8796-ceb6-4a66-b3a7-4a145ef7f346
+music:
+  mood: a single sustained low note that resolves at the turn, a hoofbeat pulse under the phases
+  cue: assets/music/the-hinge-04.mp3
+look_key_prompt: >-
+  empty establishing frame of a vast Great Plains grassland at dawn with no roads or fences, a river in a shallow
+  valley, mist in the hollows, long low light, tall grass moving in the wind
+research:
+  hinge: >-
+    Horses evolved in North America and died out there at the end of the last Ice Age, about ten thousand years
+    ago, returning only with the Spanish in the 1490s and 1510s. In this timeline a few plains herds survive the
+    thaw, and the peoples of the Americas domesticate them thousands of years before contact.
+  hinge_date: about 10,000 years ago
+  sources:
+  - >-
+    Haile et al., Ancient DNA reveals late survival of mammoth and horse in interior Alaska, PNAS 106 (2009)
+  - Bruce MacFadden, Fossil Horses (1992), on the origin of Equus in North America
+  - >-
+    Outram et al., The earliest horse harnessing and milking, Science 323 (2009): Botai domestication around 3500
+    BC
+  - >-
+    Pekka Hämäläinen, The Comanche Empire (2008): a horse empire built within a century of acquiring horses
+  - 'Timothy Pauketat, Cahokia: Ancient America''s Great City on the Mississippi (2009)'
+  - >-
+    Bernal Díaz del Castillo, The True History of the Conquest of New Spain, on the sixteen horses of 1519
+  facts:
+  - >-
+    The horse family evolved in North America over fifty million years and spread to Asia across the Bering land
+    bridge.
+  - >-
+    Horses vanished from the Americas around ten thousand years ago with the other large Ice Age animals.
+  - On the Eurasian steppe, horses were domesticated by about three thousand five hundred BC.
+  - >-
+    The Comanche went from first horses to a plains empire in roughly a hundred years; Cahokia, around the year
+    eleven hundred, held perhaps fifteen to twenty thousand people.
+  - >-
+    Cortés landed in 1519 with sixteen horses; Mesoamerica had wheeled toys but no draught animals.
+  era_sheet:
+    timeline: >-
+      the end of the Ice Age; five thousand years ago on the Missouri; Cahokia around the year one thousand; the
+      beach at Veracruz in 1519
+    architecture: >-
+      none at first; later earthen platform mounds, thatched wattle-and-daub houses, log palisades, stone-and-timber
+      relay posts
+    clothing: >-
+      hide and fur at the thaw; woven and hide clothing with shell and copper ornaments by the year one thousand;
+      riders in hardened leather armour with copper plates; Spanish in steel morions and brigandines in 1519
+    vehicles: >-
+      small stocky horses, rawhide bridles with a copper bead, timber corrals, two-wheeled carts by the year one
+      thousand, Spanish ships' boats
+    street: tall grass, bison, river bluffs, earth mounds, corrals, a Veracruz beach with dunes
+    light: Ice Age dawn, hard plains noon, torch-lit night raid, Gulf coast morning
+    palette: grass gold, river brown, copper, crimson accent in paint and bead
+    forbidden: >-
+      nineteenth-century war bonnets and tipis in the year one thousand, Hollywood western framing, tribal caricature,
+      text, modern flags
+  cost: >-
+    The horse brings the steppe with it. Wherever riders meet farmers, the riders win for a thousand years and burn
+    the cities: Cahokia falls twice before Columbus. An empire on horseback is still an empire, with everything
+    that word carries.
+beats:
+- id: hook
+  vo: >-
+    What if horses never left America. Born here, gone ten thousand years ago. Here they stay, and the first cavalry
+    on Earth is American.
+  card:
+    text: WHAT IF HORSES NEVER LEFT AMERICA
+    style: title
+- id: hinge
+  vo: >-
+    The horse evolved in North America, died out at the end of the Ice Age, and only returned with the Spanish.
+    Here, a few herds survive the thaw. This is how it happens.
+  card:
+    text: 10,000 YEARS AGO · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    Year five thousand. Someone on the Missouri climbs on and rides. A rider moves five times faster than a walker,
+    so the plains become a road. Bison are herded, not hunted.
+  card:
+    text: 3000 BC
+    style: phase
+- id: phase2
+  vo: >-
+    Year one thousand. Cahokia, on the Mississippi, has cavalry. Nomads raid it as the steppe raided China, so it
+    builds walls and relays. The wheel arrives, because something can pull it.
+  card:
+    text: 1000 AD
+    style: phase
+- id: phase3
+  vo: >-
+    Fifteen nineteen. Cortés lands with sixteen horses and meets ten thousand. The invasion ends on the beach, because
+    an empire that rides cannot be surprised. Europe trades. It does not conquer.
+  card:
+    text: '1519'
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But the horse brings the steppe. Wherever riders meet farmers, riders win for a thousand years and
+    burn the cities. Cahokia falls twice before Columbus. An empire on horseback is still an empire.
+  card: null
+- id: dilemma
+  vo: >-
+    That timeline never happened. Ours did. Cavalry on the beach: does the invasion end, or do the horses just change
+    who conquers?
+  card:
+    text: 'Cavalry on the beach: does the invasion end, or just change who conquers?'
+    style: question
+shots:
+- beat: hook
+  size: WIDE
+  location: Ice Age plains, dawn
+  prompt: >-
+    a herd of small stocky horses galloping across a grassland at dawn with a mammoth standing far in the distance,
+    mist in the hollows, long low light from the right
+  motion: lateral track left keeping pace with the herd, mist drifts, the mammoth stays still
+  dur: 2.5
+  mode: video
+  sfx: hooves on grass
+- beat: hook
+  size: DETAIL
+  location: Plains camp, 3000 BC, dawn
+  prompt: >-
+    macro, a braided rawhide bridle with a single copper bead on a horse's muzzle, breath steaming in cold dawn
+    light, a hand resting on the cheek strap
+  motion: static macro, breath steams, the horse's nostril flares, the hand pats
+  dur: 2.5
+  mode: video
+  sfx: horse breath
+  hero_object: true
+- beat: hook
+  size: AERIAL
+  location: River crossing, 1000 AD, dawn
+  prompt: >-
+    high and slow over a long column of riders fording a wide shallow river at dawn, spray, the column stretching
+    to the far bank, low golden light
+  motion: slow pan right along the column, spray lifts, riders advance
+  dur: 2.5
+  mode: video
+  sfx: river crossing
+- beat: hinge
+  size: MAP
+  location: Museum table, today
+  prompt: >-
+    a physical relief map of North America on a table, a hand placing small carved wooden horses on the Great Plains
+    while sweeping others off into a tray, lamp light, no lettering
+  motion: the hand places the horses and sweeps the tray, slow push-in
+  dur: 3.5
+  mode: video
+  sfx: wood on wood
+- beat: hinge
+  size: CLOSE
+  location: Permafrost bank, Alaska, thaw
+  prompt: >-
+    a horse's hoof and lower leg thawing out of a dark permafrost bank, meltwater running over it, moss, grey spring
+    light
+  motion: static close, meltwater runs, a clod of earth drops away
+  dur: 3.0
+  mode: video
+  sfx: meltwater
+- beat: hinge
+  size: MEDIUM
+  location: Thawing valley, 10,000 years ago
+  prompt: >-
+    waist-up from behind, three people in fur and hide on a ridge watching a small band of horses grazing in a thawing
+    valley below, meltwater streams, cold bright light
+  motion: static tripod with a slow push-in, the horses graze, a fur cloak stirs
+  dur: 3.0
+  mode: video
+  sfx: wind on ridge
+- beat: phase1
+  size: WIDE
+  location: Missouri bluffs, 3000 BC
+  prompt: >-
+    a single rider bareback on a stocky horse on a river bluff, a crowd of people in hide clothing looking up from
+    the bank below, tall grass, hard noon light
+  motion: slow crane up from the crowd to the rider, grass moves in the wind
+  dur: 3.5
+  mode: video
+  sfx: crowd murmur
+  card:
+    text: |-
+      5×
+      FASTER THAN WALKING
+    style: stat
+- beat: phase1
+  size: POV
+  location: Plains, 3000 BC
+  prompt: >-
+    handheld from horseback at a gallop over tall grass, a horse's mane and ears in the foreground, the horizon
+    bouncing, bright afternoon light
+  motion: handheld gallop forward, the mane flies, grass streams past
+  dur: 3.0
+  mode: video
+  sfx: gallop
+- beat: phase1
+  size: DETAIL
+  location: Campfire, 3000 BC, night
+  prompt: >-
+    macro, hands braiding rawhide strips into a bridle and threading a copper bead, firelight, a bone awl
+  motion: static macro, the hands braid and thread the bead, flames flicker
+  dur: 3.0
+  mode: video
+  sfx: fire crackle
+  hero_object: true
+- beat: phase1
+  size: MEDIUM
+  location: Timber corral, 3000 BC, dusk
+  prompt: >-
+    waist-up, riders driving a line of bison toward a timber corral at dusk, dust, a woman on horseback closing
+    the gate, warm low light
+  motion: slow lateral track right with the bison, dust drifts, the gate swings
+  dur: 3.5
+  mode: video
+  sfx: bison herd
+- beat: phase2
+  size: AERIAL
+  location: Cahokia, 1000 AD
+  prompt: >-
+    high and slow over a city of grass-covered earthen platform mounds, a log palisade, thatched houses, horse pens
+    and a plaza with riders drilling, morning haze over the river
+  motion: slow crane down toward the plaza, riders wheel, haze drifts
+  dur: 3.5
+  mode: video
+  sfx: city morning
+  card:
+    text: |-
+      20,000 PEOPLE
+      CAHOKIA, 1100 AD
+    style: stat
+- beat: phase2
+  size: CLOSE
+  location: Cahokia plaza, 1000 AD
+  prompt: >-
+    a rider's leg in hardened leather armour with copper plates against a horse's flank, a shell ornament at the
+    knee, dust, bright noon light
+  motion: static close, the horse shifts its weight, dust lifts
+  dur: 3.0
+  mode: video
+  sfx: leather creak
+- beat: phase2
+  size: WIDE
+  location: Cahokia palisade, 1000 AD, dusk
+  prompt: >-
+    riders with torches circling outside a log palisade at dusk, defenders on the walkway, arrows in the timber,
+    smoke and orange light
+  motion: slow dolly back as the riders circle, torches stream, smoke drifts
+  dur: 3.5
+  mode: video
+  sfx: raid
+- beat: phase2
+  size: DETAIL
+  location: Relay post, 1000 AD
+  prompt: >-
+    macro, the rawhide bridle with the copper bead being slipped onto a fresh horse at a stone-and-timber relay
+    post, a two-wheeled cart behind, midday light
+  motion: static macro, the bridle slips on, the horse tosses its head
+  dur: 3.0
+  mode: video
+  sfx: horse snort
+  hero_object: true
+- beat: phase3
+  size: WIDE
+  location: Veracruz beach, 1519, morning
+  prompt: >-
+    sixteen Spanish horses and soldiers in steel morions at the waterline of a beach, ten thousand riders in leather
+    armour lining the dunes above them, ships at anchor, bright morning light
+  motion: slow crane up from the waterline to reveal the dunes full of riders, surf runs in
+  dur: 3.5
+  mode: video
+  sfx: surf and horses
+  card:
+    text: |-
+      16 VS 10,000
+      HORSES ON THE BEACH
+    style: stat
+- beat: phase3
+  size: POV
+  location: Ship's boat, Veracruz, 1519
+  prompt: >-
+    handheld from a ship's boat looking up the beach at a line of riders on the dunes, oars in the foreground, spray,
+    hard morning sun
+  motion: handheld pitch with the swell, the oars lift, the riders hold their line
+  dur: 3.0
+  mode: video
+  sfx: oars
+- beat: phase3
+  size: CLOSE
+  location: Veracruz beach, 1519
+  prompt: a steel morion helmet lying in wet sand beside a horse's hoof, surf foam, morning light
+  motion: static close, surf foam runs around the helmet and withdraws, the hoof shifts
+  dur: 3.0
+  mode: video
+  sfx: surf
+- beat: phase3
+  size: MAP
+  location: Captain's cabin, 1519
+  prompt: >-
+    a parchment map on a cabin table where a Spanish hand with a quill draws a coastal trade route instead of an
+    inland march, a lantern, lettering illegible
+  motion: the quill draws slowly along the coast, lantern flame leans
+  dur: 3.0
+  mode: video
+  sfx: quill
+- beat: turn
+  size: WIDE
+  location: Cahokia, night, 1200 AD
+  prompt: >-
+    earthen mounds and thatched houses burning at night, riders silhouetted against the fire, smoke across the moon,
+    orange light on the river
+  motion: very slow dolly back, smoke drifts across the moon, riders cross the fire
+  dur: 4.5
+  mode: video
+  sfx: fire
+- beat: turn
+  size: DETAIL
+  location: Cahokia, morning after
+  prompt: >-
+    macro, the rawhide bridle with its copper bead hanging from a broken post in grey ash, thin morning light
+  motion: static macro, ash drifts, the bridle sways slightly
+  dur: 4.0
+  mode: video
+  sfx: ash wind
+  hero_object: true
+- beat: turn
+  size: MEDIUM
+  location: Ridge over a farm valley, dawn
+  prompt: >-
+    waist-up from behind, riders in leather armour on a ridge at dawn looking down on a valley of maize fields and
+    thatched houses, mist, low golden light
+  motion: static tripod with a slow push-in, horses shift, mist drifts below
+  dur: 4.0
+  mode: video
+  sfx: wind on ridge
+- beat: dilemma
+  size: CLOSE
+  location: Veracruz beach, 1519, dawn
+  prompt: >-
+    a horse's hoof and a steel-shod Spanish boot a metre apart on wet sand at dawn, surf foam between them, low
+    golden light
+  motion: static close, foam runs between the hoof and the boot and withdraws
+  dur: 3.5
+  mode: video
+  sfx: surf
+- beat: dilemma
+  size: WIDE
+  location: Veracruz beach, 1519, dawn
+  prompt: >-
+    a beach at dawn with Spanish ships at anchor and a line of riders on the dunes facing them, the sand empty between
+    them, pale sky, long light
+  motion: very slow dolly back, surf runs in, the riders hold still
+  dur: 5.5
+  mode: video
+  sfx: dawn surf
+dilemma: >-
+  Cavalry on the beach: does the invasion end there, or do the horses just change who conquers?
+pinned_comment: >-
+  It ends there. The conquest ran on horses, steel and surprise, and this timeline takes two of the three off the
+  table on the first morning. Europe sells cannon and buys silver. Nobody gets an empire for free.
+metadata:
+  cover_time: 0.6
+  second_comment: >-
+    It just changes who conquers. The Comanche built an empire in a century with horses alone. Give the plains five
+    thousand years of cavalry and the Spanish meet an empire that has already done the conquering.
+  hashtags:
+  - '#alternatehistory'
+  - '#history'
+  - '#whatif'
+  - '#horses'
+  - '#thehinge'
+  replies_to_prepare:
+  - Smallpox would still have won
+  - Why did the horses die out in the first place

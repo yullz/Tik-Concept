@@ -1,0 +1,47 @@
+# The Counterfact house look. Appended to every keyframe prompt by `pipeline promptsheet`.
+name: counterfact-v1
+aspect_ratio: "9:16"
+keyframe_model: nano_banana_pro
+keyframe_resolution: "2k"
+video_model: kling3_0
+video_params: {mode: std, sound: "off", duration: 5}
+video_fallback_model: veo3_1_lite
+video_fallback_params: {duration: 4, generate_audio: false}
+
+lens: "35 mm anamorphic, mild oval bokeh"
+film: "Kodak 5219 with 2383 print emulation, fine grain, soft highlight roll-off"
+light_rule: "natural key light plus practicals, haze allowed"
+negative: "no text, no lettering, no logos, no watermark, no lens flare, no glow, no bloom, no particles"
+
+accents:
+  never-fell: "imperial gold accents in props and light"
+  tomorrow-morning: "deep cyan accents in props and light"
+  early-arrival: "amber accents in props and light"
+  the-hinge: "crimson accents in props and light"
+
+size_openers:
+  AERIAL: "AERIAL, high and slow,"
+  WIDE: "WIDE,"
+  MEDIUM: "MEDIUM, waist-up,"
+  CLOSE: "CLOSE,"
+  DETAIL: "DETAIL, macro,"
+  POV: "POV, handheld,"
+  MAP: "MAP, top-down, a physical map,"
+
+motion_suffix: "subject keeps its shape, no new objects appear, no text"
+
+typography:
+  font: "Inter Display"            # fallback: Montserrat, then DejaVu Sans
+  caption_size_px: 84
+  caption_weight: 600
+  card_size_px: 116
+  card_weight: 800
+  caption_color: "#FFFFFF"
+  shadow_color: "#000000"
+  safe_zone_px: {top: 120, bottom: 220, right: 140, left: 60}
+
+mix:
+  voice_lufs: -16
+  music_db_under_voice: -28
+  music_db_in_gaps: -22
+  sfx_peak_dbfs: -20

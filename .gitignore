@@ -1,0 +1,21 @@
+# secrets
+.env
+# build / renders (large binaries never go in git)
+renders/
+!renders/.gitkeep
+assets/music/*.mp3
+assets/music/*.wav
+assets/sfx/*.wav
+assets/sfx/*.mp3
+assets/fonts/*.ttf
+assets/fonts/*.otf
+*.mp4
+*.mov
+*.png
+*.jpg
+*.webp
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/

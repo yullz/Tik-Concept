@@ -1,0 +1,376 @@
+id: ep002-ocean-dries-up
+series: tomorrow-morning
+series_number: 1
+pillar: tomorrow-morning
+title: The Ocean Dries Up Tonight
+hook_title: WHAT IF THE OCEAN DRIED UP TONIGHT
+file_number: FILE B-0002
+target_duration: 80
+stamp_text: NEVER HAPPENED
+voice:
+  direction: calm dry archivist, British-leaning, unhurried, low-mid pitch, lets facts land
+  voice_type: preset
+  voice_id: 30fc8796-ceb6-4a66-b3a7-4a145ef7f346
+music:
+  mood: sparse piano, a sub bass that enters at the hinge, no percussion
+  cue: assets/music/tomorrow-morning-01.mp3
+look_key_prompt: >-
+  empty establishing frame of a dry ocean basin at dawn, a cracked white salt plain to the horizon, a grey sediment
+  cliff several kilometres high in the far distance with a city on its lip, cold low sun, haze
+research:
+  hinge: >-
+    At midnight every drop of seawater, about one point three billion cubic kilometres, vanishes; the salt, the
+    seabed and the atmosphere stay. Everything after follows from measured physics: depth, lapse rate, the water
+    cycle and the ocean's heat capacity.
+  hinge_date: tonight
+  sources:
+  - NOAA, How much water is in the ocean (1.335 billion km³; mean depth about 3,682 m)
+  - NOAA Ocean Exploration, Challenger Deep depth (about 10,935 m)
+  - >-
+    USGS Water Science School, The water cycle: oceans supply about 86 percent of global evaporation; fresh water
+    is about 2.5 percent of all water
+  - >-
+    IPCC AR6 WG1 (2021): the ocean has taken up more than 90 percent of the excess heat in the climate system
+  - Randall Munroe, What If? (2014), Drain the Oceans
+  facts:
+  - >-
+    Mean ocean depth is about three thousand seven hundred metres, so the coast becomes a cliff of that height.
+  - >-
+    Air warms by roughly six and a half degrees for every kilometre you descend, so a trench floor eleven kilometres
+    down runs around seventy degrees in the tropics.
+  - >-
+    The atmosphere holds about ten days of rain; most evaporation comes from the sea, so rain stops within weeks.
+  - >-
+    Fresh water is two and a half percent of the total, most of it ice; the Great Lakes and Lake Baikal each hold
+    about a fifth of the liquid fresh water on the surface.
+  - >-
+    The ocean has absorbed over ninety percent of the heat humans added to the climate; without it, land temperatures
+    swing wildly between day and night.
+  era_sheet:
+    timeline: the present day, the morning after
+    architecture: >-
+      real ports: Rotterdam cranes, Singapore container terminals, Hong Kong towers now on a cliff edge
+    clothing: >-
+      ordinary present-day work clothes, hi-vis vests, dust masks, keffiyeh-style scarves against salt dust
+    vehicles: >-
+      container ships on their sides or upright on sediment, tugboats, pickup trucks on salt, no flying anything
+    street: >-
+      harbour tide gauges, bollards, rusted anchor chains, cracked salt crust, dry kelp, bleached coral
+    light: >-
+      dawn and brutal noon over white salt; night with frost; cyan accent in rationed water, tarps, hull paint
+    palette: salt white, sediment grey, hull rust, deep cyan accent
+    forbidden: sea monsters, glowing anything, fantasy skies, floating objects, text on signs
+  cost: >-
+    The ocean was never just water. It is the planet's thermostat: it absorbed more than ninety percent of the heat
+    we added, it made most of the rain, and it kept day and night within a few degrees of each other. Without it
+    the Earth behaves like a desert planet.
+beats:
+- id: hook
+  vo: >-
+    What if the ocean dried up tonight. Every drop, gone at midnight. By sunrise, the Titanic is standing on dry
+    land.
+  card:
+    text: WHAT IF THE OCEAN DRIED UP TONIGHT
+    style: title
+- id: hinge
+  vo: >-
+    The water goes. The salt stays. One point three billion cubic kilometres of sea, gone. Every coastline becomes
+    a cliff nearly four kilometres high. This is how it happens.
+  card:
+    text: MIDNIGHT · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    Day one. Every port is a cliff top. Ships lie on a salt plain three continents wide. The seabed is the lowest
+    land there is, so its air is thick and hot. The trench floor reads seventy degrees.
+  card:
+    text: DAY ONE
+    style: phase
+- id: phase2
+  vo: >-
+    Week two. The ocean made most of the world's rain, so the rain stops. Rivers run off the cliff and vanish into
+    salt. Salt storms cross whole countries. Harvests fail from India to Iowa.
+  card:
+    text: WEEK TWO
+    style: phase
+- id: phase3
+  vo: >-
+    Year ten. The water left, two and a half percent, sits in lakes and ice, so eight billion people crowd the Great
+    Lakes and Baikal. By day the salt plains hit sixty degrees. By night they freeze.
+  card:
+    text: YEAR TEN
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But the ocean was never just water. It held ninety percent of the heat we added. Without it, the planet
+    swings between furnace and freezer. The ocean was the thermostat.
+  card: null
+- id: dilemma
+  vo: >-
+    That timeline never happened. Ours did. Tonight: do you climb to the rain, or walk down to the salt?
+  card:
+    text: Do you climb to the rain, or walk down to the salt?
+    style: question
+shots:
+- beat: hook
+  size: WIDE
+  location: North Sea bed, dawn
+  prompt: >-
+    a red container ship standing upright on a cracked white salt plain at dawn, dry kelp and dead fish at its keel,
+    a grey sediment cliff with a port city on its lip far in the distance, cold low sun, haze
+  motion: slow dolly forward toward the ship, salt dust drifts low, the ship stays rigid
+  dur: 2.5
+  mode: video
+  sfx: wind over salt
+  hero_object: true
+- beat: hook
+  size: DETAIL
+  location: North Atlantic bed, 3,800 metres down, dawn
+  prompt: >-
+    macro, the rust-draped bow of a century-old steel liner standing in grey sediment, rusticles like icicles, wet
+    mud cracking as it dries, mist, first sunlight from the right
+  motion: slow lateral track left along the bow, mist drifts, a drip falls from a rusticle
+  dur: 2.5
+  mode: video
+  sfx: drip
+- beat: hook
+  size: MEDIUM
+  location: Cliff edge, Rotterdam, dawn
+  prompt: >-
+    waist-up, a harbour pilot in a hi-vis jacket standing at a new cliff edge beside a bollard, looking down into
+    a white basin, mooring ropes hanging into nothing, cold dawn light
+  motion: static tripod with a slow push-in, the jacket flaps, a rope sways over the edge
+  dur: 2.5
+  mode: video
+  sfx: wind over salt
+- beat: hinge
+  size: AERIAL
+  location: Hong Kong, the morning after
+  prompt: >-
+    high and slow, a dense harbour city on the edge of a sheer grey sediment cliff, the old harbour floor far below
+    with moored ships lying on their sides, morning haze, low sun from the left
+  motion: slow crane down toward the cliff edge, haze drifts, the city stays rigid
+  dur: 3.5
+  mode: video
+  sfx: city hum
+- beat: hinge
+  size: CLOSE
+  location: Harbour wall, Rotterdam, dawn
+  prompt: >-
+    a harbour tide-gauge post with a dark barnacle line two metres up and nothing but dry air below it, a rusted
+    ladder descending into haze, bollards, morning light
+  motion: static tripod with a slow push-in on the barnacle line, haze moves below
+  dur: 3.0
+  mode: video
+  sfx: gulls
+- beat: hinge
+  size: MAP
+  location: Hydrographic office, morning
+  prompt: >-
+    a physical relief globe of the ocean floor on a wooden stand, ridges and trenches in raised plaster, a hand
+    tilting it toward the camera, a desk lamp, charts beneath
+  motion: the hand tilts the globe slowly toward camera, lamp steady, slow push-in
+  dur: 3.0
+  mode: video
+  sfx: paper
+- beat: phase1
+  size: WIDE
+  location: Dogger Bank, day one, noon
+  prompt: >-
+    the red container ship and a dozen other cargo ships lying across a white salt plain, tiny figures walking between
+    them with bags, heat shimmer, a hard noon sun, no horizon
+  motion: slow lateral track right, heat shimmer wavers, the figures walk
+  dur: 3.5
+  mode: video
+  sfx: wind over salt
+  card:
+    text: |-
+      3,700 M
+      THE NEW COASTLINE
+    style: stat
+  hero_object: true
+- beat: phase1
+  size: POV
+  location: Cliff path below Singapore port, day one
+  prompt: >-
+    handheld, descending a switchback path cut into a grey sediment cliff, port cranes against the sky far above,
+    the white plain far below, dust on the path, noon glare
+  motion: handheld walk downward, the cranes recede above, dust kicks up
+  dur: 3.5
+  mode: video
+  sfx: footsteps gravel
+- beat: phase1
+  size: DETAIL
+  location: Mariana trench floor, day one
+  prompt: >-
+    macro, a steel pressure sphere from a research lander resting on grey ooze, salt crust cracking around it, intense
+    heat shimmer, sunlight filtering down the trench walls
+  motion: static macro, heat shimmer wavers, a crack in the salt crust widens slowly
+  dur: 3.0
+  mode: video
+  sfx: heat crackle
+  card:
+    text: |-
+      70°C
+      TRENCH FLOOR
+    style: stat
+- beat: phase1
+  size: MEDIUM
+  location: Seabed camp below Rotterdam, day one, afternoon
+  prompt: >-
+    waist-up, dock workers in hi-vis vests under a tarp strung between two shipping containers on the salt plain,
+    passing a water bottle, sweat, harsh light through the tarp
+  motion: slow push-in, the bottle passes hand to hand, the tarp flaps
+  dur: 3.5
+  mode: video
+  sfx: tarp flap
+- beat: phase2
+  size: WIDE
+  location: Mouth of the Rhine, week two
+  prompt: >-
+    a wide river pouring over the edge of a grey cliff into a dry abyss with no sea below, a thin veil of spray,
+    the river already narrower than its banks, overcast afternoon light
+  motion: slow crane up along the falling water, spray drifts, the cliff stays rigid
+  dur: 3.5
+  mode: video
+  sfx: waterfall
+  card:
+    text: |-
+      86%
+      OF RAIN CAME FROM THE SEA
+    style: stat
+- beat: phase2
+  size: CLOSE
+  location: Rice paddy, Bengal, week two
+  prompt: >-
+    a farmer's hand pressing into cracked grey paddy mud, dead rice seedlings, a dry irrigation channel behind,
+    flat white noon light, salt dust on the leaves
+  motion: static close, the hand presses and lifts, dust blows across the mud
+  dur: 3.0
+  mode: video
+  sfx: dry wind
+- beat: phase2
+  size: AERIAL
+  location: Iowa, week two
+  prompt: >-
+    high and slow, a white wall of salt dust rolling across a patchwork of corn fields and a grain elevator, the
+    leading edge swallowing a road, late afternoon sun turning the dust pink
+  motion: slow lateral track right as the dust wall advances, fields stay rigid
+  dur: 3.5
+  mode: video
+  sfx: dust storm
+- beat: phase2
+  size: MEDIUM
+  location: Farmhouse porch, Iowa, week two
+  prompt: >-
+    waist-up, two farmers on a porch pulling scarves over their faces as salt dust reaches the yard, a pickup truck
+    already white with salt, orange dust light
+  motion: slow push-in, the scarves go up, dust thickens between camera and porch
+  dur: 3.0
+  mode: video
+  sfx: dust storm
+- beat: phase3
+  size: WIDE
+  location: Lake Michigan shore, Chicago, year ten
+  prompt: >-
+    a shanty city of tents and containers ringing a lake shore under a familiar skyline, boats dense on the water,
+    armed checkpoints at the shore, grey morning light
+  motion: slow dolly forward along the shore, the crowd moves, boats rock
+  dur: 3.5
+  mode: video
+  sfx: crowd
+  card:
+    text: |-
+      2.5%
+      OF THE WATER LEFT
+    style: stat
+- beat: phase3
+  size: DETAIL
+  location: Ration point, Lake Baikal, year ten
+  prompt: >-
+    macro, a dented tin cup being filled from a brass tap on a steel tank, a numbered token held in the other hand
+    with its number illegible, cold morning light, breath visible
+  motion: static macro, the water fills the cup, the tap closes
+  dur: 3.0
+  mode: video
+  sfx: water pour
+- beat: phase3
+  size: POV
+  location: Inside the container ship, North Sea bed, year ten, night
+  prompt: >-
+    handheld, looking out through a cut doorway in a ship's hull at a frozen white salt plain under stars, frost
+    on the steel edges, a lantern behind the camera, breath fog
+  motion: handheld slow step forward to the doorway, breath fog drifts, stars steady
+  dur: 3.0
+  mode: video
+  sfx: wind over salt
+  hero_object: true
+- beat: phase3
+  size: MAP
+  location: Relief map, year ten
+  prompt: >-
+    a physical relief map of the northern hemisphere on a table, the ocean basins painted white, hands placing small
+    blue stones on the Great Lakes and Baikal, lamp light
+  motion: slow push-in as the hands place the stones, lamp steady
+  dur: 3.0
+  mode: video
+  sfx: stone on wood
+- beat: turn
+  size: WIDE
+  location: North Sea bed, noon
+  prompt: >-
+    the red container ship tiny on a white salt plain under a brutal noon sun, heat shimmer dissolving the horizon,
+    no shade anywhere, bleached sky
+  motion: very slow dolly back from the ship, heat shimmer wavers
+  dur: 4.5
+  mode: video
+  sfx: heat crackle
+  hero_object: true
+- beat: turn
+  size: CLOSE
+  location: Ship's rail, North Sea bed, night
+  prompt: >-
+    a gloved hand on a ship's rail furred with frost, the salt plain pale under starlight behind, breath fog, a
+    lantern's warm light from the left
+  motion: static close, the hand grips and releases, breath fog drifts
+  dur: 4.0
+  mode: video
+  sfx: frost creak
+- beat: turn
+  size: WIDE
+  location: Above the dry Atlantic basin, dusk
+  prompt: >-
+    from a mountain summit looking out over a vast dry basin, salt white fading to grey, the far cliff of Africa
+    catching the last light, a thin dust haze
+  motion: slow pan right across the basin, haze drifts, the cliff stays rigid
+  dur: 4.0
+  mode: video
+  sfx: high wind
+- beat: dilemma
+  size: WIDE
+  location: Cliff edge, Lisbon, dawn
+  prompt: >-
+    a lone figure with a backpack at a cliff edge at dawn, a path down into the white basin on one side and green
+    mountains with rain clouds on the other, pale sky, cold light
+  motion: very slow dolly back from the figure, clouds drift over the mountains
+  dur: 5.5
+  mode: video
+  sfx: dawn wind
+dilemma: Do you climb to the rain, or walk down to the salt?
+pinned_comment: >-
+  Down. The seabed is three kilometres closer to the groundwater, the old ports are already there, and the cliff
+  towns will be fighting over rain by week two. Change my mind.
+metadata:
+  cover_time: 0.9
+  second_comment: >-
+    Up, every time. Seventy degrees on the trench floor and sixty on the plains by year ten. The rain that is left
+    falls on mountains. Whoever holds the high ground holds the water.
+  hashtags:
+  - '#whatif'
+  - '#science'
+  - '#ocean'
+  - '#physics'
+  - '#tomorrowmorning'
+  replies_to_prepare:
+  - The oxygen would run out
+  - Where did the water go, that's not physics

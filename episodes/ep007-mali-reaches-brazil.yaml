@@ -1,0 +1,383 @@
+id: ep007-mali-reaches-brazil
+series: never-fell
+series_number: 3
+pillar: never-fell
+title: Mali Reaches Brazil
+hook_title: WHAT IF MALI FOUND AMERICA FIRST
+file_number: FILE B-0007
+target_duration: 80
+stamp_text: NEVER HAPPENED
+voice:
+  direction: calm dry archivist, British-leaning, unhurried, low-mid pitch, lets facts land
+  voice_type: preset
+  voice_id: 30fc8796-ceb6-4a66-b3a7-4a145ef7f346
+music:
+  mood: low strings with a kora figure, slow pulse
+  cue: assets/music/never-fell-03.mp3
+look_key_prompt: >-
+  empty establishing frame of a wide West African river mouth at dawn, mud-brick buildings with timber torons on
+  the bank, indigo cloth drying on a line, dugout pirogues, the Atlantic grey beyond the bar, warm haze
+research:
+  hinge: >-
+    According to al-Umari, who recorded Mansa Musa's own account given in Cairo in 1324, Musa's predecessor sent
+    two hundred ships into the Atlantic, then sailed himself with two thousand, and never returned; Musa took the
+    throne in 1312 as a result. In this timeline the Canary and Equatorial currents carry the fleet to the coast
+    of Brazil.
+  hinge_date: '1312'
+  sources:
+  - >-
+    al-Umari, Masalik al-absar fi mamalik al-amsar (c. 1337-38), in Levtzion & Hopkins, Corpus of Early Arabic Sources
+    for West African History (1981)
+  - Nehemia Levtzion, Ancient Ghana and Mali (1973)
+  - >-
+    Michael Gomez, African Dominion: A New History of Empire in Early and Medieval West Africa (2018)
+  - >-
+    NOAA Ocean Service, the Canary Current and North Equatorial Current flow west from West Africa toward the Caribbean
+    and northern Brazil
+  - >-
+    Pero Vaz de Caminha, letter on the Portuguese landfall in Brazil, 1500 (for what the Portuguese found in our
+    timeline)
+  facts:
+  - >-
+    Mansa Musa's pilgrimage of 1324 carried so much gold that Cairo's gold price stayed depressed for years.
+  - >-
+    Mali controlled the trans-Saharan gold trade and a large share of the Old World's gold supply in the fourteenth
+    century.
+  - Timbuktu's scholars and the Sankore mosque made Mali a centre of Islamic learning.
+  - The Tupi peoples of coastal Brazil lived in longhouse villages and farmed manioc.
+  - >-
+    Smallpox and measles were endemic in the Old World, Africa included, and arrived in the Americas with the first
+    sustained contact.
+  - In our timeline the Portuguese reached Brazil in April 1500.
+  era_sheet:
+    timeline: 1312 to 1412, the Portuguese arrival of 1500, and the present day
+    architecture: >-
+      banco mud-brick with projecting timber torons and conical pinnacles, Tupi thatched longhouses; today a river
+      metropolis of stepped concrete with toron-like studs, mosques with tapering mud-brick-styled minarets
+    clothing: >-
+      indigo-dyed cotton robes and wrapped head cloths, gold ear and nose ornaments, cowrie belts; Tupi men and
+      women with feather ornaments and red urucum body paint, depicted with dignity; Portuguese sailors in linen
+      and wool; today ordinary tropical clothes with indigo cloth common
+    vehicles: >-
+      large lashed-plank ships with square indigo cotton sails and steering oars, Niger pirogues, Tupi dugouts,
+      Portuguese carracks, today river ferries
+    street: >-
+      gold dust in leather bags, cowries, manioc baskets, indigo cloth on lines, red earth, Atlantic forest
+    light: warm Sahel dawn, hard equatorial noon, green river light under forest, tropical dusk
+    palette: red earth, indigo, gold, forest green, imperial gold accent
+    forbidden: >-
+      Egyptian pyramids, tribal caricature, Hollywood jungle clichés, text, European flags before 1500
+  cost: >-
+    Contact kills in every timeline: the fleet carries measles and smallpox as surely as any caravel, so the great
+    dying of the Americas begins in 1312 instead of 1492. First contact changes the century and the language of
+    a continent; it never changes the virus.
+beats:
+- id: hook
+  vo: >-
+    What if Mali found America first. Thirteen twelve. Two thousand ships sail west from Africa. In our world they
+    vanished. Here, they land in Brazil.
+  card:
+    text: WHAT IF MALI FOUND AMERICA FIRST
+    style: title
+- id: hinge
+  vo: >-
+    Mansa Musa told Cairo that the ruler before him sailed west with two thousand ships and never returned. Here
+    the current delivers them to Brazil. This is how it happens.
+  card:
+    text: 1312 · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    Year one. The fleet lands in Brazil, so first contact between the worlds is Malinke and Tupi: gold for manioc.
+    No horses, no guns. By year ten there are mud mosques on the Amazon.
+  card:
+    text: '1313'
+    style: phase
+- id: phase2
+  vo: >-
+    Year one hundred. The gold that built Timbuktu now builds ports. The Atlantic is a Malian sea, so when the Portuguese
+    arrive in fifteen hundred they find harbours, tariffs and scholars.
+  card:
+    text: '1412'
+    style: phase
+- id: phase3
+  vo: >-
+    Today. The largest city in the Americas sits at the mouth of the Amazon, because the first port was there. Half
+    of South America speaks a Malinke creole. The call to prayer carries over the river.
+  card:
+    text: TODAY
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But contact kills in every timeline. The fleet carries smallpox, so the great dying begins in thirteen
+    twelve, not fourteen ninety-two. It changes the century. Never the virus.
+  card: null
+- id: dilemma
+  vo: >-
+    That timeline never happened. Ours did. First contact from Africa, not Europe: less slavery, or just a different
+    master?
+  card:
+    text: 'First contact from Africa: less slavery, or a different master?'
+    style: question
+shots:
+- beat: hook
+  size: WIDE
+  location: Senegal river mouth, dawn, 1312
+  prompt: >-
+    hundreds of lashed-plank ships with square indigo sails crossing a river bar into the Atlantic at dawn, mud-brick
+    buildings with timber torons on the bank, crowds on the shore, warm haze, low sun from behind
+  motion: slow dolly forward, the lead ships cross the bar, sails fill, haze drifts
+  dur: 2.5
+  mode: video
+  sfx: crowd and surf
+  hero_object: true
+- beat: hook
+  size: DETAIL
+  location: Ship's deck, 1312
+  prompt: >-
+    macro, gold dust pouring from a small leather bag into a brass bowl on a ship's deck, a dark hand steadying
+    the bowl, indigo cloth beside it, dawn light from the left
+  motion: static macro, the gold pours and settles, the deck tilts gently
+  dur: 2.5
+  mode: video
+  sfx: gold dust
+- beat: hook
+  size: AERIAL
+  location: Mid-Atlantic, 1312
+  prompt: >-
+    high and slow over a vast spread of indigo-sailed ships on open ocean under trade-wind clouds, long morning
+    shadows on the swell, no land
+  motion: slow pan right across the fleet, clouds drift, sails stay rigid
+  dur: 2.5
+  mode: video
+  sfx: wind at sea
+- beat: hinge
+  size: MEDIUM
+  location: Court audience, Cairo, 1324
+  prompt: >-
+    waist-up, a tall man in white robes and gold ornaments speaking to seated scribes with reed pens in a lamp-lit
+    hall, carved wooden screens behind, warm lamp light
+  motion: slow push-in, the scribes write, lamp flames steady
+  dur: 3.5
+  mode: video
+  sfx: hall murmur
+- beat: hinge
+  size: MAP
+  location: Scholar's room, Timbuktu, 1324
+  prompt: >-
+    a parchment map of the Atlantic on a low table with ocean currents painted as sweeping arrows from Africa westward,
+    a hand tracing one arrow to the far shore, bright daylight through a carved shutter, no lettering
+  motion: the hand traces the current slowly westward, dust in the light
+  dur: 3.0
+  mode: video
+  sfx: paper
+- beat: hinge
+  size: CLOSE
+  location: Steering oar, mid-Atlantic, 1312
+  prompt: >-
+    a dark hand gripping a long steering oar, an indigo sail filling above, open ocean, hard noon sun, spray on
+    the oar
+  motion: static close, the oar leans with the swell, spray lifts
+  dur: 3.0
+  mode: video
+  sfx: bow wave
+- beat: phase1
+  size: WIDE
+  location: Bay on the Brazilian coast, 1312
+  prompt: >-
+    indigo-sailed ships at anchor in a forested bay, dugout canoes paddling out to meet them, Atlantic forest to
+    the water, soft morning light
+  motion: slow dolly forward across the bay, the canoes advance, sails stay rigid
+  dur: 3.5
+  mode: video
+  sfx: paddles
+  hero_object: true
+- beat: phase1
+  size: CLOSE
+  location: Beach, 1312
+  prompt: >-
+    a gold ear ornament passing from one hand to another over a basket of manioc roots on wet sand, red body paint
+    on one wrist, indigo cloth on the other, bright beach light
+  motion: static close, the ornament passes and the basket is lifted
+  dur: 3.0
+  mode: video
+  sfx: surf
+- beat: phase1
+  size: POV
+  location: Tupi village, 1313
+  prompt: >-
+    handheld walking into a clearing of long thatched houses, people in red body paint and people in indigo robes
+    talking by a cook fire, forest light, smoke
+  motion: handheld walk forward, smoke drifts, people turn toward camera
+  dur: 3.0
+  mode: video
+  sfx: village
+- beat: phase1
+  size: DETAIL
+  location: Amazon bank, 1322
+  prompt: >-
+    macro, a mud-brick wall with projecting timber torons beside a wide brown river, a lizard on the wall, green
+    river light, forest behind
+  motion: slow lateral track right along the wall, the lizard moves, the river flows
+  dur: 3.0
+  mode: video
+  sfx: river
+  card:
+    text: |-
+      YEAR TEN
+      MOSQUES ON THE AMAZON
+    style: stat
+- beat: phase2
+  size: AERIAL
+  location: Malian port, Brazilian coast, 1412
+  prompt: >-
+    high and slow over a port city of stepped mud-brick buildings with torons on a forested coast, a stone quay,
+    dozens of indigo-sailed ships, morning haze
+  motion: slow crane down toward the quay, ships rock, haze drifts
+  dur: 3.5
+  mode: video
+  sfx: harbour
+- beat: phase2
+  size: DETAIL
+  location: Customs house, 1412
+  prompt: >-
+    macro, hands counting cowrie shells and gold rings on a wooden counting board, a brass weight, warm daylight
+    through a carved shutter
+  motion: static macro, the hands move shells across the board
+  dur: 3.0
+  mode: video
+  sfx: cowries
+- beat: phase2
+  size: WIDE
+  location: Malian harbour, 1500
+  prompt: >-
+    three Portuguese carracks entering a harbour of stone and red earth, a customs house with indigo banners without
+    lettering, pilots in indigo rowing out, bright noon light
+  motion: slow dolly back as the carracks enter, the pilots row, banners stir
+  dur: 3.5
+  mode: video
+  sfx: harbour
+  card:
+    text: |-
+      1500
+      THE PORTUGUESE ARRIVE SECOND
+    style: stat
+- beat: phase2
+  size: MEDIUM
+  location: Courtyard, 1500
+  prompt: >-
+    waist-up, a scholar in indigo robes reading from a bound manuscript to two Portuguese officers in wool and linen
+    seated on a mat, a carved screen, warm afternoon light
+  motion: slow push-in, the scholar turns a page, the officers lean in
+  dur: 3.0
+  mode: video
+  sfx: courtyard
+- beat: phase3
+  size: WIDE
+  location: Amazon-mouth metropolis, today
+  prompt: >-
+    a river metropolis of stepped concrete buildings studded with toron-like beams, tapering minarets, ferries on
+    a brown river, forest beyond, tropical afternoon light
+  motion: slow dolly forward over the water, ferries cross, buildings stay rigid
+  dur: 3.5
+  mode: video
+  sfx: ferry horn
+- beat: phase3
+  size: POV
+  location: Market street, today
+  prompt: >-
+    handheld walking through a covered market with bolts of indigo cloth, sacks of manioc flour and gold jewellery
+    stalls, tropical light through gaps in the roof
+  motion: handheld walk forward, cloth sways, a vendor turns
+  dur: 3.0
+  mode: video
+  sfx: market
+- beat: phase3
+  size: DETAIL
+  location: Minaret, today, sunset
+  prompt: >-
+    macro, the tapering top of a minaret with projecting timber beams against an orange sunset, swifts circling,
+    warm last light
+  motion: slow crane up the minaret, swifts circle, light fades
+  dur: 3.0
+  mode: video
+  sfx: swifts
+- beat: phase3
+  size: MEDIUM
+  location: River ferry, today, dusk
+  prompt: >-
+    waist-up, a crowded river ferry deck at dusk, passengers in indigo and in ordinary tropical clothes, the lit
+    city behind, warm deck lamps
+  motion: slow lateral track right along the rail, the city slides past, people talk
+  dur: 3.0
+  mode: video
+  sfx: ferry
+- beat: turn
+  size: WIDE
+  location: Tupi village, 1313, dusk
+  prompt: >-
+    long thatched houses at dusk with cook fires untended, hammocks hanging empty under the eaves, smoke, a single
+    figure sitting at a doorway, blue shadow
+  motion: very slow dolly forward, smoke drifts, a hammock stirs
+  dur: 4.5
+  mode: video
+  sfx: evening forest
+- beat: turn
+  size: CLOSE
+  location: Longhouse, 1313
+  prompt: >-
+    a woven hammock swinging empty inside a longhouse, light through thatch in thin lines, a clay bowl on the floor
+    beneath it
+  motion: static close, the hammock swings slowly to rest, light lines shift
+  dur: 4.0
+  mode: video
+  sfx: hammock creak
+- beat: turn
+  size: DETAIL
+  location: Beach, 1320
+  prompt: >-
+    macro, a furled indigo sail rotting on a beached ship's hull, salt-bleached, a crab in the folds, soft morning
+    light
+  motion: slow lateral track right along the sail, the crab moves, cloth stirs
+  dur: 4.0
+  mode: video
+  sfx: surf
+  hero_object: true
+- beat: dilemma
+  size: CLOSE
+  location: Beach, Brazilian coast, dawn, 1312
+  prompt: >-
+    a dark hand and a red-painted hand clasped at the wrist over wet sand, an indigo sleeve and a feather bracelet,
+    dawn light, surf foam
+  motion: static close, the grip holds, surf runs up the sand and withdraws
+  dur: 3.5
+  mode: video
+  sfx: surf
+- beat: dilemma
+  size: WIDE
+  location: Mid-Atlantic, dawn, 1312
+  prompt: >-
+    the indigo fleet mid-ocean at dawn, sails catching the first light, a line of ships to the horizon, pale sky
+  motion: very slow dolly back, sails fill, light rises
+  dur: 5.5
+  mode: video
+  sfx: wind at sea
+  hero_object: true
+dilemma: 'First contact from Africa instead of Europe: less slavery, or just a different master?'
+pinned_comment: >-
+  A different master. Mali ran on gold, salt and captives like every empire of its century. A Malian Atlantic has
+  plantations by fourteen hundred; the only question is who is working them.
+metadata:
+  cover_time: 0.8
+  second_comment: >-
+    Less. The Atlantic slave trade needed sugar, cannon, and a two-century head start for European ships. A Malian
+    Brazil trading gold for manioc without horses or guns is a trading world, not a plantation one.
+  hashtags:
+  - '#alternatehistory'
+  - '#history'
+  - '#whatif'
+  - '#mali'
+  - '#neverfell'
+  replies_to_prepare:
+  - Abu Bakr II is a myth
+  - Those ships could not cross the Atlantic

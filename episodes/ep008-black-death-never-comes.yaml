@@ -1,0 +1,366 @@
+id: ep008-black-death-never-comes
+series: the-hinge
+series_number: 3
+pillar: the-hinge
+title: The Black Death Never Comes
+hook_title: WHAT IF THE BLACK DEATH NEVER CAME
+file_number: FILE B-0008
+target_duration: 80
+stamp_text: NEVER HAPPENED
+voice:
+  direction: calm dry archivist, British-leaning, unhurried, low-mid pitch, lets facts land
+  voice_type: preset
+  voice_id: 30fc8796-ceb6-4a66-b3a7-4a145ef7f346
+music:
+  mood: a single sustained low note that resolves at the turn, a slow church bell under the phases
+  cue: assets/music/the-hinge-03.mp3
+look_key_prompt: >-
+  empty establishing frame of Messina harbour at dawn in 1347, a stone mole, a harbour chain, limestone warehouses,
+  calm grey-green water with no galleys, Etna faint beyond, cold low sun
+research:
+  hinge: >-
+    In October 1347 Genoese galleys from Kaffa on the Black Sea brought plague into Messina; within five years the
+    pandemic killed roughly a third to a half of Europe's population. In this timeline a storm sinks the galleys
+    off Crete and the plague never crosses.
+  hinge_date: October 1347
+  sources:
+  - 'Ole Benedictow, The Black Death 1346-1353: The Complete History (2004)'
+  - >-
+    Michele da Piazza, Chronica (the Messina arrival, October 1347); Gabriele de' Mussis, Historia de Morbo (Kaffa)
+  - >-
+    Voigtländer & Voth, The Three Horsemen of Riches: Plague, War, and Urbanization in Early Modern Europe, Review
+    of Economic Studies 80 (2013)
+  - >-
+    Robert Allen, The British Industrial Revolution in Global Perspective (2009), on high wages and mechanisation
+  - >-
+    Statute of Labourers (1351) and the English Rising of 1381, as consequences of the labour shortage
+  facts:
+  - >-
+    Europe held roughly seventy-five million people before the plague; between twenty-five and fifty million died
+    by 1353.
+  - Labour became scarce, so real wages in England roughly doubled over the following century.
+  - Lords tried to freeze wages by law in 1351; the Rising of 1381 was the response.
+  - >-
+    Economists argue the plague's high wages pushed Europe toward labour-saving machines and later toward industry.
+  - >-
+    Famine had struck Europe in 1315 to 1317 because population had outrun the land; without the plague that pressure
+    stays.
+  era_sheet:
+    timeline: >-
+      1347 Messina; 1357 and 1447 rural and urban Europe; the present day of a crowded, poor, aristocratic Europe
+    architecture: >-
+      limestone harbour moles and warehouses, wattle-and-daub villages, walled towns with timber-framed houses;
+      today intact palaces behind high walls with brick slums at their feet, mills on rivers, no factories
+    clothing: >-
+      serfs in undyed wool tunics and hoods, lords in fur-trimmed wool, bailiffs with staffs; today worn wool, bicycles,
+      caps, few cars
+    vehicles: Genoese galleys, ox carts, water mills; today bicycles and horse carts, a rare car
+    street: scythes, an iron-bound wooden grain measure, strip fields, tally sticks, coal smoke
+    light: >-
+      stormy night at sea, grey Messina dawn, summer harvest light, grey famine winter, smoky morning today
+    palette: wool grey, straw gold, limestone, crimson accent on the grain measure's iron bands
+    forbidden: skeletons, plague doctor masks, rats as a motif, cartoon squalor, text
+  cost: >-
+    The plague was the worst thing that ever happened to Europe and the reason it got rich: high wages bought machines,
+    empty land bought freedom, and fifty million deaths bought the modern world. Without it Europe stays crowded,
+    poor and feudal.
+beats:
+- id: hook
+  vo: >-
+    What if the Black Death never came. Thirteen forty-seven. Twelve ships from Kaffa sail into Messina. Here, a
+    storm sinks them off Crete. Fifty million people live.
+  card:
+    text: WHAT IF THE BLACK DEATH NEVER CAME
+    style: title
+- id: hinge
+  vo: >-
+    Plague reached Europe on Genoese ships in thirteen forty-seven. In five years it killed a third of the continent.
+    Here, the ships never arrive. This is how it happens.
+  card:
+    text: OCTOBER 1347 · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    Year ten. Fifty million people are alive, so there is no shortage of hands. Wages stay low. Serfs stay serfs,
+    because a lord can always find another. The peasant revolts never come.
+  card:
+    text: '1357'
+    style: phase
+- id: phase2
+  vo: >-
+    Year one hundred. Every field is farmed, so every bad harvest is a famine. Nobody buys a machine that saves
+    labour, because labour is cheaper than iron. The printing press waits.
+  card:
+    text: '1447'
+    style: phase
+- id: phase3
+  vo: >-
+    Today. Europe has a billion people and the income of Bangladesh. Land is everything, so the nobility never left.
+    Industry starts somewhere the plague did reach, a century late, not here.
+  card:
+    text: TODAY
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But the ledger is uncomfortable. The plague was the worst thing that happened to Europe, and the reason
+    it got rich. High wages bought machines. Empty land bought freedom. Fifty million deaths bought the modern world.
+  card: null
+- id: dilemma
+  vo: >-
+    That timeline never happened. Ours did. So: fifty million live, and Europe stays poor. Do you take that trade?
+  card:
+    text: Fifty million live. Europe stays poor. Do you take the trade?
+    style: question
+shots:
+- beat: hook
+  size: WIDE
+  location: Off Crete, night, October 1347
+  prompt: >-
+    a Genoese galley foundering in a night storm off a rocky coast, mast snapped, oars trailing, lightning lighting
+    the spray, black water
+  motion: slow dolly back as the galley rolls, spray flies, lightning flashes once
+  dur: 2.5
+  mode: video
+  sfx: storm at sea
+- beat: hook
+  size: DETAIL
+  location: Messina harbour, dawn, 1347
+  prompt: >-
+    macro, a rusted harbour chain hanging slack across calm water at a stone mole, barnacles, no ships, cold dawn
+    light on the links
+  motion: static macro, the chain sways slightly, water laps
+  dur: 2.5
+  mode: video
+  sfx: harbour quiet
+- beat: hook
+  size: MEDIUM
+  location: Market square, Siena, 1348, morning
+  prompt: >-
+    waist-up, a crowded market of families in wool and linen buying bread and cheese, stalls, a fountain, bright
+    spring morning light on a brick square
+  motion: slow lateral track right through the crowd, people haggle, a basket is lifted
+  dur: 2.5
+  mode: video
+  sfx: market
+- beat: hinge
+  size: CLOSE
+  location: Monastery, 1347, night
+  prompt: >-
+    a monk's hand writing in a chronicle with a quill, the lines illegible, a tallow candle, a window of black night
+    behind
+  motion: static close, the quill moves, candle flame leans, the hand pauses
+  dur: 3.5
+  mode: video
+  sfx: quill
+- beat: hinge
+  size: MAP
+  location: Chart room, Genoa, 1347
+  prompt: >-
+    a parchment map of the Mediterranean on an oak table, a hand tracing a route with a finger from the Black Sea
+    west toward Sicily and then lifting away, candle and window light, lettering illegible
+  motion: the finger traces slowly and lifts, candle flame steady
+  dur: 3.0
+  mode: video
+  sfx: paper
+- beat: hinge
+  size: AERIAL
+  location: Messina harbour, dawn, 1347
+  prompt: >-
+    high and slow over a harbour of stone moles and limestone warehouses at dawn, the water empty of galleys, fishing
+    boats only, Etna faint on the horizon
+  motion: slow pan left over the empty harbour, boats rock, haze drifts
+  dur: 3.0
+  mode: video
+  sfx: gulls
+- beat: phase1
+  size: WIDE
+  location: Manor fields, England, 1357, summer
+  prompt: >-
+    dozens of serfs in undyed wool scything a strip field in a line, a lord in fur-trimmed wool on horseback watching,
+    a bailiff with a staff, hot summer light, dust
+  motion: slow lateral track left along the line of scythes, dust drifts, the horse shifts
+  dur: 3.5
+  mode: video
+  sfx: scythes
+  card:
+    text: |-
+      50,000,000
+      STILL ALIVE
+    style: stat
+- beat: phase1
+  size: DETAIL
+  location: Manor barn, 1357
+  prompt: >-
+    macro, an iron-bound wooden grain measure being struck level with a stick by a bailiff's hand, grain spilling,
+    a tally stick beside it, barn light through gaps in the boards
+  motion: static macro, the stick strikes the grain level, dust in the light
+  dur: 3.0
+  mode: video
+  sfx: grain
+  hero_object: true
+- beat: phase1
+  size: POV
+  location: Manor gate, 1357
+  prompt: >-
+    handheld in a queue of labourers in wool hoods at a manor gate, a bailiff pointing people away, the gatehouse
+    arch, grey morning light
+  motion: handheld shuffle forward, the bailiff's arm points, the queue shifts
+  dur: 3.0
+  mode: video
+  sfx: crowd murmur
+- beat: phase1
+  size: MEDIUM
+  location: Village, 1357, dusk
+  prompt: >-
+    waist-up, a wattle-and-daub village lane crowded with families at dusk, cook smoke, pigs, a church tower behind,
+    warm low light
+  motion: slow push-in down the lane, smoke drifts, people move between doors
+  dur: 3.5
+  mode: video
+  sfx: village
+- beat: phase2
+  size: AERIAL
+  location: Walled town, 1447, autumn
+  prompt: >-
+    high and slow over a walled town with timber-framed houses packed inside, every field outside farmed to the
+    walls, no woodland, grey autumn light
+  motion: slow crane down toward the walls, smoke rises from the roofs
+  dur: 3.5
+  mode: video
+  sfx: town
+- beat: phase2
+  size: CLOSE
+  location: Granary, 1447, winter
+  prompt: >-
+    a hand scraping the last grain from the bottom of the iron-bound grain measure, cold winter light, frost on
+    the barn boards
+  motion: static close, the hand scrapes and lifts a few grains
+  dur: 3.0
+  mode: video
+  sfx: grain
+  hero_object: true
+- beat: phase2
+  size: WIDE
+  location: Town street, 1447, winter
+  prompt: >-
+    a famine procession on a muddy street between timber-framed houses, thin people with empty baskets, a cart of
+    turnips guarded by men with staffs, grey flat light
+  motion: slow dolly back ahead of the procession, the cart creaks, breath fogs
+  dur: 3.5
+  mode: video
+  sfx: cart on mud
+- beat: phase2
+  size: DETAIL
+  location: Scriptorium, 1447
+  prompt: >-
+    macro, a scribe's hand copying a page by candlelight, the letters illegible, no printing press anywhere, a stack
+    of hand-copied quires, candle
+  motion: static macro, the pen moves across the page, candle flame leans
+  dur: 3.0
+  mode: video
+  sfx: pen on parchment
+  card:
+    text: |-
+      1447
+      NO PRINTING PRESS
+    style: stat
+- beat: phase3
+  size: WIDE
+  location: Capital city, today, morning
+  prompt: >-
+    a palace behind high walls with a brick slum built against its base, bicycles and a horse cart on a cobbled
+    road, coal smoke, hazy morning light
+  motion: slow dolly forward along the road, bicycles pass, smoke drifts
+  dur: 3.5
+  mode: video
+  sfx: bicycle bells
+- beat: phase3
+  size: POV
+  location: City street, today
+  prompt: >-
+    handheld cycling through a crowded cobbled street, laundry lines overhead, a tram bell, people in worn wool,
+    flat grey light
+  motion: handheld ride forward, laundry sways, people step aside
+  dur: 3.0
+  mode: video
+  sfx: street
+- beat: phase3
+  size: CLOSE
+  location: Mill yard, today
+  prompt: >-
+    the iron-bound wooden grain measure on a mill counter being filled a few handfuls at a time while a worker's
+    open palm holds a few brass coins, a mill wheel turning behind, water spray, grey light
+  motion: static close, the hand closes on the coins, the wheel turns
+  dur: 3.0
+  mode: video
+  sfx: mill wheel
+  hero_object: true
+- beat: phase3
+  size: MAP
+  location: Relief globe, today
+  prompt: >-
+    a physical relief globe on a stand, a hand placing a small iron gear token on the Ganges delta and nothing on
+    Europe, lamp light
+  motion: the hand places the token and withdraws, slow push-in, lamp steady
+  dur: 3.0
+  mode: video
+  sfx: token on globe
+- beat: turn
+  size: WIDE
+  location: River valley, England, today
+  prompt: >-
+    a river valley with water mills and weirs but no chimneys, sheep on the hills, a stone bridge, soft afternoon
+    light
+  motion: very slow crane up over the valley, the wheels turn, sheep move
+  dur: 4.5
+  mode: video
+  sfx: river
+- beat: turn
+  size: DETAIL
+  location: Lord's table, today
+  prompt: >-
+    macro, the iron-bound grain measure heaped and overflowing on a polished table, a silver candlestick, warm candle
+    light
+  motion: static macro, a few grains slide off the heap, flame steady
+  dur: 4.0
+  mode: video
+  sfx: grain
+  hero_object: true
+- beat: turn
+  size: MEDIUM
+  location: Stone bridge, today
+  prompt: >-
+    waist-up, workers in worn wool caps leaning on a stone bridge watching a mill wheel turn, their backs to camera,
+    spray in the air, grey light
+  motion: slow push-in, the wheel turns, a cap is removed
+  dur: 4.0
+  mode: video
+  sfx: mill wheel
+- beat: dilemma
+  size: WIDE
+  location: Messina harbour, dawn, October 1347
+  prompt: >-
+    twelve Genoese galleys rowing into a harbour at dawn past a stone mole, oars rising together, pale sky, the
+    harbour chain being lowered
+  motion: very slow dolly back as the galleys enter, oars rise and fall
+  dur: 5.5
+  mode: video
+  sfx: oars
+dilemma: Fifty million live. Europe stays poor. Do you take the trade?
+pinned_comment: >-
+  I take it. Fifty million people is fifty million people. The modern world would still have arrived, from somewhere,
+  a century late. A century is nothing. A grandmother is not.
+metadata:
+  cover_time: 0.6
+  second_comment: >-
+    No. A crowded feudal Europe is not the same number of people living gently; it is famine every decade, serfdom
+    until the nineteen hundreds, and no vaccines, ever. The plague paid for the vaccines.
+  hashtags:
+  - '#alternatehistory'
+  - '#history'
+  - '#whatif'
+  - '#blackdeath'
+  - '#thehinge'
+  replies_to_prepare:
+  - The plague would have arrived by another route anyway
+  - China had plague too and didn't industrialise
