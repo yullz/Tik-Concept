@@ -51,16 +51,24 @@ Ten million is reachable in month one only with (a) ≥ 150 posts across surface
 | 3 | 7 masters + 4 replies | Same cadence; schedule all posts in the two best hour slots found in week 1–2 | Series momentum: every end card teases the next in-series episode |
 | 4 | 7 masters + 4 replies + 2 "best of timeline" compilations (90 s) | Same | Push the breakouts: reply videos on the top three, duet/stitch-friendly cuts |
 
-## Launch sequence (the first 72 hours decide the month)
+## Launch sequence (the first week decides the month)
+
+The launch set is eight premises anyone on Earth understands without knowing a single date.
+Each is a "tomorrow morning" counterfactual with a sourced mechanism and a real dilemma; the
+history series starts only once the account has an audience that already trusts the format.
 
 | Slot | Episode | Why this one here |
 |---|---|---|
-| Day 1, 18:00 | **Rome Never Fell** (`FILE B-0001`) | The premise everyone understands in four words, the most iconic impossible image we own (jets with eagles over a roofed Colosseum), and the biggest argument magnet. Pinned comment takes the Rome side. |
-| Day 2, 07:00 | **The Ocean Dries Up Tonight** (`B-0002`) | The share engine: kid-safe, global, physics; the hook image (a container ship upright on a dry seabed with the tide line a kilometre above it) stops a thumb cold. |
-| Day 2, 18:00 | **The Asteroid Hits Twenty Minutes Later** (`B-0003`) | Novel, sourced hinge (impact angle and location), the dinosaur audience is enormous, and the dilemma (would mammals ever get their turn) splits the room. |
-| Day 3, 07:00 | **The Moon Is Gone** (`B-0004`) | The second physics tent-pole; "you wake up and look up" hooks test the POV pattern. |
-| Day 3, 18:00 | **Columbus Turns Back** (`B-0005`) | First pure Hinge episode; strong in ES and PT markets on day one of those accounts. |
-| Day 4–7 | Constantinople Holds; Mali Reaches Brazil; Antibiotics in 1300; The Internet in 1950; Horses Never Left America | Pillar rotation, two reply episodes from the Rome and asteroid comment threads on days 5 and 7 |
+| Day 1, 18:00 | **The Moon Is Gone** (`FILE B-0001`) | "You wake up and look up" is the most universal hook we own; tides, dark nights and a wandering axis escalate cleanly; the dilemma (dark, tide or tilt) splits the room. |
+| Day 2, 07:00 | **The Earth Stops Spinning** (`B-0002`) | Physics everyone has wondered about; the oceans migrating to the poles is a one-image hook; the Foucault pendulum is a through-line people screenshot. |
+| Day 2, 18:00 | **All the Ice Melts This Week** (`B-0003`) | The drowned-skyline image stops thumbs; the turn (salt, not water) is the thing nobody expects; Antarctica as the last unclaimed land is an argument generator. |
+| Day 3, 07:00 | **The Internet Goes Dark for a Year** (`B-0004`) | Modern, personal, immediate: the bakery card machine saying no. City vs village is a dilemma everyone has a side on. |
+| Day 3, 18:00 | **Sleep Takes One Hour** (`B-0005`) | Upbeat premise with a dark turn (the night becomes a shift); the most shareable of the set. |
+| Day 4, 07:00 | **Money Vanishes at Midnight** (`B-0006`) | The counterintuitive mechanism (money reinvented in nine hours) plus a moral dilemma (debts erased, savings too). |
+| Day 4, 18:00 | **The Signal Comes Tomorrow** (`B-0007`) | The reply debate is the best comment engine in the set; sourced protocol, no aliens on screen. |
+| Day 5, 07:00 | **Every Human Vanishes Tonight** (`B-0008`) | The bridge through-line and the Chernobyl fact; the three-way ending (pyramid, plastic, probe) is built for arguments. |
+| Day 5–7 | The Ocean Dries Up Tonight (`B-0009`), The Asteroid Hits Twenty Minutes Later (`B-0010`), two reply episodes | Two more broad premises, then the first replies from the Moon and Ice threads |
+| Week 2 onward | Rome Never Fell (`B-0011`), Columbus Turns Back, Constantinople Holds, Mali Reaches Brazil, The Black Death Never Comes, The Internet in 1950, Horses Never Left America | The history series, introduced once the audience trusts the format |
 
 Rules for the first week: reply to every argument in the first hour; pin the dilemma comment
 within one minute of posting; the end card of each video teases the next in its series; no post

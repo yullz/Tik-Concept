@@ -6,7 +6,7 @@
 | Weekly production runs: research sheets, episode scripts, shot lists, keyframe and motion prompts, metadata, localisations, reply-episode drafts, scorecard pre-fill | **Claude Opus 5.5** (`claude-opus-5-5`) | `pipeline/llm.py`, invoked by `python -m pipeline write`, `research`, `metadata`, `localize` |
 | Image keyframes | Higgsfield · Nano Banana Pro (`nano_banana_pro`) | `pipeline/visuals.py` |
 | Motion clips | Higgsfield · Kling 3.0 (`kling3_0`), Veo 3.1 Lite as budget fallback | `pipeline/visuals.py` |
-| Narration | ElevenLabs (direct API) or ElevenLabs via Higgsfield (`text2speech_v2`, variant `elevenlabs`) | `pipeline/tts.py` |
+| Narration | ElevenLabs API, Eleven v4, the channel's own key | `pipeline/tts.py` |
 | Word alignment for captions | ElevenLabs timestamps, else faster-whisper | `pipeline/align.py` |
 | Assembly, captions, mix, QC | ffmpeg (local) | `pipeline/assemble.py`, `captions.py`, `qc.py` |
 

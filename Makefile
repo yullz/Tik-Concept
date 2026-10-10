@@ -1,5 +1,5 @@
 PY ?= python3
-EP ?= episodes/ep001-rome-never-fell.yaml
+EP ?= episodes/ep001-moon-is-gone.yaml
 
 .PHONY: help install test validate lint plan tts promptsheet assemble qc metadata dryrun all
 

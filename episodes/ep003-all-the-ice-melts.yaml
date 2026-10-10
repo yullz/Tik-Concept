@@ -1,0 +1,376 @@
+id: ep003-all-the-ice-melts
+series: tomorrow-morning
+series_number: 3
+pillar: tomorrow-morning
+title: All the Ice Melts This Week
+hook_title: WHAT IF ALL THE ICE MELTED THIS WEEK
+file_number: FILE B-0003
+target_duration: 80
+stamp_text: UNHAPPENED
+voice:
+  direction: calm, dry, unhurried documentary narrator; lets facts land
+  elevenlabs_voice_id: ''
+  model_id: eleven_v4
+  settings:
+    stability: 0.5
+    similarity_boost: 0.75
+    style: 0.15
+    speed: 0.95
+music:
+  mood: sparse piano, a rising sub bass through the phases, silence at the turn
+  cue: assets/music/tomorrow-morning-03.mp3
+look_key_prompt: >-
+  empty establishing frame of a drowned city skyline at dawn, towers standing in grey sea to their twentieth floors,
+  a church spire as an island, mist on the water, cold cyan light
+research:
+  hinge: >-
+    All of Earth's land ice, about twenty-six million cubic kilometres, mostly on Antarctica, melts over seven days.
+    Sea level rises roughly seventy metres; everything below that line, including most of the world's great ports
+    and deltas, is under water.
+  hinge_date: this week
+  sources:
+  - >-
+    National Geographic, What the World Would Look Like If All the Ice Melted (September 2013): about 216 feet (66
+    m) of sea-level rise and the resulting continental maps
+  - 'USGS, How would sea level change if all glaciers melted: about 70 metres'
+  - >-
+    Fretwell et al., Bedmap2: ice thickness and subglacial topographic model of Antarctica, The Cryosphere 7 (2013):
+    about 26.5 million km³ of ice; much of West Antarctica's bedrock below sea level
+  - >-
+    Kulp & Strauss, New elevation data triple estimates of global vulnerability to sea-level rise, Nature Communications
+    10 (2019): about one billion people live below 10 m
+  - IPCC AR6 WG1 (2021) on meltwater weakening the Atlantic overturning circulation
+  facts:
+  - >-
+    Antarctica holds about twenty-six million cubic kilometres of ice; Greenland about three million; mountain glaciers
+    add a little.
+  - >-
+    Melting all of it raises the sea by about seventy metres; Shanghai, Dhaka, Miami, Amsterdam and most of Bangladesh
+    and the Netherlands lie below that line.
+  - Roughly a billion people live within ten metres of sea level today.
+  - A flood of fresh meltwater weakens the Atlantic current that keeps north-west Europe mild.
+  - >-
+    On the 70-metre map the Amazon basin and the Mississippi valley become inland seas; Antarctica's East is high
+    bare rock.
+  - >-
+    The great river deltas, the Nile, the Ganges, the Mekong, feed hundreds of millions and are among the first
+    to go under.
+  era_sheet:
+    timeline: 'the present day: day seven, month one, year ten'
+    architecture: >-
+      real skylines partly submerged: Shanghai, Miami, Amsterdam, Dhaka; inland cities improvising harbours; tent
+      cities on hills; a bare-rock Antarctic shore
+    clothing: present-day clothes, life jackets, waders, parkas in the south
+    vehicles: >-
+      container ships anchored off drowned ports, small boats between towers, buses as ferries, helicopters
+    street: >-
+      tide marks on towers, salt-crusted fields, a drowned airport, pallets of rice, a survey flag on bare rock
+    light: grey dawn over water, hard sun on salt flats, long polar summer light in Antarctica
+    palette: sea grey, concrete, salt white, deep cyan accent
+    forbidden: tidal-wave spectacle, bodies, glowing effects, text, cartoon flooding
+  cost: >-
+    The water is not the worst of it. The deltas that feed a billion people, the Nile, the Ganges, the Mekong, are
+    under salt; the famine outlasts the flood.
+beats:
+- id: hook
+  vo: >-
+    What if all the ice melted this week. Every glacier, both ice caps, gone by Sunday. The sea rises seventy metres.
+    London is a reef.
+  card:
+    text: WHAT IF ALL THE ICE MELTED THIS WEEK
+    style: title
+- id: hinge
+  vo: >-
+    There are twenty-six million cubic kilometres of ice on Earth, nearly all on Antarctica. Here it goes in seven
+    days, and the sea climbs seventy metres. This is how it happens.
+  card:
+    text: THIS WEEK · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    Day seven. The water reaches seventy metres above the old tide, so Shanghai, Dhaka, Miami and most of the Netherlands
+    are gone. A tenth of humanity lived below ten metres. They moved uphill, or did not.
+  card:
+    text: DAY SEVEN
+    style: phase
+- id: phase2
+  vo: >-
+    Month one. The ports are under water, so the ships have nowhere to unload. Trade stops. A billion people live
+    inland, uninvited. Meltwater stalls the current that warms Europe, so Paris gets Canada's winter.
+  card:
+    text: MONTH ONE
+    style: phase
+- id: phase3
+  vo: >-
+    Year ten. The map is new. The Amazon basin is a sea. Antarctica, bare rock for the first time in thirty million
+    years, is the last unclaimed land on Earth.
+  card:
+    text: YEAR TEN
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But the water is not the worst of it. The deltas that feed a billion people, the Nile, the Ganges,
+    the Mekong, are salt now. The famine lasts longer than the flood.
+  card: null
+- id: dilemma
+  vo: >-
+    That timeline never happened. Ours did. So: uphill with everyone else, or south to the new continent?
+  card:
+    text: Uphill with everyone else, or south to the new continent?
+    style: question
+shots:
+- beat: hook
+  size: WIDE
+  location: London, day seven, dawn
+  prompt: >-
+    the top of a cathedral dome and a few tower tops standing out of a grey sea at dawn, gulls on the dome, mist
+    on the water, no land in sight, cold light
+  motion: slow dolly forward toward the dome, mist drifts, gulls lift
+  dur: 2.5
+  mode: video
+  sfx: gulls and water
+- beat: hook
+  size: DETAIL
+  location: Antarctic ice front, day three
+  prompt: >-
+    macro, meltwater streaming in sheets down a blue ice cliff, a waterfall pouring off its edge into the sea, spray,
+    hard polar sunlight
+  motion: static macro, water sheets down, spray drifts
+  dur: 2.5
+  mode: video
+  sfx: meltwater roar
+- beat: hook
+  size: MEDIUM
+  location: Rooftop, Shanghai, day seven
+  prompt: >-
+    waist-up, a family on an apartment rooftop with bags, water lapping at the floor below, towers all around standing
+    in sea, a helicopter far off, grey morning light
+  motion: static tripod with a slow push-in, water laps, the helicopter crosses behind
+  dur: 2.5
+  mode: video
+  sfx: helicopter distant
+- beat: hinge
+  size: MAP
+  location: Survey office, day one
+  prompt: >-
+    a physical relief map of the world on a table, a hand pouring water from a jug across Antarctica and watching
+    it run along the coastlines, lamp light, no lettering
+  motion: water runs along the coastlines, the hand steadies the jug, slow push-in
+  dur: 3.5
+  mode: video
+  sfx: water pour
+  card:
+    text: |-
+      70 M
+      OF SEA-LEVEL RISE
+    style: stat
+- beat: hinge
+  size: CLOSE
+  location: Antarctic shore, day five
+  prompt: >-
+    a surveyor's gloved hand on a steel pole hammered into bare grey rock newly exposed from under ice, meltwater
+    running around the boot, polar sun
+  motion: static close, meltwater runs past the boot, the hand grips the pole
+  dur: 3.0
+  mode: video
+  sfx: meltwater
+  hero_object: true
+- beat: hinge
+  size: AERIAL
+  location: Bangladesh delta, day seven
+  prompt: >-
+    high and slow over a delta where only treetops, mosque domes and the roofs of a town stand out of brown water
+    to the horizon, boats between them, flat grey light
+  motion: slow pan right over the water, boats move, roofs stay rigid
+  dur: 3.0
+  mode: video
+  sfx: high wind
+- beat: phase1
+  size: WIDE
+  location: Miami, day seven
+  prompt: >-
+    a line of beachfront towers standing in open sea to their tenth floors, a cruise ship anchored among them, small
+    boats, hard morning sun on the water
+  motion: slow lateral track right along the towers, boats rock, the ship stays rigid
+  dur: 3.5
+  mode: video
+  sfx: boats
+  card:
+    text: |-
+      1,000,000,000
+      LIVED BELOW 10 M
+    style: stat
+- beat: phase1
+  size: POV
+  location: Hill road above Amsterdam, day seven
+  prompt: >-
+    handheld walking up a crowded road with a bag over the shoulder, people with carts and bicycles, a church tower
+    standing in water in the valley below, overcast light
+  motion: handheld walk uphill, the crowd moves, the water glints below
+  dur: 3.0
+  mode: video
+  sfx: crowd
+- beat: phase1
+  size: DETAIL
+  location: Drowned apartment, Dhaka, day seven
+  prompt: >-
+    macro, a tide mark of silt across a kitchen wall and a photograph frame, water still lapping at the lower shelf,
+    light through a window
+  motion: static macro, water laps, a reflection moves on the wall
+  dur: 3.0
+  mode: video
+  sfx: water lap
+- beat: phase1
+  size: MEDIUM
+  location: Hillside camp, Netherlands, day seven, dusk
+  prompt: >-
+    waist-up, volunteers handing out blankets from a lorry on a hillside, a city's towers standing in sea below,
+    tents on the slope, warm dusk light
+  motion: slow push-in, blankets pass hand to hand, the crowd shifts
+  dur: 3.5
+  mode: video
+  sfx: camp dusk
+- beat: phase2
+  size: AERIAL
+  location: Drowned port, Rotterdam, month one
+  prompt: >-
+    high and slow over container cranes standing out of grey sea, a dozen ships anchored beyond them with nowhere
+    to go, grey light
+  motion: slow crane down toward the cranes, ships rock, water glints
+  dur: 3.5
+  mode: video
+  sfx: ship horns
+- beat: phase2
+  size: CLOSE
+  location: Inland warehouse, month one
+  prompt: >-
+    a hand lifting the last sack of rice from a pallet in an empty warehouse, a clipboard with illegible lines,
+    a forklift idle, fluorescent light
+  motion: static close, the sack lifts, dust falls from the pallet
+  dur: 3.0
+  mode: video
+  sfx: warehouse
+- beat: phase2
+  size: WIDE
+  location: Paris, month one, snow
+  prompt: >-
+    a boulevard in heavy snow, people in coats pushing bicycles, the Seine's new sea beyond the end of the street,
+    grey flat light
+  motion: slow dolly forward down the boulevard, snow falls, people move
+  dur: 3.5
+  mode: video
+  sfx: snow street
+- beat: phase2
+  size: DETAIL
+  location: Frozen fountain, Paris, month one
+  prompt: >-
+    macro, ice sheathing a bronze fountain figure, snow on its shoulder, breath fog beyond, grey light
+  motion: static macro, snow drifts onto the ice, fog drifts
+  dur: 3.0
+  mode: video
+  sfx: snow wind
+- beat: phase3
+  size: WIDE
+  location: Amazon sea, year ten
+  prompt: >-
+    a vast brown inland sea with the tops of forest trees standing out of it to the horizon, a fishing boat among
+    them, tropical afternoon light, heat haze
+  motion: slow dolly forward over the water, the boat rocks, treetops stay rigid
+  dur: 3.5
+  mode: video
+  sfx: water and birds
+- beat: phase3
+  size: POV
+  location: Antarctic shore, year ten
+  prompt: >-
+    handheld stepping off a boat onto bare grey rock and moss, a tent camp ahead, bare mountains behind with a few
+    last ice fields, long polar summer light
+  motion: handheld walk forward over the rock, tents flap, light steady
+  dur: 3.0
+  mode: video
+  sfx: polar wind
+  hero_object: true
+- beat: phase3
+  size: DETAIL
+  location: Antarctic camp, year ten
+  prompt: >-
+    macro, a survey flag on a steel pole snapping in the wind, driven into bare grey rock beside a patch of new
+    moss, polar sun
+  motion: static macro, the flag snaps, moss stirs
+  dur: 3.0
+  mode: video
+  sfx: flag in wind
+  card:
+    text: |-
+      14,000,000 KM²
+      OF NEW LAND
+    style: stat
+  hero_object: true
+- beat: phase3
+  size: MAP
+  location: Relief globe, year ten
+  prompt: >-
+    a physical relief globe with the new coastlines painted in, a hand turning it to a bare brown Antarctica, desk
+    lamp
+  motion: the hand turns the globe slowly to the south pole, lamp steady
+  dur: 3.0
+  mode: video
+  sfx: globe turn
+- beat: turn
+  size: WIDE
+  location: Former Nile delta, year ten
+  prompt: >-
+    a flat plain of white salt crust where fields were, dead palms, a sea beyond, a minaret standing in the water
+    far off, harsh noon sun
+  motion: very slow dolly forward across the salt, heat shimmer wavers
+  dur: 4.5
+  mode: video
+  sfx: hot wind
+- beat: turn
+  size: CLOSE
+  location: Former Mekong delta, year ten
+  prompt: >-
+    a farmer's hands crumbling salt-white soil over a dead rice seedling, a cracked paddy behind, flat white light
+  motion: static close, the soil crumbles and falls, the hands open
+  dur: 4.0
+  mode: video
+  sfx: dry wind
+- beat: turn
+  size: MEDIUM
+  location: Ration queue, Ganges plain, year ten
+  prompt: >-
+    waist-up, a long queue of people with bowls at a grain lorry, a soldier counting them in, dust, low afternoon
+    light
+  motion: slow lateral track left along the queue, the soldier gestures, dust drifts
+  dur: 4.0
+  mode: video
+  sfx: crowd murmur
+- beat: dilemma
+  size: WIDE
+  location: Ridge above a drowned city, dawn
+  prompt: >-
+    a figure with a pack on a ridge at dawn, a drowned city's tower tops in the sea below, a crowded road going
+    uphill on one side and a ship with a survey flag on its mast waiting at a new shore on the other, pale light
+  motion: very slow dolly back from the figure, mist drifts over the water
+  dur: 5.5
+  mode: video
+  sfx: dawn wind
+  hero_object: true
+dilemma: Uphill with everyone else, or south to the new continent?
+pinned_comment: >-
+  South. A continent the size of Europe and America together, no owners, no borders, and the only fresh ice left
+  on Earth. Antarctica in this timeline is the only place that is not already full.
+metadata:
+  cover_time: 0.9
+  second_comment: >-
+    Uphill. Antarctica is bare rock with six months of night and no soil; moss takes centuries. You cannot farm
+    a continent that has never had a worm in it. Go where the dirt is.
+  hashtags:
+  - '#whatif'
+  - '#science'
+  - '#climate'
+  - '#earth'
+  - '#tomorrowmorning'
+  replies_to_prepare:
+  - This is literally happening, just slower
+  - The ice can't melt that fast

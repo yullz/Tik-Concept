@@ -1,16 +1,21 @@
-id: ep003-asteroid-twenty-minutes
+id: ep010-asteroid-twenty-minutes
 series: the-hinge
 series_number: 1
 pillar: the-hinge
 title: The Asteroid Hits Twenty Minutes Later
 hook_title: WHAT IF THE ASTEROID MISSED
-file_number: FILE B-0003
+file_number: FILE B-0010
 target_duration: 80
-stamp_text: NEVER HAPPENED
+stamp_text: UNHAPPENED
 voice:
-  direction: calm dry archivist, British-leaning, unhurried, low-mid pitch, lets facts land
-  voice_type: preset
-  voice_id: 30fc8796-ceb6-4a66-b3a7-4a145ef7f346
+  direction: calm, dry, unhurried documentary narrator; lets facts land
+  elevenlabs_voice_id: ''
+  model_id: eleven_v4
+  settings:
+    stability: 0.5
+    similarity_boost: 0.75
+    style: 0.15
+    speed: 0.95
 music:
   mood: a single sustained low note that resolves at the turn, soft tom pulse under the phases
   cue: assets/music/the-hinge-01.mp3

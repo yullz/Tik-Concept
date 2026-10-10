@@ -1,0 +1,392 @@
+id: ep007-the-signal
+series: tomorrow-morning
+series_number: 7
+pillar: tomorrow-morning
+title: The Signal Comes Tomorrow
+hook_title: WHAT IF THE SIGNAL CAME TOMORROW
+file_number: FILE B-0007
+target_duration: 80
+stamp_text: UNHAPPENED
+voice:
+  direction: calm, dry, unhurried documentary narrator; lets facts land
+  elevenlabs_voice_id: ''
+  model_id: eleven_v4
+  settings:
+    stability: 0.5
+    similarity_boost: 0.75
+    style: 0.15
+    speed: 0.95
+music:
+  mood: >-
+    a single sustained high string, a slow repeating pulse every few bars, sub bass at the turn
+  cue: assets/music/tomorrow-morning-07.mp3
+look_key_prompt: >-
+  empty establishing frame of a high desert plateau at dawn with a large radio dish turning against a violet sky,
+  frost on the gravel, a low concrete control building with one lit window, thin cold air
+research:
+  hinge: >-
+    Tomorrow a radio observatory detects a narrow-band signal with a non-natural structure from a star about forty
+    light-years away; a second observatory confirms it, which is the step the international post-detection protocol
+    requires before announcing it to the world.
+  hinge_date: tomorrow
+  sources:
+  - >-
+    International Academy of Astronautics, Declaration of Principles Concerning Activities Following the Detection
+    of Extraterrestrial Intelligence (1989; revised 2010): confirm with independent observers, then inform the public
+    and the UN
+  - >-
+    Almar & Tarter, The discovery of ETI as a high-consequence, low-probability event: the Rio Scale (2000)
+  - >-
+    Gillon et al., Seven temperate terrestrial planets around the nearby ultracool dwarf star TRAPPIST-1, Nature
+    542 (2017): about forty light-years away
+  - >-
+    The Arecibo message of 1974 and the 1977 Wow! signal (Ohio State Big Ear), as the two reference events
+  - >-
+    Vakoch (ed.), Extraterrestrial Altruism (2014) and the 2015 statement by Hawking and others cautioning against
+    active transmission, for the METI debate
+  facts:
+  - >-
+    A signal from forty light-years away is forty years old when it arrives; a reply takes forty more to get there.
+  - >-
+    The protocol asks for independent confirmation before any announcement, and for no reply without international
+    consultation.
+  - >-
+    A sequence of prime numbers is the textbook sign of a made signal, because no known natural process produces
+    one.
+  - >-
+    Television and radar have leaked from Earth since the nineteen thirties; the strongest signals are only a few
+    decades out.
+  - >-
+    Nothing in daily life changes when the signal arrives; markets have fallen and recovered on far less.
+  era_sheet:
+    timeline: 'the present day: day one, year one, year ten'
+    architecture: >-
+      a high-desert observatory with one large dish and a low control building, a second dish array on a plain,
+      a trading floor, a cathedral square, an assembly hall, a 1930s television studio
+    clothing: parkas and headsets at the observatory, suits, robes, ordinary clothes in the square
+    vehicles: a pickup on the plateau road, none else
+    street: >-
+      a paper spectrum printout, a telephone handset, a brass star globe, punched paper tape, candles, a brass transmit
+      key
+    light: >-
+      violet high-desert dawn, cold control-room screens kept dark or blurred, warm candlelight, Milky Way nights
+    palette: desert grey, dish white, violet dawn, deep cyan accent
+    forbidden: aliens, spaceships, green lights, glowing UFOs, text on screens, Hollywood panic
+  cost: >-
+    The signal left its star forty years ago. Whoever sent it may be gone, and whatever we send reaches their grandchildren;
+    a decade is spent deciding what to say to the dead.
+beats:
+- id: hook
+  vo: >-
+    What if the signal came tomorrow. A radio telescope in Chile hears a pattern that nature cannot make. It repeats
+    every twenty-three hours. It is forty light-years away.
+  card:
+    text: WHAT IF THE SIGNAL CAME TOMORROW
+    style: title
+- id: hinge
+  vo: >-
+    The protocol was written in nineteen eighty-nine: confirm with a second telescope, then tell the world. Here,
+    the second telescope hears it too. This is how it happens.
+  card:
+    text: TOMORROW · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    Day one. Every dish on Earth turns to one star. The pattern is prime numbers, so it is not a pulsar and not
+    a prank. The markets fall nine percent and recover by Friday, because nothing has changed.
+  card:
+    text: DAY ONE
+    style: phase
+- id: phase2
+  vo: >-
+    Year one. The signal keeps coming, saying nothing new. Churches fill, then empty. A reply takes forty years
+    to arrive and forty more to answer, so the fight is over who speaks for Earth.
+  card:
+    text: YEAR ONE
+    style: phase
+- id: phase3
+  vo: >-
+    Year ten. No reply sent. One camp says they already hear our television, leaking since the nineteen thirties.
+    The other says that is exactly why we should go quiet.
+  card:
+    text: YEAR TEN
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But the signal left its star forty years ago. Whoever sent it may be gone, and whatever we send reaches
+    their grandchildren. We spent ten years deciding what to say to the dead.
+  card: null
+- id: dilemma
+  vo: >-
+    That timeline never happened. Ours did. The dish is pointed, the message written. Do we send it?
+  card:
+    text: The dish is pointed, the message is written. Do we send it?
+    style: question
+shots:
+- beat: hook
+  size: WIDE
+  location: Atacama observatory, dawn
+  prompt: >-
+    a large white radio dish turning slowly on a high desert plateau at dawn, frost on the gravel, a low concrete
+    control building with one lit window, violet sky
+  motion: slow dolly forward toward the dish as it turns a few degrees, frost glints
+  dur: 2.5
+  mode: video
+  sfx: dish motor
+  hero_object: true
+- beat: hook
+  size: DETAIL
+  location: Control room, dawn
+  prompt: >-
+    macro, a paper spectrum printout with a regular comb of sharp spikes rising from noise, the labels illegible,
+    a desk lamp, a pencil resting on it
+  motion: slow lateral track right along the spikes, the pencil rolls slightly
+  dur: 2.5
+  mode: video
+  sfx: paper
+- beat: hook
+  size: MEDIUM
+  location: Control room, dawn
+  prompt: >-
+    waist-up, an astronomer in a parka at a console with a headset half off, staring at a dark monitor, the dawn
+    window behind her, cold light and one warm lamp
+  motion: static tripod with a slow push-in, she lowers the headset, breath fogs
+  dur: 2.5
+  mode: video
+  sfx: control room hum
+- beat: hinge
+  size: CLOSE
+  location: Observatory office, morning
+  prompt: >-
+    a hand resting on a black telephone handset in its cradle, a wall clock out of focus, a printed protocol document
+    with illegible text beside it, morning light
+  motion: static close, the hand lifts the handset slowly
+  dur: 3.5
+  mode: video
+  sfx: phone lift
+  card:
+    text: |-
+      1989
+      THE PROTOCOL
+    style: stat
+- beat: hinge
+  size: MAP
+  location: Observatory library, morning
+  prompt: >-
+    a brass star globe on a wooden stand, a hand placing a small red pin on one star, morning light through a window,
+    shelves of bound volumes behind
+  motion: the hand places the pin and withdraws, slow push-in on the pin
+  dur: 3.0
+  mode: video
+  sfx: pin
+- beat: hinge
+  size: AERIAL
+  location: Dish array, South African plain, noon
+  prompt: >-
+    high and slow over a field of dozens of white dishes on a dry plain all turning together toward the same point
+    in the sky, hard noon light, long shadows
+  motion: slow pan right as the dishes turn in unison, shadows sweep
+  dur: 3.0
+  mode: video
+  sfx: high wind
+- beat: phase1
+  size: WIDE
+  location: Dish array, dusk, day one
+  prompt: >-
+    dozens of white dishes on a desert plain all pointed at one bright star low in a dusk sky, technicians standing
+    between them looking up, cold violet light
+  motion: slow crane up over the dishes, the technicians look up, dusk deepens
+  dur: 3.5
+  mode: video
+  sfx: dusk wind
+  card:
+    text: |-
+      40 LIGHT-YEARS
+      AWAY
+    style: stat
+- beat: phase1
+  size: DETAIL
+  location: Control room, day one
+  prompt: >-
+    macro, a strip of punched paper tape with holes grouped in a widening pattern, two, three, five, seven, lying
+    across a desk under a lamp, a magnifying glass beside it
+  motion: slow lateral track right along the tape, the lamp light catches the holes
+  dur: 3.0
+  mode: video
+  sfx: paper
+- beat: phase1
+  size: POV
+  location: Trading floor, day one
+  prompt: >-
+    handheld walking through a trading floor where everyone is standing still looking up at a dark wall of screens,
+    phones held loose, cold fluorescent light
+  motion: handheld walk forward, people turn their heads, nobody moves from their desk
+  dur: 3.0
+  mode: video
+  sfx: trading floor quiet
+- beat: phase1
+  size: MEDIUM
+  location: Church steps, dusk, day one
+  prompt: >-
+    waist-up, a priest in black and a woman in a parka talking on church steps at dusk, both glancing up, candles
+    being lit inside the open door behind them, warm and cold light
+  motion: slow push-in, the priest gestures to the sky, candlelight flickers behind
+  dur: 3.5
+  mode: video
+  sfx: evening bells
+- beat: phase2
+  size: AERIAL
+  location: Cathedral square, year one, dusk
+  prompt: >-
+    high and slow over a cathedral square packed with people holding candles at dusk, the cathedral facade lit,
+    a river of small lights
+  motion: slow crane down toward the crowd, candle flames flicker, the crowd sways
+  dur: 3.5
+  mode: video
+  sfx: crowd murmur
+- beat: phase2
+  size: CLOSE
+  location: Church, year one
+  prompt: >-
+    a hand lighting a candle from another in a rack of candles, most of the rack unlit, stone wall behind, warm
+    flame light
+  motion: static close, the flame catches, the hand withdraws
+  dur: 3.0
+  mode: video
+  sfx: church quiet
+- beat: phase2
+  size: WIDE
+  location: Assembly hall, year one
+  prompt: >-
+    a vast assembly hall with delegates at curved rows of desks, several standing and gesturing at once, a row of
+    plain coloured flags without emblems behind the dais, warm hall light
+  motion: slow dolly forward down the aisle, delegates gesture, an usher crosses
+  dur: 3.5
+  mode: video
+  sfx: hall argument
+  card:
+    text: |-
+      80 YEARS
+      FOR A REPLY
+    style: stat
+- beat: phase2
+  size: DETAIL
+  location: Dish drive housing, night, year one
+  prompt: >-
+    macro, the greased steel drive gears of the radio dish turning slowly inside their housing, frost on the casing,
+    a work lamp
+  motion: static macro, the gears turn one tooth, grease glints
+  dur: 3.0
+  mode: video
+  sfx: dish motor
+  hero_object: true
+- beat: phase3
+  size: WIDE
+  location: Television studio, 1936
+  prompt: >-
+    a television studio of the nineteen thirties, a bulky camera on a wooden dolly, a presenter in a suit under
+    hot lamps, technicians in shirtsleeves, monochrome tones
+  motion: slow dolly forward past the camera toward the presenter, lamp glare, a technician crosses
+  dur: 3.5
+  mode: video
+  sfx: studio hum
+- beat: phase3
+  size: POV
+  location: Radio mast, night, year ten
+  prompt: >-
+    handheld from the top of a radio mast at night, a lit city far below, the mast's red beacon pulsing beside the
+    camera, stars above
+  motion: handheld slow tilt up from the city to the stars, the beacon pulses
+  dur: 3.0
+  mode: video
+  sfx: high wind
+- beat: phase3
+  size: DETAIL
+  location: Atacama observatory, winter, year ten
+  prompt: >-
+    macro, snow on the rim of the white radio dish, the dish still, a single track of footprints in the snow below
+    it, flat winter light
+  motion: static macro, blown snow drifts off the rim, nothing else moves
+  dur: 3.0
+  mode: video
+  sfx: snow wind
+  hero_object: true
+- beat: phase3
+  size: MAP
+  location: Observatory library, year ten
+  prompt: >-
+    a physical relief globe on a stand with a single thin copper wire rising from it straight up into the dark above
+    the lamp's reach, a hand resting on the stand
+  motion: slow crane up along the wire into the dark, lamp steady below
+  dur: 3.0
+  mode: video
+  sfx: room quiet
+- beat: turn
+  size: WIDE
+  location: Atacama observatory, night, year ten
+  prompt: >-
+    the white radio dish under the full Milky Way, pointed at one star, the control building dark, cold starlight
+    on the gravel
+  motion: very slow pan right across the sky, the dish stays fixed
+  dur: 4.5
+  mode: video
+  sfx: night wind
+  hero_object: true
+- beat: turn
+  size: CLOSE
+  location: Empty church, night, year ten
+  prompt: >-
+    a single candle guttering out in an empty rack of candles, smoke rising, stone wall, blue night light from a
+    window
+  motion: static close, the flame dies, smoke curls upward
+  dur: 4.0
+  mode: video
+  sfx: church quiet
+- beat: turn
+  size: MEDIUM
+  location: Control room, night, year ten
+  prompt: >-
+    waist-up, a young woman at the observatory console reading a single printed page by lamp light, the page's text
+    illegible, the dark window behind her full of stars
+  motion: static tripod with a slow push-in, she turns the page over, lamp steady
+  dur: 4.0
+  mode: video
+  sfx: control room hum
+- beat: dilemma
+  size: CLOSE
+  location: Control room console, night
+  prompt: >-
+    a hand resting on the desk beside a brass transmit key on a console, a lamp, the hand not touching the key
+  motion: static close, the fingers lift and settle again beside the key
+  dur: 3.5
+  mode: video
+  sfx: control room hum
+- beat: dilemma
+  size: WIDE
+  location: Atacama observatory, dusk
+  prompt: >-
+    the white radio dish pointed at a single bright star low in a dusk sky, a lone figure standing at its base,
+    violet light, frost
+  motion: very slow dolly back from the figure, the star brightens as dusk deepens
+  dur: 5.5
+  mode: video
+  sfx: dusk wind
+  hero_object: true
+dilemma: The dish is pointed, the message is written. Do we send it?
+pinned_comment: >-
+  Send it. Our television has been leaking for ninety years; anyone who can hear a signal from forty light-years
+  away already knows exactly where we are. Silence buys nothing. Manners might.
+metadata:
+  cover_time: 0.8
+  second_comment: >-
+    Do not send it. A faint television leak is not a message, and a message is an address. Every species that ever
+    shouted into a dark forest learned the same lesson. We do not know who is listening.
+  hashtags:
+  - '#whatif'
+  - '#space'
+  - '#science'
+  - '#aliens'
+  - '#tomorrowmorning'
+  replies_to_prepare:
+  - The Wow! signal already happened
+  - Forty light-years is close enough to visit

@@ -1,16 +1,21 @@
-id: ep009-internet-in-1950
+id: ep016-internet-in-1950
 series: early-arrival
 series_number: 1
 pillar: early-arrival
 title: The Internet in 1950
 hook_title: WHAT IF THE INTERNET ARRIVED IN 1950
-file_number: FILE B-0009
+file_number: FILE B-0016
 target_duration: 80
-stamp_text: NEVER HAPPENED
+stamp_text: UNHAPPENED
 voice:
-  direction: calm dry archivist, British-leaning, unhurried, low-mid pitch, lets facts land
-  voice_type: preset
-  voice_id: 30fc8796-ceb6-4a66-b3a7-4a145ef7f346
+  direction: calm, dry, unhurried documentary narrator; lets facts land
+  elevenlabs_voice_id: ''
+  model_id: eleven_v4
+  settings:
+    stability: 0.5
+    similarity_boost: 0.75
+    style: 0.15
+    speed: 0.95
 music:
   mood: clockwork percussion and cello, a teletype rhythm under the phases
   cue: assets/music/early-arrival-01.mp3

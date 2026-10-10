@@ -1,0 +1,325 @@
+id: ep002-earth-stops-spinning
+series: tomorrow-morning
+series_number: 2
+pillar: tomorrow-morning
+title: "The Earth Stops Spinning"
+hook_title: "WHAT IF THE EARTH STOPPED SPINNING"
+file_number: "FILE B-0002"
+target_duration: 80
+stamp_text: "UNHAPPENED"
+voice:
+  direction: "calm, dry, unhurried documentary narrator; lets facts land"
+  elevenlabs_voice_id: ""
+  model_id: eleven_v4
+  settings: {stability: 0.5, similarity_boost: 0.75, style: 0.15, speed: 0.95}
+music:
+  mood: "sparse piano, sub bass from the hinge, a slowing metronome under the phases"
+  cue: "assets/music/tomorrow-morning-02.mp3"
+look_key_prompt: >-
+  empty establishing frame of a wheat field at a low noon sun, a single oak throwing a long shadow across the stubble,
+  a straight road to the horizon, thin cloud, the light wrong for the hour, cold cyan sky
+research:
+  hinge: >-
+    The Earth's rotation slows to a complete stop over one year. An instant stop would hurl everything at the
+    surface eastward at up to sixteen hundred kilometres an hour; the gradual version is survivable and far
+    stranger, because the spin was also holding the oceans in shape and stirring the core.
+  hinge_date: "tonight, over one year"
+  sources:
+    - "NASA, Earth Fact Sheet: equatorial rotation speed about 1,670 km/h; equatorial radius exceeds polar radius by about 21 km"
+    - "Witold Fraczek (Esri), If the Earth Stood Still: modeling the absence of centrifugal force, ArcUser (2010): oceans migrate to the poles, leaving an equatorial mega-continent"
+    - "Glatzmaier & Roberts, A three-dimensional self-consistent computer simulation of a geomagnetic field reversal, Nature 377 (1995): rotation organises the core dynamo"
+    - "Vsauce, What If the Earth Stopped Spinning (2014), for the instant-stop case and the one-year day"
+  facts:
+    - "At the equator the ground moves east at about sixteen hundred kilometres an hour; at the poles it does not move at all."
+    - "The spin bulges the planet by about twenty-one kilometres at the equator; without it the oceans drain toward the poles."
+    - "With no rotation, one solar day equals one orbit: six months of light, six months of dark."
+    - "The magnetic field comes from convection in the liquid iron outer core organised by the Earth's rotation; a non-rotating core loses that organisation."
+    - "Jet streams and trade winds exist because of the Coriolis effect, which vanishes with the spin."
+  era_sheet:
+    timeline: "the present day, over one year"
+    architecture: "real places: a Kansas wheat farm, a Foucault pendulum in a science museum, a Singapore quay, the Siberian coast, a mountain town at the terminator"
+    clothing: "ordinary present-day clothes, parkas in the night zone, sun hoods in the day zone"
+    vehicles: "airliners rerouting, a harbour ferry stranded by a falling tide, lorries in convoy toward the dusk line"
+    street: "a brass Foucault pendulum over floor markers, a sundial, a tide gauge, cracked mud, frost on the far side"
+    light: "a sun that hangs too long: long noons, long dusks; six-month night lit by aurora and headlamps"
+    palette: "wheat gold, cold cyan sky, brass, frost grey, deep cyan accent"
+    forbidden: "people flung through the air, exploding buildings, glowing effects, text, cartoon physics"
+  cost: >-
+    The spin did one more job: it organised the churning iron of the outer core into the magnetic field that
+    deflects the solar wind. Without rotation the field decays, and the solar wind begins to strip the upper
+    atmosphere, slowly, the way it did to Mars.
+beats:
+  - id: hook
+    vo: >-
+      What if the Earth stopped spinning. Not all at once, that would kill everyone by lunch. Slowly, over one year.
+      Day one feels normal. Day three hundred lasts six months.
+    card: {text: "WHAT IF THE EARTH STOPPED SPINNING", style: title}
+  - id: hinge
+    vo: >-
+      The ground under you is moving at one thousand six hundred kilometres an hour. Here it slows, a little each
+      day, until a year from now it stops. This is how it happens.
+    card: {text: "TONIGHT · THE HINGE", style: date}
+  - id: phase1
+    vo: >-
+      Month three. Days are forty hours long, so noon is hotter and midnight is colder than anything on record.
+      Crops bolt. Flights reroute, because the winds have changed.
+    card: {text: "MONTH THREE", style: phase}
+  - id: phase2
+    vo: >-
+      Month nine. The spin held a bulge of ocean at the equator twenty-one kilometres high. As it fades the water
+      drains to the poles, so Canada drowns and the equator rises as one dry continent.
+    card: {text: "MONTH NINE", style: phase}
+  - id: phase3
+    vo: >-
+      Year one. The Earth stands still. A day now lasts a year: six months of sun, six months of night. Eight
+      billion people live on a strip near the terminator, chasing the dusk.
+    card: {text: "YEAR ONE", style: phase}
+  - id: turn
+    vo: >-
+      [exhale] But the spin did one more job. It stirred the liquid iron in the core that makes the magnetic field.
+      Without it the field fades, and the solar wind begins to strip the air.
+    card: null
+  - id: dilemma
+    vo: >-
+      That timeline never happened. Ours did. So: the day side, or the night side?
+    card: {text: "The day side, or the night side?", style: question}
+shots:
+  - beat: hook
+    size: WIDE
+    location: "Wheat farm, Kansas, noon"
+    prompt: >-
+      a lone oak throwing an impossibly long shadow across a stubble field at what should be noon, the sun hanging
+      low and white, a grain elevator on the horizon, thin cloud, cold light
+    motion: "slow dolly forward along the shadow, wheat stubble stirs, the sun stays fixed"
+    dur: 2.5
+    mode: video
+    sfx: "prairie wind"
+  - beat: hook
+    size: DETAIL
+    location: "Science museum, Foucault pendulum, morning"
+    prompt: >-
+      macro, a brass Foucault pendulum bob swinging slowly above a ring of small brass markers on a stone floor,
+      half the markers already knocked flat, daylight from a dome above
+    motion: "static macro, the bob swings through once, a marker tips over"
+    dur: 2.5
+    mode: video
+    sfx: "pendulum"
+    hero_object: true
+  - beat: hook
+    size: MEDIUM
+    location: "Kitchen window, Lisbon, midnight"
+    prompt: >-
+      waist-up, a man in a dressing gown at a kitchen window holding a mug, the sun still above the rooftops
+      outside, a wall clock out of focus behind him, warm kitchen lamp mixed with low sunlight
+    motion: "static tripod with a slow push-in, he lifts the mug, curtains stir"
+    dur: 2.5
+    mode: video
+    sfx: "kitchen quiet"
+  - beat: hinge
+    size: MAP
+    location: "Observatory, night"
+    prompt: >-
+      a physical relief globe on a brass stand being slowed by a hand resting against it, a desk lamp, the hand
+      pressing a little harder, the globe's shadow on the wall
+    motion: "the globe turns slower and slower under the hand, lamp steady, slow push-in"
+    dur: 3.5
+    mode: video
+    sfx: "globe turn"
+    card: {text: "1,600 KM/H\nTHE GROUND, RIGHT NOW", style: stat}
+  - beat: hinge
+    size: CLOSE
+    location: "Harbour wall, Singapore, dusk"
+    prompt: >-
+      a brass sundial on a harbour wall with its shadow lying still, barnacled stone, a tide gauge beyond, warm
+      dusk light that does not change
+    motion: "static close, the shadow does not move, a gull lands and leaves"
+    dur: 3.0
+    mode: video
+    sfx: "harbour"
+  - beat: hinge
+    size: AERIAL
+    location: "Equatorial coast, dusk"
+    prompt: >-
+      high and slow over a tropical coastline at a dusk that lingers, long shadows of palms across a beach,
+      container ships waiting at anchor, warm low light
+    motion: "slow pan right along the coast, ships rock gently, shadows stay long"
+    dur: 3.0
+    mode: video
+    sfx: "high wind"
+  - beat: phase1
+    size: WIDE
+    location: "Wheat farm, Kansas, month three, noon"
+    prompt: >-
+      a wheat field bolted to seed under a hard white sun, a farmer in a hat standing in it, a combine stopped at
+      the edge, heat shimmer, bleached sky
+    motion: "slow crane up over the field, heat shimmer wavers, the farmer turns"
+    dur: 3.5
+    mode: video
+    sfx: "hot wind"
+    card: {text: "40-HOUR DAYS\nMONTH THREE", style: stat}
+  - beat: phase1
+    size: DETAIL
+    location: "Science museum, month three"
+    prompt: >-
+      macro, the Foucault pendulum's brass bob swinging through a slow arc, most floor markers flat, dust on the
+      stone, daylight from the dome
+    motion: "static macro, a slow swing, dust drifts"
+    dur: 3.0
+    mode: video
+    sfx: "pendulum"
+    hero_object: true
+  - beat: phase1
+    size: POV
+    location: "Airliner window, month three"
+    prompt: >-
+      handheld through an airliner window, the wing tilted in a long turn over cloud lit from a strange low angle,
+      a sun that should be overhead sitting on the horizon
+    motion: "handheld, the wing banks slowly, clouds slide below"
+    dur: 3.0
+    mode: video
+    sfx: "cabin"
+  - beat: phase1
+    size: MEDIUM
+    location: "Midnight street, Cairo, month three"
+    prompt: >-
+      waist-up, people in coats on a city street at midnight under frost, breath fogging, shop shutters down,
+      a sodium lamp and starlight
+    motion: "slow lateral track left along the shutters, breath fog drifts, a shutter rattles"
+    dur: 3.5
+    mode: video
+    sfx: "night street"
+  - beat: phase2
+    size: AERIAL
+    location: "Siberian coast, month nine"
+    prompt: >-
+      high and slow over a flat northern coast where the sea has pushed kilometres inland, roofs and a radio mast
+      standing out of grey water, pack ice drifting between them, pale light
+    motion: "slow pan left over the drowned coast, ice drifts, water glints"
+    dur: 3.5
+    mode: video
+    sfx: "high wind"
+    card: {text: "21 KM\nOF OCEAN BULGE, GONE", style: stat}
+  - beat: phase2
+    size: CLOSE
+    location: "Harbour wall, Singapore, month nine"
+    prompt: >-
+      the brass tide gauge on a harbour wall with the water far below its lowest mark, dry weed, a crab on the
+      stone, hard noon light
+    motion: "static close, the crab crosses, weed stirs in the wind"
+    dur: 3.0
+    mode: video
+    sfx: "wind over stone"
+  - beat: phase2
+    size: WIDE
+    location: "Former seabed, equator, month nine"
+    prompt: >-
+      a dry seabed at the equator with the hull of a stranded ferry leaning on cracked mud, a new coastline far
+      behind, people walking out across the mud with carts, harsh noon light
+    motion: "slow dolly forward across the mud, people walk, the ferry stays rigid"
+    dur: 3.5
+    mode: video
+    sfx: "wind over salt"
+  - beat: phase2
+    size: DETAIL
+    location: "Former seabed, equator, month nine"
+    prompt: >-
+      macro, cracked grey mud with a dead starfish and a snagged fishing net, salt crystals forming, hard sun
+    motion: "static macro, heat shimmer, a crack widens slowly"
+    dur: 3.0
+    mode: video
+    sfx: "heat crackle"
+  - beat: phase3
+    size: WIDE
+    location: "Terminator town, Andes, year one"
+    prompt: >-
+      a mountain town at permanent dusk, the sun sitting on the horizon, one side of the valley in orange light
+      and the other in blue shadow, tents and lorries filling the slopes, thin air haze
+    motion: "very slow dolly forward through the camp, people move between tents, light fixed"
+    dur: 3.5
+    mode: video
+    sfx: "camp"
+    card: {text: "6 MONTHS\nOF NIGHT", style: stat}
+  - beat: phase3
+    size: POV
+    location: "Convoy road, year one"
+    prompt: >-
+      handheld from a lorry cab following a convoy along a ridge road toward a horizon where the sun sits half
+      set, dust, the shadow side of the ridge in frost
+    motion: "handheld drive forward, the convoy sways, dust drifts across the sun"
+    dur: 3.0
+    mode: video
+    sfx: "convoy"
+  - beat: phase3
+    size: DETAIL
+    location: "Science museum, year one, dusk light through the dome"
+    prompt: >-
+      macro, the Foucault pendulum's brass bob hanging dead still on its wire above a floor of flattened markers,
+      dust on the bob, dim dusk light from the dome
+    motion: "static macro, nothing moves, dust motes drift in the light"
+    dur: 3.0
+    mode: video
+    sfx: "museum quiet"
+    hero_object: true
+  - beat: phase3
+    size: MAP
+    location: "Relief globe, year one"
+    prompt: >-
+      a physical relief globe on a brass stand with the oceans painted at the poles and a bare brown band around
+      the equator, a hand resting on it, desk lamp
+    motion: "the hand does not turn it, slow push-in on the equatorial band, lamp steady"
+    dur: 3.0
+    mode: video
+    sfx: "globe quiet"
+  - beat: turn
+    size: WIDE
+    location: "Night side, Mongolia, year one"
+    prompt: >-
+      a vast dark steppe under a sky full of aurora from horizon to horizon, a line of headlamps crossing it, frost
+      on the grass, green and red curtains of light
+    motion: "very slow pan right across the aurora, the headlamps crawl, curtains of light shift"
+    dur: 4.5
+    mode: video
+    sfx: "night wind"
+  - beat: turn
+    size: CLOSE
+    location: "Night side, year one"
+    prompt: >-
+      a compass in a gloved hand, its needle drifting aimlessly, aurora light on the glass, breath fog
+    motion: "static close, the needle swings slowly and does not settle"
+    dur: 4.0
+    mode: video
+    sfx: "wind"
+  - beat: turn
+    size: DETAIL
+    location: "Science museum, year one"
+    prompt: >-
+      macro, the still brass bob of the Foucault pendulum reflecting a small window of aurora light, dust, the
+      wire motionless
+    motion: "static macro, the reflected light shifts slowly, nothing else moves"
+    dur: 4.0
+    mode: video
+    sfx: "museum quiet"
+    hero_object: true
+  - beat: dilemma
+    size: WIDE
+    location: "Terminator ridge, year one"
+    prompt: >-
+      a ridge at the edge of the world's dusk, the lit half of a valley on one side and the frozen dark on the
+      other, a lone figure standing on the line between them, the sun fixed on the horizon
+    motion: "very slow dolly back from the figure, haze drifts, light fixed"
+    dur: 5.5
+    mode: video
+    sfx: "ridge wind"
+dilemma: "The day side, or the night side?"
+pinned_comment: >-
+  Night side. The day side is a six-month furnace with no shade; the night side has aurora, ice to melt for water,
+  and geothermal heat if you dig. Humans have wintered in Antarctica for a century. Nobody has summered on Venus.
+metadata:
+  cover_time: 3.4
+  second_comment: >-
+    Day side, obviously. Plants need light, and you can make shade; you cannot make a sun. The night side starves in
+    a season. Every colony in history was built where things grow.
+  hashtags: ["#whatif", "#science", "#earth", "#physics", "#tomorrowmorning"]
+  replies_to_prepare:
+    - "The atmosphere would keep spinning and strip everything"
+    - "The core would keep spinning for a while, so the field stays"

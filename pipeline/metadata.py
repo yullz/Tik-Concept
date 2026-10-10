@@ -19,7 +19,7 @@ SERIES_LABEL = {"never-fell": "Never Fell", "tomorrow-morning": "Tomorrow Mornin
 DISCLOSURE = "Alternate timeline. Visuals are AI-generated; the hinge event and dates are real and sourced."
 
 
-def build_metadata(ep: Episode, channel: str = "Counterfact") -> dict:
+def build_metadata(ep: Episode, channel: str = "Unhappened") -> dict:
     m = ep.metadata or {}
     series = SERIES_LABEL.get(ep.series, ep.series.title())
     n = f"{ep.series_number:02d}"
@@ -53,7 +53,7 @@ def build_metadata(ep: Episode, channel: str = "Counterfact") -> dict:
     }
 
 
-def write_metadata(ep: Episode, channel: str = "Counterfact") -> Path:
+def write_metadata(ep: Episode, channel: str = "Unhappened") -> Path:
     out = render_dir(ep.id) / "publish"
     meta = build_metadata(ep, channel)
     (out / "metadata.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False))

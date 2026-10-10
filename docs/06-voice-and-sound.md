@@ -18,38 +18,47 @@ available to accounts created before March 2026 and expire on **31 December 2026
 set would have to be recast mid-season, which is exactly the consistency break the charter
 forbids. So the lock is made from voices that stay available.
 
-## The pick
+## The route: ElevenLabs API, Eleven v4 (direct, not through Higgsfield)
 
-**Launch voice: "Arthur" through Higgsfield's ElevenLabs engine.**
-
-| Field | Value |
-|---|---|
-| Backend | Higgsfield `text2speech_v2`, `variant: elevenlabs` |
-| `voice_type` | `preset` |
-| `voice_id` | `30fc8796-ceb6-4a66-b3a7-4a145ef7f346` |
-| Measured cost | 0.6 credits per ~35 words (≈ 4 credits per episode) |
-| Why | Higgsfield's own history-channel recommendation; measured, dry, British-leaning; available on this account today; no expiry |
-
-Audition alternates (same backend, same audition script, pick by ear, then never change):
-- **Cillian** `d8ba9f14-8a24-44db-932b-99e16c45bd32` (Higgsfield's pinned narrator default; warmer, a touch younger).
-- **Callum** (search `list_voices`; intense, gravelly; better for the darker Hinge pillar, risk of sounding like a trailer).
-
-**Direct ElevenLabs API route** (for the dubbing accounts and when we want word timestamps
-straight from the synthesiser): pick one voice from the ElevenLabs **Voice Library**
-(not a Default voice), filter `Narrative & Story` → `Documentary`, male, 40s, British, and
-audition the same script. Save its `voice_id` into `.env` as `ELEVENLABS_VOICE_ID`, add it
-to the account's library, and never resolve by name again. Settings to start from:
+We call ElevenLabs ourselves with the channel's own key. Eleven v4 (released late September 2026,
+with a lower-latency v4 Turbo) is the most expressive model and uses bracketed natural-language
+audio tags; SSML `<break>` tags are disabled on v4, so pauses are written as punctuation and
+ellipses, and emotion as short tags. The exact `model_id` used by the API is confirmed from your
+account with `python3 -m pipeline audition --list-models` (third-party gateways expose it as
+`eleven_v4`; the pipeline default is that string and is overridable in `.env`).
 
 | Setting | Value | Note |
 |---|---|---|
-| `model_id` | `eleven_v3` | most expressive; supports performed tags like `[sighs]`, `[whispers]` |
-| fallback `model_id` | `eleven_multilingual_v2` | when `with-timestamps` is required and v3 alignment is unavailable on the account |
-| stability | 0.50 | "natural" range; lower drifts, higher goes flat |
+| `model_id` | `eleven_v4` (confirm via `--list-models`) | v4 Turbo only for drafts; the master uses full v4 |
+| stability | 0.50 | lower drifts between takes, higher goes flat |
 | similarity_boost | 0.75 | |
-| style | 0.15 | keep low, the script carries the emotion |
-| speed | 0.95 | slightly slower than default; we never time-stretch in post |
-| `apply_text_normalization` | `on` | but we spell numbers out anyway |
-| output | `mp3_44100_128` for review, `pcm_44100` for the master | |
+| style | 0.15 | the script carries the emotion |
+| speed | 0.95 | slightly under default; we never time-stretch in post |
+| use_speaker_boost | true | |
+| `apply_text_normalization` | `on` | we still spell numbers out |
+| output | `mp3_44100_192` | the assembler normalises to −16 LUFS |
+| timestamps | `/with-timestamps` first; if the model or plan refuses, plain synthesis then `/v1/forced-alignment` with the exact script; then faster-whisper | word timings drive every cut and caption |
+
+## Casting: pick by audition, lock by id
+
+Arthur (the Higgsfield preset) is demoted to a reference take. The Archivist is chosen from the
+ElevenLabs Voice Library by ear, never by name alone, and locked by `voice_id` in every episode
+(`voice.elevenlabs_voice_id`). Run the audition with your key:
+
+```
+python3 -m pipeline audition --list-models --search "documentary narrator" --gender male
+python3 -m pipeline audition "Frederick Surrey" "Haseeb - British Documentary" <any voice_id> --gender male
+python3 -m pipeline audition --search "documentary" --gender female
+```
+
+The command resolves Voice Library names through the API (adding the voice to the account),
+synthesises the audition script with each candidate, measures words per second and the longest
+internal pause, and writes `renders/_audition/README.md` with the files to listen to blind on a
+phone. Candidates to start with (from the Library's documentary category; confirm on the live
+page): **Frederick Surrey** (calm, well-spoken British narrator for history and science
+documentaries; closest to the brief), **Haseeb - British Documentary** (soothing, engaging), and
+two or three female voices from the same search for comparison. Pick one, set its id in all ten
+episodes, and never change it mid-season.
 
 ## The audition script (read by every candidate, compare blind)
 
@@ -64,7 +73,7 @@ Scoring: clarity of "two thousand twenty-four", the weight of "This is how it ha
 - Numbers as words. Dates as words ("the eleventh of December, twelve forty-one").
 - Punctuation is pacing: a full stop costs ~0.6 s, a comma ~0.4 s, an ellipsis ~0.8 s. Short sentences for the hook and the turn, one flowing sentence per mechanism.
 - Performed non-verbals in square brackets, at most two per episode: `[exhale]` before the turn, `[quiet]` on the sign-off. Round brackets are direction and are stripped before synthesis.
-- Delivery direction is written once per episode in `voice.direction` and prepended to the request (on the Higgsfield route it is the bracketed prefix their engine expects; on the direct route it is sent as the v3 context tag).
+- Delivery direction is written once per episode in `voice.direction` and sent as a short bracketed tag at the start of the request (v4 reads bracketed natural-language direction as an audio tag).
 
 ## Sound design (the layer that most separates us from slop)
 

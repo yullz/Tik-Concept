@@ -1,23 +1,32 @@
 # 07 · Topic Backlog — season one and beyond
 
 Score = hook strength (1–5) + debate potential (1–5) + visual specificity (1–5). Ship ≥ 11 first.
-The Launch Ten are fully written in `episodes/` (research, script, shots, prompts, metadata).
+Seventeen episodes are fully written in `episodes/` (research, script, shots, prompts, metadata).
 Everything else is a brief: hinge, hook line, dilemma.
 
-## The Launch Ten (in posting order; see the launch sequence in `docs/03-growth-plan-10M.md`)
+## The launch set (seventeen written episodes, in posting order)
 
-| File | Episode | Pillar | Why it can explode | Hinge (real, sourced in the YAML) |
+Broad first: eight premises that need no prior knowledge, then two more, then the history series.
+
+| File | Episode | Pillar | Why it can explode | Hinge or mechanism (sourced in the YAML) |
 |---|---|---|---|---|
-| B-0001 | **Rome Never Fell** | Never Fell | Four-word premise everyone gets; the most iconic impossible image we own; historians will fight in the comments | Aurelian survives the 275 AD assassination |
-| B-0002 | **The Ocean Dries Up Tonight** | Tomorrow Morning | Global, kid-safe, pure share engine; a container ship upright on a salt plain stops thumbs | 1.3 billion km³ of water gone at midnight; the physics of what follows |
-| B-0003 | **The Asteroid Hits Twenty Minutes Later** | The Hinge | Dinosaurs are the biggest audience on Earth; the hinge is novel and sourced (impact site chemistry) | Chicxulub lands in deep water instead of a sulphur-rich shallow sea |
-| B-0004 | **The Moon Is Gone** | Tomorrow Morning | "You wake up and look up" POV hook; tides, dark nights and a wandering axis escalate cleanly | The Moon vanishes at midnight; tides, light and axial stability |
-| B-0005 | **Columbus Turns Back** | The Hinge | The turn ("the ships come anyway, eight years later") reframes the hero; ES and PT markets love it | 10 October 1492, the crew's near-mutiny; Cabral reaches Brazil in 1500 regardless |
-| B-0006 | **Constantinople Holds** | Never Fell | One unpaid invoice decides a civilisation; cross-links to Columbus for a series argument | Orban offers his cannon to Constantine XI first (1452) and is turned away for lack of money |
-| B-0007 | **Mali Reaches Brazil** | Never Fell | Nobody is making this; the hinge is a real 1312 Atlantic expedition; huge in Africa and Brazil | The Mansa's 2,000-ship fleet (al-Umari, c. 1340) makes landfall |
-| B-0008 | **The Black Death Never Comes** | The Hinge | The most uncomfortable trade in history: fifty million live, Europe stays poor | The Genoese ships from Kaffa never reach Messina in October 1347 |
-| B-0009 | **The Internet in 1950** | Early Arrival | Retro-futurism done right; the privacy turn is painfully current | Vannevar Bush's Memex (1945) funded as a continental network after the 1949 Soviet bomb |
-| B-0010 | **Horses Never Left America** | The Hinge | Original, sourced, and it rewrites 1492 from the other side of the beach | Equus survives the end-Pleistocene extinction in North America |
+| B-0001 | **The Moon Is Gone** | Tomorrow Morning | "You wake up and look up"; tides, dark nights, wandering axis | lunar tides, nocturnal ecology, obliquity stabilisation |
+| B-0002 | **The Earth Stops Spinning** | Tomorrow Morning | oceans migrate to the poles; a six-month night; day side or night side | rotation speed, equatorial bulge, core dynamo |
+| B-0003 | **All the Ice Melts This Week** | Tomorrow Morning | drowned skylines; the salt turn; Antarctica as the last land | 26 million km³ of ice, 70 m rise, delta salinisation |
+| B-0004 | **The Internet Goes Dark for a Year** | Tomorrow Morning | the card machine says no; paper comes back; city vs village | payments, ports, the Tonga and CrowdStrike precedents |
+| B-0005 | **Sleep Takes One Hour** | Tomorrow Morning | seven free hours; the night becomes a shift | glymphatic clearance, power demand, labour |
+| B-0006 | **Money Vanishes at Midnight** | Tomorrow Morning | money reinvented in nine hours; debts erased, savings too | money as memory, POW cigarettes, Ireland 1970, M-PESA |
+| B-0007 | **The Signal Comes Tomorrow** | Tomorrow Morning | do we reply; a decade spent talking to the dead | the 1989 protocol, forty light-years, METI debate |
+| B-0008 | **Every Human Vanishes Tonight** | Tomorrow Morning | the bridge falls; pyramid, plastic or probe | subway pumps, Chernobyl wildlife, Voyager |
+| B-0009 | **The Ocean Dries Up Tonight** | Tomorrow Morning | a ship upright on salt; climb to the rain or walk to the salt | depth, lapse rate, water cycle, heat capacity |
+| B-0010 | **The Asteroid Hits Twenty Minutes Later** | The Hinge | dinosaurs live; do they ever build a city | impact-site sulphur (Kaiho & Oshima 2017) |
+| B-0011 | **Rome Never Fell** | Never Fell | jets with eagles over a roofed Colosseum; internet for Rome | Aurelian survives 275 AD |
+| B-0012 | **Columbus Turns Back** | The Hinge | the ships come anyway, eight years late | 10 October 1492; Cabral 1500 |
+| B-0013 | **Constantinople Holds** | Never Fell | one unpaid invoice | Orban's cannon, 1452 |
+| B-0014 | **Mali Reaches Brazil** | Never Fell | a real 1312 Atlantic expedition | al-Umari's account |
+| B-0015 | **The Black Death Never Comes** | The Hinge | fifty million live, Europe stays poor | Kaffa ships, 1347; Voigtländer & Voth |
+| B-0016 | **The Internet in 1950** | Early Arrival | retro-futurism with a privacy turn | Bush's memex; the 1949 Soviet bomb |
+| B-0017 | **Horses Never Left America** | The Hinge | cavalry on the beach in 1519 | Equus survives the Pleistocene |
 
 ## Next twelve (write these first in week two)
 

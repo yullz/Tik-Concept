@@ -1,0 +1,373 @@
+id: ep004-internet-goes-dark
+series: tomorrow-morning
+series_number: 4
+pillar: tomorrow-morning
+title: The Internet Goes Dark for a Year
+hook_title: WHAT IF THE INTERNET WENT DARK FOR A YEAR
+file_number: FILE B-0004
+target_duration: 80
+stamp_text: UNHAPPENED
+voice:
+  direction: calm, dry, unhurried documentary narrator; lets facts land
+  elevenlabs_voice_id: ''
+  model_id: eleven_v4
+  settings:
+    stability: 0.5
+    similarity_boost: 0.75
+    style: 0.15
+    speed: 0.95
+music:
+  mood: sparse piano, a ticking clock under the phases, sub bass at the turn
+  cue: assets/music/tomorrow-morning-04.mp3
+look_key_prompt: >-
+  empty establishing frame of a city street at night with every screen dark, shop windows unlit, a single sodium
+  lamp, a bus stop with a paper timetable, light rain, cold cyan reflections
+research:
+  hinge: >-
+    At midnight every data network on Earth, cables, satellites and mobile data, stops carrying traffic, and stays
+    down for twelve months. Phones still ring on voice-only circuits; nothing else connects.
+  hinge_date: tonight, for twelve months
+  sources:
+  - 'ITU, Facts and Figures 2024: about 5.5 billion people online'
+  - >-
+    Microsoft, Helping our customers through the CrowdStrike outage (July 2024): about 8.5 million devices affected;
+    airlines, hospitals and banks disrupted for days
+  - >-
+    Tonga's January 2022 volcanic eruption cut its only submarine cable; the country was largely offline for about
+    five weeks (Reuters, February 2022)
+  - Egypt's January 2011 five-day internet shutdown (Renesys/Dyn analysis)
+  - 'SWIFT, FIN traffic figures: around 45-50 million messages a day (2023)'
+  - >-
+    Deloitte, The economic impact of disruptions to Internet connectivity (2016): a highly connected country loses
+    about 1.9 percent of daily GDP per day of shutdown
+  facts:
+  - >-
+    About five and a half billion people use the internet; most card payments, bank transfers and ATM networks run
+    over it.
+  - >-
+    A single faulty software update in July 2024 grounded flights and closed hospital systems for days on about
+    eight and a half million machines.
+  - >-
+    Tonga lived without its cable for about five weeks in 2022; Egypt switched off for five days in 2011. Both recovered;
+    neither was a year.
+  - >-
+    Container shipping, customs clearance and just-in-time factory supply all run on connected systems.
+  - >-
+    Economists estimate shutdown costs at a couple of percent of GDP per day for connected economies; a year is
+    far beyond anything measured, so the fifth-of-the-economy figure is this episode's own estimate, labelled as
+    such.
+  era_sheet:
+    timeline: 'the present day: day one, week two, month six'
+    architecture: >-
+      real places: a bakery with a card terminal, a container port, a newsroom, a town hall, a rural post office
+    clothing: present-day ordinary clothes
+    vehicles: stacked containers, idle cranes, buses with paper timetables, a mail van
+    street: >-
+      dark screens, handwritten signs, cash boxes, paper ledgers, a fax machine, a radio on a counter, a queue
+    light: fluorescent shop light, grey port morning, warm radio-lit kitchens at night
+    palette: dark screen black, paper white, sodium amber, deep cyan accent
+    forbidden: hackers, glowing code, riots as spectacle, text on screens, apocalypse clichés
+  cost: >-
+    The quiet costs have no headline: the cyclone warning that never arrives, the recalled medicine nobody hears
+    about, the lab result that sits on a server. A year offline is a year without the warnings.
+beats:
+- id: hook
+  vo: >-
+    What if the internet went dark tonight. Every cable, every satellite, every tower. Twelve months. The card machine
+    at the bakery just said no.
+  card:
+    text: WHAT IF THE INTERNET WENT DARK FOR A YEAR
+    style: title
+- id: hinge
+  vo: >-
+    Five and a half billion people are online tonight. At midnight the networks stop, all of them, and they stay
+    stopped for a year. This is how it happens.
+  card:
+    text: MIDNIGHT · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    Day one. Cards die first, so cash is king by breakfast and gone by lunch, because the cash machines were online
+    too. Planes fly, but nobody can book one.
+  card:
+    text: DAY ONE
+    style: phase
+- id: phase2
+  vo: >-
+    Week two. Ships arrive at ports that cannot read their cargo, so containers stack up and shelves empty. Factories
+    that ordered parts by the hour stop by the day. Paper comes back, and so does the queue.
+  card:
+    text: WEEK TWO
+    style: phase
+- id: phase3
+  vo: >-
+    Month six. Radio is the news again. The fax machine is a job. Towns print money on card, because the bank is
+    a building you can see. The economy shrinks by a fifth.
+  card:
+    text: MONTH SIX
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But the quiet costs come without a headline. The cyclone warning that never arrives. The recalled medicine
+    nobody hears about. A year offline is a year without the warnings.
+  card: null
+- id: dilemma
+  vo: 'That timeline never happened. Ours did. So who suffers more: the city, or the village?'
+  card:
+    text: 'Who suffers more: the city, or the village?'
+    style: question
+shots:
+- beat: hook
+  size: CLOSE
+  location: Bakery counter, morning
+  prompt: >-
+    a card terminal on a bakery counter with a dark blank screen, a hand holding a card above it, a tray of bread
+    rolls, warm morning light through the shop window
+  motion: static close, the hand taps the card twice, nothing happens, the baker's hand enters frame
+  dur: 2.5
+  mode: video
+  sfx: shop quiet
+  hero_object: true
+- beat: hook
+  size: WIDE
+  location: City street, night
+  prompt: >-
+    a city street at night with every screen and shop sign dark, people standing still holding phones, a bus with
+    a lit interior passing, sodium lamp, light rain on the asphalt
+  motion: slow dolly forward down the street, the bus passes, people lower their phones
+  dur: 2.5
+  mode: video
+  sfx: rain street
+- beat: hook
+  size: DETAIL
+  location: Server room, midnight
+  prompt: >-
+    macro, a rack of network switches with every status light off, a loose cable, the fans silent, cold emergency
+    lighting
+  motion: static macro, a single fan spins down to a stop, nothing else moves
+  dur: 2.5
+  mode: video
+  sfx: fan spin down
+- beat: hinge
+  size: MAP
+  location: Cable operations room, midnight
+  prompt: >-
+    a wall map of the world's submarine cables as physical brass strings across an ocean relief, a hand switching
+    off a row of small lamps along the strings one by one, dim room
+  motion: the lamps go out one by one along the strings, slow push-in
+  dur: 3.5
+  mode: video
+  sfx: switch click
+  card:
+    text: |-
+      5,500,000,000
+      PEOPLE ONLINE TONIGHT
+    style: stat
+- beat: hinge
+  size: MEDIUM
+  location: Kitchen, Lagos, night
+  prompt: >-
+    waist-up, a woman at a kitchen table holding a phone with a dark screen up to the window, a landline handset
+    beside her, a radio on the counter, warm lamp light
+  motion: static tripod with a slow push-in, she lowers the phone and reaches for the radio
+  dur: 3.0
+  mode: video
+  sfx: radio static
+- beat: hinge
+  size: AERIAL
+  location: Satellite ground station, dawn
+  prompt: >-
+    high and slow over a field of large dish antennas all pointed at the same patch of dawn sky, a few cars in the
+    lot, mist, cold light
+  motion: slow pan right across the dishes, mist drifts, dishes stay still
+  dur: 3.0
+  mode: video
+  sfx: high wind
+- beat: phase1
+  size: WIDE
+  location: High street, day one
+  prompt: >-
+    a queue outside a bank with its doors shut, a handwritten sign in the window illegible at this distance, a cash
+    machine with a dark screen, people counting notes, grey morning light
+  motion: slow lateral track left along the queue, people shift, a shutter rattles
+  dur: 3.5
+  mode: video
+  sfx: crowd murmur
+- beat: phase1
+  size: DETAIL
+  location: Bakery, day one
+  prompt: >-
+    macro, a hand writing a tab into a notebook on the bakery counter beside the dead card terminal, coins in a
+    saucer, morning light
+  motion: static macro, the pen writes a line, a coin is placed in the saucer
+  dur: 3.0
+  mode: video
+  sfx: pen on paper
+  hero_object: true
+- beat: phase1
+  size: POV
+  location: Airport departures, day one
+  prompt: >-
+    handheld walking into a departures hall with every display dark, staff at desks writing boarding passes by hand,
+    a long queue, daylight from the roof
+  motion: handheld walk forward, the queue shifts, a desk agent looks up
+  dur: 3.0
+  mode: video
+  sfx: airport hall
+- beat: phase1
+  size: MEDIUM
+  location: Hospital ward desk, day one
+  prompt: >-
+    waist-up, a nurse at a ward desk with a dark monitor, flipping through a paper folder, a doctor waiting, fluorescent
+    light
+  motion: slow push-in, pages turn, the doctor leans in
+  dur: 3.5
+  mode: video
+  sfx: hospital ward
+- beat: phase2
+  size: AERIAL
+  location: Container port, week two
+  prompt: >-
+    high and slow over a port with containers stacked higher than the cranes, ships waiting at anchor in a line
+    to the horizon, grey morning light
+  motion: slow crane down toward the stacks, ships rock, cranes stay idle
+  dur: 3.5
+  mode: video
+  sfx: port
+- beat: phase2
+  size: CLOSE
+  location: Bakery, week two
+  prompt: >-
+    a hand writing a long tab into the bakery's notebook at the counter, the dead card terminal pushed aside, half-empty
+    bread shelves behind, morning light
+  motion: static close, the pen writes a line, a loaf is set down beside the notebook
+  dur: 3.0
+  mode: video
+  sfx: pen on paper
+  hero_object: true
+- beat: phase2
+  size: WIDE
+  location: Car factory, week two
+  prompt: >-
+    a silent assembly line with half-built cars stopped in place, workers in overalls sitting on crates, a wall
+    of empty parts bins, skylight daylight
+  motion: slow dolly forward along the line, a worker stands, nothing on the line moves
+  dur: 3.5
+  mode: video
+  sfx: factory quiet
+- beat: phase2
+  size: DETAIL
+  location: Post office, week two
+  prompt: >-
+    macro, a rubber stamp coming down on a paper form, a pile of forms beside it, a queue's shoes out of focus beyond,
+    warm counter lamp
+  motion: static macro, the stamp comes down and lifts, the form slides onto the pile
+  dur: 3.0
+  mode: video
+  sfx: rubber stamp
+  card:
+    text: |-
+      WEEK TWO
+      PAPER IS BACK
+    style: stat
+- beat: phase3
+  size: WIDE
+  location: Town square, month six, evening
+  prompt: >-
+    a town square at evening with people gathered around a radio on a café table, a chalkboard of notices illegible
+    at this distance, string lights, warm evening light
+  motion: slow dolly forward toward the café table, people lean in, lights sway
+  dur: 3.5
+  mode: video
+  sfx: radio voice distant
+- beat: phase3
+  size: DETAIL
+  location: Office, month six
+  prompt: >-
+    macro, a fax machine feeding out a page into a tray, a young hand tearing it off, a desk lamp
+  motion: static macro, the page feeds out, the hand tears it
+  dur: 3.0
+  mode: video
+  sfx: fax
+- beat: phase3
+  size: CLOSE
+  location: Bakery, month six
+  prompt: >-
+    the bakery notebook now a thick ledger with a rubber band beside a stack of the town's printed card notes, a
+    hand stamping one with a seal, morning light
+  motion: static close, the seal presses and lifts, the note joins the stack
+  dur: 3.0
+  mode: video
+  sfx: seal stamp
+  card:
+    text: |-
+      −20%
+      THE ECONOMY, YEAR ONE (EST.)
+    style: stat
+  hero_object: true
+- beat: phase3
+  size: MEDIUM
+  location: Bus stop, month six
+  prompt: >-
+    waist-up, two teenagers reading a paper timetable at a bus stop, one tracing a line with a finger, a bus approaching,
+    overcast light
+  motion: slow push-in, the finger traces, the bus arrives behind
+  dur: 3.0
+  mode: video
+  sfx: bus arrives
+- beat: turn
+  size: WIDE
+  location: Fishing village, coast, month eight
+  prompt: >-
+    a fishing village on a low coast under a darkening sky, boats still on the water, people on the quay not looking
+    up, the first rain bands of a storm on the horizon, grey light
+  motion: very slow dolly back from the quay, the sky darkens, boats rock
+  dur: 4.5
+  mode: video
+  sfx: rising wind
+- beat: turn
+  size: CLOSE
+  location: Pharmacy, month eight
+  prompt: >-
+    a pharmacist's hands placing a box of tablets into a customer's hand, a notice board behind with nothing new
+    on it, fluorescent light
+  motion: static close, the box passes hand to hand, the hands withdraw
+  dur: 4.0
+  mode: video
+  sfx: pharmacy quiet
+- beat: turn
+  size: DETAIL
+  location: Laboratory, month eight
+  prompt: macro, a printed lab result in a tray under a dark monitor, dust on the paper, a desk lamp
+  motion: slow lateral track right across the paper, dust motes in the lamp light
+  dur: 4.0
+  mode: video
+  sfx: lab hum
+- beat: dilemma
+  size: WIDE
+  location: Hilltop view, dusk
+  prompt: >-
+    a view from a hilltop at dusk with a dark city on one side and a lit village on the other, one radio mast between
+    them, a figure sitting on a wall looking at both, cold cyan sky
+  motion: very slow dolly back from the figure, the village lights flicker on one by one
+  dur: 5.5
+  mode: video
+  sfx: dusk wind
+dilemma: 'Who suffers more: the city, or the village?'
+pinned_comment: >-
+  The city. Cities are machines that run on connection: food arrives by the hour, money is a number, and nobody
+  knows their neighbour. A village has a shop with a tab and a man with a radio. Change my mind.
+metadata:
+  cover_time: 0.6
+  second_comment: >-
+    The village. The city has the hospital, the warehouse and the mayor; the village has a pharmacy that gets its
+    orders from a server in the city. When the warnings stop, the far end of the line hears last.
+  hashtags:
+  - '#whatif'
+  - '#internet'
+  - '#technology'
+  - '#society'
+  - '#tomorrowmorning'
+  replies_to_prepare:
+  - Phones would still work on 4G
+  - This is basically what happened in Tonga

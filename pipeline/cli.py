@@ -81,18 +81,19 @@ def cmd_ingest(a):
 
 def cmd_tts(a):
     ep = _ep(a.episode)
-    rdir = render_dir(ep.id)
-    if a.backend == "higgsfield":
-        p = tts.write_higgsfield_request(ep)
-        print(f"wrote {p}; run generate_audio with that body, then save the result as {rdir/'audio'/'vo.mp3'}")
-        return 0
-    vo, wj = tts.elevenlabs_tts(ep)
+    vo, wj, route = tts.elevenlabs_tts(ep)
     dur = align.audio_duration(vo)
     pace = tts.measure_pace(ep, dur)
-    print(json.dumps(pace))
+    print(json.dumps({**pace, "route": route, "words_json": str(wj) if wj else None}))
     if pace["verdict"] != "ok":
         print("pace out of range: rewrite the line(s) and regenerate; never time-stretch")
         return 1
+    return 0
+
+
+def cmd_audition(a):
+    out = tts.audition(a.candidates or [], model_id=a.model, gender=a.gender, list_models=a.list_models, search=a.search)
+    print(f"audition files in {out}")
     return 0
 
 
@@ -188,7 +189,7 @@ def cmd_new(a):
     tpl = {
         "id": a.id, "series": a.series, "series_number": a.number, "pillar": a.series, "title": a.title,
         "hook_title": f"WHAT IF {a.title.upper()}", "file_number": f"FILE B-{a.number:04d}", "target_duration": 76,
-        "stamp_text": "NEVER HAPPENED",
+        "stamp_text": "UNHAPPENED",
         "voice": {"direction": "calm dry archivist, British-leaning, unhurried, lets facts land", "voice_type": "preset", "voice_id": ""},
         "music": {"mood": "", "cue": f"assets/music/{a.series}-01.mp3"}, "look_key_prompt": "",
         "research": {"hinge": "", "hinge_date": "", "sources": [], "facts": [], "era_sheet": {}, "cost": ""},
@@ -253,14 +254,17 @@ def main(argv=None) -> int:
     sp = add("promptsheet", cmd_promptsheet); sp.add_argument("episode"); sp.add_argument("--style", default="counterfact-v1")
     sp = add("motionbatch", cmd_motionbatch); sp.add_argument("episode"); sp.add_argument("keyframe_jobs"); sp.add_argument("--style", default="counterfact-v1")
     sp = add("ingest", cmd_ingest); sp.add_argument("episode"); sp.add_argument("mapping"); sp.add_argument("--kind", choices=["keyframes", "clips"], required=True)
-    sp = add("tts", cmd_tts); sp.add_argument("episode"); sp.add_argument("--backend", choices=["elevenlabs", "higgsfield"], default="higgsfield")
+    sp = add("tts", cmd_tts); sp.add_argument("episode")
+    sp = add("audition", cmd_audition); sp.add_argument("candidates", nargs="*", help="voice ids or Voice Library names")
+    sp.add_argument("--model", default=None); sp.add_argument("--gender", choices=["male", "female"], default=None)
+    sp.add_argument("--list-models", action="store_true"); sp.add_argument("--search", default=None, help="search the Voice Library, e.g. 'documentary'")
     sp = add("plan", cmd_plan); sp.add_argument("episode"); sp.add_argument("--estimate", action="store_true")
     sp = add("assemble", cmd_assemble); sp.add_argument("episode"); sp.add_argument("--style", default="counterfact-v1")
     sp.add_argument("--placeholders", action="store_true"); sp.add_argument("--no-captions", action="store_true"); sp.add_argument("--no-music", action="store_true")
     sp = add("qc", cmd_qc); sp.add_argument("episode"); sp.add_argument("--placeholders", action="store_true")
-    sp = add("metadata", cmd_metadata); sp.add_argument("episode"); sp.add_argument("--channel", default="Counterfact")
+    sp = add("metadata", cmd_metadata); sp.add_argument("episode"); sp.add_argument("--channel", default="Unhappened")
     sp = add("cover", cmd_cover); sp.add_argument("episode"); sp.add_argument("--time", type=float, default=None)
-    sp = add("bundle", cmd_bundle); sp.add_argument("episode"); sp.add_argument("--channel", default="Counterfact")
+    sp = add("bundle", cmd_bundle); sp.add_argument("episode"); sp.add_argument("--channel", default="Unhappened")
     sp = add("dryrun", cmd_dryrun); sp.add_argument("episode"); sp.add_argument("--style", default="counterfact-v1")
     sp = add("new", cmd_new); sp.add_argument("id"); sp.add_argument("--series", required=True); sp.add_argument("--number", type=int, required=True); sp.add_argument("--title", required=True)
     sp = add("write", cmd_write); sp.add_argument("id"); sp.add_argument("--brief", required=True)

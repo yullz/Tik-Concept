@@ -1,16 +1,21 @@
-id: ep002-ocean-dries-up
+id: ep009-ocean-dries-up
 series: tomorrow-morning
-series_number: 1
+series_number: 9
 pillar: tomorrow-morning
 title: The Ocean Dries Up Tonight
 hook_title: WHAT IF THE OCEAN DRIED UP TONIGHT
-file_number: FILE B-0002
+file_number: FILE B-0009
 target_duration: 80
-stamp_text: NEVER HAPPENED
+stamp_text: UNHAPPENED
 voice:
-  direction: calm dry archivist, British-leaning, unhurried, low-mid pitch, lets facts land
-  voice_type: preset
-  voice_id: 30fc8796-ceb6-4a66-b3a7-4a145ef7f346
+  direction: calm, dry, unhurried documentary narrator; lets facts land
+  elevenlabs_voice_id: ''
+  model_id: eleven_v4
+  settings:
+    stability: 0.5
+    similarity_boost: 0.75
+    style: 0.15
+    speed: 0.95
 music:
   mood: sparse piano, a sub bass that enters at the hinge, no percussion
   cue: assets/music/tomorrow-morning-01.mp3

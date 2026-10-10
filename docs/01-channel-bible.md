@@ -1,6 +1,9 @@
-# 01 · Channel Bible
+# 01 · Channel Bible — UNHAPPENED
 
-## Three original names (pick one, then never change it)
+**Name locked: UNHAPPENED.** Handle `@unhappened` everywhere (fallbacks `@unhappened.tv`, `@unhappenedfiles`).
+Sign-off: "That timeline never happened. Ours did." End stamp: **UNHAPPENED**. Episode files: `FILE B-0001`.
+
+## The three names considered (for the record)
 
 | Name | Why it is ownable | Handle | Sign-off | End stamp |
 |---|---|---|---|---|
@@ -9,9 +12,8 @@
 | **TIMELINE B** | The clearest: everyone understands "the other timeline" instantly; file numbers become B-0001. Less unique as a word, strongest as a format label. | `@timelineb` | "This was Timeline B." | **FILE CLOSED** |
 
 Avoid anything with "What If" or "Alt History" in it: those are crowded, generic, and read as copies.
-Check all three handles on TikTok, YouTube and Instagram the same day. The repository uses
-"Counterfact" as a placeholder style name (`styles/counterfact-v1.yaml`); only the channel
-name, the stamp text (`stamp_text` in each episode) and the sign-off change.
+Check all three handles on TikTok, YouTube and Instagram the same day. The style file keeps its working name (`styles/counterfact-v1.yaml`); every episode's
+`stamp_text` is `UNHAPPENED` and the metadata channel name is Unhappened.
 
 Tagline for any of the three: **"History, rewritten one decision at a time."**
 
@@ -98,7 +100,9 @@ Full voice casting and settings: `docs/06-voice-and-sound.md`.
 
 ## Season one (first 30 episodes)
 
-Thirty episodes, ten per week for three weeks, then a reply week. Episode list: `docs/07-topic-backlog.md` (the first ten are fully written in `episodes/`).
+Thirty episodes, ten per week for three weeks, then a reply week. The first eight are broad
+"tomorrow morning" premises anyone understands; the history series follows. Episode list:
+`docs/07-topic-backlog.md` (seventeen are fully written in `episodes/`).
 
 ## KPIs (what we watch, in order)
 

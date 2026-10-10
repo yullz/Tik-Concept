@@ -9,7 +9,7 @@ title: "Rome Never Fell"
 hook_title: "WHAT IF ROME NEVER FELL"   # 3-6 words, caps, the cover title
 file_number: "FILE B-0001"
 target_duration: 76                  # 61-90
-stamp_text: "NEVER HAPPENED"
+stamp_text: "UNHAPPENED"
 voice: {direction: "calm dry archivist, British-leaning, unhurried, lets facts land", voice_type: preset, voice_id: "<locked id>"}
 music: {mood: "low strings, slow pulse", cue: "assets/music/never-fell-01.mp3"}
 look_key_prompt: "empty establishing frame of the episode's world, era-correct, named materials, light and weather"

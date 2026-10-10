@@ -3,7 +3,7 @@ from pathlib import Path
 from pipeline import align, captions, metadata, prompts, spec, timeline
 from pipeline.config import load_style
 
-EP = Path(__file__).resolve().parents[2] / "episodes" / "ep001-rome-never-fell.yaml"
+EP = Path(__file__).resolve().parents[2] / "episodes" / "ep001-moon-is-gone.yaml"
 
 
 def test_estimate_and_edl_snap_to_beats():
@@ -31,7 +31,7 @@ def test_captions_group_and_ass_has_sections():
     assert all(1 <= len(c["text"].split()) <= 3 for c in cards)
     assert all(a["end"] <= b["start"] + 1e-9 for a, b in zip(cards, cards[1:]))
     ass = captions.build_ass(ep, timed, edl, load_style(), "#C9A227")
-    for needle in ("[Script Info]", "Style: Caption", "Style: Stamp", "NEVER HAPPENED", "WHAT IF ROME NEVER FELL", ep.dilemma):
+    for needle in ("[Script Info]", "Style: Caption", "Style: Stamp", "UNHAPPENED", ep.hook_title, ep.dilemma):
         assert needle in ass
 
 
@@ -39,7 +39,7 @@ def test_promptsheet_appends_house_style_and_batches_chunk():
     ep = spec.load_episode(EP)
     sheet = prompts.build_promptsheet(ep)
     kp = sheet["shots"][0]["keyframe_prompt"]
-    assert "35 mm anamorphic" in kp and "no text" in kp and kp.startswith("WIDE,")
+    assert "35 mm anamorphic" in kp and "no text" in kp and kp.startswith(ep.shots[0].size + ",")
     batches = prompts.batch_requests(sheet, "keyframes", lookkey_job="00000000-0000-4000-8000-000000000000")
     assert all(len(b) <= 12 for b in batches)
     assert sum(len(b) for b in batches) == 2 * len(ep.shots)

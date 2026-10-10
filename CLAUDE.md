@@ -15,7 +15,9 @@ Hard rules
 - Never put model names, tool names or prompts into any published text.
 - A still with an artifact is regenerated, not cropped around. A clip that morphs becomes a
   parallax still after one regeneration, not a third attempt.
-- One voice, locked in the episode YAML (`voice.voice_id`). Never resolve a voice by name.
+- One voice, locked in the episode YAML (`voice.elevenlabs_voice_id`, Eleven v4 via the direct
+  ElevenLabs API). Never resolve a voice by name at production time; the audition command is the
+  only place names are looked up.
 - Use the batch tools (`generate_image_batch`, `generate_video_batch`) with the exact `requests`
   arrays the pipeline writes; wait with `jobs_wait`; download results with `pipeline ingest`.
 

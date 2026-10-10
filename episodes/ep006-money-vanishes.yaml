@@ -1,0 +1,390 @@
+id: ep006-money-vanishes
+series: tomorrow-morning
+series_number: 6
+pillar: tomorrow-morning
+title: Money Vanishes at Midnight
+hook_title: WHAT IF MONEY VANISHED AT MIDNIGHT
+file_number: FILE B-0006
+target_duration: 80
+stamp_text: UNHAPPENED
+voice:
+  direction: calm, dry, unhurried documentary narrator; lets facts land
+  elevenlabs_voice_id: ''
+  model_id: eleven_v4
+  settings:
+    stability: 0.5
+    similarity_boost: 0.75
+    style: 0.15
+    speed: 0.95
+music:
+  mood: sparse piano, a soft pizzicato pulse, warmth at phase one, silence at the turn
+  cue: assets/music/tomorrow-morning-06.mp3
+look_key_prompt: >-
+  empty establishing frame of a corner shop at dawn with its shutter half up, a wooden counter, a spiral notebook
+  open beside an empty cash drawer, crates of eggs and bread, soft morning light
+research:
+  hinge: >-
+    At midnight every form of money, cash, bank balances and crypto, is deleted, and every debt with it. Goods,
+    buildings and skills remain. What follows is what economists have observed every time money failed: it is reinvented
+    within hours, because money is a record of who owes what to whom.
+  hinge_date: midnight
+  sources:
+  - Kocherlakota, Money is Memory, Journal of Economic Theory 81 (1998)
+  - >-
+    R. A. Radford, The Economic Organisation of a P.O.W. Camp, Economica 12 (1945): cigarettes as currency
+  - >-
+    Antoin Murphy, Money in an Economy Without Banks: the Case of Ireland, The Manchester School 46 (1978): the
+    1970 bank closure, about six months, with cheques and pubs as the clearing system
+  - 'W. S. Jevons, Money and the Mechanism of Exchange (1875): the double coincidence of wants'
+  - >-
+    Jack & Suri, Mobile Money: The Economics of M-PESA (NBER, 2011): phone credit as money in Kenya
+  - 'Felix Martin, Money: The Unauthorised Biography (2013)'
+  facts:
+  - >-
+    Barter fails because both sides must want what the other has at the same moment; a tab solves that, and a tab
+    is money.
+  - Allied prisoners of war ran a working economy on cigarettes in the nineteen forties.
+  - >-
+    Ireland's banks closed for about six months in nineteen seventy; people paid with endorsed cheques and pubs
+    acted as banks.
+  - >-
+    Kenya's M-PESA turned phone credit into everyday money for tens of millions within a few years of 2007.
+  - >-
+    Germany's Rentenmark of nineteen twenty-three replaced a worthless currency overnight and held, because people
+    decided to trust it.
+  - >-
+    Pensions, insurance and hospital budgets are numbers; a wiped ledger hits those who hold nothing physical hardest.
+  era_sheet:
+    timeline: >-
+      the present day: day one, week one, year one; two historical inserts (a 1940s camp table, a 1970 Dublin pub)
+    architecture: >-
+      a corner shop, a street market, a Dublin pub with a long bar, a central bank printing hall, a pensioner's
+      flat
+    clothing: >-
+      present-day ordinary clothes; 1970 Dublin coats and caps; 1940s wool uniforms at a camp table
+    vehicles: a bicycle traded on a doorstep, a bread van
+    street: >-
+      a spiral notebook ledger, an empty cash drawer, eggs, a jar of honey, cigarettes on a wooden table, endorsed
+      cheques, phones held up to each other, fresh notes on a press
+    light: >-
+      soft shop morning, warm pub lamps, market noon, printing-hall fluorescent, a pensioner's kitchen at dusk
+    palette: paper cream, notebook blue, egg brown, deep cyan accent
+    forbidden: piles of gold, burning banknotes, riots, text on notes or screens, crypto logos
+  cost: >-
+    A clean slate has a price. Pensions were numbers, hospitals ran on numbers, and the people with nothing physical
+    to trade were the ones who needed the numbers most.
+beats:
+- id: hook
+  vo: >-
+    What if money vanished at midnight. Every coin, every account, every bitcoin, gone. Your debts too. By breakfast
+    the bakery is taking eggs.
+  card:
+    text: WHAT IF MONEY VANISHED AT MIDNIGHT
+    style: title
+- id: hinge
+  vo: >-
+    Money is a memory: a record of who owes what to whom, kept on clay tablets five thousand years ago. Here the
+    record is wiped clean, savings and debts alike. This is how it happens.
+  card:
+    text: MIDNIGHT · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    Day one. Nothing is for sale, because nobody can make change. By noon the corner shop runs a tab. By dusk the
+    notebook is money. It took nine hours to invent it again.
+  card:
+    text: DAY ONE
+    style: phase
+- id: phase2
+  vo: >-
+    Week one. Prisoners of war once used cigarettes. Ireland in nineteen seventy used pub cheques for six months
+    when the banks closed. Here the new money is phone credit, because everyone has it and the network keeps the
+    count.
+  card:
+    text: WEEK ONE
+    style: phase
+- id: phase3
+  vo: >-
+    Year one. The state prints again and it works, because money only ever ran on trust. But the old ledger is gone.
+    Land, tools and skills kept their value. Numbers did not.
+  card:
+    text: YEAR ONE
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But a clean slate has a price. Pensions were numbers. Hospitals ran on numbers. The people with nothing
+    to barter were the ones who needed the numbers most.
+  card: null
+- id: dilemma
+  vo: >-
+    That timeline never happened. Ours did. So: your debts erased, your savings too. Do you take that night?
+  card:
+    text: Your debts erased, your savings too. Do you take that night?
+    style: question
+shots:
+- beat: hook
+  size: CLOSE
+  location: Bakery counter, morning, day one
+  prompt: >-
+    a hand placing a carton of eggs on a wooden bakery counter while a loaf is passed across the other way, a spiral
+    notebook open beside an empty cash drawer, soft morning light
+  motion: static close, the eggs set down, the loaf passes, the drawer stays open
+  dur: 2.5
+  mode: video
+  sfx: shop quiet
+  hero_object: true
+- beat: hook
+  size: DETAIL
+  location: Cash register, midnight
+  prompt: >-
+    macro, a cash register drawer sliding open on an empty coin tray, no notes under the clips, a shop's night light
+    reflected in the chrome
+  motion: static macro, the drawer slides open and stops, nothing inside
+  dur: 2.5
+  mode: video
+  sfx: register drawer
+- beat: hook
+  size: WIDE
+  location: Street market, dawn, day one
+  prompt: >-
+    a street market at dawn with stallholders setting out goods and handwritten cardboard signs illegible at this
+    distance, people holding bags of things to swap, low warm light
+  motion: slow dolly forward through the market, signs are propped up, people arrive
+  dur: 2.5
+  mode: video
+  sfx: market dawn
+- beat: hinge
+  size: DETAIL
+  location: Museum case, night
+  prompt: >-
+    macro, a clay tablet covered in tally marks and wedge impressions in a glass museum case, spotlit, dust on the
+    glass
+  motion: slow lateral track right across the tablet, the spotlight catches the impressions
+  dur: 3.5
+  mode: video
+  sfx: museum quiet
+  card:
+    text: |-
+      MONEY
+      IS MEMORY
+    style: stat
+- beat: hinge
+  size: MEDIUM
+  location: Supermarket till, midnight
+  prompt: >-
+    waist-up, a cashier at a till with a dark screen explaining with open hands to a customer holding a basket,
+    the queue behind looking at their phones, fluorescent light
+  motion: slow push-in, the cashier shrugs, the customer sets the basket down
+  dur: 3.0
+  mode: video
+  sfx: shop quiet
+- beat: hinge
+  size: AERIAL
+  location: Financial district, dawn, day one
+  prompt: >-
+    high and slow over a financial district at dawn, glass towers, empty streets, one jogger, cold grey light
+  motion: slow pan left across the towers, the jogger crosses a plaza
+  dur: 3.0
+  mode: video
+  sfx: city dawn
+- beat: phase1
+  size: WIDE
+  location: Corner shop, noon, day one
+  prompt: >-
+    a corner shop with a queue out of the door, the shopkeeper writing in a spiral notebook on the counter as each
+    person takes goods, crates of vegetables, hard noon light through the door
+  motion: slow lateral track left along the queue, the shopkeeper writes, a bag is lifted
+  dur: 3.5
+  mode: video
+  sfx: shop queue
+  hero_object: true
+- beat: phase1
+  size: DETAIL
+  location: Corner shop counter, day one
+  prompt: >-
+    macro, a pen writing names and items in columns in a spiral notebook, the words illegible, a thumb holding the
+    page flat, afternoon light
+  motion: static macro, the pen writes a line, the thumb shifts
+  dur: 3.0
+  mode: video
+  sfx: pen on paper
+  hero_object: true
+  card:
+    text: |-
+      9 HOURS
+      TO REINVENT MONEY
+    style: stat
+- beat: phase1
+  size: POV
+  location: Street market, afternoon, day one
+  prompt: >-
+    handheld, holding out a jar of honey across a market stall and receiving a bag of rice, the stallholder's hands,
+    afternoon sun
+  motion: handheld, the jar is taken and the bag of rice is passed back
+  dur: 3.0
+  mode: video
+  sfx: market
+- beat: phase1
+  size: MEDIUM
+  location: Doorstep, dusk, day one
+  prompt: >-
+    waist-up, two neighbours on a doorstep, one holding a bicycle and the other a sack of flour, shaking hands over
+    the swap, warm dusk light
+  motion: slow push-in, the handshake, the bicycle changes hands
+  dur: 3.5
+  mode: video
+  sfx: evening street
+- beat: phase2
+  size: CLOSE
+  location: Dublin pub, 1970
+  prompt: >-
+    a hand signing the back of a cheque on a wooden bar, a pint beside it, the barman's hand taking the cheque,
+    warm pub lamps, the writing illegible
+  motion: static close, the pen signs, the barman's hand takes the cheque
+  dur: 3.0
+  mode: video
+  sfx: pub
+- beat: phase2
+  size: WIDE
+  location: Dublin pub, 1970
+  prompt: >-
+    a long wooden bar with the barman stacking bundles of endorsed cheques on a shelf behind the optics, men in
+    caps and coats at the bar, warm lamps, smoke
+  motion: slow dolly forward along the bar, the barman stacks a bundle, smoke drifts
+  dur: 3.5
+  mode: video
+  sfx: pub
+- beat: phase2
+  size: DETAIL
+  location: Market, Nairobi, week one
+  prompt: >-
+    macro, two phones held screen to screen over a sack of maize, the screens blurred and illegible, a thumb pressing,
+    bright market light
+  motion: static macro, the thumb presses, one phone is lowered
+  dur: 3.0
+  mode: video
+  sfx: market
+  card:
+    text: |-
+      PHONE CREDIT
+      THE NEW MONEY
+    style: stat
+- beat: phase2
+  size: MEDIUM
+  location: Market, Nairobi, week one
+  prompt: >-
+    waist-up, a market woman in a bright headscarf nodding at a phone held up by a customer and handing over a bag
+    of maize, a scale beside her, bright noon light under a canvas awning
+  motion: slow push-in, the nod, the bag passes, the awning stirs
+  dur: 3.0
+  mode: video
+  sfx: market
+- beat: phase3
+  size: WIDE
+  location: Central bank printing hall, year one
+  prompt: >-
+    a printing hall with a long press feeding out sheets of new banknotes with illegible designs, workers in white
+    coats inspecting a sheet, fluorescent light
+  motion: slow dolly forward along the press, sheets feed out, a worker lifts one to the light
+  dur: 3.5
+  mode: video
+  sfx: printing press
+- beat: phase3
+  size: POV
+  location: Farm, dawn, year one
+  prompt: >-
+    handheld walking down a row of vegetables at dawn with a hoe in hand, dew on the leaves, a barn ahead, low golden
+    light
+  motion: handheld walk forward along the row, leaves brush past, light rises
+  dur: 3.0
+  mode: video
+  sfx: farm dawn
+- beat: phase3
+  size: DETAIL
+  location: Corner shop shelf, year one
+  prompt: >-
+    macro, the spiral notebook closed with a rubber band on a shelf, dust on the cover, a fresh banknote tucked
+    under the band, shop light
+  motion: slow lateral track right across the notebook, dust motes in the light
+  dur: 3.0
+  mode: video
+  sfx: shop quiet
+  hero_object: true
+- beat: phase3
+  size: MAP
+  location: Study, year one
+  prompt: >-
+    a physical relief map of a country on a table, hands placing small brass tokens on farmland and workshops and
+    none on the city centre, lamp light
+  motion: the hands place tokens one by one, slow push-in, lamp steady
+  dur: 3.0
+  mode: video
+  sfx: brass on wood
+- beat: turn
+  size: WIDE
+  location: Pensioner's kitchen, dusk, year one
+  prompt: >-
+    a small kitchen at dusk, an old woman at the table with an empty biscuit tin open in front of her, a kettle,
+    a window of blue evening light, one lamp
+  motion: very slow dolly forward toward the table, the kettle steams, she does not move
+  dur: 4.5
+  mode: video
+  sfx: kettle
+- beat: turn
+  size: CLOSE
+  location: Hospital cashier window, year one
+  prompt: >-
+    a hospital cashier's window with its blind pulled down, a hand resting on the counter outside it, a corridor's
+    fluorescent light
+  motion: static close, the hand taps the counter once, the blind does not move
+  dur: 4.0
+  mode: video
+  sfx: hospital corridor
+- beat: turn
+  size: MEDIUM
+  location: Church hall, evening, year one
+  prompt: >-
+    waist-up, volunteers ladling soup into bowls for a queue of people in coats in a church hall, steam, warm hanging
+    lamps
+  motion: slow lateral track left along the queue, the ladle rises and falls, steam drifts
+  dur: 4.0
+  mode: video
+  sfx: hall murmur
+- beat: dilemma
+  size: CLOSE
+  location: Kitchen table, night
+  prompt: >-
+    a hand tearing a paper bank statement in half over a kitchen table, the figures illegible, a lamp
+  motion: static close, the paper tears slowly, the halves fall
+  dur: 3.5
+  mode: video
+  sfx: paper tear
+- beat: dilemma
+  size: WIDE
+  location: Corner shop, dawn, day one
+  prompt: >-
+    a corner shop at dawn with its shutter rolling up, the spiral notebook open on the counter, crates of eggs and
+    bread, the first customer on the step, soft morning light
+  motion: very slow dolly forward as the shutter rises, light floods the counter
+  dur: 5.5
+  mode: video
+  sfx: shutter
+  hero_object: true
+dilemma: Your debts erased, your savings too. Do you take that night?
+pinned_comment: >-
+  I take it. Most people on Earth owe more than they own; a wiped ledger is the biggest jubilee in history and the
+  people who lose are the ones with numbers to lose. The bakery was taking eggs by breakfast. We'd be fine.
+metadata:
+  cover_time: 0.6
+  second_comment: >-
+    No. Savings are a pensioner's biscuit tin and a hospital's budget, not a billionaire's spreadsheet. Erase the
+    numbers and the first people to go hungry are the ones with nothing to barter.
+  hashtags:
+  - '#whatif'
+  - '#money'
+  - '#economics'
+  - '#society'
+  - '#tomorrowmorning'
+  replies_to_prepare:
+  - Gold would become money instantly
+  - This is just Bitcoin's origin story

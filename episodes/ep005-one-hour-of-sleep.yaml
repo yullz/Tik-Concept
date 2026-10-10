@@ -1,0 +1,389 @@
+id: ep005-one-hour-of-sleep
+series: tomorrow-morning
+series_number: 5
+pillar: tomorrow-morning
+title: Sleep Takes One Hour
+hook_title: WHAT IF SLEEP TOOK ONE HOUR
+file_number: FILE B-0005
+target_duration: 80
+stamp_text: UNHAPPENED
+voice:
+  direction: calm, dry, unhurried documentary narrator; lets facts land
+  elevenlabs_voice_id: ''
+  model_id: eleven_v4
+  settings:
+    stability: 0.5
+    similarity_boost: 0.75
+    style: 0.15
+    speed: 0.95
+music:
+  mood: sparse piano, a soft ticking pulse that never stops, sub bass at the turn
+  cue: assets/music/tomorrow-morning-05.mp3
+look_key_prompt: >-
+  empty establishing frame of a residential street at three in the morning with every window lit, front doors open,
+  a café with its lights on, no cars moving, cold cyan night sky with warm light from the windows
+research:
+  hinge: >-
+    Adults need about seven to nine hours of sleep because the brain clears waste and consolidates memory while
+    we are unconscious. In this timeline the same work gets done in sixty minutes, for everyone, starting tonight.
+  hinge_date: tonight
+  sources:
+  - >-
+    Xie et al., Sleep drives metabolite clearance from the adult brain, Science 342 (2013): the glymphatic system
+    clears waste mainly during sleep
+  - Walker & Stickgold, Sleep-dependent learning and memory consolidation, Neuron 44 (2004)
+  - >-
+    National Sleep Foundation / Hirshkowitz et al. (2015): adults need 7-9 hours; about a third of life is spent
+    asleep
+  - >-
+    Matthew Walker, Why We Sleep (2017), on what short sleep does to the body and on the economics of the night
+  - >-
+    US EIA, hourly electricity demand profiles: overnight demand is typically a third below the daytime peak
+  facts:
+  - >-
+    A third of a human life is spent asleep; one hour instead of eight returns seven hours a day, about one hundred
+    days a year.
+  - Over a seventy-year life that is roughly twenty-five extra waking years.
+  - >-
+    Electricity demand drops by about a third overnight because people sleep; a sleepless planet loses that dip.
+  - >-
+    Dreaming happens mostly in REM sleep, which comes in cycles late in a night's sleep; an hour has little room
+    for it.
+  - >-
+    The night was the one period of the day that could not be sold as labour; the counterfactual assumes it becomes
+    a shift.
+  era_sheet:
+    timeline: 'the present day: week one, year one, year ten'
+    architecture: >-
+      real places: a residential street, a power-station control room, a bakery, an office tower, a factory, a parliament,
+      a crowded train
+    clothing: >-
+      dressing gowns at first, then work clothes at three in the morning; overalls, suits, school uniforms at night
+    vehicles: trains and buses full at three in the morning, a full office car park at two
+    street: >-
+      an analogue bedside clock with a bell alarm, a time clock punching cards, lit windows, open café doors
+    light: >-
+      night street lit by windows and sodium lamps, fluorescent workplaces at night, a dawn nobody is waiting for
+    palette: window amber, night cyan, fluorescent white, deep cyan accent
+    forbidden: zombies, red eyes, energy-drink clichés, text on clocks or screens, glowing
+  cost: >-
+    The seven hours were never going to be yours. The night was the one thing nobody could sell; in this timeline
+    it becomes a shift, and the extra waking years are spent mostly at work.
+beats:
+- id: hook
+  vo: >-
+    What if sleep took one hour. Not eight. One, for everyone, starting tonight. The whole planet wakes up at one
+    in the morning, rested, with twenty-three hours to fill.
+  card:
+    text: WHAT IF SLEEP TOOK ONE HOUR
+    style: title
+- id: hinge
+  vo: >-
+    We spend a third of our lives asleep, because sleep clears the brain and files the day. Here the brain learns
+    to do it in sixty minutes. This is how it happens.
+  card:
+    text: TONIGHT · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    Week one. Seven extra hours a day, for eight billion people. The lights never go off, so power demand jumps
+    by a third. Nobody knows what to do with three in the morning.
+  card:
+    text: WEEK ONE
+    style: phase
+- id: phase2
+  vo: >-
+    Year one. The hours fill. A second workday appears, because an employer who can have you for sixteen hours will.
+    Cities run three shifts. The economy grows by a quarter and so does the smoke.
+  card:
+    text: YEAR ONE
+    style: phase
+- id: phase3
+  vo: >-
+    Year ten. There is no night. Shops, schools and parliaments run around the clock. A life holds twenty-five more
+    waking years. Nobody remembers dreams, because an hour is too short to have one.
+  card:
+    text: YEAR TEN
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But the seven hours were never going to be yours. The night was the one thing nobody could sell. Now
+    it is a shift.
+  card: null
+- id: dilemma
+  vo: >-
+    That timeline never happened. Ours did. So: twenty-three hours a day. More freedom, or more work?
+  card:
+    text: 'Twenty-three hours a day: more freedom, or more work?'
+    style: question
+shots:
+- beat: hook
+  size: WIDE
+  location: Residential street, one in the morning
+  prompt: >-
+    a residential street at one in the morning with every window lit and people stepping out of front doors in dressing
+    gowns looking at each other, a café switching its lights on, cold night sky, warm window light
+  motion: slow dolly forward down the street, doors open, lights come on one by one
+  dur: 2.5
+  mode: video
+  sfx: night street
+- beat: hook
+  size: DETAIL
+  location: Bedside table, one in the morning
+  prompt: >-
+    macro, a brass analogue alarm clock with twin bells on a bedside table, its hands at one, a lamp just switched
+    on, a glass of water
+  motion: static macro, the second hand ticks, the lamp light steadies
+  dur: 2.5
+  mode: video
+  sfx: clock tick
+  hero_object: true
+- beat: hook
+  size: MEDIUM
+  location: Bedroom, one in the morning
+  prompt: >-
+    waist-up, a woman sitting up in bed fully awake and alert, curtains open on a lit city, a book on the duvet,
+    warm lamp and cold window light
+  motion: static tripod with a slow push-in, she turns to the window, curtains stir
+  dur: 2.5
+  mode: video
+  sfx: room quiet
+- beat: hinge
+  size: DETAIL
+  location: Sleep laboratory, night
+  prompt: >-
+    macro, a glass model of a human brain on a lab bench with blue dye flowing through fine channels inside it,
+    a lamp behind, a stopwatch beside it
+  motion: static macro, the dye advances through the channels, lamp steady
+  dur: 3.5
+  mode: video
+  sfx: lab hum
+  card:
+    text: |-
+      1/3 OF LIFE
+      SPENT ASLEEP
+    style: stat
+- beat: hinge
+  size: CLOSE
+  location: Bedside table, night
+  prompt: >-
+    a hand turning the alarm dial on the brass clock's back from the eight toward the one, lamp light, the twin
+    bells catching the light
+  motion: static close, the dial turns slowly, the hand withdraws
+  dur: 3.0
+  mode: video
+  sfx: clock dial
+  hero_object: true
+- beat: hinge
+  size: AERIAL
+  location: City, three in the morning
+  prompt: >-
+    high and slow over a city at three in the morning with every window lit, traffic moving on every road, no dark
+    districts at all, cold night sky
+  motion: slow pan right across the city, traffic flows, lights steady
+  dur: 3.0
+  mode: video
+  sfx: city night
+- beat: phase1
+  size: WIDE
+  location: Power station control room, week one, night
+  prompt: >-
+    a control room with a wall of analogue dials and gauges, two operators in shirtsleeves watching the needles
+    climb, coffee cups, fluorescent light
+  motion: slow dolly forward toward the wall of dials, needles climb, an operator stands
+  dur: 3.5
+  mode: video
+  sfx: control room
+  card:
+    text: |-
+      +33%
+      POWER DEMAND AT 3 AM
+    style: stat
+- beat: phase1
+  size: POV
+  location: Restaurant, three in the morning, week one
+  prompt: >-
+    handheld walking into a restaurant full of people eating breakfast at three in the morning, waiters moving,
+    windows black, warm pendant lights
+  motion: handheld walk forward between tables, a waiter passes, cutlery moves
+  dur: 3.0
+  mode: video
+  sfx: restaurant
+- beat: phase1
+  size: CLOSE
+  location: Bakery, three in the morning, week one
+  prompt: >-
+    floured hands kneading dough on a wooden counter, a brick oven's orange light from the side, a window black
+    behind
+  motion: static close, the hands fold the dough, flour dust drifts
+  dur: 3.0
+  mode: video
+  sfx: bakery
+- beat: phase1
+  size: MEDIUM
+  location: Park bench, four in the morning, week one
+  prompt: >-
+    waist-up, a man on a park bench at four in the morning, wide awake, hands in his coat pockets, looking at nothing,
+    a path lamp, lit apartment blocks behind
+  motion: static tripod with a slow push-in, he exhales, leaves stir on the path
+  dur: 3.5
+  mode: video
+  sfx: park night
+- beat: phase2
+  size: AERIAL
+  location: Office tower, two in the morning, year one
+  prompt: >-
+    high and slow over an office tower with every floor lit at two in the morning, the car park full, a lit motorway
+    beyond, cold night
+  motion: slow crane down the tower's face, cars move in the lot, lights steady
+  dur: 3.5
+  mode: video
+  sfx: city night
+  card:
+    text: |-
+      16-HOUR
+      WORKDAY
+    style: stat
+- beat: phase2
+  size: DETAIL
+  location: Factory entrance, year one
+  prompt: >-
+    macro, a steel time clock punching a card held by a hand, a rack of cards behind, fluorescent light
+  motion: static macro, the card goes in, the clock punches, the hand withdraws
+  dur: 3.0
+  mode: video
+  sfx: time clock
+- beat: phase2
+  size: WIDE
+  location: Factory floor, year one, night
+  prompt: >-
+    a factory floor with one shift in overalls walking in through a gate as another walks out, machines running
+    between them, skylights black, fluorescent light
+  motion: slow lateral track right along the gate, the two shifts pass each other
+  dur: 3.5
+  mode: video
+  sfx: factory
+- beat: phase2
+  size: MEDIUM
+  location: Classroom, two in the morning, year one
+  prompt: >-
+    waist-up, a teacher at a whiteboard with illegible marks, students in uniform at desks wide awake, the windows
+    black, fluorescent light
+  motion: slow push-in, the teacher gestures, a student raises a hand
+  dur: 3.0
+  mode: video
+  sfx: classroom
+- beat: phase3
+  size: WIDE
+  location: Parliament chamber, four in the morning, year ten
+  prompt: >-
+    a parliament chamber in full session at four in the morning, benches full, public galleries full, wood panelling
+    and warm lamps, windows black
+  motion: slow crane down from the gallery to the floor, a member stands to speak
+  dur: 3.5
+  mode: video
+  sfx: chamber murmur
+- beat: phase3
+  size: POV
+  location: Commuter train, three in the morning, year ten
+  prompt: >-
+    handheld inside a packed commuter train at three in the morning, people in work clothes holding straps, the
+    window black with passing lights, fluorescent carriage light
+  motion: handheld sway with the train, lights pass the window, straps swing
+  dur: 3.0
+  mode: video
+  sfx: train
+- beat: phase3
+  size: DETAIL
+  location: Bedside table, year ten
+  prompt: >-
+    macro, the brass alarm clock with its bell hammer removed, dust on the dial, the hands at one, dim lamp
+  motion: static macro, the second hand ticks, dust motes drift
+  dur: 3.0
+  mode: video
+  sfx: clock tick
+  hero_object: true
+  card:
+    text: |-
+      +25 YEARS
+      AWAKE
+    style: stat
+- beat: phase3
+  size: MAP
+  location: Study, year ten
+  prompt: >-
+    a physical relief globe on a stand with no shadow side, two hands holding a lamp over each hemisphere so the
+    whole globe is lit, a dark room
+  motion: the lamps hold steady, slow push-in on the fully lit globe
+  dur: 3.0
+  mode: video
+  sfx: room quiet
+- beat: turn
+  size: WIDE
+  location: Hill above the city, three in the morning, year ten
+  prompt: >-
+    a city seen from a hill at three in the morning, every window lit to the horizon, no dark district, no stars
+    visible above the window light, cold air
+  motion: very slow dolly back along the hill, the city lights stay steady
+  dur: 4.5
+  mode: video
+  sfx: city hum
+- beat: turn
+  size: CLOSE
+  location: Shop window, year ten
+  prompt: >-
+    the brass alarm clock in a junk-shop window with a paper tag, the tag illegible, dust, a reflection of a lit
+    street behind
+  motion: static close, the reflection of a passing bus crosses the glass
+  dur: 4.0
+  mode: video
+  sfx: street quiet
+  hero_object: true
+- beat: turn
+  size: MEDIUM
+  location: Office, four in the morning, year ten
+  prompt: >-
+    waist-up, a cleaner mopping an office corridor at four in the morning while a manager watches from behind a
+    glass partition, fluorescent light
+  motion: slow lateral track left along the corridor, the mop moves, the manager turns away
+  dur: 4.0
+  mode: video
+  sfx: mop
+- beat: dilemma
+  size: CLOSE
+  location: Bedroom wall, night
+  prompt: >-
+    a hand resting on a light switch without turning it off, a lit city through the window beyond, warm lamp
+  motion: static close, the finger hesitates on the switch and stays
+  dur: 3.5
+  mode: video
+  sfx: room quiet
+- beat: dilemma
+  size: WIDE
+  location: Bedroom, night, year ten
+  prompt: >-
+    a bedroom with the bed made and unused, a desk lamp on, the window full of a city lit to the horizon, the brass
+    clock on the sill, cold night sky
+  motion: very slow dolly back from the window, lights steady
+  dur: 5.5
+  mode: video
+  sfx: city hum
+  hero_object: true
+dilemma: 'Twenty-three hours a day: more freedom, or more work?'
+pinned_comment: >-
+  More work. Every hour humans have ever freed up, from the loom to the dishwasher, got filled by a job within a
+  generation. Seven hours a day is the biggest productivity gain in history, and it will not be yours.
+metadata:
+  cover_time: 0.8
+  second_comment: >-
+    More freedom. A hundred extra days a year and the first thing to die is the alarm clock. Work expands to fill
+    the day only if we let it, and a planet that is never tired has time to argue about that.
+  hashtags:
+  - '#whatif'
+  - '#sleep'
+  - '#science'
+  - '#psychology'
+  - '#tomorrowmorning'
+  replies_to_prepare:
+  - We'd just get bored
+  - Dolphins sleep with half a brain, so it's possible

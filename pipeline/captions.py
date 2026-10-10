@@ -137,7 +137,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         q_start = ds + 0.3
         line(4, q_start, total, "Question", ep.dilemma, "{\\pos(540,700)\\fad(200,0)}")
         stamp_at = max(total - 1.1, q_start + 1.5)
-        line(5, stamp_at, total, "Stamp", ep.raw.get("stamp_text", "NEVER HAPPENED"),
+        line(5, stamp_at, total, "Stamp", ep.raw.get("stamp_text", "UNHAPPENED"),
              "{\\pos(540,1180)\\fscx140\\fscy140\\t(0,120,\\fscx100\\fscy100)}")
     return header + "\n".join(ev) + "\n"
 

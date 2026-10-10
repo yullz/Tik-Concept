@@ -1,16 +1,21 @@
-id: ep006-constantinople-holds
+id: ep013-constantinople-holds
 series: never-fell
 series_number: 2
 pillar: never-fell
 title: Constantinople Holds
 hook_title: WHAT IF CONSTANTINOPLE NEVER FELL
-file_number: FILE B-0006
+file_number: FILE B-0013
 target_duration: 80
-stamp_text: NEVER HAPPENED
+stamp_text: UNHAPPENED
 voice:
-  direction: calm dry archivist, British-leaning, unhurried, low-mid pitch, lets facts land
-  voice_type: preset
-  voice_id: 30fc8796-ceb6-4a66-b3a7-4a145ef7f346
+  direction: calm, dry, unhurried documentary narrator; lets facts land
+  elevenlabs_voice_id: ''
+  model_id: eleven_v4
+  settings:
+    stability: 0.5
+    similarity_boost: 0.75
+    style: 0.15
+    speed: 0.95
 music:
   mood: low strings, slow pulse, a bell at the hinge
   cue: assets/music/never-fell-02.mp3

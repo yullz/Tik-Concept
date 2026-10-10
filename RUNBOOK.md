@@ -2,7 +2,8 @@
 
 Nothing here spends credits until step 4. Steps 1–3 and 7–12 are local and free.
 Costs are from this account's preflights (2026-10-10): keyframe 2 credits, Kling 3.0 std 5 s
-silent clip 7.5, ElevenLabs narration ≈ 4 per episode. A Hero episode is ≈ 300 credits.
+silent clip 7.5; narration is billed by ElevenLabs characters on the channel's own key (~1,200
+characters per episode). A Hero episode is ≈ 300 Higgsfield credits.
 
 ## 0. Pick the episode
 `episodes/<id>.yaml` exists and is marked ready in `docs/07-topic-backlog.md`. If it does not
@@ -81,14 +82,14 @@ Review clips at 1× in the contact sheet. Mark `clip: R` with a reason. One rege
 shot (reword the motion prompt: slower camera, fewer moving things). A second failure: set the
 shot's `mode: still` in the episode YAML; the assembler animates the approved keyframe.
 
-## 7. Narration (≈ 4 credits)
+## 7. Narration (ElevenLabs, your key; character cost only)
 ```
-python3 -m pipeline tts episodes/<id>.yaml --backend higgsfield
+python3 -m pipeline tts episodes/<id>.yaml
 ```
-Writes `renders/<id>/audio/tts_request.json`. Call `generate_audio` with exactly that body
-(`get_cost: true` first). Save the result as `renders/<id>/audio/vo.mp3`.
-Direct ElevenLabs route instead: `--backend elevenlabs` (needs `.env`), which also writes
-word timestamps.
+Uses the locked `voice.elevenlabs_voice_id` and `model_id` (Eleven v4) from the YAML, writes
+`renders/<id>/audio/vo.mp3` plus `words.json` (timestamps, or forced alignment as fallback) and
+prints the measured pace. 2.2–2.8 words per second required; otherwise rewrite the beat and run
+again. Never time-stretch. If no voice is locked yet, run the audition first (docs/06).
 
 ## 8. Timeline (free)
 ```

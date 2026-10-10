@@ -1,6 +1,6 @@
 # 05 · Visual Style & Prompt Library
 
-## The Counterfact look (locked for season one)
+## The Unhappened look (locked for season one)
 
 | Element | Spec | Why |
 |---|---|---|
