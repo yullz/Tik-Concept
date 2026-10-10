@@ -1,0 +1,341 @@
+id: ep013-humans-live-to-two-hundred
+series: tomorrow-morning
+series_number: 13
+pillar: tomorrow-morning
+title: "Humans Live to Two Hundred"
+hook_title: "WHAT IF YOU LIVED TO TWO HUNDRED"
+file_number: "FILE B-0013"
+target_duration: 80
+stamp_text: "UNHAPPENED"
+voice:
+  direction: "calm, dry, unhurried documentary narrator; lets facts land"
+  elevenlabs_voice_id: ""
+  model_id: eleven_v4
+  settings: {stability: 0.5, similarity_boost: 0.75, style: 0.15, speed: 0.95}
+music:
+  mood: "sparse piano, a slow heartbeat pulse, a warm cello line that turns cold at the turn"
+  cue: "assets/music/tomorrow-morning-13.mp3"
+look_key_prompt: >-
+  empty establishing frame of a family house's front door at dawn with a brass key in the lock, a long drive of
+  old trees, a hall of framed photographs visible through the open door, soft cyan morning light
+research:
+  hinge: >-
+    From tonight every human life lasts about two hundred years in good health, with ageing paused around the
+    middle of life. Births, prices, jobs, houses and laws stay exactly as they are, which is where the trouble
+    starts.
+  hinge_date: "tonight"
+  sources:
+    - "WHO, Global Health Estimates: world life expectancy at birth about 73 years (2019)"
+    - "INSEE / Guinness: Jeanne Calment, the longest verified human life, 122 years (1875-1997)"
+    - "OECD, Pensions at a Glance (2023): pension systems assume roughly 15-25 years of retirement after a working life of about 40"
+    - "Olshansky & Carnes, The Quest for Immortality (2001), on what a radical lifespan extension would do to institutions"
+    - "UN DESA, World Population Prospects (2024), for the population arithmetic when deaths fall and births do not"
+    - "David Sinclair, Lifespan (2019), on the healthspan argument and who gets the first treatments"
+  facts:
+    - "A human life today averages about seventy-three years; the longest ever verified was one hundred and twenty-two."
+    - "Pensions are built for fifteen to twenty-five years of retirement; two hundred-year lives break that arithmetic on day one."
+    - "A marriage at twenty-five becomes a hundred-and-seventy-year contract."
+    - "If nobody retires or dies, nobody is promoted and nothing is inherited; houses, farms and seats stay with their holders."
+    - "Births continuing at today's rate while deaths stop for a century pushes population toward sixteen billion."
+    - "New medical treatments reach the rich first and the poor last; a two-hundred-year life would be the biggest such gap in history."
+  era_sheet:
+    timeline: "the present day: year one, year fifty, year two hundred"
+    architecture: "a family house with a long drive (the through-line), a pensions office, a wedding hall, a parliament, a crowded city, a street where two houses face each other"
+    clothing: "ordinary clothes across the ages; the same faces at forty for a hundred years"
+    vehicles: "none important"
+    street: "a brass house key, framed photographs, a pension ledger, wedding rings, a parliament bench, a crowded street, a clinic door"
+    light: "soft dawn on the house, office fluorescents, warm wedding light, grey parliament, hard city noon, the two-house street at dusk"
+    palette: "brass, photograph sepia, wedding white, deep cyan accent"
+    forbidden: "wrinkled-face horror, vampires, glowing, text on documents, religious imagery"
+  cost: >-
+    The century was never free: the treatments go first to those who can pay, so for a generation the rich live to
+    two hundred and the poor die at seventy, on the same street.
+beats:
+  - id: hook
+    vo: >-
+      What if you lived to two hundred. Everyone does, from tonight. Healthy at one hundred and fifty. Your pension
+      just became a joke.
+    card: {text: "WHAT IF YOU LIVED TO TWO HUNDRED", style: title}
+  - id: hinge
+    vo: >-
+      A human life runs about seventy-three years. Here, from tonight, it runs two hundred, in good health, for
+      everyone. Nothing else changes. That is the problem. This is how it happens.
+    card: {text: "TONIGHT · THE HINGE", style: date}
+  - id: phase1
+    vo: >-
+      Year one. Retirement at sixty-five means a hundred and thirty-five years on a pension, so retirement moves
+      to one hundred and fifty. Marriage is now a hundred and seventy years long.
+    card: {text: "YEAR ONE", style: phase}
+  - id: phase2
+    vo: >-
+      Year fifty. Nobody dies, so nobody retires, so nobody is promoted. The houses, the farms, the seats in
+      parliament belong to people born last century, and they are not leaving. The young wait.
+    card: {text: "YEAR FIFTY", style: phase}
+  - id: phase3
+    vo: >-
+      Year two hundred. The first full lives are ending now, with great-great-grandchildren. Births never stopped,
+      so Earth holds sixteen billion. The oldest voters remember a planet with half the people.
+    card: {text: "YEAR TWO HUNDRED", style: phase}
+  - id: turn
+    vo: >-
+      [exhale] But the century was never free. The treatments go first to those who can pay, so for a generation
+      the rich live to two hundred and the poor die at seventy, on the same street.
+    card: null
+  - id: dilemma
+    vo: >-
+      That timeline never happened. Ours did. So: the extra century, if your grandchildren wait a lifetime for your
+      house. Do you take it?
+    card: {text: "The extra century, if your grandchildren wait a lifetime for your house. Do you take it?", style: question}
+shots:
+  - beat: hook
+    size: CLOSE
+    location: "Front door, dawn"
+    prompt: >-
+      a hand turning a brass key in the lock of a family house's front door at dawn, old paint on the door, a
+      long drive of trees reflected in the glass, soft morning light
+    motion: "static close, the key turns, the door eases open"
+    dur: 2.5
+    mode: video
+    sfx: "key in lock"
+    hero_object: true
+  - beat: hook
+    size: WIDE
+    location: "Birthday party, garden"
+    prompt: >-
+      a garden birthday party with a long table, a cake with far too many candles blazing, a woman who looks forty
+      about to blow them out, family of every age around her, warm afternoon light
+    motion: "slow dolly forward toward the cake, candle flames lean, the family leans in"
+    dur: 2.5
+    mode: video
+    sfx: "party"
+  - beat: hook
+    size: DETAIL
+    location: "Pensions office, morning"
+    prompt: >-
+      macro, a thick paper pension ledger being closed by a hand and pushed aside, the columns illegible, a
+      calculator with its display dark, fluorescent light
+    motion: "static macro, the ledger closes, the hand pushes it away"
+    dur: 2.5
+    mode: video
+    sfx: "ledger close"
+  - beat: hinge
+    size: MEDIUM
+    location: "Clinic corridor, night"
+    prompt: >-
+      waist-up, a doctor in a white coat holding a small glass vial up to a corridor light, a nurse beside her,
+      a queue of chairs behind, fluorescent light
+    motion: "static tripod with a slow push-in, the vial turns in the light"
+    dur: 3.5
+    mode: video
+    sfx: "clinic quiet"
+    card: {text: "73 → 200\nYEARS", style: stat}
+  - beat: hinge
+    size: MAP
+    location: "Hall of photographs"
+    prompt: >-
+      a wall of framed family photographs in a hallway, a hand hanging a new frame at the end of a row that runs
+      the length of the hall, warm lamp light, faces indistinct
+    motion: "slow lateral track right along the row to the new frame, the hand withdraws"
+    dur: 3.0
+    mode: video
+    sfx: "frame on wall"
+  - beat: hinge
+    size: AERIAL
+    location: "Cemetery, dawn"
+    prompt: >-
+      high and slow over a cemetery at dawn with its gates chained and grass growing over the paths, a town beyond
+      with lights coming on, mist
+    motion: "slow pan right over the cemetery to the town, mist drifts"
+    dur: 3.0
+    mode: video
+    sfx: "dawn birds"
+  - beat: phase1
+    size: WIDE
+    location: "Pensions office, year one"
+    prompt: >-
+      a pensions office with a queue of people who all look about forty, clerks behind glass with dark screens,
+      a wall clock, fluorescent light
+    motion: "slow lateral track left along the queue, a clerk shrugs, people shift"
+    dur: 3.5
+    mode: video
+    sfx: "office queue"
+    card: {text: "RETIREMENT AT\n150", style: stat}
+  - beat: phase1
+    size: DETAIL
+    location: "Wedding, year one"
+    prompt: >-
+      macro, two hands exchanging wedding rings, the officiant's hands holding an open book with illegible
+      lines, warm hall light
+    motion: "static macro, the ring slides on, the hands hold"
+    dur: 3.0
+    mode: video
+    sfx: "wedding hall"
+  - beat: phase1
+    size: POV
+    location: "Bank, year one"
+    prompt: >-
+      handheld across a bank desk where a clerk slides a mortgage document across, the figures illegible, a pen
+      offered, daylight
+    motion: "handheld, the document slides across, the pen is offered"
+    dur: 3.0
+    mode: video
+    sfx: "bank quiet"
+  - beat: phase1
+    size: MEDIUM
+    location: "Kitchen, year one, evening"
+    prompt: >-
+      waist-up, a couple at a kitchen table doing sums on paper with a calendar on the wall, both laughing in
+      disbelief, warm lamp light
+    motion: "slow push-in, one taps the paper, the other laughs"
+    dur: 3.5
+    mode: video
+    sfx: "kitchen evening"
+  - beat: phase2
+    size: AERIAL
+    location: "Office district, year fifty"
+    prompt: >-
+      high and slow over an office district at nine in the morning, the same crowds pouring in, every tower lit,
+      grey light
+    motion: "slow pan left over the crowds, traffic flows"
+    dur: 3.5
+    mode: video
+    sfx: "city morning"
+  - beat: phase2
+    size: CLOSE
+    location: "Parliament, year fifty"
+    prompt: >-
+      a hand resting on a worn green leather parliament bench, the same hand with the same ring, dust on the
+      wood beside it, grey light
+    motion: "static close, the fingers tap once on the leather"
+    dur: 3.0
+    mode: video
+    sfx: "chamber murmur"
+    card: {text: "YEAR FIFTY\nNOBODY IS PROMOTED", style: stat}
+  - beat: phase2
+    size: WIDE
+    location: "Family house, year fifty"
+    prompt: >-
+      the family house at the end of its drive of trees, now taller, four generations gathered on the lawn, the
+      same woman who looks forty at the door with the brass key, soft evening light
+    motion: "slow dolly forward up the drive, the family turns, the door stays"
+    dur: 3.5
+    mode: video
+    sfx: "evening garden"
+    hero_object: true
+  - beat: phase2
+    size: DETAIL
+    location: "Flat, year fifty"
+    prompt: >-
+      macro, a young man's hands folding a small bed into a wall of a tiny rented room, a window of towers, grey
+      light
+    motion: "static macro, the bed folds up, the hands withdraw"
+    dur: 3.0
+    mode: video
+    sfx: "room quiet"
+  - beat: phase3
+    size: WIDE
+    location: "City street, year two hundred"
+    prompt: >-
+      a city street packed shoulder to shoulder at noon, towers stacked above older towers, trams full, hard
+      light, every face the same age
+    motion: "slow dolly forward through the crowd, trams pass, the crowd moves"
+    dur: 3.5
+    mode: video
+    sfx: "dense crowd"
+    card: {text: "16,000,000,000\nPEOPLE", style: stat}
+  - beat: phase3
+    size: POV
+    location: "Hospital room, year two hundred"
+    prompt: >-
+      handheld at a bedside where an old woman's hand holds a child's hand, framed photographs crowding the
+      table, soft window light
+    motion: "handheld, the hands hold, the light shifts on the frames"
+    dur: 3.0
+    mode: video
+    sfx: "room quiet"
+  - beat: phase3
+    size: DETAIL
+    location: "Front door, year two hundred"
+    prompt: >-
+      macro, the brass key in the same front door's lock, the paint worn through to older paint beneath, dawn
+      light on the brass
+    motion: "static close, the key turns slowly, the door eases open"
+    dur: 3.0
+    mode: video
+    sfx: "key in lock"
+    hero_object: true
+  - beat: phase3
+    size: MAP
+    location: "Archive, year two hundred"
+    prompt: >-
+      a physical relief globe crowded with tiny model houses on every continent, a hand placing one more on a
+      coast with no room left, lamp light
+    motion: "the hand searches for a space and places the house, slow push-in"
+    dur: 3.0
+    mode: video
+    sfx: "wood on wood"
+  - beat: turn
+    size: WIDE
+    location: "Clinic entrance, year one"
+    prompt: >-
+      a glass-fronted clinic at dusk with a short queue of well-dressed people at a lit door, and across the
+      street a long queue outside a dark public hospital, rain
+    motion: "very slow dolly back to take in both queues, rain falls"
+    dur: 4.5
+    mode: video
+    sfx: "rain street"
+  - beat: turn
+    size: CLOSE
+    location: "Street, year one"
+    prompt: >-
+      two front doors facing each other across a narrow street at dusk, one with a brass key in the lock and fresh
+      paint, one with peeling paint and a wreath, rain on the cobbles
+    motion: "static close, rain runs down both doors, the wreath stirs"
+    dur: 4.0
+    mode: video
+    sfx: "rain"
+    hero_object: true
+  - beat: turn
+    size: MEDIUM
+    location: "Street, year one"
+    prompt: >-
+      waist-up from behind, a man of seventy with a cane standing in the rain looking across the street at a
+      lit doorway where people his age look forty, sodium lamp
+    motion: "static tripod with a slow push-in, rain falls, the cane shifts"
+    dur: 4.0
+    mode: video
+    sfx: "rain street"
+  - beat: dilemma
+    size: CLOSE
+    location: "Front door, dawn"
+    prompt: >-
+      a young hand reaching for the brass key in the family house's lock, an older hand already resting on it,
+      dawn light on the brass
+    motion: "static close, the young hand stops short of the key"
+    dur: 3.5
+    mode: video
+    sfx: "dawn quiet"
+    hero_object: true
+  - beat: dilemma
+    size: WIDE
+    location: "Family house, dawn"
+    prompt: >-
+      the family house at the end of its drive of very old trees at dawn, a woman at the door and a young couple
+      with suitcases at the gate, pale light
+    motion: "very slow dolly back down the drive, light rises"
+    dur: 5.5
+    mode: video
+    sfx: "dawn birds"
+dilemma: "The extra century, if your grandchildren wait a lifetime for your house. Do you take it?"
+pinned_comment: >-
+  I take it, and so would you. Nobody in history has refused a longer life because of the housing market. The
+  grandchildren will build their own houses. They will have two hundred years to do it.
+metadata:
+  cover_time: 0.6
+  second_comment: >-
+    No. A world where nobody dies is a world where nothing changes hands: no promotions, no inheritance, no new
+    ideas in parliament for a century. A long life for the few at the top is just a monarchy with good doctors.
+  hashtags: ["#whatif", "#science", "#longevity", "#society", "#tomorrowmorning"]
+  replies_to_prepare:
+    - "We'd just have fewer kids and it balances"
+    - "This is already happening slowly"

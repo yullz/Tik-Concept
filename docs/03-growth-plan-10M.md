@@ -53,26 +53,30 @@ Ten million is reachable in month one only with (a) ≥ 150 posts across surface
 
 ## Launch sequence (the first week decides the month)
 
-The launch set is eight premises anyone on Earth understands without knowing a single date.
-Each is a "tomorrow morning" counterfactual with a sourced mechanism and a real dilemma; the
-history series starts only once the account has an audience that already trusts the format.
+The launch set is thirteen premises anyone on Earth understands without knowing a single date:
+"tomorrow morning" counterfactuals with a sourced mechanism and a real dilemma. The history
+series is shelved (`episodes/shelved/`) until the account has an audience that trusts the format.
 
 | Slot | Episode | Why this one here |
 |---|---|---|
-| Day 1, 18:00 | **The Moon Is Gone** (`FILE B-0001`) | "You wake up and look up" is the most universal hook we own; tides, dark nights and a wandering axis escalate cleanly; the dilemma (dark, tide or tilt) splits the room. |
-| Day 2, 07:00 | **The Earth Stops Spinning** (`B-0002`) | Physics everyone has wondered about; the oceans migrating to the poles is a one-image hook; the Foucault pendulum is a through-line people screenshot. |
-| Day 2, 18:00 | **All the Ice Melts This Week** (`B-0003`) | The drowned-skyline image stops thumbs; the turn (salt, not water) is the thing nobody expects; Antarctica as the last unclaimed land is an argument generator. |
-| Day 3, 07:00 | **The Internet Goes Dark for a Year** (`B-0004`) | Modern, personal, immediate: the bakery card machine saying no. City vs village is a dilemma everyone has a side on. |
-| Day 3, 18:00 | **Sleep Takes One Hour** (`B-0005`) | Upbeat premise with a dark turn (the night becomes a shift); the most shareable of the set. |
-| Day 4, 07:00 | **Money Vanishes at Midnight** (`B-0006`) | The counterintuitive mechanism (money reinvented in nine hours) plus a moral dilemma (debts erased, savings too). |
-| Day 4, 18:00 | **The Signal Comes Tomorrow** (`B-0007`) | The reply debate is the best comment engine in the set; sourced protocol, no aliens on screen. |
-| Day 5, 07:00 | **Every Human Vanishes Tonight** (`B-0008`) | The bridge through-line and the Chernobyl fact; the three-way ending (pyramid, plastic, probe) is built for arguments. |
-| Day 5–7 | The Ocean Dries Up Tonight (`B-0009`), The Asteroid Hits Twenty Minutes Later (`B-0010`), two reply episodes | Two more broad premises, then the first replies from the Moon and Ice threads |
-| Week 2 onward | Rome Never Fell (`B-0011`), Columbus Turns Back, Constantinople Holds, Mali Reaches Brazil, The Black Death Never Comes, The Internet in 1950, Horses Never Left America | The history series, introduced once the audience trusts the format |
+| Day 1, 18:00 | **Every Human Vanishes Tonight** (`FILE B-0001`) | The widest premise there is; the bridge through-line and the Chernobyl fact; the three-way ending (pyramid, plastic, probe) is built for arguments. |
+| Day 2, 07:00 | **The Moon Is Gone** (`B-0002`) | "You wake up and look up"; tides, dark nights and a wandering axis escalate cleanly. |
+| Day 2, 18:00 | **The Earth Stops Spinning** (`B-0003`) | Oceans migrating to the poles is a one-image hook; the Foucault pendulum gets screenshotted. |
+| Day 3, 07:00 | **All the Ice Melts This Week** (`B-0004`) | Drowned skylines stop thumbs; the salt turn is the thing nobody expects. |
+| Day 3, 18:00 | **The Internet Goes Dark for a Year** (`B-0005`) | Personal and immediate; city vs village is a side everyone already has. |
+| Day 4, 07:00 | **Sleep Takes One Hour** (`B-0006`) | Upbeat premise, dark turn; the most shareable of the set. |
+| Day 4, 18:00 | **Money Vanishes at Midnight** (`B-0007`) | Money reinvented in nine hours; debts erased, savings too. |
+| Day 5, 07:00 | **The Signal Comes Tomorrow** (`B-0008`) | The reply debate is the best comment engine in the set. |
+| Day 5, 18:00 | **The Sun Goes Out** (`B-0009`) | Eight minutes of grace, then a frozen, perfectly preserved world; volcano or the deep. |
+| Day 6, 07:00 | **Earth Gets Rings Tonight** (`B-0010`) | The most beautiful sky in the solar system, and a locked door. |
+| Day 6, 18:00 | **Plastic Vanishes Tonight** (`B-0011`) | Your phone is glass and metal, the lights go out; the clear sea or the full hospital. |
+| Day 7, 07:00 | **Oil Vanishes Tonight** (`B-0012`) | The world does not starve, it slows; the big cities empty. |
+| Day 7, 18:00 | **Humans Live to Two Hundred** (`B-0013`) | Pensions, marriages and promotions at two hundred years; who gets the century. |
+| Week 2 | Two reply episodes from the strongest threads, then the next five broad premises from the backlog | |
 
 Rules for the first week: reply to every argument in the first hour; pin the dilemma comment
-within one minute of posting; the end card of each video teases the next in its series; no post
-goes up without the taste gate.
+within one minute of posting; the end card of each video teases the next; no post goes up
+without the taste gate.
 
 ## Platform mechanics we exploit
 

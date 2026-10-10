@@ -1,10 +1,10 @@
-id: ep015-black-death-never-comes
+id: black-death-never-comes
 series: the-hinge
 series_number: 3
 pillar: the-hinge
 title: The Black Death Never Comes
 hook_title: WHAT IF THE BLACK DEATH NEVER CAME
-file_number: FILE B-0015
+file_number: SHELVED
 target_duration: 80
 stamp_text: UNHAPPENED
 voice:
@@ -369,3 +369,4 @@ metadata:
   replies_to_prepare:
   - The plague would have arrived by another route anyway
   - China had plague too and didn't industrialise
+status: shelved

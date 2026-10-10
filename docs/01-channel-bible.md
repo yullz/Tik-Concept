@@ -100,9 +100,9 @@ Full voice casting and settings: `docs/06-voice-and-sound.md`.
 
 ## Season one (first 30 episodes)
 
-Thirty episodes, ten per week for three weeks, then a reply week. The first eight are broad
-"tomorrow morning" premises anyone understands; the history series follows. Episode list:
-`docs/07-topic-backlog.md` (seventeen are fully written in `episodes/`).
+Thirty episodes, ten per week for three weeks, then a reply week. The launch set is thirteen
+broad "tomorrow morning" premises anyone understands; the history series is shelved until the
+audience trusts the format. Episode list: `docs/07-topic-backlog.md`.
 
 ## KPIs (what we watch, in order)
 

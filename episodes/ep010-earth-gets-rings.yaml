@@ -1,0 +1,337 @@
+id: ep010-earth-gets-rings
+series: tomorrow-morning
+series_number: 10
+pillar: tomorrow-morning
+title: "Earth Gets Rings Tonight"
+hook_title: "WHAT IF EARTH HAD RINGS TONIGHT"
+file_number: "FILE B-0010"
+target_duration: 80
+stamp_text: "UNHAPPENED"
+voice:
+  direction: "calm, dry, unhurried documentary narrator; lets facts land"
+  elevenlabs_voice_id: ""
+  model_id: eleven_v4
+  settings: {stability: 0.5, similarity_boost: 0.75, style: 0.15, speed: 0.95}
+music:
+  mood: "sparse piano with a high shimmer, sub bass under the phases, a single held note at the turn"
+  cue: "assets/music/tomorrow-morning-10.mp3"
+look_key_prompt: >-
+  empty establishing frame of a suburban street at night with a vast pale ring arching across the whole sky from
+  horizon to horizon, its shadow band dark on the far side, rooftops lit by ringlight, cold cyan night
+research:
+  hinge: >-
+    A small moon strays inside Earth's Roche limit and breaks apart; its debris spreads into a thin flat ring of
+    ice a thousand kilometres above the atmosphere, inside the zone where satellites orbit. In this timeline that
+    happens tonight.
+  hinge_date: "tonight"
+  sources:
+    - "NASA/JPL Cassini mission pages: Saturn's rings are mostly water ice, a few tens of metres thick and hundreds of thousands of kilometres wide"
+    - "Roy Prol, What Earth Would Look Like With Rings (2009 visualisation), on ring shadows by latitude and season"
+    - "Kessler & Cour-Palais, Collision frequency of artificial satellites: the creation of a debris belt, JGR 83 (1978)"
+    - "Canup, Origin of Saturn's rings and inner moons by mass removal from a lost Titan-sized satellite, Nature 468 (2010), on how rings form from a disrupted moon"
+    - "Longcore & Rich, Ecological light pollution, Frontiers in Ecology and the Environment 2 (2004), on what bright nights do to animals"
+  facts:
+    - "Rings sit inside the Roche limit, within a few Earth radii; for Earth that is the region where satellites fly."
+    - "A ring reflects sunlight all night; seen from the ground it would outshine the full Moon many times over except where Earth's own shadow falls across it."
+    - "From the equator a ring is seen edge-on as a thin line; from mid-latitudes it is a broad band arching across the sky."
+    - "In winter the ring's shadow falls across the hemisphere tilted away from the Sun, cooling and darkening mid-latitude winters."
+    - "Nocturnal animals, from moths to sea turtles, navigate and feed by darkness; permanent bright nights disrupt them."
+    - "Any launch has to cross the ring plane; a collision at orbital speed destroys the vehicle, so the ring closes the sky."
+  era_sheet:
+    timeline: "the present day: night one, year one, year ten"
+    architecture: "a suburban street, an equatorial beach, Rome and Chicago in winter, a launch pad left standing, a ship at sea, a mountain observatory"
+    clothing: "ordinary clothes, winter coats, a sailor's oilskins, a launch technician's overalls"
+    vehicles: "a ship steering by the ring, a rocket on a pad that never launches, a tram in a snowy Rome"
+    street: "the ring band in every sky, a dead satellite dish, a sextant, a wall of snow against a Chicago door"
+    light: "ringlight on everything at night (bright, silver, shadowless), dim winters under the ring shadow"
+    palette: "ring silver, night cyan, winter grey, deep cyan accent"
+    forbidden: "Saturn, spaceships, glowing effects, text, rocket explosions"
+  cost: >-
+    The strangest change is in the mind: for all of history the sky was open, and now it has a ceiling nobody can
+    pass. No satellites, no weather maps, no space programme, and the most beautiful thing anyone has ever seen.
+beats:
+  - id: hook
+    vo: >-
+      What if Earth had rings tonight. You step outside and a bright band crosses the whole sky, horizon to horizon,
+      as wide as your hand. It was not there yesterday.
+    card: {text: "WHAT IF EARTH HAD RINGS TONIGHT", style: title}
+  - id: hinge
+    vo: >-
+      A small moon strays too close and breaks apart, and the pieces spread into a flat disc of ice a thousand
+      kilometres up. Here, that is tonight. This is how it happens.
+    card: {text: "TONIGHT · THE HINGE", style: date}
+  - id: phase1
+    vo: >-
+      Night one. The ring shines all night, so the dark is gone. From the equator you see it edge-on, a thin bright
+      line. Satellites start dying by morning.
+    card: {text: "NIGHT ONE", style: phase}
+  - id: phase2
+    vo: >-
+      Year one. The ring shadows the winter half of the world, so Rome and Chicago get colder, darker winters.
+      Nights are too bright for owls and moths. Sailors steer by the ring.
+    card: {text: "YEAR ONE", style: phase}
+  - id: phase3
+    vo: >-
+      Year ten. There is no space programme. Every launch must cross a wall of ice at thirty thousand kilometres an
+      hour, so nobody launches. No satellites, no weather maps. The ring is a locked door.
+    card: {text: "YEAR TEN", style: phase}
+  - id: turn
+    vo: >-
+      [exhale] But the strangest change is in the mind. For all of history the sky was open. Now it has a ceiling
+      that nobody can pass.
+    card: null
+  - id: dilemma
+    vo: >-
+      That timeline never happened. Ours did. So: the most beautiful sky in the solar system, and no way out. Do you take it?
+    card: {text: "The most beautiful sky in the solar system, and no way out. Do you take it?", style: question}
+shots:
+  - beat: hook
+    size: WIDE
+    location: "Suburban street, night one"
+    prompt: >-
+      a suburban street at night with a vast pale ring arching across the whole sky from horizon to horizon,
+      rooftops and lawns lit silver by it, people standing in the road looking up, cold night
+    motion: "slow dolly forward down the street, people tilt their heads up, the ring stays fixed"
+    dur: 2.5
+    mode: video
+    sfx: "night quiet"
+    hero_object: true
+  - beat: hook
+    size: DETAIL
+    location: "Suburban driveway, night one"
+    prompt: >-
+      macro, a hand held up against the night sky with the pale ring band exactly the width of the palm behind it,
+      ringlight on the fingers
+    motion: "static macro, the hand steadies, the ring stays fixed behind it"
+    dur: 2.5
+    mode: video
+    sfx: "night quiet"
+  - beat: hook
+    size: MEDIUM
+    location: "Balcony, night one"
+    prompt: >-
+      waist-up, a woman on a balcony in a dressing gown holding a cup, looking up at a sky crossed by a silver ring,
+      her face lit from above by it, the city below unusually bright
+    motion: "static tripod with a slow push-in, she lowers the cup, ringlight steady"
+    dur: 2.5
+    mode: video
+    sfx: "city night"
+  - beat: hinge
+    size: AERIAL
+    location: "Low orbit, the breakup"
+    prompt: >-
+      high above the Earth's limb, a small grey moonlet coming apart into a spreading arc of ice fragments catching
+      sunlight, the blue planet below, star field
+    motion: "slow pan right as the arc of fragments spreads and flattens, the planet stays rigid"
+    dur: 3.5
+    mode: video
+    sfx: "silence"
+    card: {text: "1,000 KM UP\nA DISC OF ICE", style: stat}
+  - beat: hinge
+    size: MAP
+    location: "Planetarium workshop, night"
+    prompt: >-
+      a physical globe on a brass stand with a flat paper ring being fitted around its equator by two hands, a
+      desk lamp casting the ring's shadow as a band across the globe's lower half
+    motion: "the hands settle the ring, the shadow band falls across the globe, slow push-in"
+    dur: 3.0
+    mode: video
+    sfx: "paper"
+  - beat: hinge
+    size: CLOSE
+    location: "Observatory, night one"
+    prompt: >-
+      an astronomer's hand on the focus wheel of a telescope eyepiece, the pale ring band visible through the open
+      dome slit beyond, red work light
+    motion: "static close, the hand turns the wheel, the ring stays fixed in the slit"
+    dur: 3.0
+    mode: video
+    sfx: "dome motor"
+  - beat: phase1
+    size: WIDE
+    location: "Equatorial beach, night one"
+    prompt: >-
+      a tropical beach at night with the ring seen edge-on as a razor-thin bright line across the sky, palms lit
+      silver, surf, no darkness anywhere
+    motion: "slow dolly along the beach, surf runs in, the thin line stays fixed"
+    dur: 3.5
+    mode: video
+    sfx: "surf"
+    hero_object: true
+  - beat: phase1
+    size: POV
+    location: "Country road, night one"
+    prompt: >-
+      handheld walking a country road at night under a broad silver ring band, the road and hedges clearly lit
+      without any lamp, shadowless silver light
+    motion: "handheld walk forward, hedges pass, the ring fixed overhead"
+    dur: 3.0
+    mode: video
+    sfx: "night walk"
+  - beat: phase1
+    size: DETAIL
+    location: "Satellite dish, dawn, night one"
+    prompt: >-
+      macro, a rooftop satellite dish with its feed arm bent and a small fresh dent in the reflector, frost on
+      the rim, the ring pale in a dawn sky behind
+    motion: "slow lateral track right across the dish, frost glints"
+    dur: 3.0
+    mode: video
+    sfx: "dawn wind"
+    card: {text: "BY MORNING\nSATELLITES START DYING", style: stat}
+  - beat: phase1
+    size: MEDIUM
+    location: "Control room, night one"
+    prompt: >-
+      waist-up, satellite operators in shirtsleeves standing at consoles with dark displays, one holding a phone
+      handset, fluorescent light, the ring visible through a window behind
+    motion: "slow push-in, the handset lowers, a monitor stays dark"
+    dur: 3.5
+    mode: video
+    sfx: "control room"
+  - beat: phase2
+    size: WIDE
+    location: "Rome, winter, year one"
+    prompt: >-
+      a Roman piazza under deep snow at noon with the sun dimmed by a dark band of ring shadow across the sky,
+      a tram, people in heavy coats, grey-blue light
+    motion: "slow dolly forward across the piazza, snow falls, the tram passes"
+    dur: 3.5
+    mode: video
+    sfx: "snow city"
+  - beat: phase2
+    size: CLOSE
+    location: "Chicago doorstep, winter, year one"
+    prompt: >-
+      a hand clearing a wall of snow from a front door with a shovel, breath fog, a thin ring-shadow dimness over
+      the street, grey light
+    motion: "static close, the shovel bites and lifts, snow falls from it"
+    dur: 3.0
+    mode: video
+    sfx: "shovel"
+  - beat: phase2
+    size: DETAIL
+    location: "Garden, summer night, year one"
+    prompt: >-
+      macro, a moth resting motionless on a leaf under bright silver ringlight, a barn owl's feather on the ground
+      beside it, no shadows
+    motion: "static macro, the moth's antennae twitch, nothing else moves"
+    dur: 3.0
+    mode: video
+    sfx: "night quiet"
+  - beat: phase2
+    size: MEDIUM
+    location: "Ship's bridge wing, night, year one"
+    prompt: >-
+      waist-up, a sailor in oilskins on a bridge wing holding a sextant up to the ring band at night, spray, the
+      ring's reflection on the swell
+    motion: "slow push-in, the sextant lifts, the ship rolls gently"
+    dur: 3.5
+    mode: video
+    sfx: "sea night"
+    hero_object: true
+  - beat: phase3
+    size: WIDE
+    location: "Launch pad, year ten"
+    prompt: >-
+      a rocket standing on a launch pad with weeds in the concrete and rust on the gantry, the ring band pale
+      overhead at noon, flat light
+    motion: "slow crane up along the rocket to the ring overhead, weeds stir"
+    dur: 3.5
+    mode: video
+    sfx: "wind on gantry"
+    card: {text: "30,000 KM/H\nTHE WALL OF ICE", style: stat}
+  - beat: phase3
+    size: POV
+    location: "Hilltop, dusk, year ten"
+    prompt: >-
+      handheld on a hilltop at dusk looking up along the ring as it brightens, Earth's shadow a dark gap in it,
+      stars appearing around it
+    motion: "handheld slow tilt up along the ring, the shadow gap sharpens as dusk deepens"
+    dur: 3.0
+    mode: video
+    sfx: "dusk wind"
+    hero_object: true
+  - beat: phase3
+    size: DETAIL
+    location: "Weather office, year ten"
+    prompt: >-
+      macro, a hand drawing isobars by pencil on a paper weather chart with illegible labels, a barometer on the
+      wall, lamp light
+    motion: "static macro, the pencil draws a curve, the hand steadies the paper"
+    dur: 3.0
+    mode: video
+    sfx: "pencil"
+  - beat: phase3
+    size: MAP
+    location: "Study, year ten"
+    prompt: >-
+      a physical globe with a flat paper ring fitted around it under a glass dome, the dome's lid locked with a
+      small brass padlock, lamp light
+    motion: "slow push-in on the padlock, lamp steady"
+    dur: 3.0
+    mode: video
+    sfx: "room quiet"
+  - beat: turn
+    size: WIDE
+    location: "Mountain observatory, night, year ten"
+    prompt: >-
+      a mountain observatory dome under the full ring arching across a star field, the ring brilliantly lit, the
+      dome slit closed, snow
+    motion: "very slow pan right along the ring, the dome stays dark"
+    dur: 4.5
+    mode: video
+    sfx: "night wind"
+    hero_object: true
+  - beat: turn
+    size: CLOSE
+    location: "Observatory, year ten"
+    prompt: >-
+      a hand resting on a closed dome shutter lever, dust on the lever, a window of ringlight beyond
+    motion: "static close, the hand rests, ringlight steady on the metal"
+    dur: 4.0
+    mode: video
+    sfx: "dome quiet"
+  - beat: turn
+    size: MEDIUM
+    location: "Schoolyard, night, year ten"
+    prompt: >-
+      waist-up, a group of children in coats lying on their backs on a playing field looking up at the ring, a
+      teacher standing beside them, silver light on every face
+    motion: "static tripod with a slow push-in, a child points, the teacher looks up"
+    dur: 4.0
+    mode: video
+    sfx: "children quiet"
+  - beat: dilemma
+    size: CLOSE
+    location: "Launch pad gate, year ten"
+    prompt: >-
+      a hand on a chained gate of a launch complex, the rusted rocket beyond, the ring pale above, dusk light
+    motion: "static close, the chain sways, the hand stays"
+    dur: 3.5
+    mode: video
+    sfx: "chain"
+  - beat: dilemma
+    size: WIDE
+    location: "Hilltop, night, year ten"
+    prompt: >-
+      a lone figure on a hilltop under the full ring crossing a star-filled sky, a town's lights below, the
+      ring's brilliance reflected in a lake
+    motion: "very slow dolly back from the figure, the lake reflection shimmers"
+    dur: 5.5
+    mode: video
+    sfx: "night wind"
+    hero_object: true
+dilemma: "The most beautiful sky in the solar system, and no way out. Do you take it?"
+pinned_comment: >-
+  I take it. We have had satellites for seventy years and the sky for two hundred thousand. Nights bright enough
+  to read by, winters with a shadow across the sun, and a ring that every child on Earth grows up under. Yes.
+metadata:
+  cover_time: 0.8
+  second_comment: >-
+    No. A ring is a cage with good lighting. No weather satellites means no storm warnings; no GPS means ships back
+    on sextants; and no one ever leaves. Beauty is not worth a locked door.
+  hashtags: ["#whatif", "#space", "#science", "#earth", "#tomorrowmorning"]
+  replies_to_prepare:
+    - "Rings would fall as meteors and kill everyone"
+    - "Earth had a ring 466 million years ago, this is real"

@@ -1,10 +1,10 @@
-id: ep017-horses-never-left
+id: horses-never-left
 series: the-hinge
 series_number: 4
 pillar: the-hinge
 title: Horses Never Left America
 hook_title: WHAT IF HORSES NEVER LEFT AMERICA
-file_number: FILE B-0017
+file_number: SHELVED
 target_duration: 80
 stamp_text: UNHAPPENED
 voice:
@@ -388,3 +388,4 @@ metadata:
   replies_to_prepare:
   - Smallpox would still have won
   - Why did the horses die out in the first place
+status: shelved

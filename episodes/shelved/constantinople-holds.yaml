@@ -1,10 +1,10 @@
-id: ep013-constantinople-holds
+id: constantinople-holds
 series: never-fell
 series_number: 2
 pillar: never-fell
 title: Constantinople Holds
 hook_title: WHAT IF CONSTANTINOPLE NEVER FELL
-file_number: FILE B-0013
+file_number: SHELVED
 target_duration: 80
 stamp_text: UNHAPPENED
 voice:
@@ -379,3 +379,4 @@ metadata:
   replies_to_prepare:
   - The city would have fallen anyway in a few years
   - The Greek scholars had already left before 1453
+status: shelved

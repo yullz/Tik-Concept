@@ -1,10 +1,10 @@
-id: ep016-internet-in-1950
+id: internet-in-1950
 series: early-arrival
 series_number: 1
 pillar: early-arrival
 title: The Internet in 1950
 hook_title: WHAT IF THE INTERNET ARRIVED IN 1950
-file_number: FILE B-0016
+file_number: SHELVED
 target_duration: 80
 stamp_text: UNHAPPENED
 voice:
@@ -384,3 +384,4 @@ metadata:
   replies_to_prepare:
   - The transistor wasn't ready in 1950
   - The real internet was built by the military too
+status: shelved

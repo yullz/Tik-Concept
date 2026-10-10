@@ -3,7 +3,7 @@ from pathlib import Path
 from pipeline import align, captions, metadata, prompts, spec, timeline
 from pipeline.config import load_style
 
-EP = Path(__file__).resolve().parents[2] / "episodes" / "ep001-moon-is-gone.yaml"
+EP = Path(__file__).resolve().parents[2] / "episodes" / "ep001-every-human-vanishes.yaml"
 
 
 def test_estimate_and_edl_snap_to_beats():

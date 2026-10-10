@@ -1,10 +1,10 @@
-id: ep009-ocean-dries-up
+id: ocean-dries-up
 series: tomorrow-morning
 series_number: 9
 pillar: tomorrow-morning
 title: The Ocean Dries Up Tonight
 hook_title: WHAT IF THE OCEAN DRIED UP TONIGHT
-file_number: FILE B-0009
+file_number: SHELVED
 target_duration: 80
 stamp_text: UNHAPPENED
 voice:
@@ -379,3 +379,4 @@ metadata:
   replies_to_prepare:
   - The oxygen would run out
   - Where did the water go, that's not physics
+status: shelved

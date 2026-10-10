@@ -1,10 +1,10 @@
-id: ep014-mali-reaches-brazil
+id: mali-reaches-brazil
 series: never-fell
 series_number: 3
 pillar: never-fell
 title: Mali Reaches Brazil
 hook_title: WHAT IF MALI FOUND AMERICA FIRST
-file_number: FILE B-0014
+file_number: SHELVED
 target_duration: 80
 stamp_text: UNHAPPENED
 voice:
@@ -386,3 +386,4 @@ metadata:
   replies_to_prepare:
   - Abu Bakr II is a myth
   - Those ships could not cross the Atlantic
+status: shelved

@@ -5,7 +5,7 @@ import yaml
 
 from pipeline import lint, spec
 
-EP = Path(__file__).resolve().parents[2] / "episodes" / "ep001-moon-is-gone.yaml"
+EP = Path(__file__).resolve().parents[2] / "episodes" / "ep001-every-human-vanishes.yaml"
 
 
 def load():

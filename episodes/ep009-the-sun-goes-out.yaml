@@ -1,0 +1,396 @@
+id: ep009-the-sun-goes-out
+series: tomorrow-morning
+series_number: 9
+pillar: tomorrow-morning
+title: The Sun Goes Out
+hook_title: WHAT IF THE SUN WENT OUT TONIGHT
+file_number: FILE B-0009
+target_duration: 80
+stamp_text: UNHAPPENED
+voice:
+  direction: calm, dry, unhurried documentary narrator; lets facts land
+  elevenlabs_voice_id: ''
+  model_id: eleven_v4
+  settings:
+    stability: 0.5
+    similarity_boost: 0.75
+    style: 0.15
+    speed: 0.95
+music:
+  mood: sparse piano, long silences, a sub bass that fades to nothing at the turn
+  cue: assets/music/tomorrow-morning-09.mp3
+look_key_prompt: >-
+  empty establishing frame of a suburban kitchen window at the last minute of daylight, a potted plant on the sill,
+  a garden outside lit by a sun that is about to vanish, long shadows, warm light edged with cold cyan
+research:
+  hinge: >-
+    At midnight the Sun ceases to exist. Its last light takes eight minutes and twenty seconds to arrive; after
+    that the sky is black, the Earth travels on in a straight line, and the planet cools on a timetable set by the
+    heat it already holds and the heat its own core still produces.
+  hinge_date: tonight
+  sources:
+  - >-
+    Randall Munroe, What If? (2014), the chapter on a sunless Earth: temperatures, the straight-line orbit, and
+    what survives
+  - >-
+    NASA, Sun Fact Sheet: light travel time about 499 seconds; Earth's orbital speed about 30 km/s
+  - >-
+    Stevenson, Life-sustaining planets in interstellar space?, Nature 400 (1999): geothermal heat can keep water
+    liquid on a starless planet
+  - >-
+    Abbot & Switzer, The Steppenwolf: a proposal for a habitable planet in interstellar space, ApJ Letters 735 (2011):
+    an ice-covered ocean kept liquid by geothermal heat
+  - >-
+    Van Dover, The Ecology of Deep-Sea Hydrothermal Vents (2000): vent ecosystems that do not depend on sunlight
+  facts:
+  - >-
+    The last sunlight arrives eight minutes and twenty seconds after the Sun is gone; nothing changes until then.
+  - >-
+    Within a week the global average falls below freezing; within a year it is around minus seventy.
+  - >-
+    Oceans freeze from the top; the ice insulates the water beneath, which stays liquid for a very long time on
+    the core's heat.
+  - >-
+    Photosynthesis stops at once, so plants die within weeks; stored food and geothermal greenhouses are what remain.
+  - >-
+    Hydrothermal vent communities live on chemical energy from the Earth itself and would not notice the Sun had
+    gone.
+  - >-
+    Geothermal regions like Iceland, with reactors for light, are the plausible last human settlements.
+  era_sheet:
+    timeline: 'the present day: the last eight minutes, week one, year one, year one hundred'
+    architecture: >-
+      a suburban kitchen and garden, a city at dusk, a frozen harbour, a geothermal greenhouse on a lava field,
+      a reactor hall, a deep-sea vent
+    clothing: ordinary clothes, then parkas, then expedition suits in year one hundred
+    vehicles: a car with headlights on in a frozen street, a snowcat, a submersible
+    street: >-
+      a kitchen window with a potted plant, frost ferns on glass, a candle, grow lamps, steam from a vent, ice-sheathed
+      cities
+    light: >-
+      the last warm sunset, then starlight only, candle and sodium grow-lamp light, the orange glow of vents
+    palette: last-light amber, frost blue, starfield black, deep cyan accent
+    forbidden: explosions, a visibly exploding sun, fireballs, glowing effects, text, panic crowds
+  cost: >-
+    Nothing is destroyed. Every mountain and city is perfectly preserved in the cold; the loss is that we built
+    a world that only works with the lights on.
+beats:
+- id: hook
+  vo: >-
+    What if the Sun went out tonight. Not set. Out. You would not know for eight minutes. Then the sky goes black,
+    and the Earth starts to coast.
+  card:
+    text: WHAT IF THE SUN WENT OUT TONIGHT
+    style: title
+- id: hinge
+  vo: >-
+    Light takes eight minutes to reach us, so for eight minutes nothing changes. Then the sky goes dark and the
+    Earth flies on in a straight line. This is how it happens.
+  card:
+    text: MIDNIGHT · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    Week one. The planet still holds its heat, so the first days are a long cold dusk. Plants stop at once. By day
+    seven the average is below freezing.
+  card:
+    text: WEEK ONE
+    style: phase
+- id: phase2
+  vo: >-
+    Year one. Minus seventy. The oceans freeze over, but a kilometre down they stay liquid, because the Earth's
+    core is still warm. The last farms are greenhouses on Iceland's volcanoes, lit by reactors.
+  card:
+    text: YEAR ONE
+    style: phase
+- id: phase3
+  vo: >-
+    Year one hundred. The surface is a frozen desert under stars. The deep sea never noticed: hot vents still feed
+    crabs and worms in the dark. Humanity is a few warm holes, perhaps ten thousand people.
+  card:
+    text: YEAR ONE HUNDRED
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But nothing is destroyed. Every mountain, every city, perfectly preserved in the cold. We built a world
+    that only works with the lights on.
+  card: null
+- id: dilemma
+  vo: >-
+    That timeline never happened. Ours did. So: where do the last people live, the volcano, or the deep?
+  card:
+    text: 'Where do the last people live: the volcano, or the deep?'
+    style: question
+shots:
+- beat: hook
+  size: WIDE
+  location: Suburban garden, the last minute of daylight
+  prompt: >-
+    a suburban garden in warm late light with long shadows, a kitchen window with a potted plant on the sill, a
+    child's bicycle on the lawn, the sun low and white behind the trees
+  motion: slow dolly forward toward the window, shadows lengthen, leaves stir
+  dur: 2.5
+  mode: video
+  sfx: evening birds
+  hero_object: true
+- beat: hook
+  size: DETAIL
+  location: Kitchen, the last minute
+  prompt: >-
+    macro, a wall clock's second hand sweeping past a wristwatch on a table, the last warm sunlight sliding across
+    the wood, a cup of tea
+  motion: static macro, the second hand sweeps, the sunlight slides and dims
+  dur: 2.5
+  mode: video
+  sfx: clock tick
+- beat: hook
+  size: MEDIUM
+  location: City street, dusk
+  prompt: >-
+    waist-up, people on a city pavement stopping and looking up as the light drains out of the sky in seconds, a
+    street lamp flickering on, cold blue replacing warm amber
+  motion: static tripod with a slow push-in, faces tilt up, the lamp flickers on
+  dur: 2.5
+  mode: video
+  sfx: street quiet
+- beat: hinge
+  size: MAP
+  location: Observatory, night
+  prompt: >-
+    a brass orrery on a wooden table with the Sun at its centre removed, leaving an empty brass socket, the small
+    Earth on its arm, a desk lamp
+  motion: the hand lifts the Earth's arm slightly, the empty socket in the centre, slow push-in
+  dur: 3.5
+  mode: video
+  sfx: brass click
+  card:
+    text: |-
+      8 MIN 20 S
+      OF GRACE
+    style: stat
+- beat: hinge
+  size: CLOSE
+  location: Garden, night
+  prompt: >-
+    a hand holding a glass of water in a dark garden with stars reflected in it, breath faintly visible, starlight
+    only
+  motion: static close, the water surface trembles, breath fog drifts
+  dur: 3.0
+  mode: video
+  sfx: night quiet
+- beat: hinge
+  size: AERIAL
+  location: Earth from orbit, night
+  prompt: >-
+    high and slow over the night side of a planet with city lights still on, no sunrise anywhere on the horizon,
+    a star field beyond, the limb of the atmosphere dark
+  motion: slow pan right along the limb, city lights steady, no dawn
+  dur: 3.0
+  mode: video
+  sfx: silence
+- beat: phase1
+  size: WIDE
+  location: City, day three of the long dusk
+  prompt: >-
+    a city under a starry sky at noon, every street lamp on, people in coats on the pavements, breath fogging, a
+    thin frost on the cars, sodium light
+  motion: slow dolly forward down the street, breath fog drifts, lamps steady
+  dur: 3.5
+  mode: video
+  sfx: cold street
+- beat: phase1
+  size: DETAIL
+  location: Kitchen window, day seven
+  prompt: >-
+    macro, frost ferns growing across the inside of the kitchen window, the potted plant on the sill wilted black,
+    a candle's light from the room
+  motion: static macro, frost crystals advance slowly across the glass, candle light flickers
+  dur: 3.0
+  mode: video
+  sfx: frost creak
+  hero_object: true
+  card:
+    text: |-
+      DAY SEVEN
+      BELOW FREEZING
+    style: stat
+- beat: phase1
+  size: POV
+  location: Wheat field, day five
+  prompt: >-
+    handheld walking through a wheat field under stars, the stalks grey and limp, a torch beam ahead, frost on the
+    ground
+  motion: handheld walk forward, the torch beam sweeps, stalks brush past
+  dur: 3.0
+  mode: video
+  sfx: dead wheat
+- beat: phase1
+  size: MEDIUM
+  location: Harbour, day seven
+  prompt: >-
+    waist-up, two fishermen in parkas on a quay looking at a harbour skinned with new ice, their boat frozen in,
+    a sodium lamp, starlight
+  motion: slow push-in, one points at the ice, breath fogs
+  dur: 3.5
+  mode: video
+  sfx: ice creak
+- beat: phase2
+  size: AERIAL
+  location: Frozen Atlantic, year one
+  prompt: >-
+    high and slow over a frozen ocean under stars, pressure ridges of ice to the horizon, a frozen container ship
+    locked in it, no light on the horizon
+  motion: slow pan left over the ice, the ship stays rigid
+  dur: 3.5
+  mode: video
+  sfx: high wind
+  card:
+    text: |-
+      −70°C
+      YEAR ONE
+    style: stat
+- beat: phase2
+  size: CLOSE
+  location: Beneath the ice, year one
+  prompt: >-
+    a submersible's lamp lighting dark liquid water beneath a ceiling of ice, a fish passing through the beam, bubbles
+    rising to the ice
+  motion: static close, the fish passes, bubbles rise and stop against the ice
+  dur: 3.0
+  mode: video
+  sfx: underwater
+- beat: phase2
+  size: WIDE
+  location: Geothermal greenhouse, Iceland, year one
+  prompt: >-
+    a long greenhouse on a black lava field lit orange by sodium grow lamps, steam from vents around it, a reactor
+    dome beyond, a starry sky, snow
+  motion: slow dolly forward toward the greenhouse, steam drifts, lamps steady
+  dur: 3.5
+  mode: video
+  sfx: steam vent
+- beat: phase2
+  size: DETAIL
+  location: Inside the greenhouse, year one
+  prompt: >-
+    macro, tomato plants under a sodium grow lamp, condensation dripping from the glass, a gloved hand turning a
+    leaf, orange light
+  motion: static macro, a drop falls, the hand turns the leaf
+  dur: 3.0
+  mode: video
+  sfx: greenhouse drip
+- beat: phase3
+  size: WIDE
+  location: Frozen city, year one hundred
+  prompt: >-
+    a city sheathed in ice under a dense star field, towers perfectly intact with frost on every surface, no lights,
+    a snowcat's headlamps tiny in the street
+  motion: very slow dolly forward down the frozen avenue, the headlamps crawl
+  dur: 3.5
+  mode: video
+  sfx: snowcat distant
+- beat: phase3
+  size: POV
+  location: Hydrothermal vent, year one hundred
+  prompt: >-
+    handheld from a submersible porthole, a black smoker vent pouring dark mineral water, white crabs and red-tipped
+    tube worms in the lamp light
+  motion: handheld drift forward, the smoke billows, crabs move
+  dur: 3.0
+  mode: video
+  sfx: vent rumble
+- beat: phase3
+  size: DETAIL
+  location: Vent field, year one hundred
+  prompt: >-
+    macro, red-tipped tube worms swaying beside a vent, a white crab climbing between them, the submersible's lamp
+    light
+  motion: static macro, the worms sway, the crab climbs
+  dur: 3.0
+  mode: video
+  sfx: underwater
+- beat: phase3
+  size: MAP
+  location: Settlement, year one hundred
+  prompt: >-
+    a physical relief globe frosted white on a stand, a hand placing three small orange lamps on it, one on Iceland,
+    one on the Pacific, one on East Africa, in a dim room
+  motion: the hand places the lamps one by one, slow push-in
+  dur: 3.0
+  mode: video
+  sfx: lamp click
+  card:
+    text: |-
+      10,000
+      PEOPLE LEFT
+    style: stat
+- beat: turn
+  size: WIDE
+  location: Mountain range, year one hundred
+  prompt: >-
+    a mountain range under stars, every peak and glacier perfectly intact and silent, a village in the valley with
+    every roof under snow, no light, starlight only
+  motion: very slow pan right along the range, nothing moves
+  dur: 4.5
+  mode: video
+  sfx: silence
+- beat: turn
+  size: CLOSE
+  location: Kitchen window, year one hundred
+  prompt: >-
+    the kitchen window from outside, ice a hand thick over the glass, the shape of the potted plant visible inside,
+    starlight
+  motion: static close, starlight glints on the ice, nothing moves
+  dur: 4.0
+  mode: video
+  sfx: silence
+  hero_object: true
+- beat: turn
+  size: MEDIUM
+  location: Reactor hall, year one hundred
+  prompt: >-
+    waist-up from behind, a figure in a thick coat at a window of a reactor hall looking out at a frozen lava field
+    under stars, warm hall light on their back
+  motion: static tripod with a slow push-in, breath fogs the glass, the figure does not move
+  dur: 4.0
+  mode: video
+  sfx: reactor hum
+- beat: dilemma
+  size: CLOSE
+  location: Greenhouse door, year one hundred
+  prompt: >-
+    a gloved hand on a greenhouse door handle, orange grow-lamp light inside, the black and starlit lava field reflected
+    in the glass
+  motion: static close, the hand rests on the handle, light steady
+  dur: 3.5
+  mode: video
+  sfx: steam vent
+- beat: dilemma
+  size: WIDE
+  location: Lava field, Iceland, year one hundred
+  prompt: >-
+    the lit greenhouse on a black lava field under stars, steam from vents, a submersible on a trailer parked beside
+    it, a figure between the two, snow
+  motion: very slow dolly back from the figure, steam drifts, stars steady
+  dur: 5.5
+  mode: video
+  sfx: night wind
+  hero_object: true
+dilemma: 'Where do the last people live: the volcano, or the deep?'
+pinned_comment: >-
+  The volcano. Iceland already heats its homes and grows tomatoes on geothermal steam, and a reactor can run the
+  lamps for decades. The deep sea feeds crabs. It does not feed ten thousand people.
+metadata:
+  cover_time: 0.8
+  second_comment: >-
+    The deep. Vent ecosystems have run on the Earth's own heat for billions of years without a sun; a volcano is
+    a surface bet in a world that is cooling toward minus two hundred. Go where the heat comes from.
+  hashtags:
+  - '#whatif'
+  - '#space'
+  - '#science'
+  - '#sun'
+  - '#tomorrowmorning'
+  replies_to_prepare:
+  - We'd all die in the first week from the cold
+  - Jupiter's moons have life under ice, same thing

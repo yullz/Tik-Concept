@@ -1,32 +1,30 @@
 # 07 · Topic Backlog — season one and beyond
 
 Score = hook strength (1–5) + debate potential (1–5) + visual specificity (1–5). Ship ≥ 11 first.
-Seventeen episodes are fully written in `episodes/` (research, script, shots, prompts, metadata).
+Thirteen launch episodes are fully written in `episodes/`, nine more in `episodes/shelved/`.
 Everything else is a brief: hinge, hook line, dilemma.
 
-## The launch set (seventeen written episodes, in posting order)
+## The launch set (thirteen written episodes, in posting order; all Tomorrow Morning)
 
-Broad first: eight premises that need no prior knowledge, then two more, then the history series.
+| File | Episode | Why it can explode | Mechanism (sourced in the YAML) |
+|---|---|---|---|
+| B-0001 | **Every Human Vanishes Tonight** | the bridge falls; pyramid, plastic or probe | subway pumps, Chernobyl wildlife, Voyager |
+| B-0002 | **The Moon Is Gone** | you wake up and look up | lunar tides, nocturnal ecology, obliquity |
+| B-0003 | **The Earth Stops Spinning** | oceans to the poles; day side or night side | rotation, equatorial bulge, core dynamo |
+| B-0004 | **All the Ice Melts This Week** | drowned skylines; the salt turn | 26 million km³ of ice, 70 m rise, deltas |
+| B-0005 | **The Internet Goes Dark for a Year** | the card machine says no | payments, ports, Tonga and CrowdStrike |
+| B-0006 | **Sleep Takes One Hour** | seven free hours; the night becomes a shift | glymphatic clearance, power demand, labour |
+| B-0007 | **Money Vanishes at Midnight** | money reinvented in nine hours | money as memory, POW cigarettes, Ireland 1970 |
+| B-0008 | **The Signal Comes Tomorrow** | do we reply | the 1989 protocol, forty light-years |
+| B-0009 | **The Sun Goes Out** | eight minutes of grace; volcano or the deep | light delay, heat loss, geothermal oceans |
+| B-0010 | **Earth Gets Rings Tonight** | the most beautiful sky, and a locked door | Roche limit, ring shadow, Kessler syndrome |
+| B-0011 | **Plastic Vanishes Tonight** | your phone is glass and metal; the lights go out | 8 billion tonnes, synthetic textiles, cable insulation, medical plastics |
+| B-0012 | **Oil Vanishes Tonight** | the world does not starve, it slows | 100 million barrels a day, three days of food, electrified rail |
+| B-0013 | **Humans Live to Two Hundred** | pensions, marriages, promotions at two hundred | life expectancy, pension design, the healthspan divide |
 
-| File | Episode | Pillar | Why it can explode | Hinge or mechanism (sourced in the YAML) |
-|---|---|---|---|---|
-| B-0001 | **The Moon Is Gone** | Tomorrow Morning | "You wake up and look up"; tides, dark nights, wandering axis | lunar tides, nocturnal ecology, obliquity stabilisation |
-| B-0002 | **The Earth Stops Spinning** | Tomorrow Morning | oceans migrate to the poles; a six-month night; day side or night side | rotation speed, equatorial bulge, core dynamo |
-| B-0003 | **All the Ice Melts This Week** | Tomorrow Morning | drowned skylines; the salt turn; Antarctica as the last land | 26 million km³ of ice, 70 m rise, delta salinisation |
-| B-0004 | **The Internet Goes Dark for a Year** | Tomorrow Morning | the card machine says no; paper comes back; city vs village | payments, ports, the Tonga and CrowdStrike precedents |
-| B-0005 | **Sleep Takes One Hour** | Tomorrow Morning | seven free hours; the night becomes a shift | glymphatic clearance, power demand, labour |
-| B-0006 | **Money Vanishes at Midnight** | Tomorrow Morning | money reinvented in nine hours; debts erased, savings too | money as memory, POW cigarettes, Ireland 1970, M-PESA |
-| B-0007 | **The Signal Comes Tomorrow** | Tomorrow Morning | do we reply; a decade spent talking to the dead | the 1989 protocol, forty light-years, METI debate |
-| B-0008 | **Every Human Vanishes Tonight** | Tomorrow Morning | the bridge falls; pyramid, plastic or probe | subway pumps, Chernobyl wildlife, Voyager |
-| B-0009 | **The Ocean Dries Up Tonight** | Tomorrow Morning | a ship upright on salt; climb to the rain or walk to the salt | depth, lapse rate, water cycle, heat capacity |
-| B-0010 | **The Asteroid Hits Twenty Minutes Later** | The Hinge | dinosaurs live; do they ever build a city | impact-site sulphur (Kaiho & Oshima 2017) |
-| B-0011 | **Rome Never Fell** | Never Fell | jets with eagles over a roofed Colosseum; internet for Rome | Aurelian survives 275 AD |
-| B-0012 | **Columbus Turns Back** | The Hinge | the ships come anyway, eight years late | 10 October 1492; Cabral 1500 |
-| B-0013 | **Constantinople Holds** | Never Fell | one unpaid invoice | Orban's cannon, 1452 |
-| B-0014 | **Mali Reaches Brazil** | Never Fell | a real 1312 Atlantic expedition | al-Umari's account |
-| B-0015 | **The Black Death Never Comes** | The Hinge | fifty million live, Europe stays poor | Kaffa ships, 1347; Voigtländer & Voth |
-| B-0016 | **The Internet in 1950** | Early Arrival | retro-futurism with a privacy turn | Bush's memex; the 1949 Soviet bomb |
-| B-0017 | **Horses Never Left America** | The Hinge | cavalry on the beach in 1519 | Equus survives the Pleistocene |
+Shelved for later (written, in `episodes/shelved/`): The Ocean Dries Up Tonight, The Asteroid Hits
+Twenty Minutes Later, Rome Never Fell, Columbus Turns Back, Constantinople Holds, Mali Reaches
+Brazil, The Black Death Never Comes, The Internet in 1950, Horses Never Left America.
 
 ## Next twelve (write these first in week two)
 

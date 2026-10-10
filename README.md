@@ -11,7 +11,7 @@ narrator voice. Videos run 61–90 s (target 72–80 s). Goal: ten million views
 ```
 docs/        00 charter · 01 bible · 02 format · 03 growth plan · 04 pipeline · 05 visual style & prompts
              06 voice & sound · 07 topic backlog · 08 model policy
-episodes/    seventeen fully written episodes in posting order (research, script, 22–24 shots, prompts, metadata)
+episodes/    thirteen launch episodes in posting order (research, script, 22–24 shots, prompts, metadata); shelved/ holds nine more
 pipeline/    Python: validate · lint · promptsheet · tts · plan · assemble · qc · metadata · bundle · dryrun
 styles/      the house look appended to every prompt
 assets/      music, sfx and fonts (licensed, not in git)
@@ -25,12 +25,12 @@ CLAUDE.md    rules for the executing agent (Claude Opus 5.5)
 ```bash
 pip install -r requirements.txt            # pyyaml, requests, pytest
 python3 -m pytest -q pipeline/tests         # offline test suite (renders a dry run with ffmpeg)
-python3 -m pipeline validate episodes/ep001-moon-is-gone.yaml
-python3 -m pipeline lint     episodes/ep001-moon-is-gone.yaml
-python3 -m pipeline dryrun   episodes/ep001-moon-is-gone.yaml   # placeholder render, no credits
+python3 -m pipeline validate episodes/ep001-every-human-vanishes.yaml
+python3 -m pipeline lint     episodes/ep001-every-human-vanishes.yaml
+python3 -m pipeline dryrun   episodes/ep001-every-human-vanishes.yaml   # placeholder render, no credits
 ```
 
-The dry run writes `renders/ep001-moon-is-gone/dryrun.mp4`: real timing, captions, cards,
+The dry run writes `renders/ep001-every-human-vanishes/dryrun.mp4`: real timing, captions, cards,
 hinge line and end stamp over labelled placeholder shots. Everything after that (look key,
 keyframes, motion, narration) spends Higgsfield credits and is described step by step in `RUNBOOK.md`.
 

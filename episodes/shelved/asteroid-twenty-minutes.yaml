@@ -1,10 +1,10 @@
-id: ep010-asteroid-twenty-minutes
+id: asteroid-twenty-minutes
 series: the-hinge
 series_number: 1
 pillar: the-hinge
 title: The Asteroid Hits Twenty Minutes Later
 hook_title: WHAT IF THE ASTEROID MISSED
-file_number: FILE B-0010
+file_number: SHELVED
 target_duration: 80
 stamp_text: UNHAPPENED
 voice:
@@ -378,3 +378,4 @@ metadata:
   replies_to_prepare:
   - The Deccan Traps would have killed them anyway
   - Birds ARE dinosaurs so they didn't die
+status: shelved

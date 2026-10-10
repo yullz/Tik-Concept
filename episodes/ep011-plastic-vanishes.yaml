@@ -1,0 +1,404 @@
+id: ep011-plastic-vanishes
+series: tomorrow-morning
+series_number: 11
+pillar: tomorrow-morning
+title: Plastic Vanishes Tonight
+hook_title: WHAT IF PLASTIC VANISHED TONIGHT
+file_number: FILE B-0011
+target_duration: 80
+stamp_text: UNHAPPENED
+voice:
+  direction: calm, dry, unhurried documentary narrator; lets facts land
+  elevenlabs_voice_id: ''
+  model_id: eleven_v4
+  settings:
+    stability: 0.5
+    similarity_boost: 0.75
+    style: 0.15
+    speed: 0.95
+music:
+  mood: sparse piano, a brittle percussive tick under the phases, warmth returning in phase three
+  cue: assets/music/tomorrow-morning-11.mp3
+look_key_prompt: >-
+  empty establishing frame of a living room at midnight lit by one candle, a smartphone's glass and metal parts
+  lying loose on a side table, a wool coat on a chair, the lamp dark, cold cyan moonlight through the window
+research:
+  hinge: >-
+    At midnight every gram of synthetic polymer on Earth disappears: packaging, fibres, insulation, casings, tubing,
+    paint binders. Metal, glass, wood, wool, cotton and paper remain, which is exactly what the world was made of
+    before 1950.
+  hinge_date: midnight
+  sources:
+  - >-
+    Geyer, Jambeck & Law, Production, use, and fate of all plastics ever made, Science Advances 3 (2017): about
+    8.3 billion tonnes produced since 1950
+  - >-
+    Textile Exchange, Materials Market Report (2023): polyester alone is over half of global fibre production; synthetics
+    about two thirds
+  - >-
+    IEC/IEEE cable standards: nearly all building wiring and underground power cable is insulated with PVC or cross-linked
+    polyethylene
+  - >-
+    WHO, Medical devices: single-use plastics (syringes, IV sets, blood bags, gloves, catheters) are the standard
+    of care worldwide
+  - >-
+    FAO, Global food losses and food waste (2011), on the role of packaging in reducing spoilage
+  facts:
+  - >-
+    More than eight billion tonnes of plastic have been made since nineteen fifty, and most of it still exists.
+  - >-
+    About six in ten garments contain synthetic fibre; a world without polymer is a world half undressed.
+  - >-
+    House wiring, underground cables and car looms are insulated with plastic; without it they short at once, so
+    the grid and most vehicles fail.
+  - >-
+    Syringes, drip sets, blood bags, gloves and tubing are plastic; medicine without them is medicine of the nineteen
+    thirties, in glass and steel.
+  - 'Food packaging is a preservative: without it fresh food spoils in days.'
+  - >-
+    The ocean's plastic load, estimated in the hundreds of millions of tonnes, vanishes with everything else.
+  era_sheet:
+    timeline: 'the present day: minute one, week one, year ten'
+    architecture: >-
+      a living room, a city street, a hospital ward and operating theatre, a supermarket, a harbour, a rebuilt kitchen
+      in glass and tin
+    clothing: >-
+      wool, cotton, linen and leather only; at minute one, many people half dressed under blankets
+    vehicles: >-
+      cars stopped with hoods open, a tram with bare copper wiring, bicycles with leather saddles
+    street: >-
+      loose phone components, bare copper wires, a drip stand with a glass bottle, a steel syringe, glass milk bottles,
+      paper bags, tin cans
+    light: candle and moonlight at minute one, hospital daylight, a clean bright harbour in year ten
+    palette: glass green, copper, wool grey, paper cream, deep cyan accent
+    forbidden: naked bodies, melting effects, glowing, text on packaging, cartoon chaos
+  cost: >-
+    Plastic was never the villain; it was the cheapest clean thing we ever made. The bottles were the problem. The
+    blood bags were the point.
+beats:
+- id: hook
+  vo: >-
+    What if plastic vanished tonight. All of it. Your phone falls apart. Your shirt is gone. The lights go out,
+    because every wire was wrapped in it.
+  card:
+    text: WHAT IF PLASTIC VANISHED TONIGHT
+    style: title
+- id: hinge
+  vo: >-
+    Humans have made more than eight billion tonnes of plastic since nineteen fifty, and it is in everything. Here,
+    at midnight, every gram of it disappears. This is how it happens.
+  card:
+    text: MIDNIGHT · THE HINGE
+    style: date
+- id: phase1
+  vo: >-
+    Minute one. Six in ten garments on Earth are synthetic, so most people are half dressed. Cars stop, because
+    their wiring shorts. The grid fails for the same reason. Pipes split.
+  card:
+    text: MINUTE ONE
+    style: phase
+- id: phase2
+  vo: >-
+    Week one. The hospitals are the real loss. Drips, syringes, blood bags, gloves, all plastic. Surgery goes back
+    to glass and steel, slower and deadlier. Food spoils in days, because packaging was the preservative.
+  card:
+    text: WEEK ONE
+    style: phase
+- id: phase3
+  vo: >-
+    Year ten. The world is rebuilt in glass, tin, wool and paper. The sea is clear, because nothing new goes in.
+    Every hospital has a wing for the people who would have lived.
+  card:
+    text: YEAR TEN
+    style: phase
+- id: turn
+  vo: >-
+    [exhale] But plastic was never the villain. It was the cheapest clean thing we made. The bottles were the problem.
+    The blood bags were the point.
+  card: null
+- id: dilemma
+  vo: >-
+    That timeline never happened. Ours did. So: the clear sea, or the full hospital. Which one do you keep?
+  card:
+    text: The clear sea, or the full hospital. Which one do you keep?
+    style: question
+shots:
+- beat: hook
+  size: CLOSE
+  location: Living room floor, midnight
+  prompt: >-
+    a smartphone's loose glass panel, copper coils and steel plates lying scattered on a wooden floor beside a dark
+    lamp, moonlight from the window, a hand reaching for them
+  motion: static close, the hand picks up the glass panel, pieces shift
+  dur: 2.5
+  mode: video
+  sfx: glass on wood
+- beat: hook
+  size: DETAIL
+  location: Bedroom floor, midnight
+  prompt: >-
+    macro, a pair of leather shoes on a wooden floor beside a small heap of loose metal zips, buckles and buttons
+    where clothes had been, a wool coat on the chair above, moonlight
+  motion: static macro, a buckle settles, moonlight steady
+  dur: 2.5
+  mode: video
+  sfx: metal on wood
+- beat: hook
+  size: WIDE
+  location: City street, midnight
+  prompt: >-
+    a city street gone dark at midnight, cars stopped mid-lane with hoods up, people in blankets and wool coats
+    standing in the road, moonlight and one lit gas lamp
+  motion: slow dolly forward down the street, people wrap blankets tighter, nothing moves
+  dur: 2.5
+  mode: video
+  sfx: street quiet
+- beat: hook
+  size: MEDIUM
+  location: Hospital ward, midnight
+  prompt: >-
+    waist-up, a nurse holding an empty steel drip stand in a dark ward lit by a torch, the bag and tubing gone,
+    a patient's hand on the sheet beside her
+  motion: static tripod with a slow push-in, the torch beam moves, the stand's hook swings empty
+  dur: 2.5
+  mode: video
+  sfx: ward quiet
+  hero_object: true
+- beat: hinge
+  size: MAP
+  location: Warehouse office, night
+  prompt: >-
+    a physical relief globe on a table with a thin skin of clear film being peeled off it by two hands, the film
+    lifting away in one sheet, a desk lamp
+  motion: the film peels away in one sheet, slow push-in on the bare globe
+  dur: 3.5
+  mode: video
+  sfx: film peel
+  card:
+    text: |-
+      8,300,000,000 T
+      MADE SINCE 1950
+    style: stat
+- beat: hinge
+  size: DETAIL
+  location: Living room, midnight
+  prompt: >-
+    macro, bare copper wires inside a wall socket exposed where their coloured sleeves used to be, a scorch mark
+    on the plaster, moonlight
+  motion: static macro, a thin wisp of smoke rises from the scorch mark
+  dur: 3.0
+  mode: video
+  sfx: electric crackle
+- beat: hinge
+  size: AERIAL
+  location: City from above, midnight
+  prompt: >-
+    high and slow over a city at midnight with every light out, moonlight on roofs, headlights frozen in the streets,
+    no screens, no signs lit
+  motion: slow pan right across the dark city, moonlight steady
+  dur: 3.0
+  mode: video
+  sfx: silence
+- beat: phase1
+  size: WIDE
+  location: Apartment courtyard, minute one
+  prompt: >-
+    an apartment courtyard at night with residents in wool blankets and leather shoes gathered under moonlight,
+    a woman in a cotton nightdress holding a candle, a bicycle with no tyres against the wall
+  motion: slow lateral track left along the group, candle flames lean, blankets shift
+  dur: 3.5
+  mode: video
+  sfx: courtyard murmur
+  card:
+    text: |-
+      6 IN 10
+      GARMENTS, GONE
+    style: stat
+- beat: phase1
+  size: DETAIL
+  location: Car engine bay, minute one
+  prompt: >-
+    macro, an engine bay with bare copper wires lying loose where the harness was, a dashboard behind reduced to
+    a steel frame and a glass gauge, torch light
+  motion: static macro, the torch beam moves across the wires
+  dur: 3.0
+  mode: video
+  sfx: engine tick
+- beat: phase1
+  size: POV
+  location: Kitchen, minute one
+  prompt: >-
+    handheld at a kitchen sink where water sprays from a split in the wall where a pipe was, a saucepan held under
+    it, candlelight
+  motion: handheld, water sprays, the saucepan fills
+  dur: 3.0
+  mode: video
+  sfx: water spray
+- beat: phase1
+  size: MEDIUM
+  location: Power station control room, minute one
+  prompt: >-
+    waist-up, operators in shirtsleeves at a wall of dials with every needle at zero, bare copper hanging from an
+    open panel, emergency lamp light
+  motion: slow push-in, an operator lifts a dead handset, needles stay at zero
+  dur: 3.5
+  mode: video
+  sfx: emergency alarm
+- beat: phase2
+  size: WIDE
+  location: Operating theatre, week one
+  prompt: >-
+    an operating theatre lit by skylight and lanterns, surgeons in cotton gowns, a glass bottle on a steel drip
+    stand, steel instruments in an enamel tray, no gloves
+  motion: slow dolly forward toward the table, a surgeon holds out a hand for an instrument
+  dur: 3.5
+  mode: video
+  sfx: theatre quiet
+  hero_object: true
+- beat: phase2
+  size: CLOSE
+  location: Ward, week one
+  prompt: >-
+    a glass syringe with a steel plunger being filled from a glass vial by gloveless hands, a steel kidney dish,
+    daylight
+  motion: static close, the plunger draws, a drop beads on the needle
+  dur: 3.0
+  mode: video
+  sfx: glass clink
+  card:
+    text: |-
+      WEEK ONE
+      MEDICINE OF 1935
+    style: stat
+- beat: phase2
+  size: DETAIL
+  location: Supermarket, week one
+  prompt: >-
+    macro, loose strawberries moulding in a wooden crate, flies, a paper bag beside them, fluorescent light from
+    a window since the lights are out
+  motion: static macro, a fly lands and lifts, nothing else moves
+  dur: 3.0
+  mode: video
+  sfx: flies
+- beat: phase2
+  size: MEDIUM
+  location: Market street, week one
+  prompt: >-
+    waist-up, a woman in a wool coat buying milk in a glass bottle from a cart, paper bags, a horse behind the cart,
+    grey morning light
+  motion: slow push-in, the bottle passes hand to hand, the horse shifts
+  dur: 3.5
+  mode: video
+  sfx: market
+- beat: phase3
+  size: WIDE
+  location: Rebuilt kitchen, year ten
+  prompt: >-
+    a bright kitchen rebuilt in glass, tin, enamel and wood, a wool-upholstered chair, a steel radio, cloth-covered
+    wires along the skirting, morning sun
+  motion: slow dolly forward through the kitchen, sunlight moves across the enamel
+  dur: 3.5
+  mode: video
+  sfx: kitchen morning
+- beat: phase3
+  size: POV
+  location: Harbour, year ten
+  prompt: >-
+    handheld looking down from a quay into clear harbour water with fish visible over clean sand, a glass bottle
+    on the quay edge, bright sun
+  motion: handheld slow tilt down into the water, fish move over the sand
+  dur: 3.0
+  mode: video
+  sfx: harbour water
+  card:
+    text: |-
+      YEAR TEN
+      THE SEA IS CLEAR
+    style: stat
+- beat: phase3
+  size: DETAIL
+  location: Hospital ward, year ten
+  prompt: >-
+    macro, a glass bottle hanging from the steel drip stand with a rubber tube, sunlight through a tall ward window,
+    a patient's hand beside it
+  motion: static macro, a drop falls in the chamber, sunlight steady
+  dur: 3.0
+  mode: video
+  sfx: ward quiet
+  hero_object: true
+- beat: phase3
+  size: MAP
+  location: Hospital office, year ten
+  prompt: >-
+    a physical relief map of a city on a table with a new hospital wing modelled in white card being set into place
+    by a hand, lamp light
+  motion: the hand sets the wing into place, slow push-in
+  dur: 3.0
+  mode: video
+  sfx: card on wood
+- beat: turn
+  size: WIDE
+  location: Beach, year ten, dawn
+  prompt: >-
+    a wide beach at dawn perfectly clean to the horizon, driftwood and shells only, gulls, a lone walker, pale light
+  motion: very slow dolly forward along the tide line, gulls lift
+  dur: 4.5
+  mode: video
+  sfx: beach dawn
+- beat: turn
+  size: CLOSE
+  location: Hospital ward, year ten
+  prompt: >-
+    the empty steel drip stand beside a made bed in a sunlit ward, the glass bottle gone, a folded wool blanket
+  motion: static close, sunlight moves slowly across the bed, nothing else
+  dur: 4.0
+  mode: video
+  sfx: ward quiet
+  hero_object: true
+- beat: turn
+  size: MEDIUM
+  location: Blood bank, year ten
+  prompt: >-
+    waist-up, a technician in a cotton coat placing glass blood bottles into a wooden rack, far fewer than the rack
+    holds, a steel refrigerator behind, daylight
+  motion: slow lateral track right along the rack, a bottle is set down
+  dur: 4.0
+  mode: video
+  sfx: glass clink
+- beat: dilemma
+  size: CLOSE
+  location: Quay, year ten
+  prompt: >-
+    a hand holding a clear glass bottle up to the sun with clean sea behind it, light through the glass
+  motion: static close, the bottle turns slowly in the light
+  dur: 3.5
+  mode: video
+  sfx: harbour water
+- beat: dilemma
+  size: WIDE
+  location: Hospital on the harbour, year ten, dusk
+  prompt: >-
+    a hospital on a harbour at dusk with its tall windows lit, the clear sea in front of it, a figure on the quay
+    between the water and the doors
+  motion: very slow dolly back from the figure, windows steady, water calm
+  dur: 5.5
+  mode: video
+  sfx: dusk harbour
+dilemma: The clear sea, or the full hospital. Which one do you keep?
+pinned_comment: >-
+  The hospital. A clean ocean is a beautiful thing, and a child on a drip is a more beautiful thing. We can fix
+  the bottles with rules. We cannot fix a blood bag with glass.
+metadata:
+  cover_time: 0.6
+  second_comment: >-
+    The sea. Medicine ran on glass and steel until the nineteen sixties and people lived; the ocean has never once
+    recovered from what we put in it. One is a cost we can pay. The other we have never managed to pay back.
+  hashtags:
+  - '#whatif'
+  - '#plastic'
+  - '#science'
+  - '#environment'
+  - '#tomorrowmorning'
+  replies_to_prepare:
+  - Natural rubber and bakelite aren't plastic, they'd stay
+  - We'd just use glass for everything, it's fine

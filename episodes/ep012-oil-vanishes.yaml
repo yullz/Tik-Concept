@@ -1,0 +1,337 @@
+id: ep012-oil-vanishes
+series: tomorrow-morning
+series_number: 12
+pillar: tomorrow-morning
+title: "Oil Vanishes Tonight"
+hook_title: "WHAT IF OIL VANISHED TONIGHT"
+file_number: "FILE B-0012"
+target_duration: 80
+stamp_text: "UNHAPPENED"
+voice:
+  direction: "calm, dry, unhurried documentary narrator; lets facts land"
+  elevenlabs_voice_id: ""
+  model_id: eleven_v4
+  settings: {stability: 0.5, similarity_boost: 0.75, style: 0.15, speed: 0.95}
+music:
+  mood: "sparse piano, a slowing engine-like pulse that settles into a tram-bell rhythm by phase three"
+  cue: "assets/music/tomorrow-morning-12.mp3"
+look_key_prompt: >-
+  empty establishing frame of a six-lane motorway at dawn with cars and lorries stopped in every lane, doors open,
+  a petrol station on the verge with its canopy lights off, mist, cold cyan light
+research:
+  hinge: >-
+    At midnight every barrel of crude oil and every litre of petrol, diesel, jet fuel and bunker fuel ceases to
+    exist. Natural gas, coal, uranium, wind and sun remain, so electricity mostly survives; what vanishes is
+    the energy that moves things.
+  hinge_date: "midnight"
+  sources:
+    - "IEA, Oil Market Report (2024): world oil demand about 103 million barrels a day; transport is roughly 60 percent of it"
+    - "IEA, Aviation and Shipping tracking reports: jet fuel about 8 million barrels a day; marine bunkers about 5 million"
+    - "UK Cabinet Office / Chatham House, Food supply resilience: supermarkets hold around three days of stock in just-in-time chains"
+    - "UIC, Railway statistics: most of Europe's, China's and Japan's main lines are electrified; most of North America's are not"
+    - "Smil, Energy and Civilization (2017), on the speed of pre-oil economies and the size of cities they could feed"
+  facts:
+    - "The world burns about a hundred million barrels of oil a day, most of it to move people and goods."
+    - "Every airliner runs on jet fuel; every ocean freighter on bunker fuel; almost every lorry on diesel."
+    - "Supermarkets in connected economies hold about three days of food; the lorries that restock them run on diesel."
+    - "Electric railways, trams and metros keep running on gas, coal, nuclear and renewable electricity."
+    - "Before oil, in nineteen hundred, the largest city on Earth held about six million people and was fed by rail, canal and horse."
+    - "Harvests today are brought in by diesel machinery; by hand, a harvest takes the whole village."
+  era_sheet:
+    timeline: "the present day: day one, week two, year ten"
+    architecture: "a motorway, an airport apron, a container port, a supermarket, a railway station, a market at a city's edge, a rebuilt tram city"
+    clothing: "ordinary present-day clothes; work clothes and boots by week two"
+    vehicles: "stopped cars and lorries (the lorry is the through-line), grounded airliners, drifting ships, a coal tug, electric trains, trams, bicycles, horses, sailing freighters"
+    street: "petrol pumps with nozzles hanging, dead dashboards, empty shelves, bicycles, rail tracks, a lorry cab used as a market stall"
+    light: "cold motorway dawn, hard apron noon, grey port morning, warm market evening, bright tram-city afternoon"
+    palette: "asphalt grey, lorry white, rail rust, deep cyan accent"
+    forbidden: "explosions, burning refineries, riots, glowing, text on signs"
+  cost: >-
+    The speed was the point: a city of twenty million eats because a lorry arrives every minute. At the old
+    speed the biggest cities cannot be fed, so they empty. The world does not starve; it moves.
+beats:
+  - id: hook
+    vo: >-
+      What if oil vanished tonight. Every barrel, every tank, every drop in every engine. By breakfast every plane
+      on Earth is grounded, and the cars are where they stopped.
+    card: {text: "WHAT IF OIL VANISHED TONIGHT", style: title}
+  - id: hinge
+    vo: >-
+      The world burns a hundred million barrels a day, most of it to move things. Here it is gone at midnight;
+      the gas and coal stay. This is how it happens.
+    card: {text: "MIDNIGHT · THE HINGE", style: date}
+  - id: phase1
+    vo: >-
+      Day one. Cars coast to the kerb. Planes are grounded. Ships drift until a coal tug finds them. The electric
+      trains run, so cities with them keep moving. Everyone else walks.
+    card: {text: "DAY ONE", style: phase}
+  - id: phase2
+    vo: >-
+      Week two. Supermarkets hold three days of food, and the lorries ran on diesel. Shelves empty, then markets
+      reopen at the edge of every city, fed by rail, bicycle and horse. The harvest comes in by hand.
+    card: {text: "WEEK TWO", style: phase}
+  - id: phase3
+    vo: >-
+      Year ten. The world runs at nineteen hundred's speed with today's electricity. Trams, trains, sails and
+      wires. Flying is a short electric hop. The cities are smaller, and the air is clean.
+    card: {text: "YEAR TEN", style: phase}
+  - id: turn
+    vo: >-
+      [exhale] But the speed was the point. A city of twenty million eats because a lorry arrives every minute.
+      At the old speed the biggest cities cannot be fed, so they empty.
+    card: null
+  - id: dilemma
+    vo: >-
+      That timeline never happened. Ours did. So: does the world starve, or just slow down?
+    card: {text: "Does the world starve, or just slow down?", style: question}
+shots:
+  - beat: hook
+    size: WIDE
+    location: "Motorway, dawn, day one"
+    prompt: >-
+      a six-lane motorway at dawn with cars and white lorries stopped in every lane, doors open, people walking
+      between them with bags, a petrol station on the verge with its lights off, mist
+    motion: "slow dolly forward between the lanes, people walk, mist drifts"
+    dur: 2.5
+    mode: video
+    sfx: "dawn quiet"
+    hero_object: true
+  - beat: hook
+    size: DETAIL
+    location: "Petrol station, dawn, day one"
+    prompt: >-
+      macro, a petrol pump nozzle hanging from its hook dripping nothing, the pump's dial dark, dew on the
+      metal, cold light
+    motion: "static macro, a drop of dew runs down the nozzle, nothing else moves"
+    dur: 2.5
+    mode: video
+    sfx: "dawn quiet"
+  - beat: hook
+    size: MEDIUM
+    location: "Airport apron, morning, day one"
+    prompt: >-
+      waist-up, a pilot in uniform standing on an airport apron beside the nose wheel of a silent airliner, hat
+      in hand, a row of parked aircraft behind, hard morning light
+    motion: "static tripod with a slow push-in, the pilot looks up at the fuselage, wind moves the hat"
+    dur: 2.5
+    mode: video
+    sfx: "apron wind"
+  - beat: hinge
+    size: MAP
+    location: "Shipping office, night"
+    prompt: >-
+      a physical relief map of the world on a table with hundreds of small black beads strung along the shipping
+      lanes, two hands sweeping the beads off into a tray, lamp light
+    motion: "the hands sweep the beads away, the lanes left bare, slow push-in"
+    dur: 3.5
+    mode: video
+    sfx: "beads"
+    card: {text: "100,000,000\nBARRELS A DAY", style: stat}
+  - beat: hinge
+    size: CLOSE
+    location: "Car interior, midnight"
+    prompt: >-
+      a hand turning a car key in the ignition with the dashboard dark and the fuel needle on empty, a street
+      lamp through the windscreen
+    motion: "static close, the key turns twice, nothing happens, the hand withdraws"
+    dur: 3.0
+    mode: video
+    sfx: "key click"
+  - beat: hinge
+    size: AERIAL
+    location: "Container port, dawn, day one"
+    prompt: >-
+      high and slow over a container port with ships stopped at every berth and more drifting at anchor beyond,
+      cranes idle, grey light
+    motion: "slow pan left across the port, ships drift slightly, cranes stay still"
+    dur: 3.0
+    mode: video
+    sfx: "port quiet"
+  - beat: phase1
+    size: WIDE
+    location: "City avenue, day one"
+    prompt: >-
+      a city avenue with cars coasted to the kerb and crowds walking down the middle of the road, an electric
+      tram moving through them, bright morning light
+    motion: "slow dolly forward with the walkers, the tram passes through the crowd"
+    dur: 3.5
+    mode: video
+    sfx: "tram bell"
+  - beat: phase1
+    size: POV
+    location: "Open sea, day one"
+    prompt: >-
+      handheld from the deck of a drifting cargo ship, the bow swinging slowly across the horizon, a small
+      coal tug approaching trailing black smoke, grey sea
+    motion: "handheld, the bow swings, the tug's smoke drifts"
+    dur: 3.0
+    mode: video
+    sfx: "sea and tug"
+  - beat: phase1
+    size: DETAIL
+    location: "Railway station, day one"
+    prompt: >-
+      macro, an electric train's overhead pantograph pressed to the wire, a spark, a departures board blurred and
+      illegible behind, platform light
+    motion: "static macro, the pantograph sparks once as the train starts to move"
+    dur: 3.0
+    mode: video
+    sfx: "electric train"
+    card: {text: "THE TRAINS RUN\nDAY ONE", style: stat}
+  - beat: phase1
+    size: MEDIUM
+    location: "Suburban road, day one, evening"
+    prompt: >-
+      waist-up, a family walking a suburban road at dusk pulling a handcart of shopping, a stopped white lorry
+      on the verge behind them, warm low light
+    motion: "slow lateral track right with the family, the cart wheels turn"
+    dur: 3.5
+    mode: video
+    sfx: "evening walk"
+    hero_object: true
+  - beat: phase2
+    size: AERIAL
+    location: "Supermarket car park, week two"
+    prompt: >-
+      high and slow over a supermarket with an empty car park and a queue around the building, a white lorry
+      stranded at the loading bay with its doors open, grey light
+    motion: "slow crane down toward the queue, people shift, the lorry stays"
+    dur: 3.5
+    mode: video
+    sfx: "queue murmur"
+    hero_object: true
+    card: {text: "3 DAYS\nOF FOOD IN STOCK", style: stat}
+  - beat: phase2
+    size: CLOSE
+    location: "Supermarket aisle, week two"
+    prompt: >-
+      a hand reaching along an empty shelf and finding one tin, price labels in place, fluorescent light
+    motion: "static close, the hand slides along the shelf and closes on the tin"
+    dur: 3.0
+    mode: video
+    sfx: "shop quiet"
+  - beat: phase2
+    size: WIDE
+    location: "City edge market, week two"
+    prompt: >-
+      a market on a field at a city's edge with a railway siding beside it, sacks unloaded from a goods wagon
+      onto bicycles and a horse cart, crowds, warm evening light
+    motion: "slow dolly forward through the market, sacks pass hand to hand, the horse shifts"
+    dur: 3.5
+    mode: video
+    sfx: "market"
+  - beat: phase2
+    size: DETAIL
+    location: "Wheat field, week two"
+    prompt: >-
+      macro, hands gathering cut wheat into a sheaf with a sickle beside them, a line of people working behind
+      out of focus, hot afternoon light
+    motion: "static macro, the hands bind the sheaf, chaff drifts"
+    dur: 3.0
+    mode: video
+    sfx: "harvest"
+  - beat: phase3
+    size: WIDE
+    location: "Tram city, year ten"
+    prompt: >-
+      a city street with trams, cyclists and overhead wires, no cars, cafés spilling onto the road, a small
+      electric aircraft passing low overhead, bright clean afternoon light
+    motion: "slow dolly forward down the street, a tram passes, cyclists cross"
+    dur: 3.5
+    mode: video
+    sfx: "tram city"
+  - beat: phase3
+    size: POV
+    location: "Sailing freighter, year ten"
+    prompt: >-
+      handheld from the deck of a modern cargo ship with tall rigid sails set, the bow cutting a blue sea,
+      containers on deck, sun
+    motion: "handheld pitch with the swell, the sails hold, spray lifts"
+    dur: 3.0
+    mode: video
+    sfx: "bow wave"
+  - beat: phase3
+    size: DETAIL
+    location: "Former lorry, year ten"
+    prompt: >-
+      macro, the cab of a white lorry turned into a market stall with vegetables on its bonnet, a bicycle leaning
+      on the wheel, warm light
+    motion: "static macro, a hand sets down a basket, the bicycle wheel turns"
+    dur: 3.0
+    mode: video
+    sfx: "market"
+    hero_object: true
+  - beat: phase3
+    size: MAP
+    location: "Planning office, year ten"
+    prompt: >-
+      a physical relief map of a country with the big cities shown as small clusters of model houses and the rail
+      lines as brass wire, a hand adding houses along a line, lamp light
+    motion: "the hand places houses along the rail line, slow push-in"
+    dur: 3.0
+    mode: video
+    sfx: "wood on wood"
+    card: {text: "1900 SPEED\nTODAY'S ELECTRICITY", style: stat}
+  - beat: turn
+    size: WIDE
+    location: "Megacity, year ten, dusk"
+    prompt: >-
+      a vast city of towers at dusk with half its windows dark, empty elevated highways, a single tram line lit
+      through the middle, haze
+    motion: "very slow dolly back along the highway, the tram crawls, lights stay sparse"
+    dur: 4.5
+    mode: video
+    sfx: "city hum low"
+  - beat: turn
+    size: CLOSE
+    location: "Motorway, year ten"
+    prompt: >-
+      the white lorry rusting on the motorway verge with grass through its wheels, a cyclist passing on the
+      lane, soft light
+    motion: "static close, the cyclist passes, grass sways"
+    dur: 4.0
+    mode: video
+    sfx: "bicycle"
+    hero_object: true
+  - beat: turn
+    size: MEDIUM
+    location: "Station platform, year ten"
+    prompt: >-
+      waist-up, a family with suitcases on a crowded station platform as an electric train arrives, a child on
+      a parent's shoulders, afternoon light through the canopy
+    motion: "slow push-in, the train arrives behind, the crowd steps forward"
+    dur: 4.0
+    mode: video
+    sfx: "station"
+  - beat: dilemma
+    size: CLOSE
+    location: "Kitchen table, year ten"
+    prompt: >-
+      a loaf of bread on a kitchen table beside a railway timetable with illegible print, morning sun
+    motion: "static close, sunlight moves across the loaf, a hand sets down a cup"
+    dur: 3.5
+    mode: video
+    sfx: "kitchen morning"
+  - beat: dilemma
+    size: WIDE
+    location: "City edge, year ten, dawn"
+    prompt: >-
+      a railway line running from a dense tram city out across fields at dawn, a goods train on it, bicycles on
+      a path beside the track, pale light
+    motion: "very slow dolly back along the track, the train moves away, light rises"
+    dur: 5.5
+    mode: video
+    sfx: "dawn train"
+dilemma: "Does the world starve, or just slow down?"
+pinned_comment: >-
+  Slows down. The electricity stays, the trains run, and the harvest took the whole village for ten thousand
+  years before diesel. The only thing that dies is the forty-minute commute, and nobody will mourn it.
+metadata:
+  cover_time: 0.6
+  second_comment: >-
+    Starves, in the cities. Three days of food on the shelves and the lorries gone; the countryside is fine and
+    the megacities are not. Year ten is clean air for the people who survived week two.
+  hashtags: ["#whatif", "#energy", "#science", "#oil", "#tomorrowmorning"]
+  replies_to_prepare:
+    - "Electric cars would be fine"
+    - "Fertiliser comes from oil so everyone starves"
