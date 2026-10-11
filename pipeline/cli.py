@@ -44,8 +44,9 @@ def cmd_lint(a):
 
 def cmd_promptsheet(a):
     ep = _ep(a.episode)
-    out = prompts.write_promptsheet(ep, a.style)
-    print(f"wrote {out} and keyframe_batches.json ({len(ep.shots)} shots × 2 variants)")
+    out = prompts.write_promptsheet(ep, a.style, lookkey_job=getattr(a, "lookkey_job", None))
+    print(f"wrote {out} and keyframe_batches.json ({len(ep.shots)} shots × 2 variants"
+          f"{', with look key ' + a.lookkey_job if getattr(a, 'lookkey_job', None) else ''})")
     return 0
 
 
@@ -283,6 +284,7 @@ def main(argv=None) -> int:
     for name, fn in (("validate", cmd_validate), ("lint", cmd_lint), ("contact", cmd_contact), ("select", cmd_select)):
         add(name, fn).add_argument("episode")
     sp = add("promptsheet", cmd_promptsheet); sp.add_argument("episode"); sp.add_argument("--style", default="counterfact-v1")
+    sp.add_argument("--lookkey-job", default=None, help="job id of the approved look key; adds it as image_references to every keyframe request")
     sp = add("motionbatch", cmd_motionbatch); sp.add_argument("episode"); sp.add_argument("keyframe_jobs"); sp.add_argument("--style", default="counterfact-v1")
     sp = add("ingest", cmd_ingest); sp.add_argument("episode"); sp.add_argument("mapping"); sp.add_argument("--kind", choices=["keyframes", "clips"], required=True)
     sp = add("tts", cmd_tts); sp.add_argument("episode")

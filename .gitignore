@@ -22,3 +22,4 @@ __pycache__/
 # publisher credentials
 secrets/
 publish/post-log.csv
+publish/schedule.yaml

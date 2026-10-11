@@ -32,18 +32,24 @@ estimated length. Watch it: the cut rhythm and the cards should already feel rig
 
 ## 4. Look key (2 credits)
 Call `generate_image` (not batch; it is one image) with `promptsheet.json → look_key.params`
-and `get_cost: true` first. Then generate. Keep the `job_id`; it is the `image_references`
-value for every keyframe. Save the image to `renders/<id>/lookkey.png`.
+and `get_cost: true` first. Then generate. Keep the `job_id` (a UUID); it becomes the
+`image_references` value for every keyframe. Save the image to `renders/<id>/lookkey.png`.
+Show it to the owner before step 5: if the look is wrong here, every keyframe inherits it.
 
 ## 5. Keyframes (≈ 96 credits for 24 shots × 2 variants)
-For each chunk in `keyframe_batches.json`, add `"medias": [{"role": "image_references",
-"value": "<lookkey job_id>"}]` to every item (the pipeline already does this if you pass the
-look key: `python3 -c "..."` is unnecessary; just edit the JSON or regenerate the sheet with
-the id), then:
+Regenerate the sheet with the look key so every request carries it:
+```
+python3 -m pipeline promptsheet episodes/<id>.yaml --lookkey-job <lookkey job_id>
+```
+Check that `keyframe_batches.json` items now contain `"medias": [{"role": "image_references", ...}]`;
+never submit a batch without it. Then, for each chunk in the file:
 ```
 generate_image_batch({ requests: <chunk> })      # ≤ 12 per call
 jobs_wait({ jobs: [{index, job_id}, ...], timeout_seconds: 15 })   # repeat until all_terminal
 ```
+If a batch call returns `unlim_choice` instead of jobs (the account holds an unlimited allowance
+for the model), nothing was submitted: stop, ask the owner whether to use it, then resubmit the
+same requests with `use_unlim: <answer>` on every item.
 Index convention: `shot_index * 10 + variant` (21 → shot-02 variant a, 22 → shot-02 variant b).
 Collect `{ "shot-02-a": url, "shot-02-b": url, ... }` into `renders/<id>/keyframe_results.json`
 and download:
@@ -75,7 +81,8 @@ python3 -m pipeline ingest episodes/<id>.yaml renders/<id>/clip_results.json --k
 python3 -m pipeline contact episodes/<id>.yaml
 ```
 Preset recommendation responses (`submission_failed` + `preset_recommendation`): resubmit that
-index with `declined_preset_id`. Never ask; never stop.
+index with `declined_preset_id`. Never ask; never stop. An `unlim_choice` response is handled as
+in step 5 (nothing was submitted; ask, then resubmit with `use_unlim`).
 
 ## GATE B (human)
 Review clips at 1× in the contact sheet. Mark `clip: R` with a reason. One regeneration per

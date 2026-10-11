@@ -14,8 +14,6 @@ voice:
   settings:
     stability: 0.5
     similarity_boost: 0.75
-    style: 0.15
-    speed: 0.95
 music:
   mood: sparse piano, a soft ticking pulse that never stops, sub bass at the turn
   cue: assets/music/tomorrow-morning-05.mp3
@@ -79,29 +77,26 @@ beats:
     style: title
 - id: hinge
   vo: >-
-    We spend a third of our lives asleep, because sleep clears the brain and files the day. Here the brain learns
-    to do it in sixty minutes. This is how it happens.
+    We spend a third of our lives asleep, and the brain uses the time to file the day. Here it learns to do it in sixty minutes. This is how it happens.
   card:
     text: TONIGHT · THE HINGE
     style: date
 - id: phase1
   vo: >-
-    Week one. Seven extra hours a day, for eight billion people. The lights never go off, so power demand jumps
-    by a third. Nobody knows what to do with three in the morning.
+    Week one. Seven extra hours a day, for eight billion people. The lights never go off, so power demand at three in the morning climbs by half. Nobody knows what to do with three in the morning.
   card:
     text: WEEK ONE
     style: phase
 - id: phase2
   vo: >-
-    Year one. The hours fill. A second workday appears, because an employer who can have you for sixteen hours will.
-    Cities run three shifts. The economy grows by a quarter and so does the smoke.
+    Year one. The hours fill. A second workday appears, because an employer who can have you sixteen hours will.
+    Cities run three shifts. The economy grows by maybe a quarter, and so does the smoke.
   card:
     text: YEAR ONE
     style: phase
 - id: phase3
   vo: >-
-    Year ten. There is no night. Shops, schools and parliaments run around the clock. A life holds twenty-five more
-    waking years. Nobody remembers dreams, because an hour is too short to have one.
+    Year ten. There is no night. Shops, schools and parliaments never close. A life holds twenty more waking years. Dreams turn rare, because the dreaming stage came late and an hour barely reaches it.
   card:
     text: YEAR TEN
     style: phase
@@ -148,6 +143,16 @@ shots:
   dur: 2.5
   mode: video
   sfx: room quiet
+- beat: hook
+  size: WIDE
+  location: City square, one in the morning
+  prompt: >-
+    a city square at one in the morning with every office window lit, a tram crossing, cafés raising their
+    shutters, people in coats crossing the cobbles, cold night sky, warm window light
+  motion: slow dolly forward across the square, the tram passes, windows light up one by one
+  dur: 2.5
+  mode: video
+  sfx: tram bell
 - beat: hinge
   size: DETAIL
   location: Sleep laboratory, night
@@ -196,7 +201,7 @@ shots:
   sfx: control room
   card:
     text: |-
-      +33%
+      +50%
       POWER DEMAND AT 3 AM
     style: stat
 - beat: phase1
@@ -305,7 +310,7 @@ shots:
   hero_object: true
   card:
     text: |-
-      +25 YEARS
+      +20 YEARS
       AWAKE
     style: stat
 - beat: phase3
@@ -371,8 +376,7 @@ shots:
   hero_object: true
 dilemma: 'Twenty-three hours a day: more freedom, or more work?'
 pinned_comment: >-
-  More work. Every hour humans have ever freed up, from the loom to the dishwasher, got filled by a job within a
-  generation. Seven hours a day is the biggest productivity gain in history, and it will not be yours.
+  More work. Working hours fell for a century, then stopped falling around 1980, and every hour since has gone to the job. Seven free hours a day is the biggest productivity gain in history, and it will not be yours.
 metadata:
   cover_time: 0.8
   second_comment: >-

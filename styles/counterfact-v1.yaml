@@ -5,8 +5,6 @@ keyframe_model: nano_banana_pro
 keyframe_resolution: "2k"
 video_model: kling3_0
 video_params: {mode: std, sound: "off", duration: 5}
-video_fallback_model: veo3_1_lite
-video_fallback_params: {duration: 4, generate_audio: false}
 
 lens: "35 mm anamorphic, mild oval bokeh"
 film: "Kodak 5219 with 2383 print emulation, fine grain, soft highlight roll-off"
@@ -38,7 +36,7 @@ typography:
   card_weight: 800
   caption_color: "#FFFFFF"
   shadow_color: "#000000"
-  safe_zone_px: {top: 120, bottom: 220, right: 140, left: 60}
+  safe_zone_px: {top: 200, bottom: 420, right: 150, left: 70}   # TikTok/Shorts UI: tabs above, description below, icon column right
 
 mix:
   voice_lufs: -16

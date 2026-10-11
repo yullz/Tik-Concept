@@ -41,19 +41,17 @@ research:
     timeline: "the present day: day one, week two, year ten"
     architecture: "a motorway, an airport apron, a container port, a supermarket, a railway station, a market at a city's edge, a rebuilt tram city"
     clothing: "ordinary present-day clothes; work clothes and boots by week two"
-    vehicles: "stopped cars and lorries (the lorry is the through-line), grounded airliners, drifting ships, a coal tug, electric trains, trams, bicycles, horses, sailing freighters"
+    vehicles: "stopped cars and lorries (the lorry is the through-line), grounded airliners, drifting ships, a battery tug, electric trains, trams, bicycles, horses, sailing freighters"
     street: "petrol pumps with nozzles hanging, dead dashboards, empty shelves, bicycles, rail tracks, a lorry cab used as a market stall"
     light: "cold motorway dawn, hard apron noon, grey port morning, warm market evening, bright tram-city afternoon"
     palette: "asphalt grey, lorry white, rail rust, deep cyan accent"
     forbidden: "explosions, burning refineries, riots, glowing, text on signs"
   cost: >-
-    The speed was the point: a city of twenty million eats because a lorry arrives every minute. At the old
-    speed the biggest cities cannot be fed, so they empty. The world does not starve; it moves.
+    The speed was the point: a city of twenty million eats because a lorry arrives every minute. At the old speed the biggest cities starve, so they empty. The world does not starve; it moves.
 beats:
   - id: hook
     vo: >-
-      What if oil vanished tonight. Every barrel, every tank, every drop in every engine. By breakfast every plane
-      on Earth is grounded, and the cars are where they stopped.
+      What if oil vanished tonight. Every barrel, every tank, every drop in every engine. Thousands of planes glide down in the dark. By breakfast the cars are where they stopped.
     card: {text: "WHAT IF OIL VANISHED TONIGHT", style: title}
   - id: hinge
     vo: >-
@@ -62,18 +60,16 @@ beats:
     card: {text: "MIDNIGHT · THE HINGE", style: date}
   - id: phase1
     vo: >-
-      Day one. Cars coast to the kerb. Planes are grounded. Ships drift until a coal tug finds them. The electric
+      Day one. Cars coast to the kerb. Planes are grounded. Ships drift; only battery tugs still move. The electric
       trains run, so cities with them keep moving. Everyone else walks.
     card: {text: "DAY ONE", style: phase}
   - id: phase2
     vo: >-
-      Week two. Supermarkets hold three days of food, and the lorries ran on diesel. Shelves empty, then markets
-      reopen at the edge of every city, fed by rail, bicycle and horse. The harvest comes in by hand.
+      Week two. Supermarkets hold a few days of fresh food, and the lorries ran on diesel. Shelves empty, then markets reopen at the city's edge, fed by rail, bicycle and horse. The harvest comes in by hand.
     card: {text: "WEEK TWO", style: phase}
   - id: phase3
     vo: >-
-      Year ten. The world runs at nineteen hundred's speed with today's electricity. Trams, trains, sails and
-      wires. Flying is a short electric hop. The cities are smaller, and the air is clean.
+      Year ten. One car in seven is back, electric; the rest rusted. Freight is trams, trains, sails and wires. Flying is a short electric hop. The cities are smaller, and the air is clean.
     card: {text: "YEAR TEN", style: phase}
   - id: turn
     vo: >-
@@ -116,6 +112,16 @@ shots:
     dur: 2.5
     mode: video
     sfx: "apron wind"
+  - beat: hook
+    size: CLOSE
+    location: Crossroads, dawn, day one
+    prompt: >-
+      a car abandoned at a crossroads with its driver's door open and the key still in the ignition, a child's
+      seat in the back, dew on the windscreen, low morning sun across the road
+    motion: static close, the open door rocks once in the wind, dew runs down the glass
+    dur: 2.5
+    mode: video
+    sfx: wind through door
   - beat: hinge
     size: MAP
     location: "Shipping office, night"
@@ -161,9 +167,8 @@ shots:
     size: POV
     location: "Open sea, day one"
     prompt: >-
-      handheld from the deck of a drifting cargo ship, the bow swinging slowly across the horizon, a small
-      coal tug approaching trailing black smoke, grey sea
-    motion: "handheld, the bow swings, the tug's smoke drifts"
+      handheld from the deck of a drifting cargo ship, the bow swinging slowly across the horizon, a small battery tug approaching with no smoke, grey sea
+    motion: "handheld, the bow swings, the tug closes in"
     dur: 3.0
     mode: video
     sfx: "sea and tug"
@@ -200,7 +205,7 @@ shots:
     mode: video
     sfx: "queue murmur"
     hero_object: true
-    card: {text: "3 DAYS\nOF FOOD IN STOCK", style: stat}
+    card: {text: "A FEW DAYS\nOF FRESH FOOD IN STOCK", style: stat}
   - beat: phase2
     size: CLOSE
     location: "Supermarket aisle, week two"
@@ -271,7 +276,7 @@ shots:
     dur: 3.0
     mode: video
     sfx: "wood on wood"
-    card: {text: "1900 SPEED\nTODAY'S ELECTRICITY", style: stat}
+    card: {text: "1 CAR IN 7\nBACK, ELECTRIC", style: stat}
   - beat: turn
     size: WIDE
     location: "Megacity, year ten, dusk"

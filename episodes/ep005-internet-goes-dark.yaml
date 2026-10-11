@@ -14,8 +14,6 @@ voice:
   settings:
     stability: 0.5
     similarity_boost: 0.75
-    style: 0.15
-    speed: 0.95
 music:
   mood: sparse piano, a ticking clock under the phases, sub bass at the turn
   cue: assets/music/tomorrow-morning-04.mp3
@@ -80,7 +78,7 @@ beats:
     style: title
 - id: hinge
   vo: >-
-    Five and a half billion people are online tonight. At midnight the networks stop, all of them, and they stay
+    Six billion people are online tonight. At midnight the networks stop, all of them, and they stay
     stopped for a year. This is how it happens.
   card:
     text: MIDNIGHT · THE HINGE
@@ -88,7 +86,7 @@ beats:
 - id: phase1
   vo: >-
     Day one. Cards die first, so cash is king by breakfast and gone by lunch, because the cash machines were online
-    too. Planes fly, but nobody can book one.
+    too. Some planes fly, on radio and paper, but nobody can book one.
   card:
     text: DAY ONE
     style: phase
@@ -102,7 +100,7 @@ beats:
 - id: phase3
   vo: >-
     Month six. Radio is the news again. The fax machine is a job. Towns print money on card, because the bank is
-    a building you can see. The economy shrinks by a fifth.
+    a building you can see. The economy, by one estimate, shrinks by a fifth.
   card:
     text: MONTH SIX
     style: phase
@@ -148,6 +146,17 @@ shots:
   dur: 2.5
   mode: video
   sfx: fan spin down
+- beat: hook
+  size: MEDIUM
+  location: Bakery, morning
+  prompt: >-
+    waist-up, a woman at a bakery counter holding out a bank card while the baker shakes his head, the card
+    terminal between them with a black screen, a tray of bread, warm morning light through the window
+  motion: static tripod with a slow push-in, the baker shakes his head, she lowers the card
+  dur: 2.5
+  mode: video
+  sfx: shop quiet
+  hero_object: true
 - beat: hinge
   size: MAP
   location: Cable operations room, midnight
@@ -160,7 +169,7 @@ shots:
   sfx: switch click
   card:
     text: |-
-      5,500,000,000
+      6,000,000,000
       PEOPLE ONLINE TONIGHT
     style: stat
 - beat: hinge
@@ -343,6 +352,16 @@ shots:
   dur: 4.0
   mode: video
   sfx: lab hum
+- beat: dilemma
+  size: CLOSE
+  location: Hilltop cottage window, dusk
+  prompt: >-
+    a battered transistor radio on a windowsill at dusk, a hand turning its dial, a candle beside it, the dark
+    city beyond the glass with one lit village far off
+  motion: static close, the hand turns the dial, the candle flame leans
+  dur: 3.0
+  mode: video
+  sfx: radio static
 - beat: dilemma
   size: WIDE
   location: Hilltop view, dusk

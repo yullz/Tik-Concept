@@ -14,8 +14,6 @@ voice:
   settings:
     stability: 0.5
     similarity_boost: 0.75
-    style: 0.15
-    speed: 0.95
 music:
   mood: sparse piano, long silences, a sub bass that fades to nothing at the turn
   cue: assets/music/tomorrow-morning-09.mp3
@@ -30,8 +28,7 @@ research:
   hinge_date: tonight
   sources:
   - >-
-    Randall Munroe, What If? (2014), the chapter on a sunless Earth: temperatures, the straight-line orbit, and
-    what survives
+    David Stevenson (Caltech) in Popular Science, What would happen if the Sun disappeared: below minus eighteen within a week, about minus seventy within a year, ocean surfaces freeze while deep water stays liquid
   - >-
     NASA, Sun Fact Sheet: light travel time about 499 seconds; Earth's orbital speed about 30 km/s
   - >-
@@ -56,12 +53,12 @@ research:
     Hydrothermal vent communities live on chemical energy from the Earth itself and would not notice the Sun had
     gone.
   - >-
-    Geothermal regions like Iceland, with reactors for light, are the plausible last human settlements.
+    Geothermal regions like Iceland, with geothermal electricity for light, are the plausible last human settlements.
   era_sheet:
     timeline: 'the present day: the last eight minutes, week one, year one, year one hundred'
     architecture: >-
       a suburban kitchen and garden, a city at dusk, a frozen harbour, a geothermal greenhouse on a lava field,
-      a reactor hall, a deep-sea vent
+      a geothermal plant hall, a deep-sea vent
     clothing: ordinary clothes, then parkas, then expedition suits in year one hundred
     vehicles: a car with headlights on in a frozen street, a snowcat, a submersible
     street: >-
@@ -91,22 +88,19 @@ beats:
     style: date
 - id: phase1
   vo: >-
-    Week one. The planet still holds its heat, so the first days are a long cold dusk. Plants stop at once. By day
-    seven the average is below freezing.
+    Week one. The planet still holds its heat, so the first days are a long cold dusk. Plants stop at once. By day seven it is minus eighteen degrees.
   card:
     text: WEEK ONE
     style: phase
 - id: phase2
   vo: >-
-    Year one. Minus seventy. The oceans freeze over, but a kilometre down they stay liquid, because the Earth's
-    core is still warm. The last farms are greenhouses on Iceland's volcanoes, lit by reactors.
+    Year one. Minus seventy. The oceans freeze over, but under the lid they stay liquid, because the ice holds the stored heat in. The last farms are greenhouses on Iceland's lava fields, lit by the island's own geothermal power.
   card:
     text: YEAR ONE
     style: phase
 - id: phase3
   vo: >-
-    Year one hundred. The surface is a frozen desert under stars. The deep sea never noticed: hot vents still feed
-    crabs and worms in the dark. Humanity is a few warm holes, perhaps ten thousand people.
+    Year one hundred. The surface is a frozen desert under stars. The deep sea has not noticed yet: hot vents still feed crabs and worms in the dark. Humanity is a few warm holes, perhaps ten thousand people.
   card:
     text: YEAR ONE HUNDRED
     style: phase
@@ -153,6 +147,16 @@ shots:
   dur: 2.5
   mode: video
   sfx: street quiet
+- beat: hook
+  size: WIDE
+  location: Suburban street, the first hour
+  prompt: >-
+    a suburban street under a black sky crowded with hard stars, every porch light on, a man in a doorway lifting
+    a torch toward the sky, frost already forming on the car roofs, cold light
+  motion: slow dolly forward down the street, the torch beam lifts, frost spreads on the roofs
+  dur: 2.5
+  mode: video
+  sfx: night quiet
 - beat: hinge
   size: MAP
   location: Observatory, night
@@ -211,8 +215,8 @@ shots:
   hero_object: true
   card:
     text: |-
-      DAY SEVEN
-      BELOW FREEZING
+      WEEK ONE
+      −18°C
     style: stat
 - beat: phase1
   size: POV
@@ -263,8 +267,7 @@ shots:
   size: WIDE
   location: Geothermal greenhouse, Iceland, year one
   prompt: >-
-    a long greenhouse on a black lava field lit orange by sodium grow lamps, steam from vents around it, a reactor
-    dome beyond, a starry sky, snow
+    a long greenhouse on a black lava field lit orange by sodium grow lamps, steam from vents around it, a geothermal plant's steam plume beyond, a starry sky, snow
   motion: slow dolly forward toward the greenhouse, steam drifts, lamps steady
   dur: 3.5
   mode: video
@@ -321,7 +324,7 @@ shots:
   sfx: lamp click
   card:
     text: |-
-      10,000
+      PERHAPS 10,000
       PEOPLE LEFT
     style: stat
 - beat: turn
@@ -347,14 +350,14 @@ shots:
   hero_object: true
 - beat: turn
   size: MEDIUM
-  location: Reactor hall, year one hundred
+  location: Geothermal plant hall, year one hundred
   prompt: >-
-    waist-up from behind, a figure in a thick coat at a window of a reactor hall looking out at a frozen lava field
+    waist-up from behind, a figure in a thick coat at a window of a geothermal plant hall looking out at a frozen lava field
     under stars, warm hall light on their back
   motion: static tripod with a slow push-in, breath fogs the glass, the figure does not move
   dur: 4.0
   mode: video
-  sfx: reactor hum
+  sfx: turbine hum
 - beat: dilemma
   size: CLOSE
   location: Greenhouse door, year one hundred
@@ -378,13 +381,11 @@ shots:
   hero_object: true
 dilemma: 'Where do the last people live: the volcano, or the deep?'
 pinned_comment: >-
-  The volcano. Iceland already heats its homes and grows tomatoes on geothermal steam, and a reactor can run the
-  lamps for decades. The deep sea feeds crabs. It does not feed ten thousand people.
+  The volcano. Iceland already heats its homes and grows tomatoes on geothermal steam, and the steam does not care whether the Sun is there. The deep sea feeds crabs. It does not feed ten thousand people.
 metadata:
   cover_time: 0.8
   second_comment: >-
-    The deep. Vent ecosystems have run on the Earth's own heat for billions of years without a sun; a volcano is
-    a surface bet in a world that is cooling toward minus two hundred. Go where the heat comes from.
+    The deep. Vent microbes have lived on the Earth's own heat for billions of years; a volcano is a surface bet in a world cooling toward minus two hundred. Go where the heat comes from.
   hashtags:
   - '#whatif'
   - '#space'

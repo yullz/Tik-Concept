@@ -19,6 +19,7 @@ FPS = 30
 W, H = 1080, 1920
 PUNCH_IN_AFTER = 3.8     # seconds: shots at least this long get a hard punch-in at ~55%
 PUNCH_IN_SCALE = 1.045
+CLIP_PUSH = 0.03        # continuous push over a clip shot (1.00 -> 1.03) so nothing ever sits still
 
 
 def _probe_duration(path: Path) -> float:
@@ -53,12 +54,15 @@ def _video_segment(idx: int, kind: str, src: Path | None, dur: float, label: str
         # use the middle of the clip when it is longer than needed (the model's first frames are the weakest)
         offset = max(0.0, min((clip_len - dur) * 0.35, clip_len - dur)) if clip_len > dur else 0.0
         inputs = ["-ss", f"{offset:.3f}", "-t", f"{dur + 0.2:.3f}", "-i", str(src)]
-        base = f"[{idx}:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},setsar=1,"
-        if punch:
-            # hard punch-in at ~55% of the shot: a pattern interrupt so no shot sits still past four seconds
-            base += (f"scale={W*2}:{H*2},zoompan=z='if(gte(on,{mid}),{PUNCH_IN_SCALE},1)':x='iw/2-(iw/zoom/2)':"
-                     f"y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS},")
-        chain = base + f"trim=duration={dur:.3f},setpts=PTS-STARTPTS,format=yuv420p{tag}"
+        # a generated clip is 5 s; a shot can run longer (beat snapping, the final hold). Pad by cloning the
+        # last frame so the picture never runs short of the narration, and keep a continuous slow push
+        # (1.00 -> 1.03) over the whole shot so neither a static clip start nor a padded tail ever freezes.
+        punch_term = f"+if(gte(on,{mid}),{PUNCH_IN_SCALE-1.0:.3f},0)" if punch else ""
+        chain = (f"[{idx}:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},setsar=1,"
+                 f"tpad=stop_mode=clone:stop_duration={dur + 1.0:.3f},"
+                 f"scale={W*2}:{H*2},zoompan=z='1+{CLIP_PUSH:.3f}*on/{frames}{punch_term}':x='iw/2-(iw/zoom/2)':"
+                 f"y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS},"
+                 f"trim=duration={dur:.3f},setpts=PTS-STARTPTS,format=yuv420p{tag}")
     elif kind == "still":
         inputs = ["-loop", "1", "-t", f"{dur + 0.2:.3f}", "-i", str(src)]
         # slow push 1.00 → 1.035 with a slight drift (zoompan works on a larger canvas to avoid jitter)

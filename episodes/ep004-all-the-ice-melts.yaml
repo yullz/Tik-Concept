@@ -14,8 +14,6 @@ voice:
   settings:
     stability: 0.5
     similarity_boost: 0.75
-    style: 0.15
-    speed: 0.95
 music:
   mood: sparse piano, a rising sub bass through the phases, silence at the turn
   cue: assets/music/tomorrow-morning-03.mp3
@@ -81,7 +79,7 @@ beats:
     style: title
 - id: hinge
   vo: >-
-    There are twenty-six million cubic kilometres of ice on Earth, nearly all on Antarctica. Here it goes in seven
+    There are thirty million cubic kilometres of ice on land, nine-tenths of it on Antarctica. Here it goes in seven
     days, and the sea climbs seventy metres. This is how it happens.
   card:
     text: THIS WEEK · THE HINGE
@@ -96,21 +94,19 @@ beats:
 - id: phase2
   vo: >-
     Month one. The ports are under water, so the ships have nowhere to unload. Trade stops. A billion people live
-    inland, uninvited. Meltwater stalls the current that warms Europe, so Paris gets Canada's winter.
+    inland, uninvited. Meltwater chokes the current that warms Europe; within a decade Paris has Canada's winter.
   card:
     text: MONTH ONE
     style: phase
 - id: phase3
   vo: >-
-    Year ten. The map is new. The Amazon basin is a sea. Antarctica, bare rock for the first time in thirty million
-    years, is the last unclaimed land on Earth.
+    Year ten. The map is new. The Amazon basin is a sea. Antarctica, bare rock for the first time in thirty-four million years, is the only continent no nation owns.
   card:
     text: YEAR TEN
     style: phase
 - id: turn
   vo: >-
-    [exhale] But the water is not the worst of it. The deltas that feed a billion people, the Nile, the Ganges,
-    the Mekong, are salt now. The famine lasts longer than the flood.
+    [exhale] But the water is not the worst of it. The deltas that feed hundreds of millions, the Nile, the Ganges, the Mekong, are salt now. The famine lasts longer than the flood.
   card: null
 - id: dilemma
   vo: >-
@@ -149,6 +145,16 @@ shots:
   dur: 2.5
   mode: video
   sfx: helicopter distant
+- beat: hook
+  size: CLOSE
+  location: Oxford Street, under the sea, day seven
+  prompt: >-
+    a red double-decker bus seen from just below the surface of green seawater, small fish moving through its open
+    door, silt on the seats, shafts of sunlight through the water
+  motion: slow drift forward through the water, fish pass, the light shafts sway
+  dur: 2.5
+  mode: video
+  sfx: underwater
 - beat: hinge
   size: MAP
   location: Survey office, day one
@@ -302,7 +308,7 @@ shots:
   sfx: flag in wind
   card:
     text: |-
-      14,000,000 KM²
+      7,000,000 KM²
       OF NEW LAND
     style: stat
   hero_object: true
@@ -346,6 +352,16 @@ shots:
   mode: video
   sfx: crowd murmur
 - beat: dilemma
+  size: DETAIL
+  location: Ridge above a drowned city, dawn
+  prompt: >-
+    macro, a hand-drawn map on wet paper with two pencil arrows, one pointing up a hill and one south across
+    open water, no lettering, illegible marks, salt water beading on the paper, dawn light
+  motion: static macro, a drop of water runs across the paper, the pencil arrows stay
+  dur: 3.0
+  mode: video
+  sfx: paper
+- beat: dilemma
   size: WIDE
   location: Ridge above a drowned city, dawn
   prompt: >-
@@ -358,8 +374,7 @@ shots:
   hero_object: true
 dilemma: Uphill with everyone else, or south to the new continent?
 pinned_comment: >-
-  South. A continent the size of Europe and America together, no owners, no borders, and the only fresh ice left
-  on Earth. Antarctica in this timeline is the only place that is not already full.
+  South. A continent half again the size of the United States, no owners, no borders, and the coolest summers left on Earth. Antarctica in this timeline is the only place that is not already full.
 metadata:
   cover_time: 0.9
   second_comment: >-

@@ -21,7 +21,10 @@ from .spec import Episode, words
 
 ELEVEN_BASE = "https://api.elevenlabs.io/v1"
 DEFAULT_MODEL = "eleven_v4"            # Eleven v4 (Sept 2026). Confirm the exact id with `pipeline audition --list-models`.
-DEFAULT_SETTINGS = {"stability": 0.5, "similarity_boost": 0.75, "style": 0.15, "use_speaker_boost": True, "speed": 0.95}
+DEFAULT_SETTINGS = {"stability": 0.5, "similarity_boost": 0.75, "use_speaker_boost": True}
+V3_PLUS_ONLY = ("stability", "similarity_boost", "use_speaker_boost")   # Eleven v3/v4 have no style or speed sliders
+DEFAULT_OUTPUT_FORMAT = "mp3_44100_192"                                 # 192 kbps needs Creator tier or above; 128 is the fallback
+TAG_RE = re.compile(r"\[[^\]]*\]")
 
 AUDITION_SCRIPT = (
     "What if Rome never fell. Not in four seventy-six. Not ever. Tonight, the Senate votes on the Moon. "
@@ -39,11 +42,22 @@ def narration_text(ep: Episode) -> str:
 
 
 def _chars_to_words(alignment: dict) -> list[dict]:
+    """Character timings -> spoken words. Audio tags such as [exhale] or a bracketed direction are
+    timed by the API like any other characters; they are skipped here so they never become words."""
     chars = alignment["characters"]
     starts = alignment["character_start_times_seconds"]
     ends = alignment["character_end_times_seconds"]
-    out, cur, s0, e0 = [], "", None, None
+    out, cur, s0, e0, in_tag = [], "", None, None, False
     for ch, st, en in zip(chars, starts, ends):
+        if ch == "[":
+            if cur:
+                out.append({"word": cur, "start": s0, "end": e0}); cur = ""
+            in_tag = True
+            continue
+        if in_tag:
+            if ch == "]":
+                in_tag = False
+            continue
         if ch.isspace():
             if cur:
                 out.append({"word": cur, "start": s0, "end": e0}); cur = ""
@@ -53,7 +67,7 @@ def _chars_to_words(alignment: dict) -> list[dict]:
         cur += ch; e0 = en
     if cur:
         out.append({"word": cur, "start": s0, "end": e0})
-    return [w for w in out if not re.fullmatch(r"\[.*\]", w["word"])]
+    return [w for w in out if re.search(r"[A-Za-z0-9]", w["word"])]
 
 
 class ElevenLabs:
@@ -96,22 +110,35 @@ class ElevenLabs:
 
     # ---- synthesis ---------------------------------------------------------
     def tts(self, voice_id: str, text: str, model_id: str, settings: dict, out_mp3: Path,
-            output_format: str = "mp3_44100_192", language_code: str | None = None) -> tuple[Path, list[dict] | None, str]:
+            output_format: str | None = None, language_code: str | None = None) -> tuple[Path, list[dict] | None, str]:
+        output_format = output_format or env("ELEVENLABS_OUTPUT_FORMAT", DEFAULT_OUTPUT_FORMAT)
         body = {"text": text, "model_id": model_id, "voice_settings": settings, "apply_text_normalization": "on"}
         if language_code:
             body["language_code"] = language_code
-        r = self._req("POST", f"/text-to-speech/{voice_id}/with-timestamps", params={"output_format": output_format}, json=body)
+
+        def post(path):
+            r = self._req("POST", path, params={"output_format": output_format}, json=body)
+            if r.status_code in (400, 403, 422) and "output_format" in r.text and output_format != "mp3_44100_128":
+                # the plan does not allow 192 kbps: retry once at the default bitrate
+                print(f"  ElevenLabs refused output_format {output_format}; retrying with mp3_44100_128")
+                r = self._req("POST", path, params={"output_format": "mp3_44100_128"}, json=body)
+            return r
+
+        r = post(f"/text-to-speech/{voice_id}/with-timestamps")
         if r.ok:
             data = r.json()
             out_mp3.write_bytes(base64.b64decode(data["audio_base64"]))
             align = data.get("normalized_alignment") or data.get("alignment")
             return out_mp3, (_chars_to_words(align) if align else None), "elevenlabs-timestamps"
-        # timestamps not available for this model/plan: plain synthesis, then forced alignment
-        r2 = self._req("POST", f"/text-to-speech/{voice_id}", params={"output_format": output_format}, json=body)
+        if r.status_code not in (400, 404, 422):
+            # auth, credits, rate limit, server errors: say so, do not retry blindly on another endpoint
+            raise SystemExit(f"ElevenLabs with-timestamps failed ({r.status_code}): {r.text[:400]}")
+        print(f"  with-timestamps not available ({r.status_code}: {r.text[:160]}); plain synthesis + forced alignment")
+        r2 = post(f"/text-to-speech/{voice_id}")
         if not r2.ok:
             raise SystemExit(f"ElevenLabs TTS failed ({r2.status_code}): {r2.text[:400]}")
         out_mp3.write_bytes(r2.content)
-        return out_mp3, self.forced_alignment(out_mp3, text), "elevenlabs-forced-alignment"
+        return out_mp3, self.forced_alignment(out_mp3, TAG_RE.sub("", text)), "elevenlabs-forced-alignment"
 
     def forced_alignment(self, audio: Path, text: str) -> list[dict] | None:
         """POST /v1/forced-alignment: returns character and word timings for a given audio + transcript."""
@@ -122,7 +149,8 @@ class ElevenLabs:
             return None
         data = r.json()
         if data.get("words"):
-            return [{"word": w.get("text", w.get("word", "")), "start": float(w["start"]), "end": float(w["end"])} for w in data["words"] if str(w.get("text", w.get("word", ""))).strip()]
+            return [{"word": w.get("text", w.get("word", "")), "start": float(w["start"]), "end": float(w["end"])}
+                    for w in data["words"] if re.search(r"[A-Za-z0-9]", str(w.get("text", w.get("word", ""))))]
         if data.get("characters"):
             return _chars_to_words({"characters": [c["text"] for c in data["characters"]],
                                     "character_start_times_seconds": [c["start"] for c in data["characters"]],
@@ -137,6 +165,9 @@ def voice_config(ep: Episode) -> tuple[str, str, dict]:
         raise SystemExit("no voice locked: set voice.elevenlabs_voice_id in the episode (or ELEVENLABS_VOICE_ID); pick one with `pipeline audition`")
     model_id = v.get("model_id") or env("ELEVENLABS_MODEL_ID", DEFAULT_MODEL)
     settings = {**DEFAULT_SETTINGS, **(v.get("settings") or {})}
+    if model_id.startswith(("eleven_v3", "eleven_v4")):
+        # v3/v4 accept only stability, similarity and speaker boost; style/speed would be rejected or ignored
+        settings = {k: val for k, val in settings.items() if k in V3_PLUS_ONLY}
     return voice_id, model_id, settings
 
 

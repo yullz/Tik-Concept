@@ -32,11 +32,10 @@ account with `python3 -m pipeline audition --list-models` (third-party gateways 
 | `model_id` | `eleven_v4` (confirm via `--list-models`) | v4 Turbo only for drafts; the master uses full v4 |
 | stability | 0.50 | lower drifts between takes, higher goes flat |
 | similarity_boost | 0.75 | |
-| style | 0.15 | the script carries the emotion |
-| speed | 0.95 | slightly under default; we never time-stretch in post |
+| style / speed | n/a | not available on Eleven v3/v4 (v2 models only); pace comes from the script, punctuation and `[pause]` tags, never from post |
 | use_speaker_boost | true | |
 | `apply_text_normalization` | `on` | we still spell numbers out |
-| output | `mp3_44100_192` | the assembler normalises to −16 LUFS |
+| output | `mp3_44100_192` (Creator tier or above; the code falls back to `mp3_44100_128`, or set `ELEVENLABS_OUTPUT_FORMAT`) | the assembler normalises to −16 LUFS |
 | timestamps | `/with-timestamps` first; if the model or plan refuses, plain synthesis then `/v1/forced-alignment` with the exact script; then faster-whisper | word timings drive every cut and caption |
 
 ## Casting: pick by audition, lock by id
@@ -62,9 +61,11 @@ episodes, and never change it mid-season.
 
 ## The audition script (read by every candidate, compare blind)
 
-> What if Rome never fell. In the year two thousand twenty-four, the Senate still meets. The eagle flies over four continents, and Latin is the language of the internet. This is how it happens. [exhale] But a timeline that keeps its empire has to pay for it, and the bill arrives in the fifteenth century.
+The text is `AUDITION_SCRIPT` in `pipeline/tts.py` (the command reads it from there):
 
-Scoring: clarity of "two thousand twenty-four", the weight of "This is how it happens", whether the bracketed exhale sounds human, whether the sentence after it darkens without slowing to a crawl.
+> What if Rome never fell. Not in four seventy-six. Not ever. Tonight, the Senate votes on the Moon. One autumn night, two seventy-five. Aurelian, the emperor who stitched the broken empire back together in five years, is murdered by his officers. Here, the plot fails. This is how it happens. [exhale] But an empire with no rivals has no reason to invent. Printing, banking, steam, all came from states fighting to survive. That timeline never happened. Ours did. So, honestly: would you trade the internet for Rome?
+
+Scoring: clarity of "two seventy-five", the weight of "This is how it happens", whether the bracketed exhale sounds human, whether the last line darkens without slowing to a crawl.
 
 ## How narration is written for the synthesiser (what `pipeline lint` enforces)
 

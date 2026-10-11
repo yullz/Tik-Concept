@@ -14,8 +14,6 @@ voice:
   settings:
     stability: 0.5
     similarity_boost: 0.75
-    style: 0.15
-    speed: 0.95
 music:
   mood: sparse piano, sub bass, a high sustained string from the turn
   cue: assets/music/tomorrow-morning-02.mp3
@@ -80,36 +78,32 @@ beats:
     style: title
 - id: hinge
   vo: >-
-    At midnight the Moon is simply gone. No impact, no debris, just absence. Earth loses what pulled on it for four
+    At midnight the Moon is gone. No impact, no debris, just absence. Earth loses what pulled on it for four
     and a half billion years. This is how it happens.
   card:
     text: MIDNIGHT · THE HINGE
     style: date
 - id: phase1
   vo: >-
-    First night. The darkest night in human history, because moonlight was a hundred times brighter than stars.
-    Tides shrink to a third. Fundy's sixteen metres become five. Corals that spawn by moonlight miss their cue.
+    First night. Every night is a new-moon night now; full moonlight was a hundred times brighter than the stars. Tides shrink to a third, so Fundy's sixteen metres become five. Corals that spawn by the full Moon miss their night.
   card:
     text: FIRST NIGHT
     style: phase
 - id: phase2
   vo: >-
-    Year ten. Estuaries that fed on the tide go quiet, so the fisheries go with them. Every calendar loses its month.
-    Moths, turtles and dung beetles that steered by the Moon wander.
+    Year ten. The tide is a third of itself, so the estuary nurseries shrink, and the fisheries with them. Lunar calendars lose their month. Moths lose their compass. Leatherback hatchlings circle longer before they find the sea.
   card:
     text: YEAR TEN
     style: phase
 - id: phase3
   vo: >-
-    A million years. The Moon kept Earth's tilt steady. Without it the axis drifts, so the poles swing toward the
-    sun and back. Ice ages and furnace ages trade places every few hundred millennia.
+    Millions of years on. The Moon kept Earth's tilt steady. Without it the axis wanders by tens of degrees, so climates lurch between ice age and furnace.
   card:
     text: ONE MILLION YEARS
     style: phase
 - id: turn
   vo: >-
-    [exhale] But the quiet cost comes first. The Moon's pull is why a day lasts twenty-four hours, not six. It was
-    the planet's brake, its clock, and the only other place anyone walked.
+    [exhale] But the quiet cost comes first. The Moon's pull is why a day lasts twenty-four hours, not six. It was our brake, our clock, the only other place anyone walked.
   card: null
 - id: dilemma
   vo: >-
@@ -149,6 +143,16 @@ shots:
   dur: 2.5
   mode: video
   sfx: drip
+- beat: hook
+  size: MEDIUM
+  location: Harbour wall, night
+  prompt: >-
+    waist-up, a fisherman in oilskins on a harbour wall at night looking down at boats sitting on bare mud far
+    below him, mooring ropes slack, a harbour lamp, star-dense sky with no moon
+  motion: static tripod with a slow push-in, he looks down, a slack rope swings once
+  dur: 2.5
+  mode: video
+  sfx: harbour quiet
 - beat: hinge
   size: DETAIL
   location: Harbourmaster's office, night
@@ -260,9 +264,9 @@ shots:
   size: MEDIUM
   location: Turtle beach, Queensland, night
   prompt: >-
-    waist-up, a park ranger kneeling on a beach with a red torch as turtle hatchlings scatter in every direction
+    waist-up, a park ranger kneeling on a beach with a red torch as leatherback turtle hatchlings circling in the sand before they turn toward the sea
     instead of toward the sea, the sea a dark line, starlight
-  motion: static tripod with a slow push-in, hatchlings scatter, the torch beam moves
+  motion: static tripod with a slow push-in, the hatchlings circle and turn seaward, the torch beam moves
   dur: 3.5
   mode: video
   sfx: surf distant
@@ -338,6 +342,17 @@ shots:
   mode: video
   sfx: city night
 - beat: dilemma
+  size: CLOSE
+  location: Harbour wall, dawn
+  prompt: >-
+    a brass tide clock on a harbour wall at dawn with its single hand missing from the dial, salt crust on the
+    brass, a gull's shadow crossing it, pale grey light
+  motion: static close, the gull's shadow crosses the dial, the light steadies
+  dur: 3.0
+  mode: video
+  sfx: dawn surf
+  hero_object: true
+- beat: dilemma
   size: WIDE
   location: Headland lighthouse, dawn
   prompt: >-
@@ -351,7 +366,7 @@ shots:
 dilemma: 'Which ends us first: the dark, the tide, or the tilt?'
 pinned_comment: >-
   The tide. Not the water, the fisheries. Estuaries are nurseries for most of what we eat from the sea, and they
-  run on tidal mixing. The dark is a mood; the tilt is a million years away. Argue.
+  run on tidal mixing. The dark is a mood; the tilt is millions of years away. Argue.
 metadata:
   cover_time: 3.4
   second_comment: >-

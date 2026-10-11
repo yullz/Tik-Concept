@@ -14,8 +14,6 @@ voice:
   settings:
     stability: 0.5
     similarity_boost: 0.75
-    style: 0.15
-    speed: 0.95
 music:
   mood: sparse piano, sub bass from the hinge, a slowing metronome under the phases
   cue: assets/music/tomorrow-morning-02.mp3
@@ -64,7 +62,7 @@ research:
     street: >-
       a brass Foucault pendulum over floor markers, a sundial, a tide gauge, cracked mud, frost on the far side
     light: >-
-      a sun that hangs too long: long noons, long dusks; six-month night lit by aurora and headlamps
+      a sun that hangs too long: long noons, long dusks; six-month night lit by stars and headlamps
     palette: wheat gold, cold cyan sky, brass, frost grey, deep cyan accent
     forbidden: people flung through the air, exploding buildings, glowing effects, text, cartoon physics
   cost: >-
@@ -75,42 +73,39 @@ beats:
 - id: hook
   vo: >-
     What if the Earth stopped spinning. Not all at once, that would kill everyone by lunch. Slowly, over one year.
-    Day one feels normal. Day three hundred lasts six months.
+    Day one feels normal. Day three hundred lasts a week.
   card:
     text: WHAT IF THE EARTH STOPPED SPINNING
     style: title
 - id: hinge
   vo: >-
-    The ground under you is moving at one thousand six hundred kilometres an hour. Here it slows, a little each
+    The ground at the equator moves at one thousand seven hundred kilometres an hour. Here it slows, a little each
     day, until a year from now it stops. This is how it happens.
   card:
     text: TONIGHT · THE HINGE
     style: date
 - id: phase1
   vo: >-
-    Month three. Days are forty hours long, so noon is hotter and midnight is colder than anything on record. Crops
+    Month three. Days are thirty-two hours long, so afternoons bake and nights freeze harder every week. Crops
     bolt. Flights reroute, because the winds have changed.
   card:
     text: MONTH THREE
     style: phase
 - id: phase2
   vo: >-
-    Month nine. The spin held a bulge of ocean at the equator twenty-one kilometres high. As it fades the water
-    drains to the poles, so Canada drowns and the equator rises as one dry continent.
+    Month nine. The spin made the planet twenty-one kilometres wider at the equator, and the sea sat on that bulge. As it fades the water runs to the poles, so Canada drowns and the equator rises as one dry continent.
   card:
     text: MONTH NINE
     style: phase
 - id: phase3
   vo: >-
-    Year one. The Earth stands still. A day now lasts a year: six months of sun, six months of night. Eight billion
-    people live on a strip near the terminator, chasing the dusk.
+    Year one. The Earth stands still. A day now lasts a year: six months of sun, six months of night. Eight billion people live on the dusk line, and move with it.
   card:
     text: YEAR ONE
     style: phase
 - id: turn
   vo: >-
-    [exhale] But the spin did one more job. It stirred the liquid iron in the core that makes the magnetic field.
-    Without it the field fades, and the solar wind begins to strip the air.
+    [exhale] But the spin did one more job. It stirred the liquid iron that makes the magnetic field. Without it the field fades over thousands of years, and the solar wind starts stripping the air.
   card: null
 - id: dilemma
   vo: 'That timeline never happened. Ours did. So: the day side, or the night side?'
@@ -149,6 +144,16 @@ shots:
   dur: 2.5
   mode: video
   sfx: kitchen quiet
+- beat: hook
+  size: CLOSE
+  location: Garden sundial, afternoon
+  prompt: >-
+    a stone sundial in a garden with its shadow fixed on the same hour mark, moss on the dial, a bee resting on
+    the gnomon, hard low sunlight that has not moved
+  motion: static close, the bee's wings stir, the shadow does not move
+  dur: 2.5
+  mode: video
+  sfx: garden quiet
 - beat: hinge
   size: MAP
   location: Observatory, night
@@ -161,8 +166,8 @@ shots:
   sfx: globe turn
   card:
     text: |-
-      1,600 KM/H
-      THE GROUND, RIGHT NOW
+      1,700 KM/H
+      THE GROUND AT THE EQUATOR
     style: stat
 - beat: hinge
   size: CLOSE
@@ -196,7 +201,7 @@ shots:
   sfx: hot wind
   card:
     text: |-
-      40-HOUR DAYS
+      32-HOUR DAYS
       MONTH THREE
     style: stat
 - beat: phase1
@@ -243,7 +248,7 @@ shots:
   card:
     text: |-
       21 KM
-      OF OCEAN BULGE, GONE
+      WIDER AT THE EQUATOR
     style: stat
 - beat: phase2
   size: CLOSE
@@ -324,9 +329,9 @@ shots:
   size: WIDE
   location: Night side, Mongolia, year one
   prompt: >-
-    a vast dark steppe under a sky full of aurora from horizon to horizon, a line of headlamps crossing it, frost
+    a vast dark steppe under a sky crowded with hard stars from horizon to horizon, a line of headlamps crossing it, frost
     on the grass, green and red curtains of light
-  motion: very slow pan right across the aurora, the headlamps crawl, curtains of light shift
+  motion: very slow pan right across the steppe, the headlamps crawl, frost glints
   dur: 4.5
   mode: video
   sfx: night wind
@@ -334,7 +339,7 @@ shots:
   size: CLOSE
   location: Night side, year one
   prompt: >-
-    a compass in a gloved hand, its needle drifting aimlessly, aurora light on the glass, breath fog
+    a compass in a gloved hand, its needle still holding north, frost on the glass, headlamp light, breath fog
   motion: static close, the needle swings slowly and does not settle
   dur: 4.0
   mode: video
@@ -343,13 +348,23 @@ shots:
   size: DETAIL
   location: Science museum, year one
   prompt: >-
-    macro, the still brass bob of the Foucault pendulum reflecting a small window of aurora light, dust, the wire
+    macro, the still brass bob of the Foucault pendulum reflecting a small window of starlight, dust, the wire
     motionless
   motion: static macro, the reflected light shifts slowly, nothing else moves
   dur: 4.0
   mode: video
   sfx: museum quiet
   hero_object: true
+- beat: dilemma
+  size: MEDIUM
+  location: Dusk line, year one
+  prompt: >-
+    waist-up from behind, a woman in a parka standing exactly on the dusk line, low sunlight on one shoulder and
+    frost on the other, a child's hand in hers, wind in her hair
+  motion: static tripod with a slow push-in, her hair moves in the wind, frost glints on the dark side
+  dur: 3.0
+  mode: video
+  sfx: ridge wind
 - beat: dilemma
   size: WIDE
   location: Terminator ridge, year one
@@ -362,7 +377,7 @@ shots:
   sfx: ridge wind
 dilemma: The day side, or the night side?
 pinned_comment: >-
-  Night side. The day side is a six-month furnace with no shade; the night side has aurora, ice to melt for water,
+  Night side. The day side is a six-month furnace with no shade; the night side has ice to melt for water,
   and geothermal heat if you dig. Humans have wintered in Antarctica for a century. Nobody has summered on Venus.
 metadata:
   cover_time: 3.4

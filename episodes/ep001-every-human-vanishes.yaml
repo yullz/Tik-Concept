@@ -14,8 +14,6 @@ voice:
   settings:
     stability: 0.5
     similarity_boost: 0.75
-    style: 0.15
-    speed: 0.95
 music:
   mood: sparse piano, long silences, a single cello line from the turn
   cue: assets/music/tomorrow-morning-08.mp3
@@ -70,7 +68,7 @@ research:
     palette: sodium amber, concrete grey, vine green, rust, deep cyan accent
     forbidden: bodies, zombies, explosions, Hollywood ruins with skulls, text, people
   cost: >-
-    Some things do not go. Plastic lasts centuries, the pyramids millions of years, and two probes keep falling
+    Some things do not go. Plastic lasts centuries, the pyramids a hundred thousand years at least, and two probes keep falling
     away from the sun carrying a gold record of our voices, to nobody.
 beats:
 - id: hook
@@ -104,13 +102,13 @@ beats:
 - id: phase3
   vo: >-
     Year one hundred. Chernobyl already showed us: wolves and forest within decades. Rivers take their old beds
-    back. Bridges rust through. The cities are green hills with towers in them.
+    back. Bridge cables rust bare. The cities are green hills with towers in them.
   card:
     text: YEAR ONE HUNDRED
     style: phase
 - id: turn
   vo: >-
-    [exhale] But some things do not go. Plastic lasts centuries. The pyramids, millions of years. And two probes
+    [exhale] But some things do not go. Plastic lasts centuries. The pyramids, a hundred thousand years at least. And two probes
     keep falling away from the sun carrying a gold record of our voices, to nobody.
   card: null
 - id: dilemma
@@ -151,6 +149,16 @@ shots:
   dur: 2.5
   mode: video
   sfx: house quiet
+- beat: hook
+  size: WIDE
+  location: City avenue, dawn
+  prompt: >-
+    a city avenue at dawn with the traffic lights cycling for no one, a taxi stalled at the kerb with pigeons on
+    its roof, a line of grass already standing in a crack of the asphalt, low sun
+  motion: slow dolly forward along the avenue, the lights change green to red, pigeons shift
+  dur: 2.5
+  mode: video
+  sfx: traffic light click
 - beat: hinge
   size: CLOSE
   location: Pavement, midnight
@@ -304,7 +312,7 @@ shots:
   sfx: forest quiet
   card:
     text: |-
-      100 YEARS
+      40 YEARS
       CHERNOBYL ALREADY SHOWED US
     style: stat
 - beat: phase3
@@ -369,13 +377,11 @@ shots:
   sfx: desert wind
 dilemma: 'The last human thing standing: the pyramid, the plastic, or the probe?'
 pinned_comment: >-
-  The probe. The pyramids erode in a few million years, plastic breaks down in a few thousand, but Voyager is outside
-  the solar system with nothing to touch it. In a billion years the only proof we existed is a gold record.
+  The probe. The pyramids wear down over a hundred thousand years or so, plastic in a few thousand, but Voyager is in interstellar space with nothing to touch it. In a billion years the only proof we existed is a gold record.
 metadata:
   cover_time: 0.6
   second_comment: >-
-    The plastic. Not a bottle, the layer: a thin band of polymer in the rock of every continent, the same way the
-    dinosaurs left an iridium line. The pyramids are a monument. The plastic is a fossil.
+    The plastic. Not a bottle, the layer: a thin band of polymer in the rock of every continent, the way the asteroid that ended the dinosaurs left an iridium line. The pyramids are a monument. The plastic is a fossil.
   hashtags:
   - '#whatif'
   - '#science'

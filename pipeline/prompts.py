@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 from .config import load_style, render_dir
@@ -83,11 +84,22 @@ def batch_requests(sheet: dict, kind: str, lookkey_job: str | None = None,
     return [reqs[i:i + 12] for i in range(0, len(reqs), 12)]
 
 
-def write_promptsheet(ep: Episode, style_name: str = "counterfact-v1") -> Path:
+UUID_RE = re.compile(r"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")
+
+
+def write_promptsheet(ep: Episode, style_name: str = "counterfact-v1", lookkey_job: str | None = None) -> Path:
+    """Write promptsheet.json/.md and keyframe_batches.json. Pass the look-key job id so every keyframe
+    request carries it as image_references; without it the batches are written WITHOUT a reference."""
     out = render_dir(ep.id)
     sheet = build_promptsheet(ep, style_name)
+    if lookkey_job and not UUID_RE.match(lookkey_job):
+        raise SystemExit(f"look-key job id must be a UUID (from generate_image), got {lookkey_job!r}")
+    sheet["look_key"]["job_id"] = lookkey_job
     (out / "promptsheet.json").write_text(json.dumps(sheet, indent=2))
-    (out / "keyframe_batches.json").write_text(json.dumps(batch_requests(sheet, "keyframes"), indent=2))
+    (out / "keyframe_batches.json").write_text(json.dumps(batch_requests(sheet, "keyframes", lookkey_job=lookkey_job), indent=2))
+    if not lookkey_job:
+        print("  note: keyframe_batches.json written WITHOUT image_references; after the look key exists, run "
+              "`pipeline promptsheet <episode> --lookkey-job <job_id>` before submitting keyframes")
     lines = [f"# Prompt sheet · {ep.title} ({ep.id})", "",
              f"Aspect {sheet['aspect_ratio']} · keyframes `{sheet['look_key']['model']}` · motion `{load_style(style_name)['video_model']}`", "",
              "## Look key (generate first, pass its job id as image_references to every keyframe)", "",

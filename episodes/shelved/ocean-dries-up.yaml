@@ -14,8 +14,6 @@ voice:
   settings:
     stability: 0.5
     similarity_boost: 0.75
-    style: 0.15
-    speed: 0.95
 music:
   mood: sparse piano, a sub bass that enters at the hinge, no percussion
   cue: assets/music/tomorrow-morning-01.mp3

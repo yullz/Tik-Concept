@@ -14,8 +14,6 @@ voice:
   settings:
     stability: 0.5
     similarity_boost: 0.75
-    style: 0.15
-    speed: 0.95
 music:
   mood: sparse piano, a brittle percussive tick under the phases, warmth returning in phase three
   cue: assets/music/tomorrow-morning-11.mp3
@@ -56,7 +54,7 @@ research:
     thirties, in glass and steel.
   - 'Food packaging is a preservative: without it fresh food spoils in days.'
   - >-
-    The ocean's plastic load, estimated in the hundreds of millions of tonnes, vanishes with everything else.
+    The ocean's plastic load, estimated at seventy-five to two hundred million tonnes, vanishes with everything else.
   era_sheet:
     timeline: 'the present day: minute one, week one, year ten'
     architecture: >-
@@ -85,21 +83,19 @@ beats:
     style: title
 - id: hinge
   vo: >-
-    Humans have made more than eight billion tonnes of plastic since nineteen fifty, and it is in everything. Here,
-    at midnight, every gram of it disappears. This is how it happens.
+    Humans have made more than eight billion tonnes of plastic since nineteen fifty, and it is in everything. Here, at midnight, every gram of it disappears, and no more can be made. This is how it happens.
   card:
     text: MIDNIGHT · THE HINGE
     style: date
 - id: phase1
   vo: >-
-    Minute one. Six in ten garments on Earth are synthetic, so most people are half dressed. Cars stop, because
-    their wiring shorts. The grid fails for the same reason. Pipes split.
+    Minute one. Two thirds of all clothing fibre is synthetic, so most people are half dressed. Cars stop, because their wiring shorts. So does the grid. Pipes split.
   card:
     text: MINUTE ONE
     style: phase
 - id: phase2
   vo: >-
-    Week one. The hospitals are the real loss. Drips, syringes, blood bags, gloves, all plastic. Surgery goes back
+    Week one. The hospitals are the real loss. Drips, syringes, blood bags, nitrile gloves, all plastic. Surgery goes back
     to glass and steel, slower and deadlier. Food spoils in days, because packaging was the preservative.
   card:
     text: WEEK ONE
@@ -177,7 +173,7 @@ shots:
   card:
     text: |-
       8,300,000,000 T
-      MADE SINCE 1950
+      MADE 1950–2015
     style: stat
 - beat: hinge
   size: DETAIL
@@ -211,8 +207,8 @@ shots:
   sfx: courtyard murmur
   card:
     text: |-
-      6 IN 10
-      GARMENTS, GONE
+      2 IN 3
+      CLOTHING FIBRES, GONE
     style: stat
 - beat: phase1
   size: DETAIL
@@ -268,7 +264,7 @@ shots:
   card:
     text: |-
       WEEK ONE
-      MEDICINE OF 1935
+      THE WARD OF 1949
     style: stat
 - beat: phase2
   size: DETAIL
@@ -387,7 +383,7 @@ shots:
 dilemma: The clear sea, or the full hospital. Which one do you keep?
 pinned_comment: >-
   The hospital. A clean ocean is a beautiful thing, and a child on a drip is a more beautiful thing. We can fix
-  the bottles with rules. We cannot fix a blood bag with glass.
+  the bottles with rules. We cannot spin platelets out of a glass bottle.
 metadata:
   cover_time: 0.6
   second_comment: >-
@@ -400,5 +396,5 @@ metadata:
   - '#environment'
   - '#tomorrowmorning'
   replies_to_prepare:
-  - Natural rubber and bakelite aren't plastic, they'd stay
+  - Natural rubber stays; Bakelite is synthetic (1907) and goes
   - We'd just use glass for everything, it's fine

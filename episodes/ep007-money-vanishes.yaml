@@ -14,8 +14,6 @@ voice:
   settings:
     stability: 0.5
     similarity_boost: 0.75
-    style: 0.15
-    speed: 0.95
 music:
   mood: sparse piano, a soft pizzicato pulse, warmth at phase one, silence at the turn
   cue: assets/music/tomorrow-morning-06.mp3
@@ -90,16 +88,14 @@ beats:
     style: date
 - id: phase1
   vo: >-
-    Day one. Nothing is for sale, because nobody can make change. By noon the corner shop runs a tab. By dusk the
-    notebook is money. It took nine hours to invent it again.
+    Day one. Nothing is for sale, because nothing has a price. By nine the corner shop runs a tab. By noon the notebook is money. It took twelve hours to invent it again.
   card:
     text: DAY ONE
     style: phase
 - id: phase2
   vo: >-
     Week one. Prisoners of war once used cigarettes. Ireland in nineteen seventy used pub cheques for six months
-    when the banks closed. Here the new money is phone credit, because everyone has it and the network keeps the
-    count.
+    when the banks closed. Here the new money is fresh airtime, because everyone has a phone and the network keeps count.
   card:
     text: WEEK ONE
     style: phase
@@ -143,6 +139,16 @@ shots:
   dur: 2.5
   mode: video
   sfx: register drawer
+- beat: hook
+  size: MEDIUM
+  location: Kitchen, dawn, day one
+  prompt: >-
+    waist-up, a man at a kitchen table at dawn holding a bank letter whose figures are blank, the paper illegible
+    at this distance, a mug, a child's drawing on the fridge, soft window light
+  motion: static tripod with a slow push-in, he turns the letter over, steam rises from the mug
+  dur: 2.5
+  mode: video
+  sfx: kitchen quiet
 - beat: hook
   size: WIDE
   location: Street market, dawn, day one
@@ -211,7 +217,7 @@ shots:
   hero_object: true
   card:
     text: |-
-      9 HOURS
+      12 HOURS
       TO REINVENT MONEY
     style: stat
 - beat: phase1
@@ -266,7 +272,7 @@ shots:
   sfx: market
   card:
     text: |-
-      PHONE CREDIT
+      AIRTIME
       THE NEW MONEY
     style: stat
 - beat: phase2
@@ -372,8 +378,7 @@ shots:
   hero_object: true
 dilemma: Your debts erased, your savings too. Do you take that night?
 pinned_comment: >-
-  I take it. Most people on Earth owe more than they own; a wiped ledger is the biggest jubilee in history and the
-  people who lose are the ones with numbers to lose. The bakery was taking eggs by breakfast. We'd be fine.
+  I take it. Half the adults on Earth own under ten thousand dollars net; a wiped ledger costs them almost nothing and frees them from every debt. The bakery was taking eggs by breakfast. We'd be fine.
 metadata:
   cover_time: 0.6
   second_comment: >-

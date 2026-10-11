@@ -14,8 +14,6 @@ voice:
   settings:
     stability: 0.5
     similarity_boost: 0.75
-    style: 0.15
-    speed: 0.95
 music:
   mood: clockwork percussion and cello, a teletype rhythm under the phases
   cue: assets/music/early-arrival-01.mp3

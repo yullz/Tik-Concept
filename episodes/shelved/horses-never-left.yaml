@@ -14,8 +14,6 @@ voice:
   settings:
     stability: 0.5
     similarity_boost: 0.75
-    style: 0.15
-    speed: 0.95
 music:
   mood: a single sustained low note that resolves at the turn, a hoofbeat pulse under the phases
   cue: assets/music/the-hinge-04.mp3

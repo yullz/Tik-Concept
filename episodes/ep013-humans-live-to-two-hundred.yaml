@@ -36,7 +36,7 @@ research:
     - "Pensions are built for fifteen to twenty-five years of retirement; two hundred-year lives break that arithmetic on day one."
     - "A marriage at twenty-five becomes a hundred-and-seventy-year contract."
     - "If nobody retires or dies, nobody is promoted and nothing is inherited; houses, farms and seats stay with their holders."
-    - "Births continuing at today's rate while deaths stop for a century pushes population toward sixteen billion."
+    - "Births continuing at today's rate while deaths stop for a century pushes population toward twenty-five billion by year two hundred."
     - "New medical treatments reach the rich first and the poor last; a two-hundred-year life would be the biggest such gap in history."
   era_sheet:
     timeline: "the present day: year one, year fifty, year two hundred"
@@ -53,13 +53,12 @@ research:
 beats:
   - id: hook
     vo: >-
-      What if you lived to two hundred. Everyone does, from tonight. Healthy at one hundred and fifty. Your pension
+      What if you lived to two hundred. From tonight, anyone treated does. Healthy at one hundred and fifty. Your pension
       just became a joke.
     card: {text: "WHAT IF YOU LIVED TO TWO HUNDRED", style: title}
   - id: hinge
     vo: >-
-      A human life runs about seventy-three years. Here, from tonight, it runs two hundred, in good health, for
-      everyone. Nothing else changes. That is the problem. This is how it happens.
+      A human life runs about seventy-three years. Here, from tonight, a treatment makes it two hundred, in good health. Nothing else changes. That is the problem. This is how it happens.
     card: {text: "TONIGHT · THE HINGE", style: date}
   - id: phase1
     vo: >-
@@ -73,8 +72,8 @@ beats:
     card: {text: "YEAR FIFTY", style: phase}
   - id: phase3
     vo: >-
-      Year two hundred. The first full lives are ending now, with great-great-grandchildren. Births never stopped,
-      so Earth holds sixteen billion. The oldest voters remember a planet with half the people.
+      Year two hundred. The first full lives are ending now, six generations down. Births never stopped,
+      so Earth holds twenty-five billion. The oldest voters remember a planet one third as full.
     card: {text: "YEAR TWO HUNDRED", style: phase}
   - id: turn
     vo: >-
@@ -108,6 +107,16 @@ shots:
     dur: 2.5
     mode: video
     sfx: "party"
+  - beat: hook
+    size: POV
+    location: Park steps, morning
+    prompt: >-
+      handheld, climbing a flight of park steps behind a white-haired runner in shorts taking them two at a time,
+      dew on the iron handrail, morning sun through the trees
+    motion: handheld slow push up the steps, the runner climbs, dew drips from the rail
+    dur: 2.5
+    mode: video
+    sfx: footsteps
   - beat: hook
     size: DETAIL
     location: "Pensions office, morning"
@@ -242,7 +251,7 @@ shots:
     dur: 3.5
     mode: video
     sfx: "dense crowd"
-    card: {text: "16,000,000,000\nPEOPLE", style: stat}
+    card: {text: "25,000,000,000\nPEOPLE", style: stat}
   - beat: phase3
     size: POV
     location: "Hospital room, year two hundred"

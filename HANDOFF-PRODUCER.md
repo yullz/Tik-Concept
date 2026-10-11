@@ -33,7 +33,7 @@ Read, in this order, before doing anything: `docs/00-anti-slop-charter.md`, `CLA
 - Measured costs on this account: keyframe 2 credits (Nano Banana Pro, 9:16, 2K), Kling 3.0 standard 5 s silent clip 7.5, look key 2. A full episode is about 300 credits (24 shots × 2 keyframe variants, 20 animated shots, 20 % retries). Narration is billed to the ElevenLabs key in characters (~1,200 per episode).
 - Preflight with `get_cost: true` before the first paid call of each stage; it is free.
 - Stop and report when the Higgsfield balance drops below 350 credits, or before any single episode would exceed 400. Never top up.
-- Never use `use_unlim` unless the owner says to.
+- Never use `use_unlim` unless the owner says to. If a batch call returns `unlim_choice`, nothing was submitted: ask, then resubmit.
 
 ## 4. Order of operations for the launch
 
@@ -49,7 +49,8 @@ chosen `voice_id` into every episode's `voice.elevenlabs_voice_id` and commit. O
 
 **Step 1 — the first episode end to end** (`episodes/ep001-every-human-vanishes.yaml`), following
 `RUNBOOK.md` sections 1–10 in order: validate → lint → promptsheet → dryrun (free, watch it) →
-look key → keyframes (batch, 2 variants per shot) → **Gate A** (owner picks, you apply `select`)
+look key (show it to the owner) → `promptsheet --lookkey-job <id>` → keyframes (batch, 2 variants per shot,
+every request carrying the look key as `image_references`) → **Gate A** (owner picks, you apply `select`)
 → motion (batch) → **Gate B** → tts → plan → assemble → qc → **Gate C** (owner fills
 `review.yaml`) → metadata → cover → bundle. Do not start episode two until episode one has a
 passing `review.yaml`; the first episode teaches us which prompts fail.

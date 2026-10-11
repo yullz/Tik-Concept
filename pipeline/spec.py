@@ -214,6 +214,13 @@ def validate(ep: Episode) -> tuple[list[str], list[str]]:
             errors.append("hook needs at least two shots (impossible image, then escalation) to hold 5 seconds")
         if sum(s.dur for s in hook_shots) < 5.0:
             errors.append("hook shots total under 5.0s; the hook must cover the 5-second qualified-view window")
+        planned_hook = sum(s.dur for s in hook_shots)
+        if hook_shots and planned_hook < hook_beat.est_seconds * 0.8:
+            errors.append(f"hook shots total {planned_hook:.1f}s for ~{hook_beat.est_seconds:.1f}s of narration; they would stretch past 3s each. "
+                          f"Add a hook shot (the first five seconds need a cut every 2-3 s)")
+    dil_shots = ep.shots_for("dilemma")
+    if "dilemma" in known and len(dil_shots) == 1 and ep.beat("dilemma").est_seconds + 0.8 > 6.5:
+        errors.append(f"dilemma: one shot would hold ~{ep.beat('dilemma').est_seconds + 0.8:.1f}s; add a second ending shot (nothing holds past six seconds)")
     aerials = [s for s in ep.shots if s.size == "AERIAL"]
     if len(aerials) > 2:
         warnings.append(f"{len(aerials)} AERIAL shots; keep to two or fewer")

@@ -14,8 +14,6 @@ voice:
   settings:
     stability: 0.5
     similarity_boost: 0.75
-    style: 0.15
-    speed: 0.95
 music:
   mood: >-
     a single sustained high string, a slow repeating pulse every few bars, sub bass at the turn
@@ -42,8 +40,7 @@ research:
   - >-
     The Arecibo message of 1974 and the 1977 Wow! signal (Ohio State Big Ear), as the two reference events
   - >-
-    Vakoch (ed.), Extraterrestrial Altruism (2014) and the 2015 statement by Hawking and others cautioning against
-    active transmission, for the METI debate
+    Vakoch (ed.), Extraterrestrial Altruism (2014); the 2015 Berkeley SETI statement signed by twenty-eight scientists, and Hawking's separate 2010 and 2016 warnings, for the METI debate
   facts:
   - >-
     A signal from forty light-years away is forty years old when it arrives; a reply takes forty more to get there.
@@ -54,8 +51,7 @@ research:
     A sequence of prime numbers is the textbook sign of a made signal, because no known natural process produces
     one.
   - >-
-    Television and radar have leaked from Earth since the nineteen thirties; the strongest signals are only a few
-    decades out.
+    Television and radar have leaked from Earth since the nineteen thirties; the oldest is ninety light-years out, the strongest about sixty.
   - >-
     Nothing in daily life changes when the signal arrives; markets have fallen and recovered on far less.
   era_sheet:
@@ -78,43 +74,37 @@ research:
 beats:
 - id: hook
   vo: >-
-    What if the signal came tomorrow. A radio telescope in Chile hears a pattern that nature cannot make. It repeats
-    every twenty-three hours. It is forty light-years away.
+    What if the signal came tomorrow. A radio telescope in Chile hears a pattern nature cannot make. It repeats every seventeen hours. It is forty light-years away.
   card:
     text: WHAT IF THE SIGNAL CAME TOMORROW
     style: title
 - id: hinge
   vo: >-
-    The protocol was written in nineteen eighty-nine: confirm with a second telescope, then tell the world. Here,
-    the second telescope hears it too. This is how it happens.
+    The protocol was written in nineteen eighty-nine: confirm with a second telescope, then tell the world. Here, the second telescope hears it. This is how it happens.
   card:
     text: TOMORROW · THE HINGE
     style: date
 - id: phase1
   vo: >-
-    Day one. Every dish on Earth turns to one star. The pattern is prime numbers, so it is not a pulsar and not
-    a prank. The markets fall nine percent and recover by Friday, because nothing has changed.
+    Day one. Every dish on Earth turns to one star. The pattern is prime numbers, so it is not a pulsar. Two continents hear it, so it is not a prank. The markets fall, then recover by Friday, because nothing has changed.
   card:
     text: DAY ONE
     style: phase
 - id: phase2
   vo: >-
-    Year one. The signal keeps coming, saying nothing new. Churches fill, then empty. A reply takes forty years
-    to arrive and forty more to answer, so the fight is over who speaks for Earth.
+    Year one. The signal keeps coming, saying nothing new. Churches fill, then empty. A reply takes forty years to arrive and forty to answer, so the fight is over who speaks for Earth.
   card:
     text: YEAR ONE
     style: phase
 - id: phase3
   vo: >-
-    Year ten. No reply sent. One camp says they already hear our television, leaking since the nineteen thirties.
-    The other says that is exactly why we should go quiet.
+    Year ten. No reply sent. One camp says a big dish already hears our television, leaking since the nineteen thirties. The other says that is why we should go quiet.
   card:
     text: YEAR TEN
     style: phase
 - id: turn
   vo: >-
-    [exhale] But the signal left its star forty years ago. Whoever sent it may be gone, and whatever we send reaches
-    their grandchildren. We spent ten years deciding what to say to the dead.
+    [exhale] But the signal left its star forty years ago. Whoever sent it may be gone; whatever we send reaches their grandchildren. We spent ten years deciding what to say to the dead.
   card: null
 - id: dilemma
   vo: >-
@@ -154,6 +144,17 @@ shots:
   dur: 2.5
   mode: video
   sfx: control room hum
+- beat: hook
+  size: POV
+  location: Observatory gravel, dawn
+  prompt: >-
+    handheld, looking up from frosted gravel past the rim of the great white dish at one bright star in a violet
+    dawn sky, breath fogging in the cold, the dish's edge dark against the sky
+  motion: handheld slow tilt up from the dish rim to the star, breath fog drifts
+  dur: 2.5
+  mode: video
+  sfx: wind
+  hero_object: true
 - beat: hinge
   size: CLOSE
   location: Observatory office, morning
@@ -374,8 +375,7 @@ shots:
   hero_object: true
 dilemma: The dish is pointed, the message is written. Do we send it?
 pinned_comment: >-
-  Send it. Our television has been leaking for ninety years; anyone who can hear a signal from forty light-years
-  away already knows exactly where we are. Silence buys nothing. Manners might.
+  Send it. Our radar and television have leaked for ninety years; a civilisation that can build a beacon can build the dish that hears them. Silence buys nothing. Manners might.
 metadata:
   cover_time: 0.8
   second_comment: >-

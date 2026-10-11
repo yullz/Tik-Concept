@@ -14,8 +14,6 @@ voice:
   settings:
     stability: 0.5
     similarity_boost: 0.75
-    style: 0.15
-    speed: 0.95
 music:
   mood: low strings, slow pulse, a bell at the hinge
   cue: assets/music/never-fell-02.mp3
