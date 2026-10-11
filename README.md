@@ -18,6 +18,9 @@ assets/      music, sfx and fonts (licensed, not in git)
 renders/     per-episode working directories (not in git)
 RUNBOOK.md   executor steps with exact Higgsfield MCP tool calls
 CLAUDE.md    rules for the executing agent (Claude Opus 5.5)
+HANDOFF-PRODUCER.md   paste into the production chat: how to turn the episodes into finished masters
+HANDOFF-PUBLISHER.md  paste into the publishing chat: how to schedule and upload to TikTok and YouTube
+publish/     schedule.yaml and post-log.csv (made by `pipeline schedule`)
 ```
 
 ## Quick start
@@ -28,6 +31,7 @@ python3 -m pytest -q pipeline/tests         # offline test suite (renders a dry 
 python3 -m pipeline validate episodes/ep001-every-human-vanishes.yaml
 python3 -m pipeline lint     episodes/ep001-every-human-vanishes.yaml
 python3 -m pipeline dryrun   episodes/ep001-every-human-vanishes.yaml   # placeholder render, no credits
+python3 -m pipeline schedule --start 2026-10-20 --tz Europe/Sofia         # posting calendar for the publisher chat
 ```
 
 The dry run writes `renders/ep001-every-human-vanishes/dryrun.mp4`: real timing, captions, cards,

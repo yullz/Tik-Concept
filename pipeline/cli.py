@@ -10,7 +10,7 @@ from pathlib import Path
 
 import yaml
 
-from . import align, assemble as asm, captions, lint, metadata as meta, prompts, qc, spec, timeline, tts, visuals, contact_sheet
+from . import align, assemble as asm, captions, lint, metadata as meta, prompts, qc, schedule as sched, spec, timeline, tts, visuals, contact_sheet
 from .config import ASSETS_DIR, EPISODES_DIR, load_style, render_dir
 
 
@@ -225,6 +225,37 @@ def cmd_dryrun(a):
     return cmd_qc(a)
 
 
+def cmd_schedule(a):
+    from datetime import date
+    entries = sched.build_schedule(date.fromisoformat(a.start), a.tz, a.slots.split(","), youtube_offset_minutes=a.youtube_offset)
+    out = sched.write_schedule(entries)
+    print(f"wrote {out}: {len(entries)} slots for {len(entries)//3} episodes starting {a.start} ({a.tz})")
+    for e in entries:
+        if e["platform"] == "tiktok":
+            print(f"  {e['scheduled_local']}  {e['file_number']}  {e['title']}")
+    return 0
+
+
+def cmd_youtube_upload(a):
+    from . import publish_youtube as yt
+    ep = _ep(a.episode)
+    ok, msg = qc.taste_gate(ep)
+    if not ok:
+        print(f"refusing to upload: {msg}"); return 1
+    res = yt.upload(ep, a.publish_at, a.privacy)
+    sched.append_log({"episode_id": ep.id, "file_number": ep.file_number, "platform": "youtube", "account": a.account,
+                      "scheduled_utc": res.get("publish_at") or "", "post_id": res["video_id"], "url": res["url"]})
+    print(json.dumps(res, indent=2))
+    return 0
+
+
+def cmd_youtube_comment(a):
+    from . import publish_youtube as yt
+    cid = yt.comment(a.video_id, a.text)
+    print(f"comment posted: {cid} (pin it in YouTube Studio)")
+    return 0
+
+
 def cmd_write(a):
     from . import llm
     out = EPISODES_DIR / f"{a.id}.yaml"
@@ -267,6 +298,11 @@ def main(argv=None) -> int:
     sp = add("bundle", cmd_bundle); sp.add_argument("episode"); sp.add_argument("--channel", default="Unhappened")
     sp = add("dryrun", cmd_dryrun); sp.add_argument("episode"); sp.add_argument("--style", default="counterfact-v1")
     sp = add("new", cmd_new); sp.add_argument("id"); sp.add_argument("--series", required=True); sp.add_argument("--number", type=int, required=True); sp.add_argument("--title", required=True)
+    sp = add("schedule", cmd_schedule); sp.add_argument("--start", required=True, help="launch day, YYYY-MM-DD")
+    sp.add_argument("--tz", default="UTC"); sp.add_argument("--slots", default="07:00,18:00"); sp.add_argument("--youtube-offset", type=int, default=0, help="minutes after the TikTok slot")
+    sp = add("youtube-upload", cmd_youtube_upload); sp.add_argument("episode"); sp.add_argument("--publish-at", default=None, help="RFC3339 with offset; omit to upload private without a schedule")
+    sp.add_argument("--privacy", choices=["private", "unlisted", "public"], default="private"); sp.add_argument("--account", default="main")
+    sp = add("youtube-comment", cmd_youtube_comment); sp.add_argument("video_id"); sp.add_argument("--text", required=True)
     sp = add("write", cmd_write); sp.add_argument("id"); sp.add_argument("--brief", required=True)
     sp = add("localize", cmd_localize); sp.add_argument("episode"); sp.add_argument("--lang", required=True)
 

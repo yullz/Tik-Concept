@@ -3,3 +3,6 @@ requests>=2.31
 pytest>=8.0
 # optional, for word-level alignment when ElevenLabs timestamps are unavailable:
 # faster-whisper>=1.0
+# optional, for the publisher chat (YouTube Data API v3):
+# google-api-python-client>=2.100
+# google-auth-oauthlib>=1.2

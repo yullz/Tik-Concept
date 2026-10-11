@@ -120,10 +120,10 @@ python3 -m pipeline bundle episodes/<id>.yaml
 ```
 `bundle` refuses to run without a passing review and QC.
 
-## 11. Post (human)
-From `renders/<id>/publish/`: TikTok (AI-generated flag on, pinned comment within a minute),
-YouTube Shorts (altered-content disclosure), Reels. TikTok can be prepared through the
-Higgsfield MCP (`tiktok_prepare_publish`, `mode: UPLOAD_TO_DRAFT`); the human submits the form.
+## 11. Post (the publishing chat)
+Hand `renders/<id>/publish/` to the publishing chat (`HANDOFF-PUBLISHER.md`): it schedules the
+slot, prepares the TikTok draft through the Higgsfield MCP, uploads to YouTube with a scheduled
+publish time, and runs the posting-day checklist. The producer never posts.
 
 ## 12. After posting
 Log the 24 h and 7 d numbers in `analytics/`. Save the best objection to
